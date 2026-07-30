@@ -1,0 +1,105 @@
+---
+title: "Claude Connector"
+---
+
+You can connect your Habitify account to Claude using our MCP server. This works with both Claude Desktop and Claude Code. Authentication is handled automatically via OAuth — you'll be prompted to sign in to your Habitify account when you connect.
+
+## **Prerequisites**
+
+- Claude Desktop app or Claude Code CLI
+- A Habitify account
+
+## **Claude Desktop**
+
+### **1. Open the Configuration File**
+
+Open your Claude Desktop MCP configuration file:
+
+- **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
+- **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
+
+### **2. Add the Habitify MCP Server**
+
+Add the following to your configuration file:
+
+```text
+{
+  "mcpServers": {
+    "habitify": {
+      "url": "https://mcp.habitify.me/mcp"
+    }
+  }
+}
+```
+
+### **3. Restart Claude Desktop**
+
+Close and reopen Claude Desktop. On first use, you'll be prompted to sign in to your Habitify account and authorize access. You should then see the Habitify tools available in the tools menu.
+
+## **Claude Code**
+
+### **1. Add the MCP Server**
+
+Run the following command in your terminal:
+
+```text
+claude mcp add habitify --transport http https://mcp.habitify.me/mcp
+```
+
+### **2. Verify the Connection**
+
+Start a Claude Code session and try:
+
+> "Show me all my habits"
+
+You'll be prompted to sign in and authorize access on first use.
+
+## **Example Prompts**
+
+Once connected, you can try:
+
+- "What habits do I have scheduled for today?"
+- "Mark my 'Morning Run' habit as completed"
+- "Log 30 minutes for my 'Reading' habit"
+- "What's my current streak for meditation?"
+
+## **Troubleshooting**
+
+### **Tools not appearing in Claude Desktop**
+
+- Make sure the JSON configuration is valid (no trailing commas, correct brackets)
+- Verify the file path is correct for your operating system
+- Restart Claude Desktop completely after editing the config
+
+### **Claude shows "Configure" instead of "Connect"**
+
+This is a known behavior on Claude's side. After adding the Habitify connector, Claude may show a **Configure** button instead of the expected **Connect** button.
+
+To fix this:
+
+1. Open Claude and go to **Profile (your initials) \> Settings \> Connectors**
+2. Find the Habitify connector
+3. Tap the **…** (three-dot) menu next to it and choose **Disconnect**
+4. After disconnecting, the **Connect** button should appear
+5. Tap **Connect** and follow the prompts to sign in to your Habitify account and authorize access
+
+<Card title="Paid Claude plan is required" type="info">
+  - Custom Connectors are a premium feature — make sure you're on a paid Claude plan.
+  - On Team and Enterprise plans, only Owners can add custom connectors. Once added, individual users can connect and enable the connector.
+</Card>
+
+### **Authorization prompt doesn't appear**
+
+- Check your browser — the OAuth sign-in page may have opened in the background
+- Try again on a different network (Wi-Fi vs cellular) and restart Claude
+- Make sure you have network access to `https://mcp.habitify.me`
+
+### **Claude Code can't connect**
+
+- Run `claude mcp list` to verify the server was added
+- Try removing and re-adding the server
+- Ensure you have network access to `https://mcp.habitify.me`
+
+## **Need Help?**
+
+Contact us at [support@habitify.me](mailto:support@habitify.me) if you run into any issues. If you see an error message, please share a screenshot or screen recording along with the exact wording so we can help.
