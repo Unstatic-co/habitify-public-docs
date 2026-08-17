@@ -36,100 +36,74 @@
       {
         "tab": "Help Center",
         "icon": "life-ring",
-        "dropdowns": [
+        "groups": [
           {
-            "dropdown": "Mobile App",
-            "groups": [
-              {
-                "group": "Overview",
-                "icon": "archway",
-                "pages": [
-                  "habitify-introduction",
-                  "untitled-page"
-                ]
-              },
-              {
-                "group": "Basic Set-up & Tracking",
-                "icon": "anchor",
-                "pages": [
-                  {
-                    "group": "Good Habits",
-                    "icon": "battery-bolt",
-                    "pages": [
-                      "untitled-page-3",
-                      "untitled-page-4",
-                      "untitled-page-5"
-                    ]
-                  },
-                  {
-                    "group": "Bad Habits",
-                    "icon": "battery-exclamation",
-                    "pages": [
-                      "untitled-page-6",
-                      "untitled-page-7",
-                      "untitled-page-8"
-                    ]
-                  }
-                ]
-              },
-              {
-                "group": "Supportive Tools",
-                "icon": "tools",
-                "pages": []
-              }
+            "group": "Get Started",
+            "pages": [
+              "habitify-introduction",
+              "untitled-page-2",
+              "untitled-page"
             ]
           },
           {
-            "dropdown": "Website & Desktop",
+            "group": "Features",
             "pages": [
+              "untitled-page-19",
+              "untitled-page-4",
+              "untitled-page-7",
+              "untitled-page-5",
+              "untitled-page-6"
+            ]
+          },
+          {
+            "group": "Tools",
+            "pages": [
+              "untitled-page-8",
               "untitled-page-9",
-              "untitled-page-11"
+              "untitled-page-16",
+              "untitled-page-17",
+              "untitled-page-18",
+              "untitled-page-3"
             ]
           },
           {
-            "dropdown": "Watch App",
+            "group": "App Settings",
             "pages": [
-              "untitled-page-10",
-              "untitled-page-12"
+              "untitled-page-11",
+              "untitled-page-10"
+            ]
+          },
+          {
+            "group": "Integration",
+            "pages": [
+              "untitled-page-12",
+              "untitled-page-13",
+              "untitled-page-14",
+              "untitled-page-15",
+              "untitled-page-20"
             ]
           }
         ]
       },
       {
         "tab": "API Documentation",
-        "icon": "rectangle-api",
-        "pages": [
-          "authentication",
-          {
-            "group": "Habit",
-            "pages": [
-              "get-habit-list"
-            ]
-          }
-        ]
+        "icon": "rectangle-api"
       },
       {
         "tab": "Habitify MCP",
         "icon": "bolt-auto",
         "pages": [
-          "overview",
           {
             "group": "ChatGPT",
-            "pages": [
-              "chat-gpt-connector"
-            ]
+            "pages": []
           },
           {
             "group": "Claude",
-            "pages": [
-              "claude-connector"
-            ]
+            "pages": []
           },
           {
             "group": "Other AI Tools",
-            "pages": [
-              "others"
-            ]
+            "pages": []
           }
         ]
       }
