@@ -1,0 +1,105 @@
+---
+title: "Strava"
+---
+
+If you're already logging your runs, rides, swims, and other workouts on Strava, there's no reason to log them a second time in Habitify. This integration connects the two, so whenever you complete and save an activity in Strava, your progress automatically syncs to the matching habit. 
+
+You do the sweating, Habitify does the tracking. This article shows you how.
+
+## Adding a Strava-synced habit
+
+<Tabs>
+  <Tab title="iOS">
+    1. From _Journal_, tap the \+ button in the bottom right corner
+    2. Choose either '**Build Good Habit**' or '**Break Bad Habit**'.
+    3. At the top of the creation screen, switch to then '**Strava**' tab.
+    4. Choose the data type you want to track from the list (e.g., "Steps").
+    5. In the next step, you will redirect to Strava site to log into your Strava account, and grant the access permission for Habitify to read the data from Strava.
+    6. Once the permission is granted, you go back to Habitify,
+    7. Configure the details of your habit as normal. 
+    8. Once everything is set, tap **the ✓ button** to save the newly created habit to your list.
+
+    Once created, a Strava-linked habit is easy to spot: it carries a small Strava icon right on the Journal view, distinguishing it from your manually tracked habits at a glance.
+  </Tab>
+  <Tab title="Android">
+    1. In _Journal_, tap **the \+ button** on the date bar at the bottom right corner of your screen.
+    2. Choose '**Create Good Habit**' or '**Break Bad Habit**'.
+    3. Among the tabs at the top of the habit templates screen, tap on **'Strava'.**
+    4. Tap to select one data option from the list of all the activities and data types Habitify can import from Strava.
+    5. Set your **Goal** (e.g., 10,000 steps, or 8 hours of sleep), then tap **'Allow Access'.**
+    6. In the next step, you will redirect to Strava site to log into your Strava account, and grant the access permission for Habitify to read the data from Strava.
+    7. Once the permission is granted, you go back to Habitify, and tap '**Continue**' button.
+    8. Configure the habit as usual.
+    9. Once everything is set, tap the '**Save**' button in the top right corner.
+
+    Once created, a Strava-linked habit is easy to spot: it carries a small Strava icon right on the Journal view, distinguishing it from your manually tracked habits at a glance.
+  </Tab>
+  <Tab title="Website & Desktop">
+    1. From the left navigation bar, access the **All Habits** tab,
+    2. Navigate to the bottom action bar, click '**\+ Add Habit**'.
+    3. Choose '**Create Good Habit'** or **'Break Bad Habit'.**
+    4. In the window that appears, select the **Strava** tab at the top.
+    5. Choose the type of activity you want to track from the list of supported categories, such as **Run, Ride, Walk,** or **Swim**.
+    6. The first time you create a Strava synced-habit, you will need to grant Habitify the access permission to your Strava account's data. <br />Under the habit name, click **'Allow Access',** and follow the next required steps.
+    7. Once the connection is successful, the 'Allow Access' button will disappear. Now, you can set up the rest of your habit's details just like a normal habit
+    8. Once everything is set, click the **Save** button at the bottom right corner to save the new habit to your tracking list
+  </Tab>
+</Tabs>
+
+## **How the Integration Works**
+
+Once the habit is created and linked to Strava, the tracking process is automatic.
+
+When you record a new activity in Strava, the data is sent to Habitify. Habitify checks if the activity's type and values (distance, duration, calories) meet the rules you defined in the habit's goal. Then, the app gets the data that meets the type required by goal and log it to the progress.
+
+If the goal value are met, the habit is automatically marked as complete. No manual input is required in Habitify.
+
+For example:
+
+- **Distance-Based Goal:**
+  - **Name:** Cycle 50 km Weekly
+  - **Goal:** 50 Kilometers per Week
+  - **Strava Connection:** Activity Type: `Ride`, Track by: `Distance`
+- **Time-Based Goal:**
+  - **Name:** Workout for 3 Hours a Week
+  - **Goal:** 3 Hours per Week
+  - **Strava Connection:** Activity Type: `Workout`, Track by: `Duration`
+
+## **Limitations**
+
+- **A single Strava account can only be connected to one Habitify account at a time.** If you connect your Strava account to a new Habitify account, the connection with the previous one will be automatically disconnected, and a notification will be sent to the original account.
+- **Strava enforces a rolling 15-minute rate limit for syncing data** (up to 3,300 overall requests every 15 minutes).If you experience an error or cannot integrate immediately, please wait 10 to 15 minutes and try again. This usually means a sudden spike in tracking has temporarily reached that 15-minute cap, and it will reset shortly.
+- When you first connect a habit to Strava, we'll import your past activities to fill in your progress. **Habitify will sync a maximum of the last 90 days of your relevant Strava history**, or from the habit's start date if it's more recent.
+- **This only syncs one way: Strava → Habitify.** The integration is designed to pull your completed activities from Strava and log them in Habitify. Your Habitify data will never be sent to, or alter, your Strava account.
+- **You cannot manually add progress log or mark complete a Strava-linked habit.** Once a habit is linked to Strava, its progress is controlled entirely by your Strava activities. This ensures the data is always accurate and effortless. 
+
+## Supported data type & unit
+
+Habitify currently supports syncing over 50 different activity types from Strava. To make it easier to find yours, we have grouped them by category below.
+
+1. **Running & Walking**:  tracking your steps and trails; including activities: Run, Walk, Hike, Trail Run, Virtual Run.
+2. **Cycling**: tracking whether you ride on the road, the mountain, or indoors; including activities: Ride, E-bike Ride, E-mountain Bike Ride, Gravel Ride, Mountain Bike Ride, Velomobile, Virtual Ride, Handcycle.
+3. **Water Sports**: calculating your time or distance on the water; including activities: Swim, Rowing, Virtual Row, Canoeing, Kayaking, Stand Up Paddling, Surfing, Windsurf, Kitesurf, Sail.
+4. **Winter Sport**s: recording your activities in the snow and ice; including activities: Alpine Ski, Backcountry Ski, Nordic Ski, Roller Ski, Snowboard, Snowshoe, Ice Skate.
+5. **Gym & Fitness**: monitoring your indoor workouts and strength training; including activities: Workout, Weight Training, Crossfit, Elliptical, Stair Stepper, Yoga, Pilates.
+6. **Team & Racket Sports**: logging your matches and practice sessions; including activities: Soccer, Tennis, Badminton, Pickleball, Squash, Racquetball, Golf.
+7. **Adventure & Other**: everything else that keeps you moving; including activities: Rock Climbing, Skateboard, Inline Skate, Wheelchair.
+
+When setting up your Strava habit, you must choose a unit that corresponds to the data Strava records. You can generally track:
+
+- **Distance:** (km, miles, meters, yards) – Available for distance-based activities like Running, Cycling, Swimming, etc.
+- **Duration:** (minutes, hours) – Available for almost all activity types.
+- **Calories:** (kcal) – Available if your Strava activity includes calorie data.
+
+## FAQs
+
+<Accordion title="Conneting wrong Strava account, what should I do?">
+  Strava may have an active authorization cached (on Strava or your browser), so when you tap “Connect with Strava” it silently reauthorizes the old profile.
+
+  Our recommendation is revoking Habitify from the wrong Strava account:
+
+  1. Go to [<u>strava.com/settings/apps</u>](https://www.strava.com/settings/apps).
+  2. If you see “Habitify”, click Revoke Access (revoke all Habitify entries if there are multiple).
+
+  If the wrong account still re‑authorizes without asking, contact us and we can remove the saved Strava authorization for your Habitify account on our side. After we confirm the reset, try connecting again, you should see the Strava login/authorize page.
+</Accordion>

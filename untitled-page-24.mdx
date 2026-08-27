@@ -1,0 +1,72 @@
+---
+title: "Health Connect"
+---
+
+Health Connect is Google's platform for centralizing health and fitness data from the apps and devices you already use: your watch, your fitness app, your sleep tracker. 
+
+Habitify connects to it so you can automate your tracking: instead of manually checking off a habit like steps or sleep, Habitify reads the data your other apps and devices are already recording, and logs your progress for you.
+
+## Adding a Health Connect-synced habit
+
+1. In _Journal_, tap **the \+ button** on the date bar at the bottom right corner of your screen.
+2. Choose '**Create Good Habit**' or '**Break Bad Habit**'.
+3. Among the tabs at the top of the habit templates screen, tap on **'Health Connect'.**
+4. Tap to select one data option from the list of all the activities and data types Habitify can import from Health Connect.
+5. Set your **Goal** (e.g., 10,000 steps, or 8 hours of sleep), then tap **'Allow Access'.**
+6. In the next screen, in _Allow 'Habitify to read_ section, **switch the toggle button ON**, then tap the **'Allow'** button below.
+7. In the next screen, adjust the goal if you want, then tap the '**Continue**' button.
+8. Configure the details of your habits as usual.
+9. Once everything is set, tap the '**Save**' button in the top right corner.
+
+Once created, a Health Connect-linked habit is easy to spot: it carries a small Health Connect icon right on the Journal view, distinguishing it from your manually tracked habits at a glance.
+
+## How it works
+
+Once a habit is linked, the day-to-day behavior is simple:
+
+- Health Connect data syncs to Habitify automatically. Once your logged value reaches the habit's goal, Habitify marks it **Completed** for you — no manual check-in needed for a good habit.
+- You can still manually mark the habit as **Skipped** or **Failed** for the day if you want to note something the synced data wouldn't otherwise capture.
+- **It's one-way only.** Data only flows from Health Connect into Habitify.
+
+## FAQs
+
+<Accordion title="My calorie data is not synced correctly from Health Connect, what should I do?">
+  When creating or editing a habit in the Health Connect category, you will be prompted to select one of three calorie-related options. Here is exactly what each option requests from your device:
+
+  1. **"Energy intake" - What you consume:** syncs the nutrition calories (consumed calories). Best for meal tracking, keeping dietary goals, or monitoring a calorie-deficit/surplus routine.
+
+  2. **"Burn some calories" - What you burn during workout:** syncs active calories burnt (physical activity only). Best for tracking daily exercise, workout consistency, and active movement goals.
+
+  3. **"Track calories"  - what you totally burn**:  syncs total calories burnt (Active \+ Passive). Best for monitoring total daily energy expenditure (TDEE) to manage weight or track overall metabolism.
+
+  If your synced progress is displaying incorrectly (e.g., you chose "Track calories" but meant to track your food intake), we recommend you to create a new habit and pick the correct one that matches your goal.
+</Accordion>
+
+<Accordion title="Habitify shows duplicate entries of data from Health Connect, what should I do?">
+  Health Connect is a shared data layer, any number of apps on your phone can write into it. If two apps are both writing the same type of data (like Sleep), Health Connect stores them as **separate records**, even if they describe the same night.
+
+  This most commonly happens when both of the following are active on your Android device at once:
+
+  - **Google Fit**
+  - Your **device's own built-in health/fitness tracking** (varies by phone maker, often on by default)
+
+  Health Connect's own summary screen sometimes displays these as a single merged entry, which is why the duplicate may not be obvious when you check there. Habitify, however, reads the underlying records, so it picks up both.
+
+  **How to fix it**
+
+  1. Open **Settings → Health Connect → App permissions** on your Android device.
+  2. Look through the list of apps and find which ones have **write access** to the data type that's duplicating (e.g. Sleep).
+  3. If you see more than one app with write access to that same data type, turn off write access for one of them — if Google Fit is one of them, we recommend disabling it, since it's a legacy path many devices no longer need.
+  4. Give it a sync cycle, then check Habitify again. Existing duplicate entries from before the fix won't retroactively merge, but new entries going forward will be clean.
+</Accordion>
+
+<Accordion title="Habitify does not syncs the data from Health Connect, what should I do?">
+  Health Connect permissions are granted **per data type**, not just per app. Connecting a source app (like Withings, which pushes to Google Health) doesn't automatically mean Habitify has been granted access to every data type from it. It's common for one data type (e.g. Steps) to be authorized while another (e.g. Weight) is not.
+
+  **How to fix it**
+
+  1. Open **Settings → Health Connect → Habitify** (under App permissions).
+  2. Check the list of data types Habitify has access to.
+  3. Confirm the specific data type your habit tracks (e.g. **Weight**, **Sleep**, **Steps**) is explicitly toggled **on**.
+  4. If it was off, turn it on and open Habitify again to trigger a fresh sync.
+</Accordion>
