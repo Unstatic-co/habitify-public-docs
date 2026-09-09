@@ -32,9 +32,9 @@
         }
       ]
     },
-    "groups": [
+    "tabs": [
       {
-        "group": "Help Center",
+        "tab": "Help Center",
         "icon": "life-ring",
         "pages": [
           {
@@ -118,7 +118,7 @@
         ]
       },
       {
-        "group": "API Documentation",
+        "tab": "API Documentation",
         "icon": "rectangle-api",
         "openapi": "https://static.habitify.me/Habitify%20API%20v2.json"
       }
