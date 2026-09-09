@@ -113,7 +113,10 @@
       {
         "tab": "API Documentation",
         "icon": "rectangle-api",
-        "openapi": "https://static.habitify.me/Habitify%20API%20v2.json"
+        "openapi": "https://static.habitify.me/Habitify%20API%20v2.json",
+        "pages": [
+          "untitled-page-37"
+        ]
       },
       {
         "tab": "Habitify MCP",
