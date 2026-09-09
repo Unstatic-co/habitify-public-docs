@@ -1,3 +1,198 @@
 ---
 title: "Data"
 ---
+
+## Importing data to Habitify
+
+Starting with a new app is exciting, but we know you don't want to lose your valuable tracking history from other apps or spreadsheets. This part will show you some methods to import your past data into Habitify to get a complete picture of your journey.
+
+### **Importing data from your Health**
+
+If your past data is related to fitness and is stored in Apple Health, Health Connect, Fitbit, or Strava, this is the easiest and most automatic way to import your history.
+
+**How it works:** When you connect one of these services to a habit in Habitify for the first time, the app will automatically perform a **historical sync**. It will look back in time and import your past activities into your habit's log.
+
+- **Apple Health or Health Connect:** Sync your steps, workouts, sleep, mindful minutes, and more directly from your iPhones or Android phones. 
+- **Fitbit:** Automatically log your daily steps, sleep, calories burned, and other stats from your Fitbit device.
+- **Strava:** Sync your runs, rides, walks, and other workouts directly to your habits right after you complete them.
+
+### Importing data from Productive app
+
+This feature requires you to first export your data from the Productive app. Productive typically exports data as a `.sqlite` file. You will need this file ready to initiate the import into Habitify.
+
+In the Habitify app, navigate to **Settings → Import / Export Data → Import from Productive.**
+
+Then choose your exported `.sqlite` file, and follow the on-screen prompts to complete the import process.
+
+The import focuses on bringing over your core habit information:
+
+- **Habits:** Your list of habits.
+- **Habit Logs:** Your historical check-ins, skips, and fails for those habits.
+- **Time of Day:** Morning, Afternoon, or Evening settings.
+- **Habit Descriptions:** Any notes or descriptions you added to your habits.
+- **End Condition:** If a habit had an end date set in Productive, it will be imported, **unless** that date is today or in the past. (Habitify requires end dates to be at least 7 days in the future).
+
+<Note>
+  **Important Notes:**
+
+  - **Challenges** and **Programs** from Productive are **not** imported into Habitify. Only individual habits are transferred.
+  - Habits that were marked as **paused or stopped** in Productive will be imported into Habitify but will be automatically placed in the **Archived** state. You can unarchive them later if needed.
+</Note>
+
+The import process automatically converts your Productive schedules and goals to Habitify's format. Here's how it works:
+
+- **Daily / Specific weekdays / Specific month dates:** Habits set to repeat daily, on specific days of the week, or on specific dates of the month in Productive will be imported as **Daily Goals** in Habitify, keeping the same schedule.
+- **Multiple Goals Per Day:** If your Productive habit had multiple targets within a day (e.g., "2 times in the morning + 2 times in the evening"), Habitify will **sum these up** into a single daily goal (e.g., "4 times per day").
+- **Weekly Frequency (e.g., "3 times per week"):** If your Productive habit was set for a weekly frequency (e.g., "3 times per week") and had a daily target (e.g., "20 minutes each time"), Habitify will convert this into a single **Weekly Goal** by multiplying the frequency and daily target.<br />_Example:_ Productive: "3 times per week, 20 minutes per day" → Habitify: **"60 minutes per week"**.
+- **Special Case - Bi-Weekly:** If you had a habit set to repeat, for example, "1 time every 2 weeks" in Productive, this specific interval is not directly supported for import. It will be converted into a **Daily Goal** in Habitify as a fallback. You may need to adjust this habit's schedule manually after import.
+
+### Importing data from Streak app
+
+This feature requires you to first export your data from the Streaks app. Streaks typically exports this data as a special file with the extension `.streaks`. You will need this file ready to begin the import into Habitify.
+
+In the Habitify app, navigate to **Settings → Import / Export Data → Import from Streaks.**
+
+Then choose your exported `.streaks` file, and follow the on-screen prompts to complete the import process.
+
+The import process is designed to bring over the core elements of your habit tracking:
+
+- **Habit Name:** The name of your habit stays the same.
+- **Schedule as Repeated:** How often you do the habit (daily, weekly, monthly) is converted.
+- **Frequency as Goal:** If your habit was "X times per day/week/month," this goal is kept.
+- **Reminders as Reminders:** Your custom reminder times are brought over (see details below).
+- **Notes as Habit Notes:** Any notes you added to your habits are copied.
+- **First Date with Logs as Start Date:** Habitify uses the date of your earliest log entry in Streaks as the "Start Date."
+- **Log History:** Your past completions, failures, and skipped days are imported.
+- **Bad Habits:** Habits you were trying to quit or limit are also imported (see details below).
+
+Because Habitify and Streaks work slightly differently, some data is converted during the import. Here are the most important things to know.
+
+**1/ Reminders**
+
+If you set specific times for reminders in Streaks, those exact times will be synced to Habitify. Also, Streaks has an "Auto Reminder" feature that Habitify doesn't have. These reminders will **not** be imported.
+
+**2/ Log History**
+
+- **For Daily Habits:** This is straightforward.
+  - `Complete` in Streaks → `Complete` in Habitify
+  - `Failed` in Streaks → `Failed` in Habitify
+  - If a day was **_not logged_** in Streaks, it will be marked as `Skipped` in Habitify (preserving your streak).
+- **For Weekly Habits:** Habitify only allows weeks to start on Sunday or Monday, while Streaks lets you start on any day. Because of this, your weekly log data from Streaks will be assigned to the **Monday** of that corresponding week in Habitify.<br />_Example:_ If your Streaks week ran Wednesday to Tuesday, the completion status for that whole week will be shown on the Monday of that week in Habitify.
+- **For Monthly Habits:** Similar to weekly habits, your completion status for an entire month in Streaks will be assigned to the **1st day of that month** in Habitify.
+
+**3/ Goal of Bad Habits**
+
+- **Quitting a Habit:** If your goal in Streaks was "No [Habit Name]", it will be imported as a **"Quit Habit"** in Habitify, tracking the days you successfully avoided it.
+- **Limiting a Habit:** If your goal in Streaks was to limit a bad habit to "X times per day/week/month", it will be imported as a **"Limit Habit"** in Habitify with the same frequency goal.
+
+### **Import data from a spreadsheet**
+
+If your previous tracking data is in a spreadsheet (perhaps exported from another app or kept manually), you can use a service called **Zapier** to import it. This method is more advanced but is perfect for backfilling a complete history for any habit.
+
+This method uses an automation (a "Zap") that watches for new rows in a Google Sheet and creates a corresponding log entry in Habitify. To import your old data, you will copy-paste it into the Google Sheet to trigger the process.
+
+Follow these steps:
+
+<Steps>
+  <Step title="Prepare your data spreadsheet">
+    First, you'll need to format your old data to fit [<u>our Google Sheets template</u>](https://docs.google.com/spreadsheets/d/1LN3wqWGwHToYL0pWqYPCGztiY9Rxi9KA_xLo1poQdU8/edit?usp=sharing). Each sheet records the progress log of one habit. This means organizing your history so that each row represents one completion (including the specific date, time, and any numerical value).
+  </Step>
+  <Step title="Set up your Habitify habit">
+    Create the corresponding habit in Habitify that you want to import the data into.
+  </Step>
+  <Step title="Use our Zapier template for easy set-up">
+    Create the corresponding habit in Habitify that you want to import the data into.
+  </Step>
+  <Step title="Run the zap to import data">
+    Once the Zap is active, you can copy-paste your entire historical data into the Google Sheet. Zapier will then read each row and import it as a dated log in Habitify, successfully backfilling your progress.
+  </Step>
+</Steps>
+
+You can implement the same integration via Zapier with other data table services like Airtable, Online Microsoft Excel, Zoho Sheet, and so on.
+
+## Exporting data from Habitify
+
+We offer two main export formats, each serving a different need: a simple **CSV file** for basic log analysis, and a comprehensive **Full Backup file (.sqlite)** for a complete snapshot of your account.
+
+#### Step-by-step Guide
+
+1. Navigate to the **Settings** tab in the Habitify app.
+2. Find and tap on **Import / Export**
+3. Choose the export format you want: **Export as .csv** or **Export as Backup**
+4. Follow the on-screen prompts from your device to save the file or share it (e.g., via email, cloud storage).
+
+#### **Comparing export file formats**
+
+| Format | .csv | Backup |
+| --- | --- | --- |
+| Best for | Analyzing your basic habit completion history in spreadsheet software like Google Sheets, Microsoft Excel, or Apple Numbers. | Creating a complete backup of your entire Habitify setup and history. This file can potentially be used to restore your data in the future or for advanced technical analysis using database tools. |
+| File extension | `.csv` | `.sqlite` |
+| What's inluded | This export provides a straightforward log of your habit check-ins, including the following columns for each entry: <ul><li>`Habit`: The name of the habit.</li><li>`Date`: The date the log entry was made.</li><li>`Total log`: The numerical value logged (if applicable).</li><li>`Unit`: The unit associated with the goal (e.g., minutes, km, times).</li><li>`Status`: Whether the habit was marked as Completed, Skipped, or Failed.</li><li>`Habit ID`: A unique identifier for the habit.</li></ul> | This export contains a comprehensive snapshot of **everything** in your account, including (but not limited to): <ul><li>**Habit Details:** All your habits (active and archived), goals, checklists, reminders (time, location, stacking), end conditions, milestones, etc.</li><li>**Progress & Logs:** All check-ins, skips, fails, numerical logs, notes, mood logs, checklist logs, streak history (`currentStreak`), and calculated progress data (`logCalculations`, `progresses`).</li><li>**Settings:** Your account settings like the first day of the week (`firstDayOfWeek`).</li></ul> |
+
+## Managing data in Habitify
+
+### Reseting habit data
+
+<Warning>
+  Before you reset your data, please acknowledge that:
+
+  - This action will **permanently delete all of your historical data** across every habit in your account.
+  - This includes all of your check-ins, skips, fails, all current streaks, notes, and any progress from archived habits.
+  - **This process cannot be undone.** Once your data is deleted, it is gone forever, and our support team cannot recover it for you.
+  - Your list of _current_ habits will remain, but their progress and streaks will be reset to zero.
+</Warning>
+
+<Tabs>
+  <Tab title=" iOS">
+    1. Open **Habitify**, and go to **Settings**
+    2. Tap your profile.
+    3. Go to '**Privacy & Data**' section, and tap on '**Reset Habit Data**'.
+    4. For confirmation, tap '**Rest Habit Data**'.
+  </Tab>
+  <Tab title="🤖 Android">
+    1. Open **Habitify**, and go to **Settings**.
+    2. Tap on your name.
+    3. Scroll down to '**Caution zone**'.
+    4. Find '**Reset Habit Data**' option, and tap the '**Delete**' button next to it.
+    5. For confirmation, tap '**OK**'.
+  </Tab>
+  <Tab title="🖥️ Website & Desktop">
+    1. Open the Habitify app
+    2. Click your profile photo, and choose '**Profil**e'.
+    3. In '**Caution Zone**', find and click the '**Reset Habit Data**' button.
+    4. For confirmation, click '**Reset Habit Data**'.
+  </Tab>
+</Tabs>
+
+### Deleting all data
+
+<Warning>
+  Please read the following very carefully before you proceed.
+
+  - This action will permanently delete **ALL OF YOUR HABITS** from your list.
+  - It will also permanently delete **ALL of your historical data**, including every check-in, skip, fail, note, and streak.
+  - **THIS PROCESS CANNOT BE UNDONE.** Once you confirm, all your information is gone forever and cannot be recovered by you or our support team.
+  - You will be left with a **completely empty account**.
+</Warning>
+
+<Tabs>
+  <Tab title=" iOS">
+    1. Open **Habitify**, and go to **Settings**
+    2. Tap your profile.
+    3. Go to '**Privacy & Data**' section, and tap on '**Delete All Data**'.
+    4. For confirmation, tap '**Delete All Data**'.
+  </Tab>
+  <Tab title="🤖 Android">
+    1. Open **Habitify**, and go to **Settings**.
+    2. Tap on your name.
+    3. Scroll down to '**Caution zone**'.
+    4. Find '**Delete All Data**' option, and tap the '**Delete**' button next to it.
+    5. For confirmation, tap '**OK**'.
+  </Tab>
+  <Tab title="🖥️ Website & Desktop">
+    1. Open the Habitify app
+    2. Click your profile photo, and choose '**Profil**e'.
+    3. In '**Caution Zone**', find and click the '**Delete Data**' button.
+    4. For confirmation, click '**Delete All Data**'.
+  </Tab>
+</Tabs>
