@@ -120,9 +120,7 @@
       {
         "group": "API Documentation",
         "icon": "rectangle-api",
-        "pages": [
-          "untitled-page-37"
-        ]
+        "openapi": "https://static.habitify.me/Habitify%20API%20v2.json"
       }
     ]
   },
