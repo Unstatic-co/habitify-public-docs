@@ -32,11 +32,11 @@
         }
       ]
     },
-    "tabs": [
+    "groups": [
       {
-        "tab": "Help Center",
+        "group": "Help Center",
         "icon": "life-ring",
-        "groups": [
+        "pages": [
           {
             "group": "Get Started",
             "pages": [
@@ -100,6 +100,12 @@
             ]
           },
           {
+            "group": "Habitify MCP & AI",
+            "pages": [
+              "untitled-page-39"
+            ]
+          },
+          {
             "group": "Plans & Billing",
             "pages": [
               "untitled-page-32",
@@ -112,29 +118,10 @@
         ]
       },
       {
-        "tab": "API Documentation",
+        "group": "API Documentation",
         "icon": "rectangle-api",
-        "openapi": "https://static.habitify.me/Habitify%20API%20v2.json",
         "pages": [
           "untitled-page-37"
-        ]
-      },
-      {
-        "tab": "Habitify MCP",
-        "icon": "bolt-auto",
-        "pages": [
-          {
-            "group": "ChatGPT",
-            "pages": []
-          },
-          {
-            "group": "Claude",
-            "pages": []
-          },
-          {
-            "group": "Other AI Tools",
-            "pages": []
-          }
         ]
       }
     ]

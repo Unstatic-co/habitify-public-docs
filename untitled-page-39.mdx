@@ -1,0 +1,58 @@
+---
+title: "Habitify MCP"
+---
+
+Habitify MCP (Model Context Protocol) connects your Habitify account directly to AI assistants like ChatGPT and Claude. 
+
+Once connected, you're not just chatting about your habits, but you can actually manage them using natural language, right from your conversation with your AI assistant of choice.
+
+## Connecting Habitify MCP
+
+### Connecting to Claude
+
+1. Open Claude and go to **Customize**.
+2. Choose **Connectors.**
+3. Find Habitify.
+4. Click the + button, or **Connect to Claude.** 
+5. Follow the prompts to sign in to Habitify and authorize access.
+
+Once the authorization is successful, you can start a new chat in Claude. 
+
+In the new chat, click + button → Connectors → turn on Habitify, and start interacting with your habits in Habitify right in Claude.
+
+### Connecting to ChatGPT
+
+1. In the ChatGPT interface, go to **Apps.**
+2. Search for **Habitify.**
+3. **Click Connect.**
+4. Read the references related to the usage of Habitify through your chats in ChatGPT. Then click **Connect Habitify**.
+5. You will redirect to Habitify on website, and may need to log into your Habitify account there is you haven't yet. Then, in the authorization step, click **Connect**.
+
+Once the authorization is successful, you can click **Start Chat** to start interacting with your habits in Habitify right in ChatGPT.
+
+### Connecting to others
+
+To connect Habitify to a new tool, you will typically be asked for a **Server URL** or **Connection Link**.
+
+- **Connection URL:** `https://mcp.habitify.me/mcp`
+- **Connection Type:** SSE (Server-Sent Events)
+
+Since every app looks a little different, the exact buttons might vary, but the process is usually the same:
+
+1. Look for a section in your app's settings called "Connectors," "Servers," or "Extensions."
+2. Choose the option to add a new custom server.
+3. Enter the details:
+   - **Name:** `Habitify`
+   - **URL:** Paste the link provided above (`https://mcp.habitify.me/mcp`).
+4. Once added, your tool will likely ask you to log in to your Habitify account to approve the access.
+
+## What Habitify MCP can do with your habits
+
+Once connected, you can ask your AI assistant to handle real actions in your Habitify account, entirely through natural language:
+
+- **Check your list**: Ask "Show me my habits for today," or for any specific date, to see what's still left to do.
+
+- **Add a log:** Ask "Mark my morning run as complete," or add a specific value toward a numeric goal.
+- **Update status**: Ask to change a habit's status to Completed, Skipped, or Failed.
+
+- **Clear progress** : Ask to wipe a habit's logged progress for a specific day, resetting it back to 0 or "Not Started." If you don't mention a date, this defaults to today.
