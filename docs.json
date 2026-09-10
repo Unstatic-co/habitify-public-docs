@@ -87,16 +87,15 @@
           {
             "group": "Integration",
             "pages": [
-              "google-calendar",
-              "outlook-calendar",
-              "apple-calendar",
-              "apple-health",
-              "health-connect",
-              "strava",
-              "google-health-fitbit",
-              "rescue-time",
-              "ios-screen-time",
-              "android-screen-time"
+              "google-calendar-integration",
+              "outlook-calendar-integration",
+              "apple-calendar-integration",
+              "apple-health-integration",
+              "health-connect-integration",
+              "strava-integration",
+              "fitbit-integration",
+              "rescue-time-integration",
+              "screen-time-integration"
             ]
           },
           {
