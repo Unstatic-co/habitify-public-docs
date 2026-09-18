@@ -121,7 +121,8 @@
       },
       {
         "tab": "Changelog",
-        "href": "https://feedback.habitify.me/changelog"
+        "href": "https://feedback.habitify.me/changelog",
+        "icon": "bullhorn"
       }
     ]
   },
