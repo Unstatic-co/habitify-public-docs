@@ -126,8 +126,8 @@
     ]
   },
   "logo": {
-    "light": "/images/128-Desktop.png",
-    "dark": "/images/128-Desktop.png"
+    "light": "/images/logo.png",
+    "dark": "/images/Group2.png"
   },
   "navbar": {
     "links": [
