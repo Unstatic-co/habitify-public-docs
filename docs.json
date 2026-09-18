@@ -21,23 +21,9 @@
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Feedback & Roadmap",
-          "href": "https://feedback.habitify.me/",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://habitify.me/blog",
-          "icon": "newspaper"
-        }
-      ]
-    },
     "tabs": [
       {
-        "tab": "Help Center",
+        "tab": "Documentation",
         "icon": "life-ring",
         "pages": [
           {
@@ -132,6 +118,10 @@
         "tab": "API Documentation",
         "icon": "rectangle-api",
         "openapi": "https://static.habitify.me/Habitify%20API%20v2.json"
+      },
+      {
+        "tab": "Changelog",
+        "href": "https://feedback.habitify.me/changelog"
       }
     ]
   },
