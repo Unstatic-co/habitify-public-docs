@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
+  "theme": "maple",
   "name": "Habitify",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#164AF2",
+    "light": "#164AF2",
+    "dark": "#1D45C9"
   },
   "favicon": "/favicon.svg",
   "navigation": {
