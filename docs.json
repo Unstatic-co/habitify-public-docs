@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "aspen",
   "name": "Habitify",
   "colors": {
     "primary": "#164AF2",
@@ -140,7 +140,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:contact@habitify.me"
       }
     ],
     "primary": {
