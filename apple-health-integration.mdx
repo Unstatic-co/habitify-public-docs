@@ -131,8 +131,9 @@ These metrics are calculated automatically by Apple's algorithms using the raw s
 <Accordion title="Does the app continue syncing data when I change my phone?">
   When you move to a new iPhone, your Apple Health permissions are not transferred automatically for security reasons. You must re-authorize Habitify to access your health data.
 
-  1. **First, follow Step 1** to go into your new iPhone's **Settings \> Health \> Data Access & Devices \> Habitify** and ensure all permissions are enabled. This is the most crucial step.
-  2. If the sync still doesn't work after enabling permissions, **then follow Step 3** to refresh the connection for each of your Apple Health-linked habits.
+  Go into your new iPhone's **Settings > Health > Data Access & Devices > Habitify** and ensure all permissions are enabled. This is the most crucial step.
+
+  If the sync still doesn't work after enabling permissions, refresh the connection for each of your Apple Health-linked habits: **Edit habit > Goal > Switch to 'Manual Logging' > Switch back to 'Syncing with Apple Health'.**
 
   By re-enabling permissions and then refreshing the connection, you can ensure a seamless transition for Habitify on your new device.
 </Accordion>
@@ -224,7 +225,7 @@ These metrics are calculated automatically by Apple's algorithms using the raw s
   **Example:** If Apple Health tracks your run in kilometers, your Habitify goal must be set in kilometers (e.g., "Run 3 km"), not just "Run 3 times".
 </Accordion>
 
-<Accordion title="Wrong calories Value synced from Apple Health, what should I do?">
+<Accordion title='Wrong "Calories Value" synced from Apple Health, what should I do?'>
   You connected a calorie-burning habit (like your Apple Watch's "Move Goal") to Apple Health, only to see a massive, unexpected number appear in Habitify. _For example,_ your goal of 500 Calories suddenly shows up as 500,000.
 
   The source of the confusion is the difference between a "Calorie" and a "calorie."
@@ -237,7 +238,7 @@ These metrics are calculated automatically by Apple's algorithms using the raw s
   To ensure the numbers from Apple Health match what you see in Habitify, you simply need to select the correct unit when creating your habit. Go to edit your habit, then, in the unit selection, make sure to choose **kcal**, not "cal".
 </Accordion>
 
-<Accordion title='My workout time is not syncing to my "Exercise Time" habit?'>
+<Accordion title='How does "Exercise Time" habit sync data from Apple Health to Habitify?'>
   It's due to the important difference between two separate data types that Apple Health tracks: **"Workouts"** and **"Exercise Minutes."**
 
   - **Workout time** is the total time of a Workout session which is recorded by your Apple Watch or any third-party app and then saved in Apple Health.
@@ -251,14 +252,44 @@ These metrics are calculated automatically by Apple's algorithms using the raw s
   - Create a habit using the exact activity template that matches (e.g., "Running," "Swimming"), set a duration goal, and link it to Apple Health.
 </Accordion>
 
-<Accordion title="Stand Hours are different in Habitify and Apple Health, what should I do?">
+<Accordion title='How is "Stand Hours" calculated when syncing from Apple Health to Habitify?'>
   When your Apple Watch tracks your activity throughout the day, it doesn't just record the hours you stood up. It actually records two different types of data points in your data history:
 
   - **Stand:** Hours where you successfully stood and moved around for at least one minute.
   - **Idle:** Hours where you were wearing your watch but remained sitting or inactive.
 
+  ![Apple Health Stand Hour Data](/images/AppleHealth-StandHourData.png "Apple Health Stand Hour Data")
+
   Both of these data points are saved into your Apple Health database under the "Stand Hours" category. The difference in your totals comes from how Apple Health and Habitify choose to read that database.
 
   - **Apple Health only counts and displays the "Stand" data points**. It hides the "Idle" hours from your total score because you didn't meet the movement goal for that specific hour.
-  - **Habitify is counting both your "Stand" data and your "Idle" data. **Currently, when Habitify syncs with your Apple Health database, it pulls the total volume of records for that category
+  - **Habitify is counting both your "Stand" data and your "Idle" data**. Currently, when Habitify syncs with your Apple Health database, it pulls the total volume of records for that category
+</Accordion>
+
+<Accordion title='How is "Sleep" calculated when syncing from Apple Health to Habitify?'>
+  When syncing sleep from Apple Health, Habitify tracks both **Time in Bed** and **Time Asleep**.
+
+  ![Applehealth Sleep Dataa](/images/Applehealth-SleepDataa.png "Applehealth Sleep Dataa")
+
+  To give you an accurate reflection of your rest without artificially inflating your hours, Habitify evaluates the start and end times of your recorded intervals and calculates your total sleep using one rule: **No Double-Counting**
+
+  If your "Time in Bed" and "Time Asleep" periods overlap, Habitify merges them so you aren't credited twice for the same hour. If the intervals are completely separate, Habitify adds them together. Here's how specific scenarios are handled:
+
+  1. **Completely Separate Intervals:**
+     - _Scenario:_ You log Time in Bed and Time Asleep as separate, non-overlapping blocks of time (for example, taking an afternoon nap versus nighttime sleep).
+     - _How it syncs:_ Habitify counts both sessions and syncs the **sum of both durations**.
+  2. **One Period Inside the Other (Fully Covered):**
+     - _Scenario:_ Your Time Asleep falls entirely within your Time in Bed window (or vice versa).
+     - _How it syncs:_ Habitify syncs the **longer window** so the smaller duration inside it is not counted twice.
+  3. **Partially Overlapping Intervals:**
+     - _Scenario:_ Your Time in Bed and Time Asleep intervals overlap, but one starts or ends before the other.
+     - _How it syncs:_ Habitify merges them into a single continuous window, measuring from the **earliest start time** to the **latest end time**.
+
+  **Here's the Summary Table for your quick check:**
+
+  | **Sleep Data Logged in Apple Health** | **How Habitify Calculates It** | **Result** |
+  | :-- | :-- | :-- |
+  | **Non-overlapping periods** (e.g., 2 hrs nap + 7 hrs night) | Sums both durations | **9 hours** total |
+  | **One covers the other** (e.g., In Bed 11 PM–7 AM, Asleep 11:30 PM–6:30 AM) | Uses the overall enclosing window | **8 hours** total (In Bed duration) |
+  | **Partial overlap** (e.g., In Bed 11 PM–6 AM, Asleep 11:30 PM–7 AM) | Merges earliest start (11 PM) to latest end (7 AM) | **8 hours** total |
 </Accordion>
