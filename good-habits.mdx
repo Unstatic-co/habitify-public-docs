@@ -22,7 +22,7 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
 
     ### Repeat
 
-    <iframe src="https://drive.google.com/file/d/1MtyR__UT9qvbSFcmgXaJRCVVQDMpqiye/preview" width="640" height="360" />
+    <iframe src="https://drive.google.com/file/d/13tFVYs9GZiq8q9som3Rx4qHJVOuDOhWt/preview" width="640" height="360" />
 
     Configuring **Repeat** is to schedule the habit shows up in the Journal.
 
@@ -217,9 +217,13 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
       For habits that link and sync data from Apple Health, Fitbit, or Strava, Habitify does not support to manually log progress or mark the habit as complete in any way within the app. However, you still can mark those habits as skipped or failed.
     </Note>
 
+    <Warning>
+      Skipping a week, month, or year is not supported yet. 
+    </Warning>
+
     ## FAQs
 
-    <Accordion title="How to undo a wrong progress log?">
+    <Accordion title="**How to undo a wrong progress log?**">
       If your habit is updated with a status (Completed, Skipped, Failed), from Journal, swipe it right to unmark the status and reset the current day's progress.
 
       if your habit is still in progress:
@@ -231,7 +235,7 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
       - Tap the \< button to save and return.
     </Accordion>
 
-    <Accordion title="How to edit a good habit?">
+    <Accordion title="**How to edit a good habit?**">
       To edit a good habit:
 
       - From Journal, tap on the habit to open its single progress view.
@@ -342,12 +346,6 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
     - **Location-based reminders**: triggers on arriving at or leaving a set location (e.g., gym when arriving home).
     - **Habit-stacking reminders**: triggers based on completion of another habit (e.g., "Journal" reminder fires immediately when "Read a Book" is marked as completed).
 
-    _See the details of setting each type of reminders:_
-
-    <Card title="Reminders" icon="alarm-clock" horizontal href="https://app.mintlify.com/unstatic/habitify/~/5add0594-6f5e-4096-909e-c55657b079a2">
-      A well-timed notification can be the nudge you need to get things done.
-    </Card>
-
     ### Checklist
 
     <iframe src="https://drive.google.com/file/d/1MwcF4YQhAWM6PHHr50nKh6P6fhImpl4i/preview" width="640" height="360" />
@@ -387,15 +385,15 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
     | **After Total Completions** | A target number of completed periods is reached (non-consecutive allowed) | ends after 50 successful days | Must be greater than current total completions |
     | **By Total Amount** | Cumulative logged value hits a target | ends after 10,000 total pages logged | Must be greater than current total amount |
 
-    ## **How a good habit shows in the list**
+    ## **How a good habit shows in Journal**
 
-    **While you are viewing the Journal tab**, whether a habit appears in the All Habit list, the Time of Day list, or a Custom Area list is based on the settings of **Repeat** and **Start Date**.
+    **In the Daily view**, whether a habit appears in the All Habit list, the Time of Day list, or a Custom Area list is based on the settings of **Repeat** and **Start Date**.
 
     For example, if your habit has **Start Date** as `2026-07-01` and **Repeat** as `every 2 days` , then it will appear in the list of date `2026-07-01`, `2026-07-03`, `2026-07-05,`etc.
 
-    ## How to record progress of a good habit
+    **In the Weekly view**, your habit will appear immediately, with the progress represented based on their goal.
 
-    <iframe src="https://drive.google.com/file/d/1N6w3WP1xBLz61FEtsK4YxzRDOCFiV1h5/preview" width="640" height="360" />
+    ## How to record progress of a good habit
 
     There are 4 options of recording the progress of a good habit:
 
@@ -415,28 +413,40 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
       **Skip doesn't protect weekly-based, monthly-based, or annual-based streak.** Once you do not complete your weekly/monthly/annual goal, your current streak will reset to 0.
     </Info>
 
-    When you are using the Habitify Android, the Journal tab is the main place of your daily tracking. From the Journal view, these are the ways to record your progress on a habit:
+    When you are using the Habitify Android, the Journal tab is the main place of your daily tracking. 
+
+    ### Logging progress in Daily View
+
+    <iframe src="https://drive.google.com/file/d/1N6w3WP1xBLz61FEtsK4YxzRDOCFiV1h5/preview" width="640" height="360" />
+
+    In Daily view, these are the ways to record your progress on a habit:
 
     - **Use smart button** which is on the left to each habit.
     - **Swipe right** to 'Complete' or 'Log progress'.
     - **Swipe left** to 'Skip' or 'Fail'
 
-    ### Smart buttons
+    #### Smart buttons
+
+    ![Smartbutton Journal Android](/images/Smartbutton_Journal_Android.png "Smartbutton Journal Android")
 
     For each habit, there is a quick button to log the entry for the habit progress:
 
-    - "Done" for habit with goal = 1 time
-    - "✓ 1" for habit with goal = x times ( x \> 1)
-    - "Timer" for habits with duration-based goal
-    - "Log" for habits with goal in other units (e.g., km, kcal, g, etc.,)
+    - "**Done**" for habit with goal = 1 time
+    - "**\+ 1**" for habit with goal = x times ( x > 1)
+    - "**Timer**" for habits with duration-based goal
+    - "**\+**" for habits with goal in other units (e.g., km, kcal, g, etc.,)
 
-    ### Right Swipe
+    #### Right Swipe
+
+    ![Swipe Right Journal Android](/images/SwipeRight_Journal_Android.png "Swipe Right Journal Android")
 
     When swiping right, you have the **'Complete' option** to immediately mark your good habit as completed as well as log the goal value as your progress value for the current period.
 
     Otherwise, you can use **'Log value' option** to record any progress value. <br />_e.g., current progress is "2km" and you add "3km", then the progress is updated to"5km"._
 
-    ### Left Swipe
+    #### Left Swipe
+
+    ![Swipe Left Journal Android](/images/SwipeLeft_Journal_Android.png "Swipe Left Journal Android")
 
     By swiping the habit left, you also have the option to mark your habit as "Failed" or "Skipped".
 
@@ -446,6 +456,33 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
     <Note>
       For habits that link and sync data from Health Connect, Fitbit, or Strava, Habitify does not support to manually log progress or mark the habit as complete in any way within the app. However, you still can mark those habits as skipped or failed.
     </Note>
+
+    <Warning>
+      Skipping a week, month, or year is not supported yet. 
+    </Warning>
+
+    ### Logging progress in Weekly View
+
+    In Weekly View, you record progress directly on each habit's row.
+
+    <iframe src="https://drive.google.com/file/d/13Jk2uWSrzhhf4qbx_V31NGzWEE1jy6e_/preview" width="640" height="360" />
+
+    #### **For habits with a daily goal**
+
+    Tap the cell of the day you want to check in. Days when the habit doesn't repeat are hatched, so tap a day when it repeats.
+
+    - If the habit's goal is measured in **times**, each tap adds 1 to your progress.
+    - If the goal uses any other unit, a tap opens the **Log Value** screen.
+
+    The cell updates right away. It fills gradually as you log, and turns solid once you complete the daily goal.
+
+    Otherwise, to check in **Skip** or **Fail** for a incomplete day, hold on the cell of that day to access the options.
+
+    {/* TODO: add how to Complete, Skip, or Fail a day in Weekly View */}
+
+    #### **For habits with a weekly/monthly/annual goal**
+
+    Tap on the habit's stripe to open the **Log Value** screen. The stripe fills as you log and shows your total progress toward the goal.
 
     ## FAQs
 
@@ -699,7 +736,11 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
 
     ## FAQs
 
-    <Accordion title="How to undo a progress log on a good habit?">
+    <Accordion title="**How to skip a week, month, or year?**">
+      Currently Habitify doesn't support to skip a week, month, or year then protecting your current streak on a weekly-based, monthly-based, or annual-based habit.
+    </Accordion>
+
+    <Accordion title="**How to undo a progress log on a good habit?**">
       If the habit is marked with a status (Completed, Skipped, or Failed), **right-click** the cell and choose '**Remove logs**'.
 
       If the habit is still in progress:
@@ -711,7 +752,7 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
       - Click '**Delete**' in the bottom right corner.
     </Accordion>
 
-    <Accordion title="How to edit a good habit?">
+    <Accordion title="**How to edit a good habit?**">
       To edit a good habit:
 
       - Open your habit list in Grid layout.

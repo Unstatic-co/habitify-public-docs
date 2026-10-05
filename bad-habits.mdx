@@ -35,6 +35,12 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
 
     The date from which your progress on this habit is saved in Habitif. It's also the date the habit begins appearing on your Journal view.
 
+    <Note>
+      **Auto-Succeed on days in past**
+
+      If you set the '**Start from...**' to a day in the past, every day from that date up through yesterday is automatically marked as Succeeded.
+    </Note>
+
     ## How a bad habit appears in the list
 
     The bad habit will start showing in your Journal since its start date.
@@ -71,21 +77,41 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
 
     ### How to check in on a bad habit
 
-    To manually check in on a bad habit:
+    In Journal, how you check in depends on the layout you're in (**Daily View** or **Weekly View**) and the habit's goal type.
 
-    - **Use smart button**: tap the **'Succeed'** button on the right of the habit in the Journal to mark it as succeeded for the day.
-    - **Use swipe gestures**: wipe the habit right for **Succeed** or **Log Progress**; swipe it left for **Skip** or **Fail**.
+    **For quit-type habits:**
+
+    - Tap the ••• **button** on the right of the bad habit and choose between
+      - **Mark as Done**: confirm you successfully avoided it for the day (Succeeded).
+      - **Reset my Streak:** log a slip and start over (Failed).
+    - **Swipe the habit left** for the **Skip** option.
+
+    **For limit-type habits:**
+
+    - Tap the smart button to add a progress log, the smart button shows as:
+      - **'+1'** for habits with the limit as 1 time
+      - **'+1'** for habits with any limit set.
+    - Swipe the habit **left** for **Skip** or **Fail**.
+    - Swipe the habit **right** for **Succeed** or **Log Value**.
 
     <Note>
-      **When marking a habit as "Failed",** what gets logged behind the scenes depends on the habit's goal type:
+      **Auto-Succeed by the end of the day**
 
-      - **Quit-type habits**: marking Failed automatically logs "1" as the progress value for the current period, since a single occurrence is the entire event.
-      - **Limit-type habits**: marking Failed flags the day as failed, but logs a progress value of zero. Habitify doesn't know how much you actually did, so it doesn't guess. If you want the real amount reflected, log it yourself using **Log Progress**.
+      At the end of the day, if your logged value is still 0 or under the limit, the habit is automatically marked as successful.
+    </Note>
+
+    <Note>
+      **What happens when marking a habit as “Failed”**
+
+      What gets logged behind the scenes depends on the habit’s goal type:
+
+      - **Quit-type habits**: marking Failed automatically logs “1” as the progress value for the current period, since a single occurrence is the entire event.
+      - **Limit-type habits**: marking Failed flags the day as failed, but logs a progress value of zero. Habitify doesn’t know how much you actually did, so it doesn’t guess. If you want the real amount reflected, log it yourself using **Log Progress**.
     </Note>
 
     ## FAQs
 
-    <Accordion title="How to edit a bad habit?">
+    <Accordion title="**How to edit a bad habit?**">
       To edit a bad habit:
 
       - From Journal, tap on the habit to open its single progress view.
@@ -98,7 +124,7 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
       - Tap on the habit, and choose '**Edit**'.
     </Accordion>
 
-    <Accordion title="How to undo a wrong log added for a bad habit?">
+    <Accordion title="**How to undo a wrong log added for a bad habit?**">
       If the habit already has a status for the day:
 
       - In _Journal_, swipe the habit right and choose '**Undo'**
@@ -111,7 +137,7 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
       - In the _Log History_, swipe left the log you want to remove and tap '**Delete**'
     </Accordion>
 
-    <Accordion title="How to change the status of a bad habit on a date in past?">
+    <Accordion title="**How to change the status of a bad habit on a date in past?**">
       To log progress for a past date, tap on the bad habit, then tap the (•••) button in the top right corner, choose **Log Progress**, then select the date and enter your value.
     </Accordion>
   </Tab>
@@ -128,6 +154,8 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
 
     ## Details of a bad habit
 
+    ![Bad Habit Details Android](/images/BadHabitDetails_Android.png "Bad Habit Details Android")
+
     ### Icon & name
 
     The icon and name of your bad habit helps it easily be identified across your Journal, Progress view, and everywhere else in the app.
@@ -141,7 +169,7 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
 
     ### Areas
 
-    You can assign a Bad Habit to one or more Areas, like "Health" or "Personal Growth", so it shows up alongside your Good Habits when you're reviewing that part of your life, instead of being visible only in a separate Bad Habits view. 
+    You can assign a Bad Habit to one or more Areas, like "Health" or "Personal Growth", so it shows up alongside your Good Habits when you're reviewing that part of your life, instead of being visible only in a separate Bad Habits view.
 
     A single habit isn't limited to one Area; assign it to as many as make sense.
 
@@ -149,21 +177,37 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
 
     This is the date from which your progress on this habit is saved in Habitify. it's also the date the habit begins appearing in your habit lists in Journal.
 
+    <Note>
+      **Auto-Succeed on days in past**
+
+      If you set the '**Start from...**' to a day in the past, every day from that date up through yesterday is automatically marked as Succeeded.
+    </Note>
+
     ## How a bad habit appears in the list
 
     Since there is no _'Repeat'_ and _'Time of Day'_ settings for bad habits, the bad habits will appear in the **'All Habits'**, **'Time of Day' lists**, and **the list of its areas** everyday.
 
-    Where a Bad Habit lands in within each list in the view depends on its goal type:
+    With **Day view** of Journal, where a Bad Habit lands in within each list in the view depends on its goal type:
 
     - **Limit-type habits with a daily goal** sit together with your Good Habits that also have a daily goal; both are core, everyday actions expected of you today, so they're grouped as one.
     - **Quit-type habits** get their own separate sub-category, '**Quit Habit(s)'**, since there's no daily numeric goal to hit, just a day to get through without the behavior happening at all.
     - **Limit-type habits with a weekly, monthly, or yearly goal** are categorized followingly to the section **'This Week'**, '**This Month'**, **'This Year'** together with the good habits.
 
+    ![Bad Habit Dayview Android](/images/BadHabit_Dayview_Android.png "Bad Habit Dayview Android")
+
     Like any habit, **once it's checked** in for the day, it moves into the **'Completed'**, **'Skipped'**, or **'Failed'** groups depending on the outcome, keeping what's still open clearly separate from what's already resolved.
 
-    ## Recording progress on a bad habit
+    <Note>
+      **When a quitting habit is checked with "Mark as Done"**
 
-    <iframe src="https://drive.google.com/file/d/189jfRYtYVd0qdl_BnCsXaZb9Bv7MXsgU/preview" width="640" height="360" />
+      When a habit to quit is marked as Done for the current day, it stays where it is in the Day view of Journal. Under its name, there is a tag line "_Secured day [current streak]_".
+    </Note>
+
+    Otherwise, in **Week view**, your habit always appeard in the view as long as it is not archieved, being sorted equally regardless of their goal type and current day's status.
+
+    ![Bad Habit Weekview Android](/images/BadHabit_Weekview_Android.png "Bad Habit Weekview Android")
+
+    ## Recording progress on a bad habit
 
     ### Status of a bad habit
 
@@ -173,68 +217,98 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
     - **Skipped**: you went over the limit or did the habit, but chose to treat it as a cheat day rather than break your streak. A skipped day freezes your streak instead of resetting it.
     - **Failed** : your total logged value exceeds the limit (or, for a quit-type habit, any occurrence at all).
 
-    ### How to check in on a bad habit
+    ### Checking in bad habits in Daily View
 
-    In Journal, how you check in depends on the habit's goal type:
+    <iframe src="https://drive.google.com/file/d/189jfRYtYVd0qdl_BnCsXaZb9Bv7MXsgU/preview" width="640" height="360" />
 
     **For quit-type habits:**
 
-    - Tap the ••• **button** on the right of the bad habit and choose between 
+    - Tap the ••• **button** on the right of the bad habit and choose between
       - **Mark as Done**: confirm you successfully avoided it for the day (Succeeded).
       - **Reset my Streak:** log a slip and start over (Failed).
-    - **Swipe the habit left** for the **Skip** option.
+    - Swipe the habit left for the **Skip** option.
 
     **For limit-type habits:**
 
     - Tap the smart button to add a progress log, the smart button shows as:
-      - **'\+1'** for habits with the limit as 1 time
-      - **'\+1'** for habits with any limit set.
-    - Swipe the habit **left** for **Skip** or **Fail**.
-    - Swipe the habit **right** for **Succeed** or **Log Value**.
+      - **button +**  for habits with the limit as 1 time
+      - **button +1** for habits with any limit set.
+    - Swipe the habit left for **Skip** or **Fail**.
+    - Swipe the habit right for **Succeed** or **Log Value**.
 
-    <Info>
-      At the end of the day, if your logged value is still 0 or under the limit, the habit is automatically marked as successful.
-    </Info>
+    ### Checking in bad habits in Weekly View
+
+    <iframe src="https://drive.google.com/file/d/1ca3j2CU9yJLAqvWBtmpsfRPJyXQ1GO5c/preview" width="640" height="360" />
+
+    **For quit-type habits:**
+
+    Hold on today's cell to check in **Succeed**, **Skip**, or **Fail**.
+
+    **For limit-type habits with a goal per day:**
+
+    - Tap on today's cell to log a progress value.
+    - Hold on today's cell to mark the day with Skip or Fail
+
+    **For limit-type habits with a goal per week, month, or year:**
+
+    - Tap on the habit's progress stripe to open the **Log Value** box.
 
     <Note>
-      **Note on marking a limit-type habit as "Failed":** marking Failed flags the day as failed, but logs a progress value of zero. Habitify doesn't know how much you actually did, so it doesn't guess; if you want the real amount reflected, log it yourself using the **"\+"** or **"\+1"** button.
+      **Auto-Succeed by the end of the day**
+
+      At the end of the day, if your logged value is still 0 or under the limit, the habit is automatically marked as successful.
     </Note>
 
     <Note>
-      If you set the '**Start from...**' to a day in the past, every day from that date up through yesterday is automatically marked as Succeeded.
+      **Note on marking a limit-type habit as "Failed"**
+
+      Marking Failed flags the day as failed, but logs a progress value of zero. 
+
+      Habitify doesn't know how much you actually did, so it doesn't guess; if you want the real amount reflected, log it yourself using the **"+"** or **"+1"** button.
     </Note>
 
     ## FAQs
 
-    <Accordion title="How to edit a bad habit?">
-      If your bad habit appears in Journal:
+    <Accordion title="**How to edit a bad habit?**">
+      There are several ways to access the Edit Habit screen in Habitify:
+
+      From the Day view layout of Journal:
 
       - Tap on your habit to open its single progress view.
       - Tap the ⫶ button in the top right corner.
       - Choose '**Edit**'.
 
-      If your bad habit doesn't start appearing in Journal yet:
+      From the Week view layout of Journal
 
-      - Go to **Settings**.
-      - Tap **Manage Habits**.
-      - Press and hold on a habit, choose '**Edit**'.
+      - Navigate through your list to find the bad habit you want to edit.
+      - Hold on anywhere on the habit's progress
+      - Choose '**Edit**'
+
+      Remember to tap 'Save' button in the top right corner to save all the changes you've made to your habit.
     </Accordion>
 
-    <Accordion title="How to undo a wrong log added for a bad habit?">
+    <Accordion title="**How to undo a wrong log added for a bad habit?**">
       If the habit already has a status for the day:
 
-      - In _Journal_, **swipe right** the habit** **and choose 'Undo'
-      - Pick either '**Remove Today Data**' (resets today's value to 0) or '**Edit Log Manually**' (swipe left on the specific log entry and choose Delete). 
+      - In the Day view of _Journal_, **swipe right** the habit, and choose '**Undo**'.
+      - Pick either '**Remove Today Data**' (resets today's value to 0),
+      -  or '**Edit Log Manually**' (then in _Log History_, swipe left on the specific log entry and choose Delete).
 
       If the habit is still in progress:
 
-      - In _Journal_, tap on the habit
+      - From _Journal_, tap on the habit's name.
       - In next screen, tap the **(⋮) button** in the top right corner, and choose '**Log History**'
       - In the _Log History_, **swipe left** the log you want to remove and tap '**Delete**'
     </Accordion>
 
-    <Accordion title="How to change the status of a bad habit on a date in past?">
-      To log progress for a past date:
+    <Accordion title="**How to change the status of a bad habit on a date in past?**">
+      To mark the habit as Skip or Fail for a day in past:
+
+      - In the Day view of _Journal,_ navigate to the date using the bottom date bar.
+      - Locate your bad habit, it might be among the Completed.
+      - Swipe right your habit, and choose between Skip or Fail.
+
+      To log a progress value for a past date:
 
       - In _Journal,_ tap on the bad habit.
       - Tap the **(⋮) button** in the top right corner.
@@ -249,7 +323,7 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
     ## Adding a bad habit
 
     - On the left side bar, access **'All Habits'.**
-    - Click **'\+ Add habit'** under the last habit in the list, or on the bottom action bar.
+    - Click **'+ Add habit'** under the last habit in the list, or on the bottom action bar.
     - Click to choose **'Break Bad Habit'.**
     - In _'New Habit'_, click on the **name field**.
     - Choose a pre-defined habit from the list,<br />or enter your own one.
@@ -271,7 +345,7 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
 
     ### Start Date
 
-    The date from which your progress on this habit is saved in Habitify. 
+    The date from which your progress on this habit is saved in Habitify.
 
     ## How a bad habit appears in the list
 
@@ -326,7 +400,7 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
 
     ## FAQs
 
-    <Accordion title="How to edit a bad habit?">
+    <Accordion title="**How to edit a bad habit?**">
       To edit a bad habit:
 
       - Open your habit list in Grid layout.
@@ -334,7 +408,7 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
       - Navigate to the top right corner, and click the 🖊 button.
     </Accordion>
 
-    <Accordion title="How to undo a wrong log added for a bad habit?">
+    <Accordion title="**How to undo a wrong log added for a bad habit?**">
       To remove a wrong log that've added for the bad habit:
 
       1. Access the **single progress view** of the bad habit:
@@ -346,7 +420,7 @@ In Habitify, tracking a Bad Habit isn't about guilt, it's about awareness. Seein
       5. Click the **'Delete' button** near the bottom right corner.
     </Accordion>
 
-    <Accordion title="How to change the status of a bad habit on a date in past?">
+    <Accordion title="**How to change the status of a bad habit on a date in past?**">
       To log progress for a past date:
 
       1. Access **the single progress view** of the bad habit:

@@ -19,7 +19,7 @@ Habitify connects to it so you can automate your tracking: instead of manually c
 7. Configure the details of your habits as usual, and adjust the goal if you want.
 9. Once everything is set, tap the '**Save**' button in the top right corner.
 
-Once created, a Health Connect-linked habit is easy to spot: it carries a small Health Connect icon right on the Journal view, distinguishing it from your manually tracked habits at a glance.
+Once created, a Health Connect-linked habit is easy to spot: it carries a small Health Connect icon right in Journal when viewing in Daily View, distinguishing it from your manually tracked habits at a glance.
 
 ## How it works
 
@@ -70,4 +70,23 @@ Once a habit is linked, the day-to-day behavior is simple:
   2. Check the list of data types Habitify has access to.
   3. Confirm the specific data type your habit tracks (e.g. **Weight**, **Sleep**, **Steps**) is explicitly toggled **on**.
   4. If it was off, turn it on and open Habitify again to trigger a fresh sync.
+</Accordion>
+
+<Accordion title="Why is my step from Health Connect is synced in nearly double amount in Habitify?">
+  This usually happens when **Health Connect** is receiving step data from multiple apps or hardware sources on your phone at the same time (for example, Google Fit, Samsung Health, a smartwatch app, and your phone's built-in pedometer). When Health Connect combines these entries without a prioritized primary source, it can send a doubled step total to Habitify.
+
+  **How to fix:**
+
+  You can resolve this by setting a single primary source for step data inside Android's Health Connect settings:
+
+  1. Open your Android device's **Settings** app.
+  2. Search and select **Health Connect**.
+  3. Tap **Data and access** (or **Manage data**).
+  4. Select **Data sources & priority**.
+  5. Tap **Activity**, then choose **Steps**.
+  6. Look at the list under **App sources**:
+     - **Reorder sources:** Drag your main step tracker (e.g., Samsung Health or Google Fit) to the top of the list so Health Connect prioritizes it.
+     - **Remove duplicate sources:** Turn off or remove secondary apps that you do not want contributing to your step total.
+
+  > **_Note:_**_ Once you update your source priorities in Health Connect, it may take a few moments for the corrected step total to sync over to Habitify._
 </Accordion>

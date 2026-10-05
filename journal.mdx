@@ -73,11 +73,11 @@ This article walks through how to navigate the Journal, understand how your habi
     To navigate through your long habit list and find the habit you want:
 
     - In _Journal_, hold and drag down your habit list.
-    - Hold your screen until you see the 🔍︎ button, then drag it to the right to select the function.
+    - Hold your screen until you see **the 🔍︎ button**, then drag it to the right to select the function.
     - Enter the habit you want to access in the search, the result shows immediately based on your input.
     - From the search result, you can check in on your habit directly.
 
-    To exit the search, simply tap on ‘Cancel’.
+    To exit the search, simply tap on ‘**Cancel**’.
   </Tab>
   <Tab title="🤖 Android">
     <iframe src="https://drive.google.com/file/d/1h7sSig4QW2TyZwuRtm6rIsk2cLKDhZ88/preview" width="640" height="360" />
@@ -92,7 +92,19 @@ This article walks through how to navigate the Journal, understand how your habi
 
     Each of these is a genuinely separate list: a habit's position in "All Habits" doesn't affect where it sits in a Time of Day list or a Custom Area, which is what makes the next section useful.
 
-    ## Sub-categories within a list
+    ## Switching between layouts
+
+    Journal has two layouts: **Daily View** and **Weekly View**. _Daily View_ keeps your attention on today. _Weekly View_ shows a full week at a glance, so you can spot patterns.
+
+    To switch between the layouts, tap the layout button next to "All Habits".
+
+    _Daily View_ and _Weekly View_ show the same habits from the same list. Only the way each habit is displayed changes.
+
+    ### Daily View
+
+    Daily View shows exactly what's due today and nothing more. It's the place to check in, log progress, and see what's left of your day.
+
+    ![Day View Journal Android](/images/DayView_Journal_Android.png "Day View Journal Android")
 
     Within any list, Habitify quietly groups habits by their current status, so what needs your attention rises to the top:
 
@@ -109,6 +121,64 @@ This article walks through how to navigate the Journal, understand how your habi
     - **This Month**: Good habits and limit-type habits with a goal per month.
     - **This Year**: Good habits and limit-type habits with a goal per year.
 
+    ### Weekly View
+
+    <iframe src="https://drive.google.com/file/d/1YamN5PUfQ3494cWsGe2bco11ZL2EGHZH/preview" width="640" height="360" />
+
+    Weekly View shows your habits across a full week, so you can see how they're trending instead of only what's due today. 
+
+    The week starts on Monday or Sunday, depending on your selection in **Settings > First Day of Week**.
+
+    Every habit gets its own row, with its icon and name above it. Today is highlighted in the day bar at the top. To move between weeks, use the week bar at the bottom of the screen. The selected week is highlighted.
+
+    How a habit looks depends on its type: **a good habit**, **a habit to limit**, or **a habit to quit**.
+
+    ![Weekly View Good Habits Journal](/images/WeeklyView-GoodHabits-Journal.png "Weekly View Good Habits Journal")
+
+    #### Good habits with goal per day
+
+    - Each day is one cell representing your progress of the day:
+      - **A completed day** is filled with a solid shade of the habit's color. Consecutive completed days join into one continuous bar.
+      - **A day still in progress** fills from the bottom up as you log more toward the daily goal.
+      - **A skipped day** is marked with an arrow.
+      - **A failed day** is marked with an ✕.
+    - On days when the habit doesn't repeat or haven't started yet, the cell is hatched with diagonal lines.
+    - Your streak appears as a 🔥 with its length (for example, 🔥**7d**) on the cell of the last day you completed the daily goal. If the whole week is part of a streak, it appears on the last day of the week and shows your streak length up to that day.
+
+    #### Good habits with goal per week, month, or year
+
+    - The period is one seamless stripe 
+    - The stripe shows your progress toward the goal and fills as you log. For example, **2/7 times** for a weekly goal, or **27/30 km this month** for a monthly goal.
+    - On the right of the habit name is your streak, counted in weeks, months, or years to match the goal period (for example, 🔥**2w** or 🔥**3m**). It's counted up to the week you're viewing, so it may changes as you move between weeks.
+
+    ![Weekly View Bad Habits Android](/images/WeeklyView-BadHabits-Android.png "Weekly View Bad Habits Android")
+
+    #### Bad habits to quit
+
+    Habits to quit have no goal period. They're tracked day by day.
+
+    - Each day is one cell representing your day:
+      - **A day you stayed on track** is filled with a solid shade of the habit's color. Consecutive days join into one continuous bar.
+      - **A day you check in 'Fail'** is marked with an ✕.
+      - **A day you check in 'Skip'** is marked with an →.
+    - On days before your habit's start date, the cell is hatched with diagonal lines.
+    - Your streak appears as a 🔥 with its length (for example, 🔥**3d**) on the cell of the last day you stayed on track.
+
+    #### Bad habits to limit per day
+
+    - Each day is one cell that shows the amount you logged that day (for example, **15m**), with a marker under the amount that shows where you stand: 
+      - a grey •󠁏 means you're within your limit.
+      - an orange ▲ means you've reached your limit.
+      - a red ✕ means you've overdone it.
+    - a day you check in 'Skip' directly is marked with an →.
+    - a day you check in 'Fail' directly is marked with an ✕.
+
+    #### Bad habits to limit per week, month, or year
+
+    - The period is one seamless stripe with a **\+** button on its left, the stripe is extended until 'tomorrow' in the current week, and will lengthen gradually until the end of the week.
+    - The stripe shows how much you've logged against your limit for that period. For monthly and yearly limits, it also shows how much you added during the week you're viewing.
+    - The stripe shows your progress against the limit and fills as you log. For example, **27/60 minutes** for a weekly goal, or **2/5 times this month** for a monthly goal.
+
     ## Managing habit order
 
     <iframe src="https://drive.google.com/file/d/18XRiIWdDYgHPnpRJGdDcZI7jqPOa8tYC/preview" width="640" height="360" />
@@ -122,6 +192,11 @@ This article walks through how to navigate the Journal, understand how your habi
     <Note>
       This is for sorting habits in 'All Habits' list only.
     </Note>
+
+    ### How sorting is applied in each layout
+
+    - **Daily View**: habits are sub-categorized first (by status, and by goal type within In progress / uncompleted), then sorted in your selected order inside each group.
+    - **Weekly View**: habits are sorted in your selected order across one continuous list, regardless of their status, type, or goal period.
 
     ### How to customize 'My Habits Order'
 
@@ -152,7 +227,7 @@ This article walks through how to navigate the Journal, understand how your habi
     - Enter the habit you want to access in the search, the result shows immediately based on your input.
     - From the search result, you can check in on your habit directly.
 
-    To exit the search, simply tap on 'Cancel'.
+    To exit the search, simply tap on '**Cancel**'.
   </Tab>
   <Tab title="🖥️ Website & Desktop">
     <iframe src="https://drive.google.com/file/d/1mpdmRbk9r8F6RVB4zzqrdHeMdU52-9Oe/preview" width="640" height="360" />
