@@ -51,6 +51,7 @@
             "pages": [
               "area",
               "reminder",
+              "habit-gate",
               "note",
               "widget",
               "task",
@@ -117,7 +118,7 @@
       {
         "tab": "API Documentation",
         "icon": "rectangle-api",
-        "openapi": "https://static.habitify.me/Habitify%20API%20v2.json"
+        "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
       },
       {
         "tab": "Changelog",

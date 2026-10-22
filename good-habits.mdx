@@ -156,9 +156,9 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
 
     ## **How a good habit shows in the list**
 
-    **While you are viewing the Journal tab**, whether a habit appears in the All Habit list, the Time of Day list, or a Custom Area list is based on the settings of **Repeat** and **Start Date**.
+    **In the Week View**, your habit will appear immediately, with the progress represented based on their goal.
 
-    For example, if your habit has **Start Date** as `2026-07-01` and **Repeat** as `every 2 days` , then it will appear in the list of date `2026-07-01`, `2026-07-03`, `2026-07-05,`etc.
+    **In the Day View**, whether a habit appears in the All Habit list, the Time of Day list, or a Custom Area list is based on the settings of **Repeat** and **Start Date**.
 
     ![Good Habits Journal I OS](/images/GoodHabits_Journal_iOS.png "Good Habits Journal I OS")
 
@@ -171,25 +171,16 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
 
     ## How to record progress of a good habit
 
-    <iframe src="https://drive.google.com/file/d/1D9yxRTFhWyQTBADrCzTgCjrIh6qc196a/preview" width="640" height="360" />
-
     There are 4 options of recording the progress of a good habit:
 
     - **Log progress**: Enter a value that is actually accomplished, the value can be bigger or smaller than the goal.
     - **Complete**: Enter a value that is equal to the goal, and set the current period as complete.
-    - **Skip**: Set the current day as skip.
-    - **Fail**: Set the current day as fail.
+    - **Skip**: Set the current day as skip when you want to take a day off, this way can help you protect your current daily-based streak.
+    - **Fail**: Set the current day as fail when you consider it as a slip, and please be noted that this will break your streak.
 
-    <Info>
-      **Difference between 'skip' and 'fail'**
+    ### **Logging progress in Daily View**
 
-      - **Skip**: use it when it is a day off, and you want to protect your daily-based streak
-      - **Fail**: use it when you should complete the habit but you miss it.
-    </Info>
-
-    <Info>
-      **Skip doesn't protect weekly-based, monthly-based, or annual-based streak.** Once you do not complete your weekly/monthly/annual goal, your current streak will reset to 0.
-    </Info>
+    <iframe src="https://drive.google.com/file/d/1D9yxRTFhWyQTBADrCzTgCjrIh6qc196a/preview" width="640" height="360" />
 
     When you are using the Habitify iOS, the Journal tab is the main place of your daily tracking on. From the Journal view, these are the ways to record your progress on a habit:
 
@@ -197,7 +188,7 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
     - **Swipe right** to 'Complete' or 'Log progress'.
     - **Swipe left** to 'Skip' or 'Fail'
 
-    ### Smart buttons
+    #### Smart buttons
 
     ![Smartbutton Journal I OS](/images/Smartbutton_Journal_iOS.png "Smartbutton Journal I OS")
 
@@ -207,7 +198,7 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
     - '⏱️ Timer' for habits with duration-based goal
     - '⌨️ Log" for habits with goal in other units (e.g., km, kcal, g, etc.,)
 
-    ### Right Swipe
+    #### Right Swipe
 
     ![Swipe Right Journal I OS](/images/SwipeRight_Journal_iOS.png "Swipe Right Journal I OS")
 
@@ -218,7 +209,7 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
     - **'Add'**: the value you enter will add up to the current progress value. <br />_e.g., current progress is "2km" and you add "3km", then the progress is updated to"5km"._
     - **'Set'**: the value you enter will be the updated current progress value. <br />_e.g., current progress is "2km" and you set "3km", then the progress is updated to "3km"._
 
-    ### Left Swipe
+    #### Left Swipe
 
     ![Swipe Left Journal I OS](/images/SwipeLeft_Journal_iOS.png "Swipe Left Journal I OS")
 
@@ -231,11 +222,31 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
       For habits that link and sync data from Apple Health, Fitbit, or Strava, Habitify does not support to manually log progress or mark the habit as complete in any way within the app. However, you still can mark those habits as skipped or failed.
     </Note>
 
-    <Warning>
-      Skipping a week, month, or year is not supported yet. 
-    </Warning>
+    ### **Logging progress in Weekly View**
+
+    <iframe src="https://drive.google.com/file/d/1N8q-bySztMM_E1SH1FAwN5dgnda466Eg/preview" width="640" height="360" />
+
+    In Week View, you record progress by interacting with each habit’s row.
+
+    **To record progress on a habit with daily goal**, 
+
+    - Tap the cell of the day you want to check in, on which the habit is scheduled to repeat. 
+      - If the habit’s goal is measured in **times**, each tap adds 1 to your progress.
+      - If the goal uses any other unit, a tap opens the **Log Progress** screen.
+    - Hold on the cell of that day to access the '**Skip**' or '**Fail**' options.
+
+    **To record progress on a the habits with weekly, monthly, or annual goal,** 
+
+    - Tap on the habit’s stripe to open the **Log Progress** screen. 
+    - The stripe fills as you log and shows your total progress toward the goal.
 
     ## FAQs
+
+    <Accordion title="**How can I mark a whole week or a whole month as Skip to protect my streak?**">
+      Currently, Habitify does not support mass-skipping or freezing streaks for an entire week or month at once.
+
+      The "Skip" function is deliberately designed to handle short-term, daily unpredictability, like waking up sick or having an unexpected emergency, so you aren't punished for a genuine off-day. However, habit formation is ultimately about consistent, present-day engagement. Allowing streaks to be frozen for weeks or months at a time would turn the streak into an artificial metric, rather than an accurate reflection of your actual momentum.
+    </Accordion>
 
     <Accordion title="**How to undo a wrong progress log?**">
       If your habit is updated with a status (Completed, Skipped, Failed), from Journal, swipe it right to unmark the status and reset the current day's progress.
@@ -417,19 +428,8 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
 
     - **Log value**: Enter a value that is actually accomplished, the value can be bigger or smaller than the goal.
     - **Complete**: Enter a value that is equal to the goal, and set the current period as complete.
-    - **Skip**: Set the current day as skip.
-    - **Fail**: Set the current day as fail.
-
-    <Info>
-      **Difference between 'skip' and 'fail'**
-
-      - Skip: use it when it is a day off, and you want to protect your daily-based streak
-      - Fail: use it when you should complete the habit but you miss it.
-    </Info>
-
-    <Info>
-      **Skip doesn't protect weekly-based, monthly-based, or annual-based streak.** Once you do not complete your weekly/monthly/annual goal, your current streak will reset to 0.
-    </Info>
+    - **Skip**: Set the current day as skip when you want to take a day off, this way can help you protect your current daily-based streak.
+    - **Fail**: Set the current day as fail when you consider it as a slip, and please be noted that this will break your streak.
 
     When you are using the Habitify Android, the Journal tab is the main place of your daily tracking. 
 
@@ -475,34 +475,31 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
       For habits that link and sync data from Health Connect, Fitbit, or Strava, Habitify does not support to manually log progress or mark the habit as complete in any way within the app. However, you still can mark those habits as skipped or failed.
     </Note>
 
-    <Warning>
-      Skipping a week, month, or year is not supported yet. 
-    </Warning>
-
     ### Logging progress in Weekly View
 
     In Weekly View, you record progress directly on each habit's row.
 
     <iframe src="https://drive.google.com/file/d/13Jk2uWSrzhhf4qbx_V31NGzWEE1jy6e_/preview" width="640" height="360" />
 
-    #### **For habits with a daily goal**
+    **To record progress on a habit with daily goal**:
 
-    Tap the cell of the day you want to check in. Days when the habit doesn't repeat are hatched, so tap a day when it repeats.
+    - Tap the cell of the day you want to check in, on which the habit is scheduled to repeat. 
+      - If the habit’s goal is measured in **times**, each tap adds 1 to your progress.
+      - If the goal uses any other unit, a tap opens the **Log Value** screen.
+    - Hold on the cell of that day to mark the day with **Skip** or **Fail**.
 
-    - If the habit's goal is measured in **times**, each tap adds 1 to your progress.
-    - If the goal uses any other unit, a tap opens the **Log Value** screen.
+    **To record progress on a the habits with weekly, monthly, or annual goal:**
 
-    The cell updates right away. It fills gradually as you log, and turns solid once you complete the daily goal.
-
-    Otherwise, to check in **Skip** or **Fail** for a incomplete day, hold on the cell of that day to access the options.
-
-    {/* TODO: add how to Complete, Skip, or Fail a day in Weekly View */}
-
-    #### **For habits with a weekly/monthly/annual goal**
-
-    Tap on the habit's stripe to open the **Log Value** screen. The stripe fills as you log and shows your total progress toward the goal.
+    - Tap on the habit’s stripe to open the **Log Value** screen. 
+    - The stripe fills as you log and shows your total progress toward the goal.
 
     ## FAQs
+
+    <Accordion title="**How can I mark a whole week or a whole month as Skip and protect my streak?**">
+      Currently, Habitify does not support mass-skipping or freezing streaks for an entire week or month at once.
+
+      The "Skip" function is deliberately designed to handle short-term, daily unpredictability—like waking up sick or having an unexpected emergency—so you aren't punished for a genuine off-day. However, habit formation is ultimately about consistent, present-day engagement. Allowing streaks to be frozen for weeks or months at a time would turn the streak into an artificial metric, rather than an accurate reflection of your actual momentum.
+    </Accordion>
 
     <Accordion title="**How to undo a wrong progress log on a good habit?**">
       If your habit is updated with a status (Completed, Skipped, Failed), from Journal, swipe it right to unmark the status and reset the current day's progress.
@@ -745,7 +742,9 @@ A Good Habit is one that moves you toward a better version of yourself: more pro
     ## FAQs
 
     <Accordion title="**How to skip a week, month, or year?**">
-      Currently Habitify doesn't support to skip a week, month, or year then protecting your current streak on a weekly-based, monthly-based, or annual-based habit.
+      Currently, Habitify does not support mass-skipping or freezing streaks for an entire week or month at once.
+
+      The "Skip" function is deliberately designed to handle short-term, daily unpredictability—like waking up sick or having an unexpected emergency—so you aren't punished for a genuine off-day. However, habit formation is ultimately about consistent, present-day engagement. Allowing streaks to be frozen for weeks or months at a time would turn the streak into an artificial metric, rather than an accurate reflection of your actual momentum.
     </Accordion>
 
     <Accordion title="**How to undo a progress log on a good habit?**">

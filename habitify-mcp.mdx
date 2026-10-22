@@ -57,3 +57,51 @@ Once connected, you can ask your AI assistant to handle real actions in your Hab
 - **Update status**: Ask to change a habit's status to Completed, Skipped, or Failed.
 
 - **Clear progress** : Ask to wipe a habit's logged progress for a specific day, resetting it back to 0 or "Not Started." If you don't mention a date, this defaults to today.
+
+## Troubleshooting
+
+<Accordion title="**Why does AI show old habits or habits from a different account?**">
+  If Habitify MCP retrieves the deleted habits, please try to disconnect it then re-connect as the action of data refreshment. 
+
+  If Habitify MCP retrieves data of another account of yours, please compare the account logged in Habitify app, and the account logged in your browser where you do the authentication for the connection. Make sure they are the same account.
+
+  If the any of the issues persists, please contact the team to get further support.
+</Accordion>
+
+<Accordion title="**Why don't Habitify MCP retrieve all the habits I have in the app?**">
+  Habitify MCP limits to retrieve a list of 50 habits at a time.
+
+  In case you have less than 50 habits and the tool still cannot retrieve them all, please try to re-connect as a refreshment.
+
+  If the any of the issues persists, please contact the team to get further support.
+</Accordion>
+
+<Accordion title="**Claude shows 'Configure' instead of 'Connect'. What should I do?**">
+  In Claude's connector settings, open the menu for Habitify and disconnect it. Then look for Connect and complete the Habitify sign-in and authorization flow. Follow the current Claude setup guide if the menu labels differ. 
+
+  If Connect remains unavailable, please capture the connector screen and contact the team to get further support.
+</Accordion>
+
+## FAQs
+
+<Accordion title="**Do I need a paid plan or can I test the connection during a trial?**">
+  Habitify MCP is a free feature for all users, so you don't need a paid plan to use it.
+
+  However, for advanced usage with the REST API, it might required a Pro subscription to use API.
+</Accordion>
+
+<Accordion title="**Can I retrieve complete history, later progress log corrections and note changes?**">
+  Habitify doesn't support to retrieve a complete log history of a habit yet, while you still can retrieve the progress of a specific date.
+
+  If you log a value then change it, only the last change is saved, so there is no data to retrieve for the correction history. Same to the changes in notes.
+</Accordion>
+
+<Accordion title="**Does currentStreak show the streak on the historical date I requested?**">
+  currentStreak shows the streak until today only.
+
+  In case you want to retrieve the streak counting until a specific date in the past, write a prompt such as "_how long was my streak of Meditate on Oct 10, 2026_".
+</Accordion>
+
+<Accordion title="**Can Habitify MCP run scheduled reviews or update habits in the background?**">
+  Habitify MCP does not support to work in automation workflow yet. It still requires user input or user interaction to run.
+</Accordion>

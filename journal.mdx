@@ -20,9 +20,17 @@ This article walks through how to navigate the Journal, understand how your habi
     - **Current Time of Day list:** only the habits assigned to that block of time. This automatically jumps to the current time block based on the ranges you've set (for example, switching to "Morning" the moment your morning window starts), so you're not stuck manually flipping tabs throughout the day.
     - **Custom Area lists**: habits grouped under the Areas you've created, like "Health" or "Work." Instead of scanning your whole day, you can zoom into just one part of your life at a time.
 
-    ## Sub-categories within a list
+    ## Switching between layouts
 
-    Within any list, Habitify quietly groups habits by their current status, so what needs your attention rises to the top: 
+    Journal has two layouts: **Day View** and **Week View**. _Daily View_ keeps your attention on today. _Weekly View_ shows a full week at a glance, so you can spot patterns. 
+
+    To switch between the layouts, tap the layout button next to “All Habits”. 
+
+    **Day View** and **Week View** show the same habits from the same list. Only the way each habit is displayed changes.
+
+    ### **Day View**
+
+    Day View shows exactly what’s due today and nothing more. It’s the place to check in, log progress, and see what’s left of your day.
 
     ![Habit Status Journal I OS Copy](/images/HabitStatus_Journal_iOS-copy.png "Habit Status Journal I OS Copy")
 
@@ -41,6 +49,64 @@ This article walks through how to navigate the Journal, understand how your habi
     - **This Month**: good habits and limit-type habits with a goal per month.
     - **This Year**: good habits and limit-type habits with a goal per year.
 
+    ### Week View
+
+    <iframe src="https://drive.google.com/file/d/1m0NskumBYsItMSYz0X7lN_LOAc8HshdQ/preview" width="640" height="360" />
+
+    **Week View** shows your habits across a full week, so you can see how they’re trending instead of only what’s due today.
+
+    The week starts on Monday or Sunday, depending on your selection in **Settings > First Day of Week.**
+
+    Every habit gets its own row, with its icon and name above it. Today is highlighted in the day bar at the top. To move between weeks, use the week bar at the bottom of the screen. The selected week is highlighted.
+
+    How a habit looks depends on its type: **a good habit**, **a habit to limit**, or **a habit to quit**.
+
+    ![Week View Good Habit I OS](/images/WeekView_GoodHabit_iOS.png "Week View Good Habit I OS")
+
+    If you habit is **a good habit with goal per day:**
+
+    - Each day is one cell representing your progress of the day:
+      - A completed day is filled with a solid shade of the habit’s color. Consecutive completed days join into one continuous bar.
+      - A day still in progress fills from the bottom up as you log more toward the daily goal.
+      - A skipped day is marked with an →.
+      - A failed day is marked with an ✕.
+    - On days when the habit doesn’t repeat or haven’t started yet, the cell is hatched with diagonal lines.
+    - Your streak appears as a 🔥 with its length (for example, 🔥**7d**) on the cell of the last day you completed the daily goal. 
+
+    If you habit is **a good habit with goal per week, month, or year:**
+
+    - The period is one seamless stripe
+    - The stripe shows your progress toward the goal and fills as you log. For example, _2/7 times this week_, or _27/30 km August 2026_.
+    - On the right of the habit name is your streak, counted in weeks, months, or years to match the goal period (for example, _🔥2w_ or _🔥3m_). It’s counted up to the week you’re viewing, so it may changes as you move between weeks.
+
+    ![Week View Bad Habit I OS](/images/WeekView_BadHabit_iOS.png "Week View Bad Habit I OS")
+
+    If you habit is **a bad habit to quit:**
+
+    - Habits to quit have no goal period. They’re tracked day by day.
+    - Each day is one cell representing your day:
+      - A day you stayed on track is filled with a solid shade of the habit’s color. Consecutive days join into one continuous bar.
+      - A day you check in ‘Fail’ is marked with an ✕.
+      - A day you check in ‘Skip’ is marked with an →.
+
+    - On days before your habit’s start date, the cell is hatched with diagonal lines.
+    - Your streak appears as a 🔥 with its length (_for example, 🔥3d_) on the cell of the last day you stayed on track.
+
+    If you habit is **a bad habit to limit per day:**
+
+    - Each day is one cell that shows the amount you logged that day (_for example, 15m_), with a marker under the amount that shows where you stand:
+      - a grey •󠁏 means you’re within your limit.
+      - an orange ▲ means you’ve reached your limit.
+      - a red ✕ means you’ve overdone it.
+    - a day you check in ‘Skip’ directly is marked with an →.
+    - a day you check in ‘Fail’ directly is marked with an ✕.
+
+    If you habit is **a bad habit to limit per week, month, or year**
+
+    - The period is one seamless stripe with a **\+** button on its left, the stripe is extended until ‘tomorrow’ in the current week, and will lengthen gradually until the end of the week.
+    - The stripe shows how much you’ve logged against your limit for that period. 
+    - The stripe shows your progress against the limit and fills as you log. For example, _27/60 minutes this week_, or _2/5 times this month_.
+
     ## Managing habit order
 
     <iframe src="https://drive.google.com/file/d/1cKK8d2w8I12G02TvZX4_9q0icU_Kni-L/preview" width="640" height="360" />
@@ -54,6 +120,11 @@ This article walks through how to navigate the Journal, understand how your habi
     <Note>
       These settings are only applied for the habit order in the 'All Habits' list
     </Note>
+
+    ### **How sorting is applied in each layout**
+
+    - **Day View**: habits are sub-categorized first (by status, and by goal type within In progress / uncompleted), then sorted in your selected order inside each group.
+    - **Week View**: habits are sorted in your selected order across one continuous list, regardless of their status, type, or goal period.
 
     ### How to customize 'My Habits Order'
 
@@ -85,20 +156,37 @@ This article walks through how to navigate the Journal, understand how your habi
 
     To exit the search, simply tap on ‘**Cancel**’.
 
+    ## Journal on iPhone Duo
+
+    Journal adapts to how you hold and fold your iPhone Duo, so the layout always fits the screen you’re using.
+
+    **_Below is a short video of a short preview of Journal on iPhone duo:_**
+
+    <iframe src="https://drive.google.com/file/d/1sEK7isUjhRWzXzPIRgF45hUh9cCLbdkp/preview" width="640" height="360" />
+
+    **When your iPhone Duo is folded,** Journal looks the same as it does on a standard iPhone, just with a shorter height. The navigation buttons for the other tabs sit on the right side of the screen.
+
+    **When you unfold it,** Journal switches to the iPad version, which gives you much more room to work:
+
+    - On the left, the sidebar lets you move between your Areas and the other tabs, such as Progress, Friends, and Reflection. 
+    - On the right, you’ll find the date bar along with the button to sort your habits or switch the layout between Day and Week view.
+
     ## FAQs
 
-    <Accordion title="**Why can I only review my Journal entries from the last 30 days?**">
-      Habitify restricts Journal history to a 30-day rolling window to keep your focus on actionable, recent insights rather than turning the app into a limitless diary. This design choice ensures the Journal remains a focused tool for immediate self-correction and continuous improvement, keeping your attention exactly where it belongs: on the habits you are building today.
+    <Accordion title="**How can I preview further than tomorrow in Day view?**">
+      Currently, the Day view only supports viewing your schedule for Today and Tomorrow.
 
-      Still, you can review until your habit's start date in each's Single Progress.
+      The Day view is engineered specifically for immediate execution. While looking ahead might feel like productive planning, seeing an endless, rolling list of upcoming daily tasks often leads to “checklist fatigue” and overwhelm. By restricting your forward visibility to just the next 24 hours, Habitify keeps your cognitive load light. It encourages you to focus entirely on winning today and making basic preparations for tomorrow, without letting the weight of next week’s commitments paralyze your current momentum.
     </Accordion>
 
-    <Accordion title="**How can I preview further than tomorrow?**">
-      Currently, in iOS app, we only support to preview for tomorrow only.
+    <Accordion title="**How far back can I review my past habits in the Day view?**">
+      You can navigate back up to 30 days in the past when using the Day View.
 
-      Habitify intentionally limits the forward preview to prevent cognitive overload and keep your focus grounded in immediate, actionable steps.
+      By keeping the Day View restricted to a 30-day rolling window, the app ensures that your daily tracker remains fast, lightweight, and focused purely on your current momentum, rather than bogging you down in the microscopic details of the distant past.
+    </Accordion>
 
-      But we are open to all of your suggestion, just please feel free to share your opinion about it at https://feedback.habitify.me
+    <Accordion title="**How far can I see back in Week view?**">
+      Habitify limits your Week view history to a rolling 54-week window to provide a complete picture of your annual progress while ensuring your data remains highly relevant to your current life.
     </Accordion>
   </Tab>
   <Tab title="🤖 Android">
@@ -198,7 +286,7 @@ This article walks through how to navigate the Journal, understand how your habi
     If you habit is **a bad habit to limit per week, month, or year**
 
     - The period is one seamless stripe with a **\+** button on its left, the stripe is extended until 'tomorrow' in the current week, and will lengthen gradually until the end of the week.
-    - The stripe shows how much you've logged against your limit for that period. For monthly and yearly limits, it also shows how much you added during the week you're viewing.
+    - The stripe shows how much you've logged against your limit for that period. 
     - The stripe shows your progress against the limit and fills as you log. For example, _27/60 minutes this week_, or _2/5 times this month_.
 
     ## Managing habit order

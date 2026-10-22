@@ -196,3 +196,19 @@ We offer two main export formats, each serving a different need: a simple **CSV 
     4. For confirmation, click '**Delete All Data**'.
   </Tab>
 </Tabs>
+
+## FAQs
+
+<Accordion title="**Why does my exported CSV file open in a single column in Excel?**">
+  This happens when Excel doesn’t recognize the separator used in the CSV file. Habitify’s export uses semicolons (`;`) to separate fields, while your Excel settings may expect a different separator.
+
+  **How can I display the data in separate columns?**
+
+  1. Open the CSV file in Excel and select **column A**.
+  2. Go to **Data → Text to Columns**.
+  3. Select **Delimited**, then click **Next**.
+  4. Check **Semicolon** and uncheck the other separators.
+  5. Click **Finish**.
+
+  Your data will appear in separate columns: **Habit, Date, Total Log, Unit, Status, and Habit ID**.
+</Accordion>
