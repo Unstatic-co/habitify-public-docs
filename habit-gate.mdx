@@ -27,17 +27,23 @@ To set up the habit gate for your habit:
 
 1. In _Habit Gate_, under "_Verification Method_", select **Verify by Location**.
 2. Tap on '**Pick a location**'
-3. Select 'Current Location' or search for the place which should be qualified for the verification, such as your gym or library.
+3. Select '**Current Location**' or **search for the place** which should be qualified for the verification, such as your gym or library.
 4. Set the distance. This is how close you must be for the habit to count.
 5. Tap ← to save and go back.
 
 **How to Verify**
 
 1. Go to the pinned place, you need to be inside the distance you set.
-2. Open a blocked app or website to reach the blocking screen.
-3. If you are within the area qualified for the verification, you can tap **Verify** button. <br />Otherwise, it will disable the button, and show how far it is from your location to the required area.
+2. Open a blocked app or website to reach the blocking screen. Then tap **Verify**.
+3. If you are within the area qualified for the verification, you can tap **Verify** button in this screen. <br />Otherwise, it will disable the button, and show how far it is from your location to the required area.
 
-![Verify By Location](/images/Verify-by-Location.png "Verify By Location")
+<Frame>
+  <img
+    src="/images/Verify-by-Location.png"
+    alt="Verify By Location"
+    title="Verify By Location"
+  />
+</Frame>
 
 ### Verify by Photo
 
@@ -54,10 +60,9 @@ To set up the habit gate for your habit:
 
 **How to Verify**
 
-1. Open a blocked app or website and you will see the blocking screen appears.
-2. Tap **Verify** on the blocked screen.
+1. Open a blocked app or website to reach the blocking screen. Then tap **Verify**.
 3. Take a photo that matches your description.
-4. Submit it. Habitify’s AI checks the photo against your description.
+4. Wait for Habitify’s AI to check the photo against your description:
    1. If your photo is not qualified, a reason will be provided. You can tap **Take another photo** and try again.
    2. If your photo is qualified, you will see a green ✔️, and you can tap '**Continue with [the blocked app/web]**' to use the app/web.
 
@@ -77,12 +82,10 @@ To set up the habit gate for your habit:
 **How to Verify**
 
 1. Open the app you chose and use it until you reach the target time.
-2. Open a blocked app or website and you will see the blocking screen appears.
-3. Tap **Verify** on the blocked screen.
-4. Once you reach it, when you open the blocked app/web, you can contintue to tap **Verify** button. Otherwise, the button will be disabled.
-5. Once your screen time is qualified, you can tap '**Continue with [the blocked app/web]**' to use the app/web.
+2. Open a blocked app or website to reach the blocking screen. Then tap **Verify**.
+3. If your screen time is qualified, you can contintue to tap **Verify** button. Otherwise, the button will be disabled.
 
-![Verify By Screen Time](/images/Verify-by-Screen-Time.png "Verify By Screen Time")
+![Verify By Screen Time 1](/images/Verify-by-Screen-Time-1.png "Verify By Screen Time 1")
 
 ### Verify by Health Connect
 
@@ -90,7 +93,7 @@ To set up the habit gate for your habit:
 
 ![Habit Gate Health Connect Android](/images/HabitGate_HealthConnect_Android.png "Habit Gate Health Connect Android")
 
-1. Select **Verify by Health Connect**.
+1. In _Habit Gate_, under "_Verification Method_", select **Verify by Health Connect**.
 2. In _Target activity_, Choose the activity you want to track, such as Steps or Calories Burned.
 3. In _Goals_, set the required value to reach, such as 10,000 steps or 800 kcal.
 4. Tap ← to save and go back.
@@ -98,17 +101,22 @@ To set up the habit gate for your habit:
 **How to Verify**
 
 1. Do the activity until you reach your goal. The data comes from your health app.
-2. Open a blocked app or website and you will see the blocking screen appears.
-3. Tap **Verify** on the blocked screen.
+2. Open a blocked app or website to reach the blocking screen. Then tap **Verify**.
 4. You can quickly check how much you do. For the first time, you may be requested to grant permission to access Health Connect.
 5. If you reach the goal value, you can continue to tap the **Verify** button. Otherwise, the button will be disabled.
+
+![Verify By Health Data](/images/Verify-by-Health-data.png "Verify By Health Data")
 
 ### Verify by NFC
 
 **How to Set up**
 
-1. Select **Verify by NFC**.
-2. Scan the NFC tag you want to link to this habit. Put the tag where the habit happens, for example by your yoga mat or next to your bed.
+![NFC Verify Set Up](/images/NFC-Verify-SetUp.png "NFC Verify Set Up")
+
+1. In _Habit Gate_, under "_Verification Method_", select **Verify by NFC**.
+2. Tap '**Scan a Tag to link...**'
+3. Scan the NFC tag you want to link to this habit, leaving a short message which will appear in the blocking screen which might help you remember what to do to remove the blocking.
+4. Tap ← to save and go back.
 
 **How to Verify**
 
@@ -116,9 +124,7 @@ To set up the habit gate for your habit:
 2. Tap **Verify** and choose **NFC**.
 3. Hold your phone against the linked tag.
 
-**What success looks like**
-
-One scan verifies the habit. The blocking screen closes and the habit is completed if you chose that option. A different tag won’t work. It has to be the one you linked.
+![Verify By NFC](/images/Verify-by-NFC.png "Verify By NFC")
 
 ## Bypass policy
 
@@ -126,4 +132,29 @@ There are 3 options of level on the bypass policy:
 
 - **Easy:** You can open blocked apps at any time after a quick confirmation. No verification needed.
 - **Friction:** You can open blocked apps for a short time, after Habitify asks you to confirm. Then they’re blocked again.
-- **Strict:** Blocked apps stay blocked until the habit is verified. There is no bypass
+- **Strict:** Blocked apps stay blocked until the habit is verified. There is no way to skip the verification.
+
+![Bypass Policy 1](/images/Bypass-Policy-1.png "Bypass Policy 1")
+
+## After Verification
+
+This setting controls what else Habitify does at the moment your verification is accepted. It runs automatically, so you don’t need to do anything extra once the gate opens.
+
+There are 2 options:
+
+- **Mark the habit as completed:** When your verification is accepted, Habitify checks off the habit for you. 
+- **Save the photo to habit notes:** When a photo is accepted for the verification, Habitify saves it in that habit’s Note.
+
+## FAQs
+
+<Accordion title="**Do my apps get blocked again the next day?**">
+  Yes. The gate resets at midnight (0:00). Once you verify a habit, your blocked apps and websites stay unlocked for the rest of that day. At 0:00 they are blocked again until you verify again.
+</Accordion>
+
+<Accordion title="**What if the same app is blocked by more than one habit?**">
+  You need to verify all of those habits. Verifying one habit doesn’t unlock the app while another habit that blocks it is still unverified.
+</Accordion>
+
+<Accordion title="**If I turn on several verification methods, which one do I see first?**">
+  Habitify shows them in a fixed order: Location, Photo, Screen Time, Health Connect, then NFC. You can’t reorder them, but you can switch between methods for the verification by choosing "Other ways to verify" on the blocking screen.
+</Accordion>
