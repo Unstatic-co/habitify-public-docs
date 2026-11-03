@@ -21,109 +21,172 @@
         ]
       }
     ],
-    "tabs": [
+    "languages": [
       {
-        "tab": "Documentation",
-        "icon": "life-ring",
-        "pages": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "Get Started",
+            "tab": "Documentation",
+            "icon": "life-ring",
             "pages": [
-              "habitify-introduction",
-              "habitify-quick-start"
+              {
+                "group": "Get Started",
+                "pages": [
+                  "habitify-introduction",
+                  "habitify-quick-start",
+                  "untitled-page-2"
+                ]
+              },
+              {
+                "group": "Features",
+                "pages": [
+                  "good-habits",
+                  "bad-habits",
+                  "journal",
+                  "single-progress",
+                  "untitled-page-5",
+                  "reflection",
+                  "circle",
+                  "challenge"
+                ]
+              },
+              {
+                "group": "Tools",
+                "pages": [
+                  "area",
+                  "reminder",
+                  "habit-gate",
+                  "note",
+                  "widget",
+                  "task",
+                  "timer"
+                ]
+              },
+              {
+                "group": "App Settings",
+                "pages": [
+                  "off-mode",
+                  "app-behavior"
+                ]
+              },
+              {
+                "group": "Automation",
+                "pages": [
+                  "automation-status-update",
+                  "ios-shortcuts",
+                  "nfc-tags",
+                  "zapier-ifttt"
+                ]
+              },
+              {
+                "group": "Integration",
+                "pages": [
+                  "google-calendar-integration",
+                  "outlook-calendar-integration",
+                  "apple-calendar-integration",
+                  "apple-health-integration",
+                  "health-connect-integration",
+                  "strava-integration",
+                  "fitbit-integration",
+                  "rescue-time-integration",
+                  "screen-time-integration"
+                ]
+              },
+              {
+                "group": "Habitify MCP & AI",
+                "pages": [
+                  "habitify-mcp",
+                  "habi-ai",
+                  "untitled-page"
+                ]
+              },
+              {
+                "group": "Plans & Billing",
+                "pages": [
+                  "plans",
+                  "billings",
+                  "habitify-family",
+                  "habitify-team",
+                  "habitify-student"
+                ]
+              },
+              {
+                "group": "Account & Data",
+                "pages": [
+                  "manage-account",
+                  "manage-data"
+                ]
+              }
             ]
           },
           {
-            "group": "Features",
-            "pages": [
-              "good-habits",
-              "bad-habits",
-              "journal",
-              "single-progress",
-              "untitled-page-5",
-              "reflection",
-              "circle",
-              "challenge"
-            ]
+            "tab": "API Documentation",
+            "icon": "rectangle-api",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
           },
           {
-            "group": "Tools",
-            "pages": [
-              "area",
-              "reminder",
-              "habit-gate",
-              "note",
-              "widget",
-              "task",
-              "timer"
-            ]
+            "tab": "Changelog",
+            "icon": "bullhorn",
+            "href": "https://feedback.habitify.me/changelog"
           },
           {
-            "group": "App Settings",
+            "tab": "Video Hub",
+            "hidden": true,
             "pages": [
-              "off-mode",
-              "app-behavior"
-            ]
-          },
-          {
-            "group": "Automation",
-            "pages": [
-              "automation-status-update",
-              "ios-shortcuts",
-              "nfc-tags",
-              "zapier-ifttt"
-            ]
-          },
-          {
-            "group": "Integration",
-            "pages": [
-              "google-calendar-integration",
-              "outlook-calendar-integration",
-              "apple-calendar-integration",
-              "apple-health-integration",
-              "health-connect-integration",
-              "strava-integration",
-              "fitbit-integration",
-              "rescue-time-integration",
-              "screen-time-integration"
-            ]
-          },
-          {
-            "group": "Habitify MCP & AI",
-            "pages": [
-              "habitify-mcp",
-              "habi-ai",
-              "untitled-page"
-            ]
-          },
-          {
-            "group": "Plans & Billing",
-            "pages": [
-              "plans",
-              "billings",
-              "habitify-family",
-              "habitify-team",
-              "habitify-student"
-            ]
-          },
-          {
-            "group": "Account & Data",
-            "pages": [
-              "manage-account",
-              "manage-data"
+              "untitled-page-2"
             ]
           }
         ]
       },
       {
-        "tab": "API Documentation",
-        "icon": "rectangle-api",
-        "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
-      },
-      {
-        "tab": "Changelog",
-        "href": "https://feedback.habitify.me/changelog",
-        "icon": "bullhorn"
+        "language": "ja",
+        "hidden": true,
+        "tabs": [
+          {
+            "tab": "ドキュメント",
+            "groups": [
+              {
+                "group": "はじめに",
+                "pages": [
+                  "ja/habitify-quick-start",
+                  "ja/habitify-introduction"
+                ]
+              },
+              {
+                "group": "機能",
+                "pages": []
+              },
+              {
+                "group": "ツール",
+                "pages": []
+              },
+              {
+                "group": "アプリの動作",
+                "pages": []
+              },
+              {
+                "group": "Automation",
+                "pages": []
+              },
+              {
+                "group": "連携 (統合)",
+                "pages": []
+              },
+              {
+                "group": "Habitify MCP・AI",
+                "pages": []
+              },
+              {
+                "group": "プランとお支払い",
+                "pages": []
+              },
+              {
+                "group": "アカウントとデータ",
+                "pages": []
+              }
+            ]
+          }
+        ]
       }
     ]
   },
