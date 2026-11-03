@@ -34,7 +34,7 @@
                 "pages": [
                   "habitify-introduction",
                   "habitify-quick-start",
-                  "untitled-page-2"
+                  "glossary"
                 ]
               },
               {
@@ -44,7 +44,7 @@
                   "bad-habits",
                   "journal",
                   "single-progress",
-                  "untitled-page-5",
+                  "overall-progress",
                   "reflection",
                   "circle",
                   "challenge"
@@ -97,7 +97,7 @@
                 "pages": [
                   "habitify-mcp",
                   "habi-ai",
-                  "untitled-page"
+                  "siri-ai"
                 ]
               },
               {
@@ -133,7 +133,7 @@
             "tab": "Video Hub",
             "hidden": true,
             "pages": [
-              "untitled-page-2"
+              "glossary"
             ]
           }
         ]
@@ -149,40 +149,88 @@
                 "group": "はじめに",
                 "pages": [
                   "ja/habitify-quick-start",
-                  "ja/habitify-introduction"
+                  "ja/habitify-introduction",
+                  "ja/glossary"
                 ]
               },
               {
                 "group": "機能",
-                "pages": []
+                "pages": [
+                  "ja/good-habits",
+                  "ja/bad-habits",
+                  "ja/journal",
+                  "ja/single-progress",
+                  "ja/overall-progress",
+                  "ja/reflection",
+                  "ja/circle",
+                  "ja/challenge"
+                ]
               },
               {
                 "group": "ツール",
-                "pages": []
+                "pages": [
+                  "ja/area",
+                  "ja/reminder",
+                  "ja/note",
+                  "ja/widget",
+                  "ja/task",
+                  "ja/timer"
+                ]
               },
               {
-                "group": "アプリの動作",
-                "pages": []
+                "group": "アプリの設定",
+                "pages": [
+                  "ja/off-mode",
+                  "ja/app-behavior"
+                ]
               },
               {
-                "group": "Automation",
-                "pages": []
+                "group": "オートメーション",
+                "pages": [
+                  "ja/automation-status-update",
+                  "ja/ios-shortcuts",
+                  "ja/nfc-tags",
+                  "ja/zapier-ifttt"
+                ]
               },
               {
                 "group": "連携 (統合)",
-                "pages": []
+                "pages": [
+                  "ja/google-calendar-integration",
+                  "ja/outlook-calendar-integration",
+                  "ja/apple-calendar-integration",
+                  "ja/apple-health-integration",
+                  "ja/health-connect-integration",
+                  "ja/strava-integration",
+                  "ja/fitbit-integration",
+                  "ja/rescue-time-integration",
+                  "ja/screen-time-integration"
+                ]
               },
               {
                 "group": "Habitify MCP・AI",
-                "pages": []
+                "pages": [
+                  "ja/habitify-mcp",
+                  "ja/habi-ai",
+                  "ja/siri-ai"
+                ]
               },
               {
                 "group": "プランとお支払い",
-                "pages": []
+                "pages": [
+                  "ja/plans",
+                  "ja/billings",
+                  "ja/habitify-family",
+                  "ja/habitify-team",
+                  "ja/habitify-student"
+                ]
               },
               {
                 "group": "アカウントとデータ",
-                "pages": []
+                "pages": [
+                  "ja/manage-account",
+                  "ja/manage-data"
+                ]
               }
             ]
           }
