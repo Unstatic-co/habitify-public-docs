@@ -148,8 +148,8 @@
               {
                 "group": "はじめに",
                 "pages": [
-                  "ja/habitify-quick-start",
                   "ja/habitify-introduction",
+                  "ja/habitify-quick-start",
                   "ja/glossary"
                 ]
               },
