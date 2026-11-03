@@ -1,1 +1,114 @@
+---
+title: "Google Health（Fitbit）"
+---
 
+健康やウェルネスの目標は、ツール同士を連携させると管理しやすくなります。FitbitのデータをHabitifyへ接続すれば、デバイスが計測し、Habitifyが記録します。Fitbitですでに記録した習慣を、手動でもう一度チェックする必要はありません。
+
+この記事では、その設定方法を説明します。
+
+## Fitbitと同期する習慣を追加する
+
+<Tabs>
+  <Tab title=" iOS">
+    <iframe src="https://drive.google.com/file/d/1yjV7FQVYALduZH8Ly7msWnxbBunnYqq0/preview" width="640" height="360" />
+
+    1. _ジャーナル_で、右下の＋ボタンをタップします。
+    2. **「良い習慣を身につける」**または**「悪い習慣をやめる」**を選びます。
+    3. 作成画面上部で**Fitbit**タブへ切り替えます。
+    4. 一覧から記録するデータの種類（「歩数」など）を選びます。
+    5. Fitbitのサイトへ移動したら、Fitbitアカウントへログインし、Habitifyによるデータの読み取りを許可します。
+    6. 許可が完了するとHabitifyへ戻ります。
+    7. 通常どおり習慣の詳細を設定します。
+    8. 設定が完了したら、**✓ボタン**をタップして新しい習慣を保存します。
+
+    作成したFitbit連携習慣には、ジャーナル画面上で小さなFitbitアイコンが表示されるため、手動で記録する習慣とひと目で見分けられます。
+  </Tab>
+  <Tab title="🤖 Android">
+    <iframe src="https://drive.google.com/file/d/19NndDt5UVbj5mmoZtohQgyatBIDWqSNX/preview" width="640" height="360" />
+
+    1. _ジャーナル_で、画面右下にある日付バーの**＋ボタン**をタップします。
+    2. **「良い習慣を作る」**または**「悪い習慣をやめる」**を選びます。
+    3. 習慣テンプレート画面上部のタブから、**Fitbit**をタップします。
+    4. HabitifyがFitbitから読み込めるアクティビティとデータの一覧から、1つ選びます。
+    5. **目標**（10,000歩、8時間の睡眠など）を設定し、**アクセスを許可**をタップします。
+    6. Fitbitのサイトへ移動したら、Fitbitアカウントへログインし、Habitifyによるデータの読み取りを許可します。
+    7. 許可が完了するとHabitifyへ戻るので、**続ける**ボタンをタップします。
+    8. 通常どおり習慣を設定します。
+    9. 設定が完了したら、右上の**保存**ボタンをタップします。
+
+    作成したFitbit連携習慣には、日次表示のジャーナル上で小さなFitbitアイコンが表示されるため、手動で記録する習慣とひと目で見分けられます。
+  </Tab>
+  <Tab title="🖥️ Web・デスクトップ">
+    <iframe src="https://drive.google.com/file/d/1w3TFIMittTwzuEJCAmURB1RyJC16AWMz/preview" width="640" height="360" />
+
+    1. 左側のナビゲーションバーから、**すべての習慣**タブを開きます。
+    2. 下部のアクションバーで、**＋ 習慣を追加**をクリックします。
+    3. **「良い習慣を作る」**または**「悪い習慣をやめる」**を選びます。
+    4. 表示された画面の上部で、**Fitbit**タブを選びます。
+    5. 対応カテゴリの一覧から、Run、Ride、Walk、Swimなど、記録するアクティビティを選びます。
+    6. Fitbitと同期する習慣を初めて作成するときは、HabitifyにFitbitアカウントのデータへのアクセスを許可する必要があります。<br />習慣名の下にある**アクセスを許可**をクリックし、続く手順を完了します。
+    7. 接続が完了すると、_アクセスを許可_ボタンが消えます。通常の習慣と同じように、残りの詳細を設定します。
+    8. 設定が完了したら、右下の**保存**ボタンをクリックして新しい習慣を保存します。
+  </Tab>
+</Tabs>
+
+## 仕組み
+
+- FitbitのデータはHabitifyへ自動的に同期されます。記録値が習慣の目標に達すると、手動でチェックインしなくてもHabitifyが**完了**としてマークします。
+- Fitbitだけでは表せない状況を残したい場合は、その日の習慣を手動で**スキップ**または**失敗**としてマークできます。
+
+## 制限事項
+
+- **Fitbitアカウントを一致させる必要があります。** 設定時にブラウザで認証するFitbitアカウントは、Fitbitモバイルアプリへログインしているアカウントと同じでなければなりません。異なる場合はデータが同期されません。
+- **水分摂取量には追加条件があります。** 水分摂取量を記録する場合、Fitbitアプリで食事も記録する必要があります。食事の記録によって、Habitifyなどの接続アプリへの水分データ同期が実行されます。
+- **HabitifyアカウントごとにFitbitアカウントは1つです。** 同時に接続できるFitbitアカウントは1つだけです。同じFitbitアカウントを2つ目のHabitifyアカウントへ接続すると、最初の接続は自動的に解除されます。
+- **解除後、同じ習慣には再接続できません。** 習慣とFitbitの連携を解除すると、後から同じ習慣へ再連携することはできません。再接続するには、新しい習慣を作成してください。
+
+## **対応するデータの種類と単位**
+
+Fitbitは、本格的なスポーツから日常動作まで、非常に多くのアクティビティに対応しています。見つけやすいように、主なカテゴリごとにまとめています。
+
+<Note>
+  **アクティビティの種類について：** Habitifyは各アクティビティの詳細な種類にも対応しています。たとえば**Yoga**には_Bikram_、_Hatha_、_Power_、_Vinyasa_が含まれ、**Swimming**には一般的なラップのほか、泳法や軽い水中活動も含まれます。
+</Note>
+
+1. **ウォーキングとランニング**：トレッドミルから屋外のコースまで歩数を記録します。Walk（Power、Race、Stroller、Weighted）、Run、Hike、Jog、Treadmill、Orienteeringなど。
+2. **ジムとフィットネスクラス**：屋内トレーニング、スタジオレッスン、柔軟運動に適しています。
+   1. **アクティビティ**：Aerobics、Bootcamp、Circuit Training、Crossfit、Elliptical、Stair Climber、Pilates、Weightlifting、Spinning、Zumba、Kickboxing。
+   2. **Yoga**：Hatha、Bikram、Power、Vinyasa、一般的なヨガ。
+3. **チーム・競技スポーツ**：試合、練習、気軽なゲームを記録します。
+   1. **アクティビティ**：Basketball（車いすを含む）、Baseball／Softball、Soccer、Football、Rugby、Hockey、Volleyball（Beach、Indoor）、Cricket、Lacrosse、Ultimate Frisbee。
+   2. **ラケットスポーツ**：Tennis、Badminton、Squash、Racquetball、Pickleball、Table Tennis。
+4. **アウトドア・ウォータースポーツ**：自然、水上、雪上でのアクティビティを記録します。
+   1. **水上**：Swimming、Kayaking、Canoeing、Rowing、Sailing、Surfing、Diving、Water Polo。
+   2. **冬季**：Skiing（Alpine、Nordic）、Snowboarding、Ice Skating、Snowshoeing、Curling。
+   3. **アドベンチャー**：Rock Climbing、Horseback Riding、Archery、Sky Diving、Rollerblading、Skateboarding。
+5. **日常生活と家事**：家事や日常の作業を記録できる習慣にします。
+   1. **家庭**：Cleaning、Cooking、Gardening、Mowing Lawn、Raking Leaves、Shoveling Snow、Moving Furniture、Carrying Groceries、Child Care。
+   2. **仕事・職業**：Carpentry、Construction、Farming、Painting、Masonry、Plumbing、Electrical Work。
+6. **芸術、趣味、音楽**：創作活動での身体的な運動を記録します。
+   1. **音楽**：Playing Drums、Guitar（standing／sitting）、Cello、Flute、Marching Band。
+   2. **ダンス**：Ballet、Ballroom、Swing、Salsa、Tap、Folk。
+   3. **ゲーム**：Wii Sports（Boxing、Tennis、Bowling）、Xbox Kinect Sports。
+7. **休息とウェルネス**：休息や回復の指標を記録します。Sleeping、Meditating、Massage Therapy、Sitting（Reading、Studying、Driving）など。
+
+アクティビティの種類に応じて、次の単位で進捗を記録できます。
+
+- **距離：** km、マイル、メートル、ヤード
+- **時間：** 分、時間
+- **カロリー：** kcal
+- **歩数：** 回数 — _ウォーキング、ランニング、ハイキングなど、歩数を使うアクティビティで利用できます。_
+
+## よくある質問
+
+<Accordion title="**1つのFitbitアカウントへ2つのHabitifyアカウントを同時に接続できますか？**">
+  できません。接続できるのは、1つのFitbitアカウントにつき1つのHabitifyアカウントだけです。2つ目のHabitifyアカウントを接続すると、最初の接続は自動的に解除されます。
+</Accordion>
+
+<Accordion title="**HabitifyからFitbitへデータを書き戻せますか？**">
+  できません。同期は一方向です。両方のアプリで同じデータが記録され、重複することを防ぐためです。
+</Accordion>
+
+<Accordion title="**Fitbitと同期している習慣のステータスを更新できますか？**">
+  スキップまたは失敗としてマークできます。ただし、進捗の追加、手動での完了、進捗値の入力はできません。
+</Accordion>
