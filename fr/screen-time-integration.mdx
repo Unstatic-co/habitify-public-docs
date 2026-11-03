@@ -1,0 +1,110 @@
+---
+title: "Temps d’écran"
+sidebarTitle: "Temps d’écran"
+---
+
+Temps d’écran mesure le temps passé sur l’appareil et dans chaque application, afin de mieux comprendre vos habitudes numériques. Il suit :
+
+- la durée totale d’utilisation de l’appareil ;
+- le temps passé dans chaque application ;
+- le nombre de prises en main de l’appareil ;
+- les applications qui envoient le plus de notifications.
+
+Ce guide explique comment créer et suivre une habitude à partir des applications et sites mesurés par votre appareil.
+
+<Tabs>
+  <Tab title=" iOS">
+    Pour consulter les données sur iOS :
+
+    - Ouvrez **Réglages** sur l’iPhone ou l’iPad.
+    - Faites défiler l’écran et touchez **Temps d’écran**.
+    - Consultez le récapitulatif et les détails par catégorie d’applications.
+
+    ## **Ajouter une habitude synchronisée avec Temps d’écran**
+
+    <iframe src="https://drive.google.com/file/d/1oK_xj5YrJQO16u4LJOTvjMxji1wh_D7R/preview" width="640" height="360" />
+
+    1. Dans le _Journal_, touchez **+** sur la barre de date en bas à droite.
+    2. Choisissez **Créer une bonne habitude** ou **Rompre une mauvaise habitude**.
+    3. Ouvrez l’onglet **Temps d’écran**.
+    4. Lors de la première utilisation, **accordez manuellement l’autorisation à Habitify** :
+       1. dans _Autorisation requise_, touchez **Continuer** ;
+       2. confirmez en touchant de nouveau **Continuer** ;
+       3. autorisez avec le code de l’appareil ou Face ID ;
+       4. dans l’écran confirmant l’accès de Habitify, touchez **Terminé**.
+    5. Sélectionnez les applications et sites, puis touchez **Continuer**.
+    6. Configurez l’habitude normalement.
+    7. Touchez **Enregistrer** en haut à droite.
+
+    ## **Remarques et limites**
+
+    - Les valeurs ne sont synchronisées qu’une fois le seuil de l’objectif atteint.
+    - **Pour une bonne habitude**, par exemple lire dans une application, l’habitude est terminée dès que l’objectif est atteint, puis cesse de recevoir les valeurs supplémentaires, même si l’appareil continue de les mesurer. Avec un objectif de 10 minutes, seules ces 10 minutes sont envoyées ; vous pouvez saisir le reste manuellement.
+    - **Pour une mauvaise habitude**, par exemple limiter les réseaux sociaux :
+      - **Limiter cette habitude** bloque réellement l’application lorsque la limite maximale est atteinte.
+      - **Arrêter cette habitude** limite par défaut l’application sélectionnée.
+      - La restriction reste active jusqu’à ce que vous marquiez volontairement l’habitude comme **Ignorée** ou **Échec** dans Habitify.
+  </Tab>
+  <Tab title="🤖 Android">
+    ## Ajouter une habitude synchronisée avec Temps d’écran
+
+    <iframe src="https://drive.google.com/file/d/1uI3xaXEJqjRkOyfJ1HP5QlvQ8jzBE-cA/preview" width="640" height="360" />
+
+    1. Ouvrez le **Journal** et touchez **+** sur la barre de date.
+    2. Choisissez **Créer une bonne habitude** ou **Rompre une mauvaise habitude**.
+    3. Choisissez **Temps d’écran**.
+    4. Sélectionnez les applications et sites à suivre :
+       1. touchez **Ajouter des applications** et sélectionnez-les ;
+       2. touchez **Ajouter un site** et saisissez ses liens ;
+       3. touchez **Continuer** lorsque la liste est complète.
+    5. Accordez les autorisations nécessaires. Sous chaque autorisation manquante, touchez **Ouvrir les paramètres → icône Habitify → activez l’interrupteur** :
+       - **Notifications** : informe sur la synchronisation, notamment lorsque la limite est atteinte ;
+       - **Accès aux données d’utilisation** : fournit une durée précise ;
+       - **Afficher par-dessus les autres applications** : permet le suivi sur l’écran d’utilisation ;
+       - **Limites d’utilisation Habitify et analyse des sites** : permet le suivi des sites Web.
+    6. Revenez dans Habitify et configurez l’habitude.
+    7. Touchez **Enregistrer** en haut à droite.
+
+    ## Remarques et limites
+
+    - **Les données sont enregistrées après la fermeture de l’application ou l’atteinte de l’objectif**, et non en continu pendant son utilisation.
+    - **Pour une bonne habitude**, elle est terminée dès l’objectif atteint, tandis que le compteur de l’appareil continue. Avec un objectif de 30 minutes et 45 minutes d’utilisation, Habitify s’arrête à 30 minutes.
+    - **Pour une mauvaise habitude** :
+      - **Limiter cette habitude** bloque réellement l’application ou le site pour le reste de la journée après l’atteinte de la limite.
+      - **Arrêter cette habitude** bloque par défaut les applications et sites sélectionnés.
+      - La restriction reste active jusqu’à ce que vous marquiez la journée comme **Ignorée** ou **Échec**.
+  </Tab>
+</Tabs>
+
+## Questions fréquentes
+
+<Accordion title="**Pourquoi la limite d’une application ne compte-t-elle pas les liens ouverts dans Chrome ?**">
+  Habitify reçoit les données directement d’Apple. Pour un service comme Instagram, TikTok, YouTube ou X, Apple mesure uniquement :
+
+  - l’application elle-même ;
+  - le site du service lorsqu’il est ouvert dans Safari.
+
+  Chrome, Firefox, Edge et les autres navigateurs sont mesurés globalement, sans détail par site. Apple ne partageant pas ce détail, Habitify ne peut pas l’inclure.
+
+  Pour conserver une limite exacte, utilisez Safari comme seul navigateur pour ce service :
+
+  1. Ouvrez ses liens dans Safari ; maintenez un lien appuyé et choisissez **Ouvrir dans Safari** si nécessaire.
+  2. Déconnectez-vous du service dans les autres navigateurs.
+  3. Supprimez les identifiants enregistrés dans leur gestionnaire de mots de passe.
+
+  Lorsque le service fonctionne uniquement dans son application et Safari, chaque minute est comptabilisée.
+</Accordion>
+
+<Accordion title="**Pourquoi certaines applications sont-elles bloquées alors que je ne les ai pas sélectionnées ?**">
+  Une application non cochée, comme Messenger, WhatsApp ou Amazon, peut être bloquée en raison de la manière dont les systèmes mobiles appliquent les limites de domaines Web à l’ensemble de l’appareil.
+
+  1. Ouvrez les réglages de l’habitude Temps d’écran dans Habitify.
+  2. Vérifiez la liste.
+  3. Laissez cochés l’application et les domaines principaux à limiter, par exemple `www.facebook.com` ou `www.instagram.com`.
+  4. Décochez les liens de redirection, aperçus mobiles et liens courts, par exemple :
+     - `l.facebook.com`
+     - `l.instagram.com`
+     - `m.facebook.com`
+     - les domaines courts et passerelles de boutiques comme `a.co`.
+  5. Enregistrez l’habitude.
+</Accordion>

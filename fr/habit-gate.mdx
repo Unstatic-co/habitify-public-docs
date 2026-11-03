@@ -1,0 +1,161 @@
+---
+title: "Habit Gate"
+sidebarTitle: "Habit Gate"
+hidden: true
+---
+
+Habit Gate bloque les applications et sites web de votre choix jusqu’à ce que vous terminiez une habitude. Les sites sont bloqués dans Chrome, Firefox et le navigateur de votre téléphone. Pour les déverrouiller, vous validez l’habitude avec une photo, une position, le temps d’écran d’une application, des données de santé ou un tag NFC. Chaque verrou est associé à une seule habitude.
+
+## Configuration rapide
+
+Pour configurer Habit Gate pour votre habitude :
+
+- Sur l’écran _Nouvelle habitude_ ou _Modifier l’habitude_, touchez **Habit Gate**.
+- Activez-le en choisissant l’option **Bloquer les applications et les sites web**.
+- Dans _Applications et sites web_, ajoutez les applications et/ou les sites à bloquer.
+- Choisissez la méthode de validation qui confirmera l’achèvement de l’habitude et débloquera les applications et sites.
+- Dans _Politique de contournement_, choisissez le niveau de rigueur du blocage et de la validation.
+- Dans _Après la validation_, choisissez ce que l’application doit exécuter après une validation réussie.
+- Une fois terminé, touchez **←** pour enregistrer la configuration et revenir aux paramètres de l’habitude.
+
+## Méthodes de validation
+
+### Valider par position
+
+**Configuration**
+
+![Habit Gate Location Android 1](/images/HabitGate_Location_Android-1.png "Habit Gate Location Android 1")
+
+1. Dans _Habit Gate_, sous _Méthode de validation_, sélectionnez **Valider par position**.
+2. Touchez **Choisir une position**.
+3. Sélectionnez **Position actuelle** ou **recherchez le lieu** requis pour la validation, comme votre salle de sport ou une bibliothèque.
+4. Définissez la distance. Elle indique à quelle proximité vous devez vous trouver pour que l’habitude soit validée.
+5. Touchez ← pour enregistrer et revenir en arrière.
+
+**Validation**
+
+1. Rendez-vous au lieu épinglé et entrez dans le rayon défini.
+2. Ouvrez une application ou un site bloqué pour afficher l’écran de blocage, puis touchez **Valider**.
+3. Si vous êtes dans la zone autorisée, vous pouvez toucher le bouton **Valider**. <br />Sinon, le bouton est désactivé et l’écran indique la distance qui vous sépare de la zone requise.
+
+<Frame>
+  <img
+    src="/images/Verify-by-Location.png"
+    alt="Verify By Location"
+    title="Verify By Location"
+  />
+</Frame>
+
+### Valider par photo
+
+**Configuration**
+
+![Habit Gate Photo Android 1](/images/HabitGate_Photo_Android-1.png "Habit Gate Photo Android 1")
+
+1. Dans _Habit Gate_, sous _Méthode de validation_, sélectionnez **Valider par photo**.
+2. Décrivez ce que la photo doit montrer. Soyez précis : « _Mes chaussures de course devant la porte_ » fonctionne mieux que « _preuve que j’ai couru_ ».
+3. Activez éventuellement les règles suivantes :
+   1. Prendre une nouvelle photo.
+   2. La photo doit être différente des précédentes.
+4. Touchez ← pour enregistrer et revenir en arrière.
+
+**Validation**
+
+1. Ouvrez une application ou un site bloqué pour afficher l’écran de blocage, puis touchez **Valider**.
+3. Prenez une photo correspondant à votre description.
+4. Attendez que l’IA de Habitify compare la photo à votre description :
+   1. Si la photo n’est pas conforme, une raison est affichée. Touchez **Prendre une autre photo** pour réessayer.
+   2. Si la photo est conforme, une coche verte ✔️ apparaît. Vous pouvez alors toucher **Continuer vers [l’application/le site bloqué]**.
+
+![Verify By Photo Android](/images/Verify-by-Photo_Android.png "Verify By Photo Android")
+
+### Valider par temps d’écran
+
+**Configuration**
+
+![Habit Gate Screen Time Android 1](/images/HabitGate_ScreenTime_Android-1.png "Habit Gate Screen Time Android 1")
+
+1. Dans _Habit Gate_, sous _Méthode de validation_, sélectionnez **Valider par temps d’écran**.
+2. Choisissez l’application à utiliser, par exemple Duolingo.
+3. Définissez la durée cible, par exemple 30 minutes.
+4. Touchez ← pour enregistrer et revenir en arrière.
+
+**Validation**
+
+1. Ouvrez l’application choisie et utilisez-la jusqu’à atteindre la durée cible.
+2. Ouvrez une application ou un site bloqué pour afficher l’écran de blocage, puis touchez **Valider**.
+3. Si votre temps d’écran remplit la condition, vous pouvez toucher le bouton **Valider**. Sinon, le bouton est désactivé.
+
+![Verify By Screen Time 1](/images/Verify-by-Screen-Time-1.png "Verify By Screen Time 1")
+
+### Valider avec Health Connect
+
+**Configuration**
+
+![Habit Gate Health Connect Android](/images/HabitGate_HealthConnect_Android.png "Habit Gate Health Connect Android")
+
+1. Dans _Habit Gate_, sous _Méthode de validation_, sélectionnez **Valider avec Health Connect**.
+2. Dans _Activité cible_, choisissez l’activité à suivre, comme les pas ou les calories brûlées.
+3. Dans _Objectifs_, définissez la valeur à atteindre, par exemple 10 000 pas ou 800 kcal.
+4. Touchez ← pour enregistrer et revenir en arrière.
+
+**Validation**
+
+1. Pratiquez l’activité jusqu’à atteindre votre objectif. Les données proviennent de votre application de santé.
+2. Ouvrez une application ou un site bloqué pour afficher l’écran de blocage, puis touchez **Valider**.
+4. Vous pouvez vérifier rapidement votre progression. Lors de la première utilisation, il peut vous être demandé d’autoriser l’accès à Health Connect.
+5. Si vous avez atteint l’objectif, vous pouvez toucher le bouton **Valider**. Sinon, le bouton est désactivé.
+
+![Verify By Health Data](/images/Verify-by-Health-data.png "Verify By Health Data")
+
+### Valider par NFC
+
+**Configuration**
+
+![NFC Verify Set Up](/images/NFC-Verify-SetUp.png "NFC Verify Set Up")
+
+1. Dans _Habit Gate_, sous _Méthode de validation_, sélectionnez **Valider par NFC**.
+2. Touchez **Scanner un tag à associer...**
+3. Scannez le tag NFC à associer à cette habitude et ajoutez un court message. Celui-ci apparaîtra sur l’écran de blocage et pourra vous rappeler quoi faire pour le lever.
+4. Touchez ← pour enregistrer et revenir en arrière.
+
+**Validation**
+
+1. Ouvrez une application ou un site bloqué pour afficher l’écran de blocage.
+2. Touchez **Valider** et choisissez **NFC**.
+3. Approchez votre téléphone du tag associé.
+
+![Verify By NFC](/images/Verify-by-NFC.png "Verify By NFC")
+
+## Politique de contournement
+
+La politique de contournement propose trois niveaux :
+
+- **Facile :** vous pouvez ouvrir les applications bloquées à tout moment après une confirmation rapide. Aucune validation n’est nécessaire.
+- **Friction :** vous pouvez ouvrir les applications bloquées pendant une courte durée après confirmation dans Habitify. Elles sont ensuite bloquées de nouveau.
+- **Strict :** les applications restent bloquées jusqu’à la validation de l’habitude. Il est impossible d’ignorer la validation.
+
+![Bypass Policy 1](/images/Bypass-Policy-1.png "Bypass Policy 1")
+
+## Après la validation
+
+Ce paramètre contrôle les autres actions exécutées par Habitify dès que votre validation est acceptée. Elles s’exécutent automatiquement : vous n’avez rien d’autre à faire une fois le verrou ouvert.
+
+Deux options sont disponibles :
+
+- **Marquer l’habitude comme terminée :** lorsque votre validation est acceptée, Habitify coche l’habitude pour vous.
+- **Enregistrer la photo dans les notes de l’habitude :** lorsqu’une photo est acceptée pour la validation, Habitify l’enregistre dans la note de cette habitude.
+
+## FAQ
+
+<Accordion title="**Mes applications seront-elles de nouveau bloquées le lendemain ?**">
+  Oui. Le verrou est réinitialisé à minuit (0:00). Après avoir validé une habitude, les applications et sites concernés restent déverrouillés jusqu’à la fin de la journée. À 0:00, ils sont de nouveau bloqués jusqu’à la prochaine validation.
+</Accordion>
+
+<Accordion title="**Que se passe-t-il si la même application est bloquée par plusieurs habitudes ?**">
+  Vous devez valider toutes ces habitudes. La validation d’une seule habitude ne déverrouille pas l’application tant qu’une autre habitude qui la bloque n’a pas encore été validée.
+</Accordion>
+
+<Accordion title="**Si j’active plusieurs méthodes de validation, laquelle s’affiche en premier ?**">
+  Habitify les présente dans un ordre fixe : Position, Photo, Temps d’écran, Health Connect, puis NFC. Vous ne pouvez pas les réorganiser, mais vous pouvez changer de méthode en choisissant « Autres méthodes de validation » sur l’écran de blocage.
+</Accordion>

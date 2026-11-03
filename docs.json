@@ -235,6 +235,105 @@
             ]
           }
         ]
+      },
+      {
+        "language": "fr",
+        "hidden": true,
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Bien démarrer",
+                "pages": [
+                  "fr/habitify-introduction",
+                  "fr/habitify-quick-start",
+                  "fr/glossary"
+                ]
+              },
+              {
+                "group": "Fonctionnalités",
+                "pages": [
+                  "fr/good-habits",
+                  "fr/bad-habits",
+                  "fr/journal",
+                  "fr/single-progress",
+                  "fr/overall-progress",
+                  "fr/reflection",
+                  "fr/circle",
+                  "fr/challenge"
+                ]
+              },
+              {
+                "group": "Outils",
+                "pages": [
+                  "fr/area",
+                  "fr/reminder",
+                  "fr/habit-gate",
+                  "fr/note",
+                  "fr/widget",
+                  "fr/task",
+                  "fr/timer"
+                ]
+              },
+              {
+                "group": "Paramètres de l’application",
+                "pages": [
+                  "fr/off-mode",
+                  "fr/app-behavior"
+                ]
+              },
+              {
+                "group": "Automatisation",
+                "pages": [
+                  "fr/automation-status-update",
+                  "fr/ios-shortcuts",
+                  "fr/nfc-tags",
+                  "fr/zapier-ifttt"
+                ]
+              },
+              {
+                "group": "Intégrations",
+                "pages": [
+                  "fr/google-calendar-integration",
+                  "fr/outlook-calendar-integration",
+                  "fr/apple-calendar-integration",
+                  "fr/apple-health-integration",
+                  "fr/health-connect-integration",
+                  "fr/strava-integration",
+                  "fr/fitbit-integration",
+                  "fr/rescue-time-integration",
+                  "fr/screen-time-integration"
+                ]
+              },
+              {
+                "group": "Habitify MCP et IA",
+                "pages": [
+                  "fr/habitify-mcp",
+                  "fr/habi-ai",
+                  "fr/siri-ai"
+                ]
+              },
+              {
+                "group": "Formules et facturation",
+                "pages": [
+                  "fr/plans",
+                  "fr/billings",
+                  "fr/habitify-family",
+                  "fr/habitify-team",
+                  "fr/habitify-student"
+                ]
+              },
+              {
+                "group": "Compte et données",
+                "pages": [
+                  "fr/manage-account",
+                  "fr/manage-data"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },

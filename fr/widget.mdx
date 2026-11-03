@@ -1,0 +1,236 @@
+---
+title: "Widget"
+sidebarTitle: "Widget"
+---
+
+Les widgets Habitify offrent une vue rapide mais complète de votre progression directement depuis l’**écran d’accueil** ou l’écran verrouillé, sans ouvrir l’application.
+
+Ce guide présente tous les widgets disponibles.
+
+## Types de widgets
+
+<Tabs>
+  <Tab title=" iOS">
+    ## Widgets de l’écran d’accueil
+
+    ### **Chaînes de progression**
+
+    ![Progress Chain Widget I OS](/images/Progress-Chain-Widget-iOS.png "Progress Chain Widget I OS")
+
+    Ce widget affiche la liste des habitudes et leur progression sous forme de carte thermique.
+
+    Les périodes disponibles sont : _7, 14, 21 ou 30 derniers jours_, _Cette semaine_ et _Ce mois-ci_. La liste peut contenir toutes les habitudes, celles du moment actuel de la journée ou celles d’un espace personnalisé.
+
+    Trois tailles sont disponibles : petite et moyenne, jusqu’à 3 habitudes ; grande, jusqu’à 8.
+
+    ### Série actuelle
+
+    ![Current Streak Widget I OS](/images/Current-Streak-Widget-iOS.png "Current Streak Widget I OS")
+
+    Ce widget motivant affiche la série actuelle d’une bonne habitude choisie. Il est uniquement disponible en petite taille.
+
+    ### Grille de régularité
+
+    ![Consistency Grid Widget I OS](/images/Consistency-Grid-Widget-iOS.png "Consistency Grid Widget I OS")
+
+    Elle affiche la carte thermique d’une bonne habitude : 96 derniers jours en petite taille et 216 en taille moyenne.
+
+    ### **Habitudes du jour**
+
+    ![Today Habits Widget I OS](/images/Today-Habits-Widget-iOS.png "Today Habits Widget I OS")
+
+    Ce widget compact affiche les bonnes habitudes prévues aujourd’hui, avec leur série actuelle. Vous pouvez choisir toutes les habitudes, celles du moment actuel de la journée ou celles d’un espace. Leur ordre suit celui défini dans Paramètres → Toutes les habitudes.
+
+    Trois tailles sont disponibles : petite et moyenne, jusqu’à 3 habitudes ; grande, jusqu’à 8.
+
+    ### Toucher pour suivre
+
+    ![Tap To Track Widget I OS](/images/Tap-to-Track-widget-iOS.png "Tap To Track Widget I OS")
+
+    Ce widget permet de modifier le statut d’une habitude depuis l’écran d’accueil. Ses deux boutons peuvent être configurés pour marquer l’habitude comme terminée, ignorée ou en échec, ou pour lancer le minuteur. Il est disponible en petite taille.
+
+    ### Jours écoulés
+
+    ![Days Since Widget I OS](/images/Days-Since-Widget-iOS.png "Days Since Widget I OS")
+
+    Il suit une mauvaise habitude que vous souhaitez abandonner et affiche la série obtenue en l’évitant. Aucun bouton d’enregistrement n’est proposé, car nous ne voulons naturellement pas encourager cette action. Petite taille uniquement.
+
+    ### Progression de l’objectif
+
+    ![Goal Progress Widget I OS](/images/Goal-Progress-Widget-iOS.png "Goal Progress Widget I OS")
+
+    Il affiche la barre de progression d’une bonne habitude dotée d’un objectif hebdomadaire, mensuel ou annuel. Petite taille uniquement.
+
+    ### Suivi de la limite
+
+    Il représente la progression d’une mauvaise habitude à limiter. Une ligne rouge verticale indique la limite à ne pas dépasser ; la valeur excédentaire apparaît en rouge. Petite taille uniquement.
+
+    ![Limit Tracker Widget I OS](/images/Limit-Tracker-Widget-iOS.png "Limit Tracker Widget I OS")
+
+    ## Widgets de l’écran verrouillé
+
+    Depuis iOS 16, Habitify propose sur l’écran verrouillé les widgets Habitudes du jour, Grille de régularité et Toucher pour suivre.
+
+    **Pour en ajouter un :**
+
+    1. Maintenez l’écran verrouillé jusqu’à l’apparition de **Personnaliser**.
+    2. Touchez **Personnaliser**.
+    3. Sélectionnez **Écran verrouillé**.
+    4. Touchez la zone des widgets.
+    5. Recherchez **Habitify** et choisissez le widget.
+    6. Touchez à l’extérieur pour enregistrer.
+
+    ![Lockscreen Widget I OS](/images/Lockscreen-widget-iOS.png "Lockscreen Widget I OS")
+
+    ## Enregistrer depuis les widgets
+
+    Toucher une habitude ouvre le Journal et la met en évidence pour faciliter son enregistrement.
+
+    Avec **Toucher pour suivre** :
+
+    - les boutons Terminer, Ignorer et Échec enregistrent directement le statut sur l’écran d’accueil ;
+    - le bouton Minuteur ouvre immédiatement sa session dans l’application.
+
+    ## Redimensionnement : possibilités et limites
+
+    iOS ne permet pas de tirer les coins d’un widget. Vous pouvez seulement choisir parmi ses tailles prédéfinies.
+
+    ### **Changer de taille**
+
+    1. Maintenez le widget.
+    2. Si plusieurs tailles sont disponibles, choisissez-en une dans le menu contextuel.
+
+    ### **Limite**
+
+    Un widget proposé dans une seule taille peut être réduit en icône d’application, mais vous devrez le supprimer puis l’ajouter de nouveau pour revenir au widget.
+
+    ## FAQ
+
+    <Accordion title="**Je ne trouve pas les widgets Habitify. Que faire ?**">
+      Vérifiez d’abord les mises à jour : ouvrez l’**App Store**, touchez votre profil et mettez Habitify à jour si nécessaire.
+
+      Vérifiez ensuite qu’aucune restriction ne les masque : **Réglages → Temps d’écran → Contenu et confidentialité**, puis autorisez les widgets.
+
+      Redémarrez l’appareil : maintenez le bouton d’alimentation, éteignez-le, puis rallumez-le jusqu’à l’apparition du logo Apple.
+
+      Enfin, réinstallez Habitify : maintenez son icône, choisissez **Supprimer l’app**, puis téléchargez-la de nouveau depuis l’App Store.
+    </Accordion>
+
+    <Accordion title="**Le widget ne reflète pas les modifications de l’habitude. Que faire ?**">
+      Les délais viennent principalement de l’optimisation agressive de la batterie et du fait qu’un widget fonctionne comme un mini-processus distinct devant communiquer avec l’application principale.
+
+      1. **Ouvrez Habitify** et laissez-le au premier plan pendant 30 à 60 secondes.
+      2. **Retirez puis ajoutez de nouveau le widget** pour recharger sa configuration.
+      3. **Redémarrez l’appareil** pour éliminer les erreurs temporaires.
+
+      iOS met les widgets à jour selon son propre calendrier. Pour forcer l’actualisation :
+
+      - maintenez le widget, touchez **Modifier le widget**, changez temporairement sa source — par exemple Toutes les habitudes vers un Espace — puis revenez à la source voulue ;
+      - ouvrez **Réglages → Général → Actualisation en arrière-plan** et activez-la pour Habitify.
+    </Accordion>
+
+    <Accordion title="**Pourquoi les mauvaises habitudes n’apparaissent-elles pas dans certains widgets ?**">
+      Elles ne sont pas prises en charge dans Habitudes du jour ni Chaînes de progression afin de garder votre liste positive et orientée vers l’action.
+
+      1. **La liste du jour sert à agir.** Une mauvaise habitude comme « Ne pas fumer » parmi des choses à faire serait contre-productive : l’objectif est de l’éviter, pas de vous la rappeler.
+      2. **La chaîne célèbre les réussites.** Une mauvaise habitude réussit par l’inaction ; elle afficherait surtout des cases vides ou d’échec, peu motivantes au quotidien.
+
+      Ces widgets restent donc centrés sur les bonnes habitudes.
+    </Accordion>
+
+    <Accordion title="**Pourquoi mon widget disparaît-il lorsque l’iPhone est verrouillé ?**">
+      Il s’agit d’une protection de confidentialité d’iOS. Pour garder son contenu visible :
+
+      1. Ouvrez **Réglages**.
+      2. Touchez **Face ID et code** ou **Touch ID et code**.
+      3. Saisissez votre code.
+      4. Accédez à **Autoriser l’accès en mode verrouillé**.
+      5. Activez **Widgets de l’écran verrouillé** ; sur les anciennes versions, l’option peut s’appeler **Vue Aujourd’hui et recherche**.
+    </Accordion>
+
+    <br />
+  </Tab>
+  <Tab title="🤖 Android">
+    ## Widgets de l’écran d’accueil
+
+    ### **Grille de régularité**
+
+    Elle représente la carte thermique de progression d’une bonne habitude. La quantité d’historique dépend de la taille choisie.
+
+    ![Consistency Grid Widget Android](/images/Consistency-Grid-widget-Android.png "Consistency Grid Widget Android")
+
+    ### **Jours écoulés**
+
+    Ce widget suit une mauvaise habitude à abandonner et affiche la série obtenue en l’évitant. Aucun bouton d’enregistrement n’est proposé afin de ne pas encourager l’action.
+
+    ![Days Since Widget Android](/images/Days-Since-Widget-Android.png "Days Since Widget Android")
+
+    ### **Suivi de l’objectif**
+
+    Il suit un objectif hebdomadaire, mensuel ou annuel, qu’il s’agisse d’une bonne habitude ou d’une mauvaise habitude à limiter.
+
+    - Pour une bonne habitude, il montre la progression vers l’objectif.
+
+    ![Goal Progress Widget Android](/images/Goal-progress-widget-Android.png "Goal Progress Widget Android")
+
+    - Pour une mauvaise habitude, une ligne rouge marque la limite et l’excédent apparaît en rouge.
+
+    ![Limit Tracker Widget Android](/images/Limit-Tracker-Widget-Android.png "Limit Tracker Widget Android")
+
+    ### Série actuelle
+
+    Ce widget motivant affiche la série actuelle de l’habitude choisie.
+
+    ![Current Streak Widget Android](/images/Current-Streak-Widget-Android.png "Current Streak Widget Android")
+
+    ### Habitudes du jour
+
+    Cette liste compacte affiche les bonnes habitudes prévues aujourd’hui, avec leur série. Vous pouvez montrer toutes les habitudes ou celles d’un espace. Leur ordre suit celui du Journal.
+
+    Lorsqu’une habitude est terminée, sa série est mise à jour et elle descend en bas de la liste pour donner la priorité aux autres.
+
+    ![Today Habits Widget Android](/images/Today-habits-widget-Android.png "Today Habits Widget Android")
+
+    ## Enregistrer depuis les widgets
+
+    Toucher une habitude ouvre le Journal et fait défiler jusqu’à elle pour faciliter l’enregistrement.
+
+    ## **Redimensionnement : possibilités et limites**
+
+    Android permet de redimensionner librement la plupart des widgets.
+
+    ### **Comment faire**
+
+    1. Placez un widget Habitify sur l’écran d’accueil.
+    2. **Maintenez-le** jusqu’à l’apparition des poignées.
+    3. **Faites glisser les poignées** jusqu’à la taille souhaitée.
+    4. Le contenu s’adapte automatiquement.
+
+    ### **Limite**
+
+    Le lanceur propre au fabricant de l’appareil peut modifier légèrement le comportement de redimensionnement.
+
+    ## FAQ
+
+    <Accordion title="**Les widgets ne mettent pas la progression à jour. Que faire ?**">
+      1. **Ouvrez Habitify** et laissez-le au premier plan pendant 30 à 60 secondes.
+      2. **Retirez puis ajoutez de nouveau le widget**.
+      3. **Redémarrez l’appareil**.
+
+      Sur Android, le problème vient presque toujours de l’optimisation de la batterie :
+
+      - Dans **Paramètres → Applications → Habitify → Batterie**, passez de « Optimisé » à **Sans restriction**.
+      - Sur Xiaomi, OnePlus ou Oppo, ouvrez les applications récentes, maintenez l’aperçu de Habitify et touchez l’**icône de verrouillage**.
+      - Dans les paramètres, recherchez « Démarrage automatique » et autorisez Habitify.
+    </Accordion>
+
+    <Accordion title="**Pourquoi mes mauvaises habitudes n’apparaissent-elles pas dans certains widgets ?**">
+      Elles ne sont pas prises en charge dans Habitudes du jour afin de garder la liste positive et orientée vers l’action.
+
+      1. **La liste du jour sert à agir.** « Ne pas fumer » parmi les choses à faire serait contre-productif : l’objectif est d’éviter l’habitude.
+      2. **La chaîne célèbre les réussites.** L’inaction propre aux mauvaises habitudes produirait des cases vides ou d’échec peu motivantes.
+
+      Les widgets concernés restent donc centrés sur les bonnes habitudes.
+    </Accordion>
+  </Tab>
+</Tabs>
