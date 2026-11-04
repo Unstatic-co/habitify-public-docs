@@ -1,0 +1,94 @@
+---
+title: "Tags NFC"
+sidebarTitle: "Tags NFC"
+---
+
+Tags NFC, sigla de Near Field Communication, são pequenos adesivos físicos e acessíveis que podem ser colocados em qualquer lugar. O Habitify pode usá-los como um acionador físico para seus hábitos. Em vez de desbloquear o telefone, abrir o aplicativo e localizar o hábito correto, basta aproximar o telefone da tag para fazer o check-in.
+
+A ideia é criar pontos de contato reais no ambiente e conectá-los diretamente aos hábitos, transformando o espaço ao seu redor em uma extensão do sistema. Uma tag na bolsa de academia pode acionar “Treino”; outra na estante, “Leitura”; e uma ao lado da cama, “Dormir”. O hábito passa a fazer parte do seu caminho durante o dia, em vez de depender da lembrança de abrir o aplicativo.
+
+<Tabs>
+  <Tab title=" iOS">
+    <iframe src="https://drive.google.com/file/d/1nVj2AURiJOVwidDNkoG5qnwegAN5mBdv/preview" width="640" height="360" />
+
+    ## Configurar uma nova integração entre NFC e hábito
+
+    1. No Habitify, acesse **Settings**.
+    2. Em **Integrations**, toque em **NFC**.
+    3. Na parte inferior da tela NFC, toque em **Scan new NFC tag**.
+    4. Aproxime o telefone da tag NFC. <br />_Pesquise na internet a localização do leitor NFC do seu modelo. Em geral, ele fica perto da câmera._
+    5. Depois da leitura:
+       1. Em _When NFC Tag Tapped_, escolha a ação que o aplicativo executará.
+       2. Em _Habit_, escolha um hábito.
+    6. Por fim, toque em **Save**.
+
+    ### Ações compatíveis
+
+    - **Mark as Complete**: leia a tag NFC para concluir um hábito.
+    - **Mark as Skipped**: leia a tag NFC para marcar o hábito como ignorado no dia atual.
+    - **Mark as Failed**: leia a tag NFC para marcar o hábito como falho no dia atual.
+    - **Log a progress value**: leia a tag NFC para registrar um valor de progresso predefinido.
+    - **Ask me**: leia a tag NFC e escolha a ação que será executada.
+
+    ## Fazer check-in com uma tag NFC
+
+    Usar uma tag NFC programada é simples:
+
+    - Leia a tag com o telefone e aguarde uma notificação push.
+    - Toque na notificação para abrir o aplicativo e executar a ação configurada.
+
+    <Note>
+      **Mantenha o Habitify em execução em segundo plano para ter a melhor experiência.**
+
+      Se o aplicativo estiver completamente fechado, ler a tag NFC e tocar na notificação abrirá apenas Journal, em vez de executar a ação pretendida de forma direta.
+    </Note>
+  </Tab>
+  <Tab title="🤖 Android">
+    <iframe src="https://drive.google.com/file/d/19VU6fi_9gwu4LuRt-mk3cxcaVvOGRyy8/preview" width="640" height="360" />
+
+    ## **Configurar uma nova integração entre NFC e hábito**
+
+    1. No Habitify, acesse **Settings**.
+    2. Em **Automation**, toque em **NFC**.
+    3. Toque em **Scan new NFC tag**.
+    4. Aproxime o telefone da tag NFC. <br />_Pesquise na internet a localização do leitor NFC do seu modelo. Em geral, ele fica perto da câmera._
+    5. Depois da leitura, configure:
+       1. Em _On NFC Tapped_, escolha a ação que o aplicativo executará.
+       2. Em _Habit_, escolha o hábito no qual a ação será executada.
+    6. Por fim, toque em **Save** no canto superior direito.
+
+    ### Ações compatíveis
+
+    - **Mark as Complete**: leia a tag NFC para concluir um hábito.
+    - **Mark as Skipped**: leia a tag NFC para marcar o hábito como ignorado no dia atual.
+    - **Mark as Failed**: leia a tag NFC para marcar o hábito como falho no dia atual.
+    - **Start Timer**: leia a tag NFC para iniciar uma sessão de timer de um hábito.
+    - **Log a progress value**: leia a tag NFC para registrar um valor de progresso predefinido.
+    - **Ask me**: leia a tag NFC e escolha a ação que será executada.
+
+    ## Fazer check-in com uma tag NFC
+
+    Usar uma tag NFC programada é simples:
+
+    - Leia a tag com o telefone até que uma notificação push apareça.
+    - Toque na notificação para abrir o aplicativo e permitir que ele execute as etapas configuradas.
+
+    <Note>
+      **Mantenha o Habitify em execução em segundo plano para ter a melhor experiência.** <br /><br />Se o aplicativo estiver completamente fechado, ler a tag NFC e tocar na notificação abrirá apenas Journal, em vez de executar a ação pretendida de forma direta.
+    </Note>
+  </Tab>
+</Tabs>
+
+## Perguntas frequentes
+
+<Accordion title="**Quantos hábitos podem ser vinculados a uma tag NFC?**">
+  Apenas um.
+</Accordion>
+
+<Accordion title="**Quais tipos de tag NFC são compatíveis?**">
+  Recomendamos tags NTAG213, NTA215 ou NTA216.
+</Accordion>
+
+<Accordion title="**Qual é o espaço mínimo de armazenamento necessário em uma tag NFC?**">
+  A vinculação de um hábito a uma tag NFC exige menos de 100 bytes de armazenamento.
+</Accordion>

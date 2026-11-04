@@ -433,6 +433,123 @@
             ]
           }
         ]
+      },
+      {
+        "language": "pt-BR",
+        "hidden": true,
+        "tabs": [
+          {
+            "tab": "Documentação",
+            "icon": "life-ring",
+            "pages": [
+              {
+                "group": "Primeiros passos",
+                "pages": [
+                  "pt-BR/habitify-introduction",
+                  "pt-BR/habitify-quick-start",
+                  "pt-BR/glossary"
+                ]
+              },
+              {
+                "group": "Recursos",
+                "pages": [
+                  "pt-BR/good-habits",
+                  "pt-BR/bad-habits",
+                  "pt-BR/journal",
+                  "pt-BR/single-progress",
+                  "pt-BR/overall-progress",
+                  "pt-BR/reflection",
+                  "pt-BR/circle",
+                  "pt-BR/challenge"
+                ]
+              },
+              {
+                "group": "Ferramentas",
+                "pages": [
+                  "pt-BR/area",
+                  "pt-BR/reminder",
+                  "pt-BR/habit-gate",
+                  "pt-BR/note",
+                  "pt-BR/widget",
+                  "pt-BR/task",
+                  "pt-BR/timer"
+                ]
+              },
+              {
+                "group": "Configurações do aplicativo",
+                "pages": [
+                  "pt-BR/off-mode",
+                  "pt-BR/app-behavior"
+                ]
+              },
+              {
+                "group": "Automação",
+                "pages": [
+                  "pt-BR/automation-status-update",
+                  "pt-BR/ios-shortcuts",
+                  "pt-BR/nfc-tags",
+                  "pt-BR/zapier-ifttt"
+                ]
+              },
+              {
+                "group": "Integrações",
+                "pages": [
+                  "pt-BR/google-calendar-integration",
+                  "pt-BR/outlook-calendar-integration",
+                  "pt-BR/apple-calendar-integration",
+                  "pt-BR/apple-health-integration",
+                  "pt-BR/health-connect-integration",
+                  "pt-BR/strava-integration",
+                  "pt-BR/fitbit-integration",
+                  "pt-BR/rescue-time-integration",
+                  "pt-BR/screen-time-integration"
+                ]
+              },
+              {
+                "group": "Habitify MCP e IA",
+                "pages": [
+                  "pt-BR/habitify-mcp",
+                  "pt-BR/habi-ai",
+                  "pt-BR/siri-ai"
+                ]
+              },
+              {
+                "group": "Planos e cobrança",
+                "pages": [
+                  "pt-BR/plans",
+                  "pt-BR/billings",
+                  "pt-BR/habitify-family",
+                  "pt-BR/habitify-team",
+                  "pt-BR/habitify-student"
+                ]
+              },
+              {
+                "group": "Conta e dados",
+                "pages": [
+                  "pt-BR/manage-account",
+                  "pt-BR/manage-data"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Documentação da API",
+            "icon": "rectangle-api",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
+          },
+          {
+            "tab": "Registro de alterações",
+            "icon": "bullhorn",
+            "href": "https://feedback.habitify.me/changelog"
+          },
+          {
+            "tab": "Central de vídeos",
+            "hidden": true,
+            "pages": [
+              "pt-BR/glossary"
+            ]
+          }
+        ]
       }
     ]
   },
