@@ -1,0 +1,526 @@
+---
+title: "Progreso individual"
+sidebarTitle: "Progreso individual"
+---
+
+Single Progress es la vista detallada de un hábito concreto, **que puedes abrir tocándolo desde Journal o Progress**. Aquí puedes consultar todo el historial de una racha: el calendario, un gráfico de rendimiento y las cifras exactas de tu constancia.
+
+Existe una vista de progreso individual para los buenos hábitos y otra para los malos. Este artículo te guía por ambas.
+
+<Tabs>
+  <Tab title="iOS">
+    ## Progreso individual de un buen hábito
+
+    ### Racha actual
+
+    ![Racha actual de un buen hábito en iOS](/images/CurrentStreak-GoodHabitSingle-iOS.png "Racha actual de un buen hábito en iOS")
+
+    Lo primero que verás en el progreso individual de un buen hábito es la racha actual que has mantenido.
+
+    La forma en que aumenta depende del período del objetivo:
+
+    - **Objetivo diario**: la racha aumenta al completar el hábito en cada día programado. Debajo verás el progreso de los últimos 7 días.
+    - **Objetivo semanal**: aumenta al cumplir el objetivo semanal. Debajo verás el progreso de las últimas 7 semanas o desde la semana de inicio.
+    - **Objetivo mensual**: aumenta al cumplir el objetivo mensual. Debajo verás el progreso de los últimos 7 meses o desde el mes de inicio.
+    - **Objetivo anual**: aumenta al cumplir el objetivo anual. Debajo verás el progreso de los últimos 7 años o desde el año de inicio.
+
+    ### **Barra de progreso hacia la condición de finalización**
+
+    Si el hábito tiene una End Condition, en esta vista aparece una barra que permite seguir el recorrido hasta el objetivo final.
+
+    La barra muestra visualmente cuánto has avanzado y cuánto te queda por conseguir.
+
+    ### Indicadores principales
+
+    ![Indicadores principales de un buen hábito en iOS](/images/CoreIndex-GoodHabitSingle-iOS.png "Indicadores principales de un buen hábito en iOS")
+
+    Hay cuatro indicadores:
+
+    - **Success**: número de días del mes en los que alcanzaste el objetivo del hábito.
+    - **Failed**: número de días del mes que marcaste como fallidos.
+    - **Skipped**: número de días del mes que marcaste como omitidos.
+    - **Total**: cantidad total o número de veces que completaste el hábito durante el mes, expresado en la misma unidad del objetivo, como minutos.
+
+    Debajo de cada cifra puedes comparar el resultado con el intervalo anterior; por ejemplo, este mes frente al mes pasado o este año frente al anterior.
+
+    <Note>
+      **_¿Cómo se calcula “Success”?_**
+
+      - En un hábito diario, es el número de días en que completas el objetivo.
+      - En un hábito con objetivo semanal, cada semana completada cuenta como 7 días exitosos, menos los días marcados como Skip o Fail.
+      - En un hábito con objetivo mensual, al completar el objetivo del mes cuentan todos sus días, menos los marcados como Skip o Fail.
+      - En un hábito con objetivo anual, al completar el objetivo del año cuentan todos sus días, menos los marcados como Skip o Fail.
+    </Note>
+
+    ### Progreso en el calendario
+
+    ![Calendario de un buen hábito en iOS](/images/CalendarView-GoodHabitSingle-iOS.png "Calendario de un buen hábito en iOS")
+
+    El calendario representa visualmente el progreso mensual. Cada día utiliza un símbolo distinto según el estado registrado:
+
+    - **Círculo de color sólido**: día marcado como Completed, o con algún progreso si el objetivo es semanal, mensual o anual.
+    - **Círculo incompleto**: día en el que avanzaste parcialmente en un objetivo diario.
+    - **Flecha hacia la derecha**: día marcado como Skipped.
+    - **Cruz negra**: día marcado como Failed.
+
+    Desliza el calendario hacia la derecha para ver el mes anterior y hacia la izquierda para avanzar hasta el mes actual.
+
+    ### Historial de rachas
+
+    Si el objetivo es diario, esta sección muestra todas las rachas conseguidas, desde la primera hasta la más reciente.
+
+    ![Rachas diarias de un buen hábito en iOS](/images/StreakDaily-GoodHabitSingle-iOS.png "Rachas diarias de un buen hábito en iOS")
+
+    Si el objetivo es semanal, mensual o anual, muestra el porcentaje de cumplimiento de cada período desde el inicial.
+
+    ![Rachas por período de un buen hábito en iOS](/images/StreakPeriod-GoodHabitSingle-iOS.png "Rachas por período de un buen hábito en iOS")
+
+    ### Gráfico de columnas de tendencia
+
+    ![Gráfico de tendencia de un buen hábito en iOS](/images/TrendChart-GoodHabitSingle-iOS.png "Gráfico de tendencia de un buen hábito en iOS")
+
+    El gráfico ofrece una representación clara del rendimiento del hábito a lo largo del tiempo. En su parte inferior puedes cambiar entre **Day**, **Week**, **Month** y **Year**, desde una instantánea diaria hasta una tendencia de largo plazo.
+
+    Al seleccionar un período verás:
+
+    - **Tendencia de rendimiento:** cada columna muestra el total conseguido en ese período, como cada día de la semana o cada mes del año.
+    - **Detalles exactos:** mantén pulsada una columna para consultar la cifra de ese período concreto.
+    - **Promedio:** el gráfico calcula también el promedio conseguido por período desde que comenzaste el hábito.
+
+    También aparece una **línea roja discontinua** que representa el objetivo del hábito y permite comprobar al instante cómo vas.
+
+    _Por ejemplo, si el objetivo es caminar 2000 metros al día, la línea roja del gráfico diario estará en 2000 m. Así puedes ver rápidamente qué días alcanzaste o superaste la meta._
+
+    ### Gráfico lineal de constancia
+
+    ![Constancia de un buen hábito en iOS](/images/Consistency-GoodHabitSingle-iOS.png "Constancia de un buen hábito en iOS")
+
+    En los hábitos con objetivo diario encontrarás una métrica llamada **Consistency Index**. A diferencia de una racha sencilla, ofrece una visión más matizada del rendimiento durante el intervalo seleccionado: 30, 60, 90 o 180 días.
+
+    Mientras que una racha es una medida de todo o nada, el índice de constancia recompensa el **esfuerzo y la resiliencia**. Aunque rompas una racha, aún puedes conservar un nivel alto de constancia. Es una forma más flexible y realista de evaluar tu mejora personal a largo plazo.
+
+    Este ejemplo muestra cómo se calcula:
+
+    <Info>
+      **Para verlo con claridad, usemos un período sencillo de 3 días.**
+
+      **Día 1:** completas el hábito.
+
+      - **Valor diario:** 100 %
+      - **Constancia diaria del día 1:** 100 % (promedio de los últimos 3 días, aunque solo existe el día 1)
+
+      **Día 2:** completas la mitad del objetivo.
+
+      - **Valor diario:** 50 %
+      - **Constancia diaria del día 2:** (100 % [día 1] + 50 % [día 2]) / 2 = **75 %**
+
+      **Día 3:** el hábito falla.
+
+      - **Valor diario:** 0 %
+      - **Constancia diaria del día 3:** (100 % [día 1] + 50 % [día 2] + 0 % [día 3]) / 3 = **50 %**
+
+      **Cálculo final:** la **constancia general** de este período de 3 días es el promedio de las puntuaciones diarias: `(100 % + 75 % + 50 %) / 3 = 75 %`.
+    </Info>
+
+    En el gráfico de constancia verás una **línea discontinua** que representa tu **rendimiento anterior** y permite saber fácilmente si la tendencia actual es mejor o peor.
+
+    El período de comparación cambia según el intervalo seleccionado:
+
+    - En la vista de los últimos **30D**, la línea muestra el promedio de los **60 días anteriores**.
+    - En la vista de los últimos **60D**, muestra el promedio de los **120 días anteriores**.
+    - En la vista de los últimos **90D**, muestra el promedio de los **180 días anteriores**.
+
+    Para determinar si la constancia sube o baja, observa la **línea continua** y su relación con la **línea discontinua**.
+
+    ## Progreso individual de un mal hábito
+
+    ### Racha actual
+
+    ![Racha actual de un mal hábito en iOS](/images/CurrentStreak-BadHabitSingle-iOS.png "Racha actual de un mal hábito en iOS")
+
+    Lo primero que verás en el progreso individual de un mal hábito es la racha actual que has mantenido.
+
+    **En hábitos con objetivo de limitar**, la forma de aumentarla depende del período:
+
+    - Límite diario: aumenta cuando el día se marca como Succeeded.
+    - Límite semanal: aumenta cuando mantienes la conducta por debajo del límite semanal.
+    - Límite mensual: aumenta cuando mantienes la conducta por debajo del límite mensual.
+    - Límite anual: aumenta cuando mantienes la conducta por debajo del límite anual.
+
+    **En hábitos con objetivo de abandonar**, aumenta cuando evitas la conducta durante el día y este se marca como Succeeded.
+
+    ### Indicadores principales
+
+    ![Indicadores principales de un mal hábito en iOS](/images/CoreIndex-BadHabitSingle-iOS.png "Indicadores principales de un mal hábito en iOS")
+
+    Una cuadrícula presenta cifras concretas sobre tus logros y evolución:
+
+    - **Success**: número total de veces que no realizaste el mal hábito o te mantuviste dentro del límite durante el intervalo seleccionado.
+    - **Failed**: número total de días fallidos del intervalo, en los que superaste el límite.
+    - **Zero-Day (solo para objetivos de límite)**: número de días en los que no realizaste el hábito ninguna vez.
+    - **Total (solo para objetivos de límite)**: cantidad total que refleja cuánto realizaste el mal hábito. Si la unidad es «mins», por ejemplo, muestra el total de minutos dedicados.
+
+    En los malos hábitos con límite semanal, mensual o anual, una vez superado el límite y fallado el hábito, el día actual y todos los restantes del período cuentan como **Failed**.
+
+    ### Progreso en el calendario
+
+    ![Calendario de un mal hábito en iOS](/images/Calendar-BadHabitSingle-iOS.png "Calendario de un mal hábito en iOS")
+
+    El calendario representa visualmente el progreso mensual. Cada día utiliza un símbolo según su estado:
+
+    - **Círculo de color sólido**: día marcado como Succeeded.
+    - **Flecha hacia la derecha**: día marcado como Skipped.
+    - **Cruz negra**: día marcado como Failed.
+
+    Desliza el calendario hacia la derecha para ver el mes anterior y hacia la izquierda para avanzar hasta el mes actual.
+
+    ### Gráfico de columnas de tendencia
+
+    ![Gráfico de tendencia de un mal hábito en iOS](/images/TrendChart-BadHabitSingle-iOS.png "Gráfico de tendencia de un mal hábito en iOS")
+
+    Este gráfico ofrece información sobre tu rendimiento diario, semanal, mensual y anual. También muestra el valor medio de progreso de los malos hábitos desde que comenzaste a registrarlos.
+
+    Toca una columna concreta para consultar la cantidad exacta del período seleccionado: fecha, semana, mes o año.
+
+    ### Historial de rachas
+
+    Si el objetivo es abandonar o establecer un límite diario, esta sección muestra todas las rachas conseguidas, desde la primera hasta la más reciente.
+
+    ![Rachas diarias de un mal hábito en iOS](/images/StreakDaily-BadHabitSingle-iOS-1.png "Rachas diarias de un mal hábito en iOS")
+
+    Si el objetivo es limitar por semana, mes o año, muestra el valor de progreso registrado en cada período desde el inicial.
+
+    ![Rachas por período de un mal hábito en iOS](/images/StreakPeriod-BadHabitSingle-iOS.png "Rachas por período de un mal hábito en iOS")
+
+    ## Progreso individual en iPhone Duo
+
+    Cuando el iPhone Duo está plegado, o desplegado y en vertical, la vista Single Progress es igual que en un iPhone estándar.
+
+    **_Este breve vídeo muestra una vista previa del progreso individual de un hábito en iPhone Duo:_**
+
+    <iframe src="https://drive.google.com/file/d/1cW7vDzIvVgp8Muk33-xs1V5l7BFRziw3/preview" width="640" height="360" />
+
+    **La diferencia aparece al desplegar el dispositivo y colocarlo en horizontal.** El calendario muestra dos meses en paralelo: a la derecha, el seleccionado; a la izquierda, el anterior. Así puedes comparar el progreso reciente de un vistazo sin cambiar de mes repetidamente.
+
+    Los demás elementos se reorganizan para aprovechar el ancho adicional. Las tarjetas Success, Failed, Skipped y Total se distribuyen por la parte superior, y las demás secciones aparecen junto al calendario en vez de debajo, para mostrar más progreso en una sola pantalla.
+  </Tab>
+  <Tab title="Android">
+    ## Progreso individual de un buen hábito
+
+    ### Racha actual
+
+    ![Racha actual de un buen hábito en Android](/images/CurrentStreak-GoodHabitSingle-Android.png "Racha actual de un buen hábito en Android")
+
+    Lo primero que verás en el progreso individual de un buen hábito es la racha actual que has mantenido.
+
+    La forma en que aumenta depende del período del objetivo:
+
+    - **Objetivo diario**: la racha aumenta al completar el hábito en cada día programado. Debajo verás el progreso de los últimos 7 días.
+    - **Objetivo semanal**: aumenta al cumplir el objetivo semanal. Debajo verás el progreso de las últimas 7 semanas o desde la semana de inicio.
+    - **Objetivo mensual**: aumenta al cumplir el objetivo mensual. Debajo verás el progreso de los últimos 7 meses o desde el mes de inicio.
+    - **Objetivo anual**: aumenta al cumplir el objetivo anual. Debajo verás el progreso de los últimos 7 años o desde el año de inicio.
+
+    ### **Barra de progreso hacia la condición de finalización**
+
+    Si el hábito tiene una End Condition, en esta vista aparece una barra que permite seguir el recorrido hasta el objetivo final.
+
+    La barra muestra visualmente cuánto has avanzado y cuánto te queda por conseguir.
+
+    ### Indicadores principales
+
+    ![Indicadores principales de un buen hábito en Android](/images/CoreIndex-GoodHabitSingle-Android.png "Indicadores principales de un buen hábito en Android")
+
+    Hay cuatro indicadores:
+
+    - **Success**: número de días del mes en los que alcanzaste el objetivo del hábito.
+    - **Failed**: número de días del mes que marcaste como fallidos.
+    - **Skipped**: número de días del mes que marcaste como omitidos.
+    - **Total**: cantidad total o número de veces que completaste el hábito durante el mes, expresado en la misma unidad del objetivo, como minutos.
+
+    Debajo de cada cifra puedes comparar el resultado con el intervalo anterior; por ejemplo, este mes frente al mes pasado o este año frente al anterior.
+
+    <Note>
+      **_¿Cómo se calcula “Success”?_**
+
+      - En un hábito diario, es el número de días en que completas el objetivo.
+      - En un hábito con objetivo semanal, cada semana completada cuenta como 7 días exitosos, menos los días marcados como Skip o Fail.
+      - En un hábito con objetivo mensual, al completar el objetivo del mes cuentan todos sus días, menos los marcados como Skip o Fail.
+      - En un hábito con objetivo anual, al completar el objetivo del año cuentan todos sus días, menos los marcados como Skip o Fail.
+    </Note>
+
+    ### Progreso en el calendario
+
+    ![Calendario de un buen hábito en Android](/images/Calendar-GoodHabitSingle-Android.png "Calendario de un buen hábito en Android")
+
+    El calendario representa visualmente el progreso mensual. Cada día utiliza un símbolo distinto según el estado registrado:
+
+    - **Círculo de color sólido**: día marcado como Completed, o con algún progreso si el objetivo es semanal, mensual o anual.
+    - **Círculo incompleto**: día en el que avanzaste parcialmente en un objetivo diario.
+    - **Flecha hacia la derecha**: día marcado como Skipped.
+    - **Cruz negra**: día marcado como Failed.
+
+    Desliza el calendario hacia la derecha para ver el mes anterior y hacia la izquierda para avanzar hasta el mes actual.
+
+    ### Gráfico de columnas de tendencia
+
+    ![Gráfico de tendencia de un buen hábito en Android](/images/TrendChart-GoodHabitSingle-Android.png "Gráfico de tendencia de un buen hábito en Android")
+
+    El gráfico ofrece una representación clara del rendimiento del hábito a lo largo del tiempo. En su parte inferior puedes cambiar entre **Day**, **Week**, **Month** y **Year**, desde una instantánea diaria hasta una tendencia de largo plazo.
+
+    Al seleccionar un período verás:
+
+    - **Tendencia de rendimiento:** cada columna muestra el total conseguido en ese período, como cada día de la semana o cada mes del año.
+    - **Detalles exactos:** mantén pulsada una columna para consultar la cifra de ese período concreto.
+    - **Promedio:** el gráfico calcula también el promedio conseguido por período desde que comenzaste el hábito.
+
+    También aparece una **línea roja discontinua** que representa el objetivo del hábito y permite comprobar al instante cómo vas.
+
+    _Por ejemplo, si el objetivo es caminar 2000 metros al día, la línea roja de la vista Daily estará en 2000 m. Así puedes ver rápidamente qué días alcanzaste o superaste la meta._
+
+    ### Historial de rachas
+
+    Si el objetivo es diario, esta sección muestra todas las rachas conseguidas, desde la primera hasta la más reciente.
+
+    ![Rachas diarias de un buen hábito en Android](/images/StreaksDaily-GoodHabitSingle-Android.png "Rachas diarias de un buen hábito en Android")
+
+    Si el objetivo es semanal, mensual o anual, muestra el porcentaje de cumplimiento de cada período desde el inicial.
+
+    ![Rachas por período de un buen hábito en Android](/images/StreaksPeriod-GoodHabitSingle-Android.png "Rachas por período de un buen hábito en Android")
+
+    ### Gráfico lineal de constancia
+
+    En los hábitos con objetivo diario encontrarás una métrica llamada **Consistency Index**. A diferencia de una racha sencilla, ofrece una visión más matizada del rendimiento durante el intervalo seleccionado: 30, 60, 90 o 180 días.
+
+    ![Constancia de un buen hábito en Android](/images/Consistency-GoodHabitSingle-Android.png "Constancia de un buen hábito en Android")
+
+    Mientras que una racha es una medida de todo o nada, el índice de constancia recompensa el **esfuerzo y la resiliencia**. Aunque rompas una racha, aún puedes conservar un nivel alto de constancia. Es una forma más flexible y realista de evaluar tu mejora personal a largo plazo.
+
+    Este ejemplo muestra cómo se calcula:
+
+    <Info>
+      **Para verlo con claridad, usemos un período sencillo de 3 días.**
+
+      **Día 1:** completas el hábito.
+
+      - **Valor diario:** 100 %
+      - **Constancia diaria del día 1:** 100 % (promedio de los últimos 3 días, aunque solo existe el día 1)
+
+      **Día 2:** completas la mitad del objetivo.
+
+      - **Valor diario:** 50 %
+      - **Constancia diaria del día 2:** (100 % [día 1] + 50 % [día 2]) / 2 = **75 %**
+
+      **Día 3:** el hábito falla.
+
+      - **Valor diario:** 0 %
+      - **Constancia diaria del día 3:** (100 % [día 1] + 50 % [día 2] + 0 % [día 3]) / 3 = **50 %**
+
+      **Cálculo final:** la **constancia general** de este período de 3 días es el promedio de las puntuaciones diarias: `(100 % + 75 % + 50 %) / 3 = 75 %`.
+    </Info>
+
+    En el gráfico de constancia verás una **línea discontinua** que representa tu **rendimiento anterior** y permite saber fácilmente si la tendencia actual es mejor o peor.
+
+    El período de comparación cambia según el intervalo seleccionado:
+
+    - Al consultar los últimos **30 días**, la línea muestra el promedio de los **60 días anteriores**.
+    - Al consultar los últimos **60 días**, muestra el promedio de los **120 días anteriores**.
+    - Al consultar los últimos **90 días**, muestra el promedio de los **180 días anteriores**.
+
+    Para determinar si la constancia sube o baja, observa la **línea continua** y su relación con la **línea discontinua**.
+
+    ## Progreso individual de un mal hábito
+
+    ### Racha actual
+
+    ![Racha actual de un mal hábito en Android](/images/CurrentStreak-BadHabit-Android.png "Racha actual de un mal hábito en Android")
+
+    Lo primero que verás en el progreso individual de un mal hábito es la racha actual que has mantenido.
+
+    **En hábitos con objetivo de limitar**, la forma de aumentarla depende del período:
+
+    - Límite diario: aumenta cuando el día se marca como Succeeded.
+    - Límite semanal, mensual o anual: aumenta cuando mantienes la conducta por debajo del límite del período actual.
+
+    **En hábitos con objetivo de abandonar**, aumenta cuando evitas la conducta durante el día y este se marca como Succeeded.
+
+    ### Indicadores principales
+
+    ![Indicadores principales de un mal hábito en Android](/images/CoreIndex-BadHabitSingle-Android.png "Indicadores principales de un mal hábito en Android")
+
+    Una cuadrícula presenta cifras concretas sobre tus logros y evolución:
+
+    - **Progress Rate**: porcentaje del valor registrado respecto al límite.
+    - **Failed**: número total de días fallidos del intervalo, en los que superaste el límite.
+    - **Zero-Day (solo para objetivos de límite)**: número de días en los que no realizaste el hábito ninguna vez.
+    - **Total (solo para objetivos de límite)**: cantidad total que refleja cuánto realizaste el mal hábito. Si la unidad es «mins», por ejemplo, muestra el total de minutos dedicados.
+
+    En los malos hábitos con límite semanal, mensual o anual, una vez superado el límite y fallado el hábito, el día actual y todos los restantes del período cuentan como **Failed**.
+
+    ### Progreso en el calendario
+
+    ![Calendario de un mal hábito en Android](/images/Calendar-BadHabitSingle-Android.png "Calendario de un mal hábito en Android")
+
+    El calendario representa visualmente el progreso mensual. Cada día utiliza un símbolo según su estado:
+
+    - **Círculo de color sólido**: día marcado como Succeeded.
+    - **Flecha hacia la derecha**: día marcado como Skipped.
+    - **Cruz negra**: día marcado como Failed.
+
+    Desliza el calendario hacia la derecha para ver el mes anterior y hacia la izquierda para avanzar hasta el mes actual.
+
+    ### Gráfico de columnas de tendencia
+
+    ![Gráfico de tendencia de un mal hábito en Android](/images/TrendChart-BadHabitSingle-Android.png "Gráfico de tendencia de un mal hábito en Android")
+
+    Este gráfico ofrece información sobre tu rendimiento diario, semanal, mensual y anual. También muestra el valor medio de progreso de los malos hábitos desde que comenzaste a registrarlos.
+
+    Toca una columna concreta para consultar la cantidad exacta del período seleccionado: fecha, semana, mes o año.
+
+    ### Historial de rachas
+
+    Si el objetivo es abandonar o establecer un límite diario, esta sección muestra todas las rachas conseguidas, desde la primera hasta la más reciente.
+
+    ![Rachas diarias de un mal hábito en Android](/images/StreaksDaily-BadHabitSingle-Android.png "Rachas diarias de un mal hábito en Android")
+
+    Si el objetivo es limitar por semana, mes o año, muestra el progreso registrado en cada período desde el inicial.
+
+    ![Rachas por período de un mal hábito en Android](/images/StreaksPeriod-BadHabitSingle-Android.png "Rachas por período de un mal hábito en Android")
+  </Tab>
+  <Tab title="Website & Desktop">
+    ## Progreso individual de un buen hábito
+
+    ![Progreso individual de un buen hábito en web y escritorio](/images/GoodHabitSingle-Web&Desktop.png "Progreso individual de un buen hábito en web y escritorio")
+
+    Al leer esta vista de arriba abajo y de izquierda a derecha encontrarás:
+
+    - La racha actual del hábito.
+    - Los indicadores principales del mes que estás consultando.
+    - Los calendarios del mes actual y del anterior, uno junto al otro.
+    - El historial completo de todas las rachas conseguidas con el hábito.
+    - Un gráfico de columnas con la tendencia de tus logros por día, semana, mes o año.
+
+    ### Racha actual
+
+    Lo primero que aparece a la izquierda es la racha actual que has mantenido.
+
+    La forma en que aumenta depende del período del objetivo:
+
+    - **Objetivo diario**: la racha aumenta al completar el hábito en cada día programado. Debajo verás el progreso de los últimos 7 días.
+    - **Objetivo semanal**: aumenta al cumplir el objetivo semanal. Debajo verás el progreso de las últimas 7 semanas o desde la semana de inicio.
+    - **Objetivo mensual**: aumenta al cumplir el objetivo mensual. Debajo verás el progreso de los últimos 7 meses o desde el mes de inicio.
+    - **Objetivo anual**: aumenta al cumplir el objetivo anual. Debajo verás el progreso de los últimos 7 años o desde el año de inicio.
+
+    ### **Barra de progreso hacia la condición de finalización**
+
+    Si el hábito tiene una End Condition, en esta vista aparece una barra que permite seguir el recorrido hasta el objetivo final.
+
+    La barra muestra visualmente cuánto has avanzado y cuánto te queda por conseguir.
+
+    ### Indicadores principales
+
+    Hay cuatro indicadores:
+
+    - **Success**: número de días del mes en los que alcanzaste el objetivo del hábito.
+    - **Failed**: número de días del mes que marcaste como fallidos.
+    - **Skipped**: número de días del mes que marcaste como omitidos.
+    - **Total**: cantidad total o número de veces que completaste el hábito durante el mes, expresado en la misma unidad del objetivo, como minutos.
+
+    Debajo de cada cifra puedes comparar el resultado con el intervalo anterior; por ejemplo, este mes frente al mes pasado o este año frente al anterior.
+
+    <Note>
+      **_¿Cómo se calcula “Success”?_**
+
+      - En un hábito diario, es el número de días en que completas el objetivo.
+      - En un hábito con objetivo semanal, cada semana completada cuenta como 7 días exitosos, menos los días marcados como Skip o Fail.
+      - En un hábito con objetivo mensual, al completar el objetivo del mes cuentan todos sus días, menos los marcados como Skip o Fail.
+      - En un hábito con objetivo anual, al completar el objetivo del año cuentan todos sus días, menos los marcados como Skip o Fail.
+    </Note>
+
+    ### Progreso en el calendario
+
+    El calendario representa visualmente dos meses consecutivos, con el mes que estás consultando a la izquierda. Cada día utiliza un símbolo distinto según el estado registrado:
+
+    - **Círculo de color sólido**: día marcado como Completed, o con algún progreso si el objetivo es semanal, mensual o anual.
+    - **Círculo incompleto**: día en el que avanzaste parcialmente en un objetivo diario.
+    - **Flecha hacia la derecha**: día marcado como Skipped.
+    - **Cruz negra**: día marcado como Failed.
+
+    ### Historial de rachas
+
+    Si el objetivo es diario, esta sección muestra todas las rachas conseguidas, desde la primera hasta la más reciente.
+
+    Si el objetivo es semanal, mensual o anual, muestra el porcentaje de cumplimiento de cada período desde el inicial.
+
+    ### Gráfico de columnas de tendencia
+
+    El gráfico ofrece una representación clara del rendimiento del hábito a lo largo del tiempo. En su parte inferior puedes cambiar entre **Day**, **Week**, **Month** y **Year**, desde una instantánea diaria hasta una tendencia de largo plazo.
+
+    Al seleccionar un período verás:
+
+    - **Tendencia de rendimiento:** cada columna muestra el total conseguido en ese período, como cada día de la semana o cada mes del año.
+    - **Detalles exactos:** mantén pulsada una columna para consultar la cifra de ese período concreto.
+    - **Promedio:** el gráfico calcula también el promedio conseguido por período desde que comenzaste el hábito.
+
+    También aparece una **línea roja discontinua** que representa el objetivo del hábito y permite comprobar al instante cómo vas.
+
+    _Por ejemplo, si el objetivo es caminar 2000 metros al día, la línea roja del gráfico diario estará en 2000 m. Así puedes ver rápidamente qué días alcanzaste o superaste la meta._
+
+    ## Progreso individual de un mal hábito
+
+    ![Progreso individual de un mal hábito en web y escritorio](/images/BadHabitSingle-Web&Desktop.png "Progreso individual de un mal hábito en web y escritorio")
+
+    Al leer esta vista de arriba abajo y de izquierda a derecha encontrarás:
+
+    - La racha actual del hábito.
+    - Los indicadores principales del mes que estás consultando.
+    - Los calendarios del mes actual y del anterior, uno junto al otro.
+    - El historial completo de todas las rachas conseguidas con el hábito.
+    - Un gráfico de columnas con la tendencia de tu control por día, semana, mes o año.
+
+    ### Racha actual
+
+    Lo primero que verás es la racha actual que has mantenido.
+
+    **En hábitos con objetivo de limitar**, la forma de aumentarla depende del período:
+
+    - Límite diario: aumenta cuando el día se marca como Succeeded.
+    - Límite semanal: aumenta cuando mantienes la conducta por debajo del límite semanal.
+    - Límite mensual: aumenta cuando mantienes la conducta por debajo del límite mensual.
+    - Límite anual: aumenta cuando mantienes la conducta por debajo del límite anual.
+
+    **En hábitos con objetivo de abandonar**, aumenta cuando evitas la conducta durante el día y este se marca como Succeeded.
+
+    ### Indicadores principales
+
+    Una cuadrícula presenta cifras concretas sobre tus logros y evolución:
+
+    - **Success**: número total de veces que no realizaste el mal hábito o te mantuviste dentro del límite durante el intervalo seleccionado.
+    - **Failed**: número total de días fallidos del intervalo, en los que superaste el límite.
+    - **Zero-Day (solo para objetivos de límite)**: número de días en los que no realizaste el hábito ninguna vez.
+    - **Total (solo para objetivos de límite)**: cantidad total que refleja cuánto realizaste el mal hábito. Si la unidad es «mins», por ejemplo, muestra el total de minutos dedicados.
+
+    En los malos hábitos con límite semanal, mensual o anual, una vez superado el límite y fallado el hábito, el día actual y todos los restantes del período cuentan como **Failed**.
+
+    ### Progreso en el calendario
+
+    El calendario representa visualmente el progreso mensual. Cada día utiliza un símbolo según su estado:
+
+    - **Círculo de color sólido**: día marcado como Succeeded.
+    - **Flecha hacia la derecha**: día marcado como Skipped.
+    - **Cruz negra**: día marcado como Failed.
+
+    Desliza el calendario hacia la derecha para ver el mes anterior y hacia la izquierda para avanzar hasta el mes actual.
+
+    ### Gráfico de columnas de tendencia
+
+    Este gráfico ofrece información sobre tu rendimiento diario, semanal, mensual y anual. También muestra el valor medio de progreso de los malos hábitos desde que comenzaste a registrarlos.
+
+    Toca una columna concreta para consultar la cantidad exacta del período seleccionado: fecha, semana, mes o año.
+
+    ### Historial de rachas
+
+    Si el objetivo es abandonar o establecer un límite diario, esta sección muestra todas las rachas conseguidas, desde la primera hasta la más reciente.
+
+    Si el objetivo es limitar por semana, mes o año, muestra el valor de progreso registrado en cada período desde el inicial.
+  </Tab>
+</Tabs>

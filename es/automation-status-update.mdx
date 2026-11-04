@@ -1,0 +1,49 @@
+---
+title: "Actualización de estado"
+sidebarTitle: "Actualización de estado"
+---
+
+Hay días en los que no llegas a todo y un hábito que realmente no hiciste puede quedarse sin estado, a menos que recuerdes abrir la aplicación y marcarlo tú mismo.
+
+La **automatización de actualización de estado** te ayuda a cubrir ese vacío: a la hora que elijas, Habitify busca los hábitos sin progreso registrado y los marca automáticamente, de modo que tu seguimiento siga siendo fiel incluso los días en que olvides registrarte.
+
+## Notas importantes
+
+Conviene conocer algunas limitaciones para que la automatización se comporte como esperas:
+
+- **Solo se ejecuta para el día actual.** Evita configurar la hora de activación después de las 23:59; si se ejecuta pasada la medianoche, podría comprobar los hábitos del día siguiente.
+- **Solo se aplica a buenos hábitos con repetición diaria.** Los hábitos semanales, mensuales y los malos hábitos aún no están incluidos en esta automatización.
+- **Solo afecta a los hábitos cuyo progreso de hoy sigue siendo 0.** No se modifica ningún hábito en el que ya hayas registrado algo.
+- **Si cambia la zona horaria de tu dispositivo, ya sea manualmente o de forma automática durante un viaje**, vuelve al ajuste de actualización de estado y actualízalo (desactívalo y vuelve a activarlo) para que la hora de activación siga siendo correcta.
+- **Es una ayuda, no un sustituto.** Puedes actualizar manualmente el estado de cualquier hábito cuando quieras; esta automatización solo se ocupa de lo que no llegaste a registrar.
+
+## Cómo activar la automatización
+
+<Tabs>
+  <Tab title=" iOS">
+    ![Automatización en iOS](/images/Automation-iOS.png "Automatización en iOS")
+
+    1. En la aplicación _Habitify_, ve a **Settings**.
+    2. En _Integration_, abre la sección **Automation**.
+    3. En la pantalla de ajustes de _Automation_, activa el interruptor.
+    4. En _Scheduled Time_, pulsa la hora y cámbiala por la que prefieras.
+    5. En _Mark Unlogged Habits As_, elige el estado que deben recibir los hábitos no registrados:
+       - **Skipped**: decidiste no hacerlo por un motivo válido.
+       - **Failed**: no lo completaste y no había un motivo válido.
+    6. Cuando todo esté configurado, pulsa el botón く de la esquina superior derecha para guardar y volver al menú principal de _Settings_.
+  </Tab>
+  <Tab title="🤖 Android">
+    ![Actualización de estado en Android](/images/StatusUpdate-Android.png "Actualización de estado en Android")
+
+    1. En la aplicación _Habitify_, ve a **Settings**.
+    2. En **Automation**, abre **Status Update**.
+    3. En la pantalla de ajustes de _Status Update_:
+       - Pulsa **«Everyday on [time]»** y selecciona la hora a la que se ejecutará la automatización cada día.
+    4. En _Mark Habit As_, elige el estado que deben recibir los hábitos no registrados:
+       - **Skipped**: decidiste no hacerlo por un motivo válido.
+       - **Failed**: no lo completaste y no había un motivo válido.
+    5. En _Excluded Habits_, pulsa **«Add Excluded Habits...»** y selecciona los hábitos que quieres excluir de la automatización.
+    6. En _Status_, activa el interruptor de **Enabled**.
+    7. Cuando todo esté listo, pulsa **el botón ←** de la esquina superior derecha para guardar y volver.
+  </Tab>
+</Tabs>

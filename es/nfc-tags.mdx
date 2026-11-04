@@ -1,0 +1,94 @@
+---
+title: "Etiquetas NFC"
+sidebarTitle: "Etiquetas NFC"
+---
+
+Las etiquetas NFC (comunicación de campo cercano) son pequeñas pegatinas físicas y económicas que puedes colocar en cualquier lugar. Habitify puede utilizarlas como desencadenante físico de tus hábitos. En vez de desbloquear el teléfono, abrir la aplicación y buscar el hábito correcto, acercas el teléfono a una etiqueta y el registro se realiza por ti.
+
+La idea consiste en crear puntos de contacto físicos en tu entorno conectados directamente con tus hábitos, de modo que el espacio sea una extensión de tu sistema de hábitos. Una etiqueta en la bolsa del gimnasio puede activar «Entrenamiento»; otra en la estantería, «Leer»; y otra junto a la cama, «Dormir». El hábito se convierte en algo que encuentras durante el día, no en algo que debes recordar abrir en una aplicación.
+
+<Tabs>
+  <Tab title=" iOS">
+    <iframe src="https://drive.google.com/file/d/1nVj2AURiJOVwidDNkoG5qnwegAN5mBdv/preview" width="640" height="360" />
+
+    ## Configurar una nueva integración entre NFC y un hábito
+
+    1. En la aplicación Habitify, ve a **Settings**.
+    2. En **Integrations**, pulsa **NFC**.
+    3. En la parte inferior de la pantalla NFC, pulsa **«Scan new NFC tag»**.
+    4. Coloca el teléfono sobre la etiqueta NFC. <br />_Puedes buscar en Internet dónde se encuentra el lector NFC de tu teléfono. Suele estar cerca de la cámara._
+    5. Cuando termine el escaneo:
+       1. En _When NFC Tag Tapped_, elige la acción que ejecutará la aplicación.
+       2. En _Habit_, elige un hábito.
+    6. Por último, pulsa **«Save»**.
+
+    ### Acciones compatibles
+
+    - **Mark as Complete**: escanea la etiqueta NFC para completar un hábito.
+    - **Mark as Skipped**: escanea la etiqueta NFC para omitir un hábito durante el día actual.
+    - **Mark as Failed**: escanea la etiqueta NFC para marcar un hábito como fallido durante el día actual.
+    - **Log a progress value**: escanea la etiqueta NFC para registrar un valor de progreso predefinido.
+    - **Ask me**: escanea la etiqueta NFC y elige la acción que quieres ejecutar.
+
+    ## Registrar un hábito con la etiqueta NFC
+
+    Registrar un hábito con una etiqueta NFC programada es sencillo:
+
+    - Escanea la etiqueta con el teléfono y recibirás una notificación push.
+    - Pulsa la notificación para abrir la aplicación y ejecutar la acción configurada.
+
+    <Note>
+      **Para disfrutar de la mejor experiencia, mantén la aplicación Habitify ejecutándose en segundo plano.**
+
+      Si la aplicación está completamente cerrada, escanear la etiqueta NFC y pulsar la notificación solo abrirá la vista Journal, en lugar de ejecutar directamente la acción prevista.
+    </Note>
+  </Tab>
+  <Tab title="🤖 Android">
+    <iframe src="https://drive.google.com/file/d/19VU6fi_9gwu4LuRt-mk3cxcaVvOGRyy8/preview" width="640" height="360" />
+
+    ## **Configurar una nueva integración entre NFC y un hábito**
+
+    1. En la aplicación Habitify, ve a **Settings**.
+    2. En **Automation**, pulsa **NFC**.
+    3. Pulsa **«Scan new NFC tag»**.
+    4. Coloca el teléfono sobre la etiqueta NFC. <br />_Puedes buscar en Internet dónde se encuentra el lector NFC de tu teléfono. Suele estar cerca de la cámara._
+    5. Cuando termine el escaneo, podrás configurar:
+       1. En _On NFC Tapped_, elige la acción que ejecutará la aplicación.
+       2. En _Habit_, elige el hábito en el que se ejecutará la acción.
+    6. Por último, pulsa **Save** en la esquina superior derecha.
+
+    ### Acciones compatibles
+
+    - **Mark as Complete**: escanea la etiqueta NFC para completar un hábito.
+    - **Mark as Skipped**: escanea la etiqueta NFC para omitir un hábito durante el día actual.
+    - **Mark as Failed**: escanea la etiqueta NFC para marcar un hábito como fallido durante el día actual.
+    - **Start Timer**: escanea la etiqueta NFC para iniciar una sesión de temporizador para un hábito.
+    - **Log a progress value**: escanea la etiqueta NFC para registrar un valor de progreso predefinido.
+    - **Ask me**: escanea la etiqueta NFC y elige la acción que quieres ejecutar.
+
+    ## Registrar un hábito con la etiqueta NFC
+
+    Registrar un hábito con una etiqueta NFC programada es sencillo:
+
+    - Escanea la etiqueta con el teléfono hasta que aparezca una notificación push.
+    - Pulsa la notificación para abrir la aplicación y deja que ejecute los pasos que configuraste.
+
+    <Note>
+      **Para disfrutar de la mejor experiencia, mantén la aplicación Habitify ejecutándose en segundo plano.** <br /><br />Si la aplicación está completamente cerrada, escanear la etiqueta NFC y pulsar la notificación solo abrirá la vista Journal, en lugar de ejecutar directamente la acción prevista.
+    </Note>
+  </Tab>
+</Tabs>
+
+## Preguntas frecuentes
+
+<Accordion title="**¿Cuántos hábitos se pueden vincular a una etiqueta NFC?**">
+  Solo 1.
+</Accordion>
+
+<Accordion title="**¿Qué tipos de etiquetas NFC son compatibles?**">
+  Recomendamos las etiquetas NTAG213, NTA215 o NTA216.
+</Accordion>
+
+<Accordion title="**¿Cuánto almacenamiento necesita como mínimo una etiqueta NFC?**">
+  Vincular un hábito a una etiqueta NFC requiere menos de 100 bytes de almacenamiento.
+</Accordion>

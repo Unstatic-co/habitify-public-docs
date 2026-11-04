@@ -1,0 +1,215 @@
+---
+title: "Datos"
+sidebarTitle: "Datos"
+---
+
+## Importar datos a Habitify
+
+Empezar con una aplicación nueva es emocionante, pero sabemos que no quieres perder el valioso historial de otras aplicaciones u hojas de cálculo. Esta sección presenta varios métodos para importar tus datos anteriores a Habitify y obtener una visión completa de tu recorrido.
+
+### **Importar datos de salud**
+
+Si tus datos anteriores están relacionados con la actividad física y se guardan en Apple Health, Health Connect, Fitbit o Strava, esta es la forma más sencilla y automática de importar el historial.
+
+**Cómo funciona:** la primera vez que conectas uno de estos servicios con un hábito de Habitify, la aplicación realiza automáticamente una **sincronización histórica** y añade al registro del hábito tus actividades anteriores.
+
+- **Apple Health o Health Connect:** sincroniza pasos, entrenamientos, sueño, minutos de atención plena y otros datos directamente desde iPhone o Android.
+- **Fitbit:** registra automáticamente los pasos diarios, el sueño, las calorías quemadas y otras estadísticas del dispositivo Fitbit.
+- **Strava:** sincroniza carreras, recorridos en bicicleta, paseos y otros entrenamientos justo después de completarlos.
+
+### Importar datos de Productive
+
+Primero debes exportar tus datos desde Productive, que normalmente genera un archivo `.sqlite`. Necesitarás este archivo para iniciar la importación.
+
+En Habitify, ve a **Settings → Import / Export Data → Import from Productive**.
+
+Elige el archivo `.sqlite` exportado y sigue las instrucciones en pantalla.
+
+La importación incluye la información principal:
+
+- **Hábitos:** tu lista de hábitos.
+- **Registros de hábitos:** registros históricos, omisiones y fallos.
+- **Momento del día:** ajustes Morning, Afternoon o Evening.
+- **Descripciones:** notas o descripciones añadidas a los hábitos.
+- **Condición de finalización:** si el hábito tenía una fecha de finalización en Productive, se importará, **salvo** que sea hoy o una fecha anterior. Habitify exige que falten al menos 7 días.
+
+<Note>
+  **Notas importantes:**
+
+  - Los **Challenges** y **Programs** de Productive **no se importan**. Solo se transfieren los hábitos individuales.
+  - Los hábitos marcados como **pausados o detenidos** se importan automáticamente con estado **Archived**. Puedes desarchivarlos más adelante.
+</Note>
+
+El proceso convierte automáticamente los horarios y objetivos al formato de Habitify:
+
+- **Diario, días concretos de la semana o fechas concretas del mes:** se importan como **objetivos diarios** y mantienen el mismo horario.
+- **Varios objetivos al día:** si Productive tenía varios objetivos diarios —por ejemplo, «2 veces por la mañana + 2 por la tarde»—, Habitify los **suma** en un único objetivo diario —«4 veces al día»—.
+- **Frecuencia semanal**, por ejemplo «3 veces por semana»: si también había un objetivo diario —por ejemplo, «20 minutos cada vez»—, Habitify multiplica la frecuencia por el objetivo y crea un único **objetivo semanal**.<br />_Ejemplo:_ Productive: «3 veces por semana, 20 minutos al día» → Habitify: **«60 minutos por semana»**.
+- **Caso especial: cada dos semanas:** un intervalo como «1 vez cada 2 semanas» no se admite directamente. Como alternativa, se convierte en un **objetivo diario** y quizá debas ajustar manualmente el horario después de importar.
+
+### Importar datos de Streaks
+
+Primero debes exportar tus datos desde Streaks, que normalmente genera un archivo especial con extensión `.streaks`. Necesitarás este archivo para iniciar la importación.
+
+En Habitify, ve a **Settings → Import / Export Data → Import from Streaks**.
+
+Elige el archivo `.streaks` exportado y sigue las instrucciones en pantalla.
+
+La importación incluye los elementos principales del seguimiento:
+
+- **Nombre del hábito:** se conserva.
+- **Horario como repetición:** se convierte la frecuencia diaria, semanal o mensual.
+- **Frecuencia como objetivo:** se conserva un objetivo de «X veces al día, semana o mes».
+- **Recordatorios como recordatorios:** se importan las horas personalizadas, con las excepciones descritas más adelante.
+- **Notas como notas del hábito:** se copian las notas añadidas.
+- **Primera fecha con registros como fecha inicial:** Habitify utiliza la fecha de la entrada más antigua de Streaks.
+- **Historial:** se importan las finalizaciones, fallos y días omitidos.
+- **Malos hábitos:** también se importan los hábitos que intentabas dejar o limitar.
+
+Como Habitify y Streaks funcionan de forma ligeramente distinta, algunos datos se convierten durante la importación.
+
+**1. Recordatorios**
+
+Las horas concretas configuradas en Streaks se sincronizan con Habitify. Streaks también ofrece Auto Reminder, una función que Habitify no tiene; esos recordatorios **no se importan**.
+
+**2. Historial de registros**
+
+- **Hábitos diarios:** la conversión es directa.
+  - `Complete` en Streaks → `Complete` en Habitify.
+  - `Failed` en Streaks → `Failed` en Habitify.
+  - Un día **_sin registrar_** en Streaks se marca como `Skipped` en Habitify para conservar la racha.
+- **Hábitos semanales:** Habitify solo permite que la semana empiece el domingo o el lunes, mientras que Streaks acepta cualquier día. Por eso, los registros semanales de Streaks se asignan al **lunes** de la semana correspondiente en Habitify.<br />_Ejemplo:_ si la semana de Streaks iba de miércoles a martes, el estado de toda esa semana aparecerá en su lunes en Habitify.
+- **Hábitos mensuales:** de forma similar, el estado de todo un mes en Streaks se asigna al **primer día de ese mes** en Habitify.
+
+**3. Objetivo de los malos hábitos**
+
+- **Abandonar un hábito:** si el objetivo en Streaks era «No [nombre del hábito]», se importa como **Quit Habit** y registra los días en que lo evitaste.
+- **Limitar un hábito:** si el objetivo era limitarlo a «X veces al día, semana o mes», se importa como **Limit Habit** con la misma frecuencia.
+
+### **Importar datos desde una hoja de cálculo**
+
+Si tus datos anteriores están en una hoja de cálculo —exportados de otra aplicación o mantenidos manualmente—, puedes usar **Zapier** para importarlos. Es un método más avanzado, pero permite completar todo el historial de cualquier hábito.
+
+El método utiliza una automatización —un «Zap»— que detecta filas nuevas en una hoja de Google Sheets y crea la entrada correspondiente en Habitify. Para importar datos antiguos, cópialos y pégalos en la hoja para activar el proceso.
+
+Sigue estos pasos:
+
+<Steps>
+  <Step title="Prepara la hoja de datos">
+    Adapta tus datos anteriores a [<u>nuestra plantilla de Google Sheets</u>](https://docs.google.com/spreadsheets/d/1LN3wqWGwHToYL0pWqYPCGztiY9Rxi9KA_xLo1poQdU8/edit?usp=sharing). Cada hoja registra el progreso de un hábito y cada fila representa una finalización con su fecha, hora y valor numérico.
+  </Step>
+  <Step title="Configura el hábito en Habitify">
+    Crea en Habitify el hábito correspondiente al que quieras importar los datos.
+  </Step>
+  <Step title="Utiliza nuestra plantilla de Zapier">
+    Crea en Habitify el hábito correspondiente al que quieras importar los datos.
+  </Step>
+  <Step title="Ejecuta el Zap para importar los datos">
+    Cuando el Zap esté activo, copia y pega todo el historial en Google Sheets. Zapier leerá cada fila y la importará como registro fechado en Habitify para completar el progreso anterior.
+  </Step>
+</Steps>
+
+Puedes implementar la misma integración mediante Zapier con otros servicios de tablas, como Airtable, Microsoft Excel Online o Zoho Sheet.
+
+## Exportar datos desde Habitify
+
+Ofrecemos dos formatos principales: un archivo **CSV** sencillo para analizar registros básicos y un archivo completo de **copia de seguridad (.sqlite)** con una instantánea de la cuenta.
+
+#### Guía paso a paso
+
+1. Ve a **Settings** en Habitify.
+2. Busca y pulsa **Import / Export**.
+3. Elige **Export as .csv** o **Export as Backup**.
+4. Sigue las instrucciones del dispositivo para guardar o compartir el archivo, por ejemplo mediante correo electrónico o almacenamiento en la nube.
+
+#### **Comparación de formatos de exportación**
+
+| Formato | .csv | Copia de seguridad |
+| --- | --- | --- |
+| Ideal para | Analizar el historial básico de finalización en Google Sheets, Microsoft Excel o Apple Numbers. | Crear una copia completa de la configuración y el historial de Habitify, que puede servir para restaurar los datos o realizar un análisis técnico avanzado con herramientas de bases de datos. |
+| Extensión | `.csv` | `.sqlite` |
+| Contenido | Un registro sencillo de las actividades, con estas columnas en cada entrada: <ul><li>`Habit`: nombre del hábito.</li><li>`Date`: fecha de la entrada.</li><li>`Total log`: valor numérico registrado, si corresponde.</li><li>`Unit`: unidad del objetivo, como minutos, km o veces.</li><li>`Status`: Completed, Skipped o Failed.</li><li>`Habit ID`: identificador único del hábito.</li></ul> | Una instantánea completa de **todo** el contenido de la cuenta, que incluye, entre otros elementos: <ul><li>**Detalles de hábitos:** hábitos activos y archivados, objetivos, listas de comprobación, recordatorios por hora, ubicación o encadenamiento, condiciones de finalización, hitos, etc.</li><li>**Progreso y registros:** actividades, omisiones, fallos, valores numéricos, notas, estados de ánimo, listas de comprobación, historial de rachas (`currentStreak`) y datos de progreso calculados (`logCalculations`, `progresses`).</li><li>**Ajustes:** opciones de la cuenta como el primer día de la semana (`firstDayOfWeek`).</li></ul> |
+
+## Gestionar los datos en Habitify
+
+### Restablecer los datos de hábitos
+
+<Warning>
+  Antes de restablecerlos, ten en cuenta lo siguiente:
+
+  - La acción **elimina permanentemente todo el historial** de todos los hábitos de la cuenta.
+  - Incluye todos los registros, omisiones, fallos, rachas actuales, notas y progreso de hábitos archivados.
+  - **No se puede deshacer.** Una vez eliminados, ni tú ni nuestro equipo de soporte podréis recuperarlos.
+  - La lista de hábitos _actuales_ se conserva, pero su progreso y sus rachas se restablecen a cero.
+</Warning>
+
+<Tabs>
+  <Tab title=" iOS">
+    1. Abre **Habitify** y ve a **Settings**.
+    2. Pulsa tu perfil.
+    3. Ve a **Privacy & Data** y pulsa **Reset Habit Data**.
+    4. Para confirmar, pulsa **Rest Habit Data**.
+  </Tab>
+  <Tab title="🤖 Android">
+    1. Abre **Habitify** y ve a **Settings**.
+    2. Pulsa tu nombre.
+    3. Desplázate hasta **Caution zone**.
+    4. Busca **Reset Habit Data** y pulsa **Delete**.
+    5. Para confirmar, pulsa **OK**.
+  </Tab>
+  <Tab title="🖥️ Sitio web y escritorio">
+    1. Abre Habitify.
+    2. Haz clic en tu foto de perfil y elige **Profile**.
+    3. En **Caution Zone**, busca y haz clic en **Reset Habit Data**.
+    4. Para confirmar, haz clic en **Reset Habit Data**.
+  </Tab>
+</Tabs>
+
+### Eliminar todos los datos
+
+<Warning>
+  Lee atentamente lo siguiente antes de continuar:
+
+  - La acción elimina permanentemente **TODOS LOS HÁBITOS** de tu lista.
+  - También elimina permanentemente **TODO el historial**, incluidos cada registro, omisión, fallo, nota y racha.
+  - **NO SE PUEDE DESHACER.** Tras confirmar, ni tú ni nuestro equipo de soporte podréis recuperar la información.
+  - Tu cuenta quedará **completamente vacía**.
+</Warning>
+
+<Tabs>
+  <Tab title=" iOS">
+    1. Abre **Habitify** y ve a **Settings**.
+    2. Pulsa tu perfil.
+    3. Ve a **Privacy & Data** y pulsa **Delete All Data**.
+    4. Para confirmar, pulsa **Delete All Data**.
+  </Tab>
+  <Tab title="🤖 Android">
+    1. Abre **Habitify** y ve a **Settings**.
+    2. Pulsa tu nombre.
+    3. Desplázate hasta **Caution zone**.
+    4. Busca **Delete All Data** y pulsa **Delete**.
+    5. Para confirmar, pulsa **OK**.
+  </Tab>
+  <Tab title="🖥️ Sitio web y escritorio">
+    1. Abre Habitify.
+    2. Haz clic en tu foto de perfil y elige **Profile**.
+    3. En **Caution Zone**, busca y haz clic en **Delete Data**.
+    4. Para confirmar, haz clic en **Delete All Data**.
+  </Tab>
+</Tabs>
+
+## Preguntas frecuentes
+
+<Accordion title="**¿Por qué el CSV exportado se abre en una sola columna de Excel?**">
+  Ocurre cuando Excel no reconoce el separador del archivo. La exportación de Habitify utiliza punto y coma (`;`) para separar los campos, pero tu configuración de Excel puede esperar otro carácter.
+
+  **¿Cómo muestro los datos en columnas independientes?**
+
+  1. Abre el CSV en Excel y selecciona la **columna A**.
+  2. Ve a **Data → Text to Columns**.
+  3. Selecciona **Delimited** y haz clic en **Next**.
+  4. Marca **Semicolon** y desmarca los demás separadores.
+  5. Haz clic en **Finish**.
+
+  Los datos aparecerán en columnas independientes: **Habit, Date, Total Log, Unit, Status y Habit ID**.
+</Accordion>
