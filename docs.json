@@ -120,7 +120,7 @@
             ]
           },
           {
-            "tab": "API Documentation",
+            "tab": "API",
             "icon": "rectangle-api",
             "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
           },
@@ -128,13 +128,6 @@
             "tab": "Changelog",
             "icon": "bullhorn",
             "href": "https://feedback.habitify.me/changelog"
-          },
-          {
-            "tab": "Video Hub",
-            "hidden": true,
-            "pages": [
-              "glossary"
-            ]
           }
         ]
       },
@@ -233,6 +226,10 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "API",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
           }
         ]
       },
@@ -332,6 +329,10 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "API",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
           }
         ]
       },
@@ -431,6 +432,10 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "API",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
           }
         ]
       },
@@ -533,7 +538,7 @@
             ]
           },
           {
-            "tab": "Documentação da API",
+            "tab": "API",
             "icon": "rectangle-api",
             "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
           },
@@ -541,13 +546,6 @@
             "tab": "Registro de alterações",
             "icon": "bullhorn",
             "href": "https://feedback.habitify.me/changelog"
-          },
-          {
-            "tab": "Central de vídeos",
-            "hidden": true,
-            "pages": [
-              "pt-BR/glossary"
-            ]
           }
         ]
       }
