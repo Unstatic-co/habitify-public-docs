@@ -117,6 +117,105 @@
             "href": "https://feedback.habitify.me/changelog"
           }
         ]
+      },
+      {
+        "language": "ja",
+        "tabs": [
+          {
+            "tab": "ドキュメント",
+            "icon": "life-ring",
+            "pages": [
+              {
+                "group": "はじめに",
+                "pages": [
+                  "ja/habitify-introduction",
+                  "ja/habitify-quick-start",
+                  "ja/glossary"
+                ]
+              },
+              {
+                "group": "機能",
+                "pages": [
+                  "ja/good-habits",
+                  "ja/bad-habits",
+                  "ja/journal",
+                  "ja/single-progress",
+                  "ja/overall-progress",
+                  "ja/reflection",
+                  "ja/circle",
+                  "ja/challenge"
+                ]
+              },
+              {
+                "group": "ツール",
+                "pages": [
+                  "ja/area",
+                  "ja/reminder",
+                  "ja/habit-gate",
+                  "ja/note",
+                  "ja/widget",
+                  "ja/task",
+                  "ja/timer"
+                ]
+              },
+              {
+                "group": "アプリ設定",
+                "pages": ["ja/off-mode", "ja/app-behavior"]
+              },
+              {
+                "group": "自動化",
+                "pages": [
+                  "ja/automation-status-update",
+                  "ja/ios-shortcuts",
+                  "ja/nfc-tags",
+                  "ja/zapier-ifttt"
+                ]
+              },
+              {
+                "group": "連携",
+                "pages": [
+                  "ja/google-calendar-integration",
+                  "ja/outlook-calendar-integration",
+                  "ja/apple-calendar-integration",
+                  "ja/apple-health-integration",
+                  "ja/health-connect-integration",
+                  "ja/strava-integration",
+                  "ja/fitbit-integration",
+                  "ja/rescue-time-integration",
+                  "ja/screen-time-integration"
+                ]
+              },
+              {
+                "group": "Habitify MCPとAI",
+                "pages": ["ja/habitify-mcp", "ja/habi-ai", "ja/siri-ai"]
+              },
+              {
+                "group": "プランと請求",
+                "pages": [
+                  "ja/plans",
+                  "ja/billings",
+                  "ja/habitify-family",
+                  "ja/habitify-team",
+                  "ja/habitify-student"
+                ]
+              },
+              {
+                "group": "アカウントとデータ",
+                "pages": ["ja/manage-account", "ja/manage-data"]
+              }
+            ]
+          },
+          {
+            "tab": "API",
+            "icon": "rectangle-api",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
+          },
+          {
+            "tab": "変更履歴",
+            "icon": "bullhorn",
+            "href": "https://feedback.habitify.me/changelog"
+          }
+        ]
       }
     ]
   },
