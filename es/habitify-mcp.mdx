@@ -1,0 +1,107 @@
+---
+title: "Habitify MCP"
+---
+
+Habitify MCP —Model Context Protocol— conecta tu cuenta de Habitify directamente con asistentes de IA como ChatGPT y Claude.
+
+Una vez conectado, no solo puedes conversar sobre tus hábitos: también puedes gestionarlos con lenguaje natural directamente desde la conversación con el asistente de IA que prefieras.
+
+## Conectar Habitify MCP
+
+### Conectarlo con Claude
+
+1. Abre Claude y ve a **Personalizar**.
+2. Elige **Conectores**.
+3. Haz clic en **Añadir**.
+4. En _Añadir conector personalizado_, configura lo siguiente:
+   1. **Nombre**: Habitify.
+   2. **URL del servidor MCP**: `https://mcp.habitify.me/mcp`.
+5. Sigue las indicaciones para iniciar sesión en Habitify y autorizar el acceso.
+
+Cuando la autorización se complete correctamente, podrás ver los ajustes detallados del conector de Habitify que acabas de añadir.
+
+En un chat nuevo, haz clic en el botón + → Conectores → activa Habitify y empieza a interactuar con tus hábitos de Habitify directamente desde Claude.
+
+### Conectarlo con ChatGPT
+
+1. En la interfaz de ChatGPT, ve a **Plugins**.
+2. Busca **Habitify**.
+3. Haz clic en + para iniciar la conexión.
+4. Se te redirigirá al sitio web de Habitify. Inicia sesión en tu cuenta de Habitify y, en el paso de autorización, haz clic en **Conectar**.
+
+Cuando la autorización se complete correctamente, puedes hacer clic en **Iniciar chat** para empezar a interactuar con tus hábitos de Habitify directamente desde ChatGPT.
+
+### Conectarlo con otras herramientas
+
+Para conectar Habitify con una herramienta nueva, normalmente se te pedirá una **URL del servidor** o un **enlace de conexión**.
+
+- **URL de conexión:** `https://mcp.habitify.me/mcp`
+- **Tipo de conexión:** SSE —eventos enviados por el servidor—.
+
+Cada aplicación tiene un aspecto ligeramente distinto, por lo que los nombres exactos de los botones pueden variar. Sin embargo, el proceso suele ser el mismo:
+
+1. Busca en los ajustes de la aplicación una sección denominada «Conectores», «Servidores» o «Extensiones».
+2. Elige la opción para añadir un servidor personalizado nuevo.
+3. Introduce los datos:
+   - **Nombre:** `Habitify`.
+   - **URL:** pega el enlace indicado anteriormente —`https://mcp.habitify.me/mcp`—.
+4. Cuando lo hayas añadido, la herramienta probablemente te pedirá que inicies sesión en tu cuenta de Habitify para aprobar el acceso.
+
+## Qué puede hacer Habitify MCP con tus hábitos
+
+Una vez conectado, puedes pedir al asistente de IA que realice acciones reales en tu cuenta de Habitify utilizando únicamente lenguaje natural:
+
+- **Consultar tu lista**: pide «Muéstrame mis hábitos de hoy» o solicita una fecha concreta para ver qué tareas te quedan por hacer.
+
+- **Añadir un registro:** pide «Marca mi carrera matutina como completada» o añade un valor concreto a un objetivo numérico.
+- **Actualizar el estado**: pide cambiar el estado de un hábito a Completado, Omitido o Fallido.
+
+- **Borrar el progreso**: pide eliminar el progreso registrado de un hábito en un día concreto y restablecerlo a 0 o «No iniciado». Si no indicas una fecha, se utilizará el día de hoy.
+
+## Solución de problemas
+
+<Accordion title="**¿Por qué la IA muestra hábitos antiguos o hábitos de otra cuenta?**">
+  Si Habitify MCP recupera hábitos eliminados, prueba a desconectarlo y volver a conectarlo para actualizar los datos.
+
+  Si Habitify MCP recupera datos de otra cuenta tuya, compara la cuenta que has abierto en la aplicación Habitify con la cuenta que has abierto en el navegador donde autorizaste la conexión. Asegúrate de que sea la misma cuenta.
+
+  Si alguno de los problemas continúa, ponte en contacto con el equipo para recibir más ayuda.
+</Accordion>
+
+<Accordion title="**¿Por qué Habitify MCP no recupera todos los hábitos que tengo en la aplicación?**">
+  Habitify MCP puede recuperar una lista de hasta 50 hábitos cada vez.
+
+  Si tienes menos de 50 hábitos y la herramienta sigue sin recuperarlos todos, prueba a conectarla de nuevo para actualizarla.
+
+  Si alguno de los problemas continúa, ponte en contacto con el equipo para recibir más ayuda.
+</Accordion>
+
+<Accordion title="**Claude muestra «Configurar» en lugar de «Conectar». ¿Qué debo hacer?**">
+  Abre el menú de Habitify en los ajustes de conectores de Claude y desconéctalo. Después, busca la opción Conectar y completa el proceso de inicio de sesión y autorización de Habitify. Consulta la guía de configuración actual de Claude si los nombres de los menús son diferentes.
+
+  Si la opción Conectar sigue sin estar disponible, captura la pantalla del conector y ponte en contacto con el equipo para recibir más ayuda.
+</Accordion>
+
+## Preguntas frecuentes
+
+<Accordion title="**¿Necesito un plan de pago o puedo probar la conexión durante un periodo de prueba?**">
+  Habitify MCP es una función gratuita para todos los usuarios, por lo que no necesitas un plan de pago para utilizarla.
+
+  Sin embargo, el uso avanzado mediante la API REST puede requerir una suscripción Pro para acceder a la API.
+</Accordion>
+
+<Accordion title="**¿Puedo recuperar el historial completo, las correcciones posteriores de los registros de progreso y los cambios de las notas?**">
+  Habitify todavía no permite recuperar el historial completo de registros de un hábito, aunque sí puedes obtener el progreso de una fecha concreta.
+
+  Si registras un valor y después lo cambias, solo se guarda la última modificación, por lo que no existen datos que permitan recuperar el historial de correcciones. Lo mismo ocurre con los cambios de las notas.
+</Accordion>
+
+<Accordion title="**¿Muestra currentStreak la racha correspondiente a la fecha histórica que solicité?**">
+  currentStreak solo muestra la racha hasta el día de hoy.
+
+  Si quieres recuperar la racha contada hasta una fecha concreta del pasado, escribe una solicitud como _«¿Cuánto duraba mi racha de Meditación el 10 de octubre de 2026?»_.
+</Accordion>
+
+<Accordion title="**¿Puede Habitify MCP realizar revisiones programadas o actualizar hábitos en segundo plano?**">
+  Habitify MCP todavía no puede funcionar dentro de flujos de trabajo automatizados. Para ejecutarse, sigue necesitando una entrada o interacción del usuario.
+</Accordion>
