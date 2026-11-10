@@ -1,0 +1,112 @@
+---
+title: "Strava"
+sidebarTitle: "Strava"
+---
+
+Wenn du Läufe, Radtouren, Schwimmeinheiten und andere Trainings bereits in Strava protokollierst, musst du sie nicht ein zweites Mal in Habitify eintragen. Diese Integration verbindet beide Dienste. Sobald du eine Aktivität in Strava abschließt und speicherst, wird der Fortschritt automatisch mit der passenden Gewohnheit synchronisiert.
+
+Du übernimmst das Training, Habitify die Verfolgung. Dieser Artikel zeigt dir, wie es funktioniert.
+
+## Eine mit Strava synchronisierte Gewohnheit hinzufügen
+
+<Tabs>
+  <Tab title="  iOS">
+    <iframe src="https://drive.google.com/file/d/1sNejJY7gvcyJK5zoTmcPWz4NVg3ql5uN/preview" width="640" height="360" />
+
+    1. Tippe im **Tagebuch** unten rechts auf **\+** und wähle **Gute Gewohnheit aufbauen**.
+    2. Wechsle auf dem nächsten Bildschirm zur Registerkarte **Strava**.
+    4. Wähle den gewünschten Datentyp aus der Liste, beispielsweise „Schritte“.
+    5. Du wirst zur Strava-Website weitergeleitet. Melde dich bei deinem Strava-Konto an und erteile Habitify die Zugriffsberechtigung.
+    6. Nach Erteilung der Berechtigung kehrst du zu Habitify zurück.
+    7. Konfiguriere die Gewohnheit wie gewohnt.
+    8. Wenn alles eingerichtet ist, tippe auf **✓**, um die neue Gewohnheit in deiner Liste zu speichern.
+
+    Eine mit Strava verknüpfte Gewohnheit ist anschließend leicht zu erkennen: In der Tagebuchansicht trägt sie ein kleines Strava-Symbol und unterscheidet sich damit auf einen Blick von manuell erfassten Gewohnheiten.
+  </Tab>
+  <Tab title="🤖 Android">
+    <iframe src="https://drive.google.com/file/d/1p9Lj5qlRltVMMaBTlp0dKhlaHDh6l5lY/preview" width="640" height="360" />
+
+    1. Tippe im _Tagebuch_ unten rechts in der Datumsleiste auf **\+**.
+    2. Wähle **Etablieren Sie eine gute Angewohnheit**.
+    3. Tippe oben auf der Vorlagenseite auf **Strava**.
+    4. Wähle aus allen von Habitify unterstützten Strava-Aktivitäten und Datentypen eine Datenoption aus.
+    5. Lege dein **Ziel** fest, etwa 10.000 Schritte oder acht Stunden Schlaf, und tippe auf **Zugriff erlauben**.
+    6. Du wirst zur Strava-Website weitergeleitet. Melde dich bei deinem Strava-Konto an und erteile Habitify die Zugriffsberechtigung.
+    7. Nach Erteilung der Berechtigung kehrst du zu Habitify zurück und tippst auf **Fortfahren**.
+    8. Konfiguriere die Gewohnheit wie gewohnt.
+    9. Wenn alles eingerichtet ist, tippe oben rechts auf **Speichern**.
+
+    Eine mit Strava verknüpfte Gewohnheit ist anschließend leicht zu erkennen: In der Tagesansicht des Tagebuchs trägt sie ein kleines Strava-Symbol und unterscheidet sich damit auf einen Blick von manuell erfassten Gewohnheiten.
+  </Tab>
+  <Tab title="🖥️ Website & Desktop">
+    <iframe src="https://drive.google.com/file/d/1YNh34ejdRnf2KvDWnN0mfkfTv1PI4CS8/preview" width="640" height="360" />
+
+    1. Öffne in der linken Navigationsleiste **Alle Gewohnheiten**.
+    2. Klicke in der unteren Aktionsleiste auf **\+ Gewohnheit hinzufügen** und wähle **Gute Gewohnheit erstellen**.
+    4. Wähle im eingeblendeten Fenster oben die Registerkarte **Strava**.
+    5. Wähle eine unterstützte Aktivitätsart, etwa **Laufen, Radfahren, Gehen** oder **Schwimmen**.
+    6. Beim ersten Erstellen einer mit Strava synchronisierten Gewohnheit musst du Habitify Zugriff auf deine Strava-Daten gewähren.<br />Klicke unter dem Gewohnheitsnamen auf **Zugriff erlauben** und führe die erforderlichen Schritte aus.
+    7. Nach erfolgreicher Verbindung verschwindet die Schaltfläche **Zugriff erlauben**.<br />Konfiguriere die Gewohnheit anschließend wie gewohnt.
+    8. Klicke abschließend unten rechts auf **Speichern**, um die neue Gewohnheit in deiner Verfolgungsliste zu speichern.
+  </Tab>
+</Tabs>
+
+## **Funktionsweise der Integration**
+
+Nach dem Erstellen und Verknüpfen der Gewohnheit mit Strava erfolgt die Verfolgung automatisch:
+
+- Wenn du eine neue Aktivität in Strava erfasst, werden ihre Daten an Habitify gesendet.
+- Habitify prüft, ob Aktivitätstyp und Werte wie Entfernung, Dauer oder Kalorien den im Gewohnheitsziel festgelegten Regeln entsprechen.
+- Die App übernimmt anschließend die Daten des vom Ziel verlangten Typs und protokolliert sie als Fortschritt.
+
+Wenn der Zielwert erreicht ist, wird die Gewohnheit automatisch abgeschlossen. Eine manuelle Eingabe in Habitify ist nicht erforderlich.
+
+Beispiele:
+
+- **Entfernungsbasiertes Ziel:**
+  - **Name:** Wöchentlich 50 km Rad fahren
+  - **Ziel:** 50 Kilometer pro Woche
+  - **Strava-Verbindung:** Aktivitätstyp: `Ride`, Verfolgung nach: `Distance`
+- **Zeitbasiertes Ziel:**
+  - **Name:** Drei Stunden pro Woche trainieren
+  - **Ziel:** Drei Stunden pro Woche
+  - **Strava-Verbindung:** Aktivitätstyp: `Workout`, Verfolgung nach: `Duration`
+
+## **Einschränkungen**
+
+- **Ein Strava-Konto kann jeweils nur mit einem Habitify-Konto verbunden sein.** Verbindest du Strava mit einem neuen Habitify-Konto, wird die vorherige Verbindung automatisch getrennt und das ursprüngliche Konto benachrichtigt.
+- **Strava verwendet für die Synchronisierung ein gleitendes 15-Minuten-Limit** von insgesamt bis zu 3.300 Anfragen je 15 Minuten. Wenn ein Fehler auftritt oder die Integration nicht sofort möglich ist, warte 10 bis 15 Minuten und versuche es erneut. Wahrscheinlich hat eine kurzfristige Aktivitätsspitze das Limit erreicht; es wird bald zurückgesetzt.
+- Beim erstmaligen Verbinden importiert Habitify frühere Aktivitäten. **Synchronisiert werden höchstens die letzten 90 Tage des relevanten Strava-Verlaufs** oder der Zeitraum seit dem Startdatum der Gewohnheit, falls dieses später liegt.
+- **Die Synchronisierung verläuft nur von Strava zu Habitify.** Abgeschlossene Strava-Aktivitäten werden in Habitify protokolliert. Habitify-Daten werden niemals an Strava gesendet oder verändern dein Strava-Konto.
+- **Bei einer mit Strava verknüpften Gewohnheit kannst du keinen Fortschritt manuell hinzufügen und sie nicht manuell abschließen.** Der Fortschritt wird vollständig durch deine Strava-Aktivitäten gesteuert, damit die Daten genau und mühelos bleiben.
+
+## Unterstützte Datentypen und Einheiten
+
+Habitify unterstützt derzeit mehr als 50 Strava-Aktivitätstypen, die zur leichteren Orientierung gruppiert sind:
+
+1. **Laufen und Gehen:** Schritte und Strecken, darunter Run, Walk, Hike, Trail Run und Virtual Run.
+2. **Radfahren:** Straße, Gelände oder Innenraum, darunter Ride, E-bike Ride, E-mountain Bike Ride, Gravel Ride, Mountain Bike Ride, Velomobile, Virtual Ride und Handcycle.
+3. **Wassersport:** Zeit oder Entfernung auf dem Wasser, darunter Swim, Rowing, Virtual Row, Canoeing, Kayaking, Stand Up Paddling, Surfing, Windsurf, Kitesurf und Sail.
+4. **Wintersport:** Aktivitäten in Schnee und Eis, darunter Alpine Ski, Backcountry Ski, Nordic Ski, Roller Ski, Snowboard, Snowshoe und Ice Skate.
+5. **Fitnessstudio und Fitness:** Training in Innenräumen und Krafttraining, darunter Workout, Weight Training, Crossfit, Elliptical, Stair Stepper, Yoga und Pilates.
+6. **Team- und Schlägersport:** Spiele und Training, darunter Soccer, Tennis, Badminton, Pickleball, Squash, Racquetball und Golf.
+7. **Abenteuer und Sonstiges:** Weitere Bewegungsarten, darunter Rock Climbing, Skateboard, Inline Skate und Wheelchair.
+
+Bei der Einrichtung musst du eine Einheit wählen, die den von Strava erfassten Daten entspricht. Im Allgemeinen verfügbar sind:
+
+- **Entfernung:** km, Meilen, Meter oder Yards – für entfernungsbasierte Aktivitäten wie Laufen, Radfahren und Schwimmen.
+- **Dauer:** Minuten oder Stunden – für fast alle Aktivitätstypen.
+- **Kalorien:** kcal – sofern die Strava-Aktivität Kaloriendaten enthält.
+
+## Häufig gestellte Fragen
+
+<Accordion title="**Ich habe das falsche Strava-Konto verbunden. Was soll ich tun?**">
+  Strava kann eine aktive Autorisierung im Dienst oder Browser zwischengespeichert haben. Beim Tippen auf „Mit Strava verbinden“ wird dann das alte Profil unbemerkt erneut autorisiert.
+
+  Wir empfehlen, Habitify im falschen Strava-Konto zu widerrufen:
+
+  1. Öffne [<u>strava.com/settings/apps</u>](https://www.strava.com/settings/apps).
+  2. Wenn „Habitify“ angezeigt wird, klicke auf Revoke Access. Widerrufe bei mehreren Einträgen alle Habitify-Zugriffe.
+
+  Falls das falsche Konto weiterhin ohne Nachfrage autorisiert wird, kontaktiere uns. Wir können die gespeicherte Strava-Autorisierung für dein Habitify-Konto entfernen. Versuche die Verbindung nach unserer Bestätigung erneut; dann sollte die Strava-Anmelde- und Autorisierungsseite erscheinen.
+</Accordion>

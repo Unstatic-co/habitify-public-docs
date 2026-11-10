@@ -419,6 +419,109 @@
             "href": "https://feedback.habitify.me/changelog"
           }
         ]
+      },
+      {
+        "language": "de",
+        "tabs": [
+          {
+            "tab": "Dokumentation",
+            "icon": "life-ring",
+            "pages": [
+              {
+                "group": "Erste Schritte",
+                "pages": [
+                  "de/habitify-introduction",
+                  "de/habitify-quick-start",
+                  "de/glossary"
+                ]
+              },
+              {
+                "group": "Funktionen",
+                "pages": [
+                  "de/good-habits",
+                  "de/bad-habits",
+                  "de/journal",
+                  "de/single-progress",
+                  "de/overall-progress",
+                  "de/reflection",
+                  "de/circle",
+                  "de/challenge"
+                ]
+              },
+              {
+                "group": "Werkzeuge",
+                "pages": [
+                  "de/area",
+                  "de/reminder",
+                  "de/habit-gate",
+                  "de/note",
+                  "de/widget",
+                  "de/task",
+                  "de/timer"
+                ]
+              },
+              {
+                "group": "App-Einstellungen",
+                "pages": ["de/off-mode", "de/app-behavior"]
+              },
+              {
+                "group": "Automatisierung",
+                "pages": [
+                  "de/automation-status-update",
+                  "de/ios-shortcuts",
+                  "de/nfc-tags",
+                  "de/zapier-ifttt"
+                ]
+              },
+              {
+                "group": "Integrationen",
+                "pages": [
+                  "de/google-calendar-integration",
+                  "de/outlook-calendar-integration",
+                  "de/apple-calendar-integration",
+                  "de/apple-health-integration",
+                  "de/health-connect-integration",
+                  "de/strava-integration",
+                  "de/fitbit-integration",
+                  "de/rescue-time-integration",
+                  "de/screen-time-integration"
+                ]
+              },
+              {
+                "group": "Habitify MCP & AI",
+                "pages": [
+                  "de/habitify-mcp",
+                  "de/habi-ai",
+                  "de/siri-ai"
+                ]
+              },
+              {
+                "group": "Tarife & Abrechnung",
+                "pages": [
+                  "de/plans",
+                  "de/billings",
+                  "de/habitify-family",
+                  "de/habitify-team",
+                  "de/habitify-student"
+                ]
+              },
+              {
+                "group": "Konto & Daten",
+                "pages": ["de/manage-account", "de/manage-data"]
+              }
+            ]
+          },
+          {
+            "tab": "API",
+            "icon": "rectangle-api",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
+          },
+          {
+            "tab": "Änderungsprotokoll",
+            "icon": "bullhorn",
+            "href": "https://feedback.habitify.me/changelog"
+          }
+        ]
       }
     ]
   },

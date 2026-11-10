@@ -1,0 +1,50 @@
+---
+title: "Google Calendar"
+sidebarTitle: "Google Calendar"
+---
+
+Deine Gewohnheiten sind nicht vom Rest deines Tages getrennt. Sie stehen neben deinen Meetings, Terminen und allem anderen in deinem Kalender.
+
+Diese Integration synchronisiert deine Habitify-Gewohnheiten direkt mit Google Calendar. So kannst du sie dort sehen und verwalten, wo du bereits deinen Zeitplan organisierst, und musst nicht zwischen zwei Apps wechseln, um einen vollständigen Überblick über deinen Tag zu erhalten.
+
+## Funktionsweise
+
+- Eine Gewohnheit ohne zeitbasierte Erinnerungen wird als ganztägiges Ereignis synchronisiert.
+- Bei einer Gewohnheit mit zeitbasierten Erinnerungen wird jede Erinnerung als Ereignis dieser Gewohnheit synchronisiert. Die Erinnerungszeit wird zur Startzeit.
+- Auch die Beschreibung der Gewohnheit wird als Beschreibung des Ereignisses synchronisiert.
+
+**In Google Calendar wird ein neuer Kalender namens Habitify für alle aus Habitify synchronisierten Gewohnheitsereignisse erstellt.** Dadurch kannst du die Ereignisse einfacher verwalten, weil du alle Gewohnheitsereignisse allein über den Habitify-Kalender ändern kannst.
+
+## Einrichtung
+
+<Tabs>
+  <Tab title=" iOS">
+    <iframe src="https://drive.google.com/file/d/15vl2cxEaP_szfKckPsBTTIXzALHNgG5n/preview" width="640" height="360" />
+
+    1. Öffne in _Habitify_ die **Einstellungen**.
+    2. Gehe zu **Integration** und tippe auf **Google Calendar**.
+    3. Tippe auf der Einstellungsseite von Google Calendar auf **Verbinden**.
+    4. Melde dich bei deinem Google-Calendar-Konto an und schließe die Autorisierung ab.
+    5. Nach erfolgreicher Autorisierung kannst du Folgendes konfigurieren:
+       1. Wähle unter **Beim Löschen eines Ereignisses**, welchen Status eine Gewohnheit erhalten soll, wenn du ihr synchronisiertes Ereignis in Google Calendar löschst: **Als nicht geschafft markieren** oder **Als übersprungen markieren**.
+    6. Wenn alles eingerichtet ist, tippe oben rechts auf **く**, um zu speichern und zurückzukehren.
+  </Tab>
+  <Tab title="🤖 Android">
+    <iframe src="https://drive.google.com/file/d/1EdAjhVmaSqO0Fi0dGMnZRdpXNdVet6BT/preview" width="640" height="360" />
+
+    1. Öffne in Habitify die **Einstellungen**.
+    2. Gehe zu **Integration** und tippe auf **Mit Google Calendar synchronisieren**.
+    3. Tippe auf der Einstellungsseite von Google Calendar auf **Verbinden**.
+    4. Melde dich bei deinem Google-Calendar-Konto an und schließe die Autorisierung ab.
+    5. Nach erfolgreicher Autorisierung kannst du Folgendes konfigurieren:
+       1. Wähle unter **Beim Löschen eines Ereignisses**, welchen Status eine Gewohnheit erhalten soll, wenn du ihr synchronisiertes Ereignis in Google Calendar löschst: **Als fehlgeschlagen markieren** oder **Als übersprungen markieren**.
+    6. Wenn alles eingerichtet ist, tippe oben rechts auf **Speichern**.
+    7. Tippe auf **←**, um zum Hauptmenü der Einstellungen zurückzukehren.
+  </Tab>
+</Tabs>
+
+## **Einschränkungen**
+
+- Wenn du den Habitify-Kalender in Google Calendar löschst, werden spätere Änderungen nicht mehr synchronisiert. Trenne die Integration und führe die Verbindungsschritte erneut aus.
+- Wenn du eine Gewohnheit in Habitify archivierst oder löschst, werden alle zugehörigen Ereignisse in Google Calendar entfernt.
+- Wenn du alle Ereignisse oder alle zukünftigen Ereignisse einer Gewohnheit in Google Calendar löschst, wird die Gewohnheit nicht als übersprungen oder fehlgeschlagen markiert.

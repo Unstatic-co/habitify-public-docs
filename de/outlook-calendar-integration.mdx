@@ -1,0 +1,59 @@
+---
+title: "Outlook Calendar"
+sidebarTitle: "Outlook Calendar"
+---
+
+Deine Gewohnheiten sind nicht vom Rest deines Tages getrennt. Sie stehen neben deinen Meetings, Terminen und allem anderen in deinem Kalender.
+
+Diese Integration synchronisiert deine Habitify-Gewohnheiten direkt mit Outlook Calendar. So kannst du sie dort sehen und verwalten, wo du bereits deinen Zeitplan organisierst, und musst nicht zwischen zwei Apps wechseln, um einen vollständigen Überblick über deinen Tag zu erhalten.
+
+## Funktionsweise
+
+- Eine Gewohnheit ohne zeitbasierte Erinnerungen wird als ganztägiges Ereignis synchronisiert.
+- Bei einer Gewohnheit mit zeitbasierten Erinnerungen wird jede Erinnerung als Ereignis dieser Gewohnheit synchronisiert. Die Erinnerungszeit wird zur Startzeit.
+- Auch die Beschreibung der Gewohnheit wird als Beschreibung des Ereignisses synchronisiert.
+
+**In Outlook Calendar wird ein neuer Kalender namens Habitify für alle aus Habitify synchronisierten Gewohnheitsereignisse erstellt.** Dadurch kannst du die Ereignisse einfacher verwalten, weil du alle Gewohnheitsereignisse allein über den Habitify-Kalender ändern kannst.
+
+## Einrichtung
+
+<Tabs>
+  <Tab title=" iOS">
+    <iframe src="https://drive.google.com/file/d/1GcuJ767UGRcttJuoBAMeUelisJBuzJe0/preview" width="640" height="360" />
+
+    1. Öffne in _Habitify_ die **Einstellungen**.
+    2. Gehe zu **Integration** und tippe auf **Outlook Calendar**.
+    3. Tippe auf der Einstellungsseite von Outlook Calendar auf **Verbinden**.
+    4. Bei der ersten Verbindung musst du dich möglicherweise bei deinem Outlook-Calendar-Konto anmelden und die angeforderten Berechtigungen erteilen.
+    5. Nach erfolgreicher Verbindung kannst du Folgendes konfigurieren:
+       1. Wähle unter **Beim Löschen eines Ereignisses**, welchen Status eine Gewohnheit erhalten soll, wenn du ihr synchronisiertes Ereignis in Outlook Calendar löschst: **Als nicht geschafft markieren** oder **Als übersprungen markieren**.
+    6. Wenn alles eingerichtet ist, tippe oben rechts auf **く**, um zu speichern und zurückzukehren.
+  </Tab>
+  <Tab title="🤖 Android">
+    <iframe src="https://drive.google.com/file/d/1UzR7x7sCvRBUDAZQCcbAilpomD8xxfXT/preview" width="640" height="360" />
+
+    1. Öffne in Habitify die **Einstellungen**.
+    2. Gehe zu **Integration** und tippe auf **Mit Outlook Calendar synchronisieren**.
+    3. Tippe auf der Einstellungsseite von Outlook Calendar auf **Verbinden**.
+    4. Bei der ersten Verbindung musst du dich möglicherweise bei deinem Outlook-Calendar-Konto anmelden und die angeforderten Berechtigungen erteilen.
+    5. Nach erfolgreicher Verbindung kannst du Folgendes konfigurieren:
+       1. Wähle unter **Beim Löschen eines Ereignisses**, welchen Status eine Gewohnheit erhalten soll, wenn du ihr synchronisiertes Ereignis in Outlook Calendar löschst: **Als fehlgeschlagen markieren** oder **Als übersprungen markieren**.
+    6. Wenn alles eingerichtet ist, tippe oben rechts auf **←**, um zu speichern und zurückzukehren.
+  </Tab>
+</Tabs>
+
+## **Einschränkungen**
+
+- Wenn du den Habitify-Kalender in Outlook Calendar löschst, werden spätere Änderungen nicht mehr synchronisiert. Trenne die Integration und führe die Verbindungsschritte erneut aus.
+- Wenn du eine Gewohnheit in Habitify archivierst oder löschst, werden alle zugehörigen Ereignisse in Outlook Calendar entfernt.
+- Wenn du alle Ereignisse oder alle zukünftigen Ereignisse einer Gewohnheit in Outlook Calendar löschst, wird die Gewohnheit nicht als übersprungen oder fehlgeschlagen markiert.
+
+## Häufig gestellte Fragen
+
+<Accordion title="**Wie ändere ich das Outlook-Konto, das mit meinem Habitify-Konto verbunden ist?**">
+  Wenn du für die Integration zu einem anderen Outlook-Calendar-Konto wechseln möchtest, gehe wie folgt vor:
+
+  - Trenne das derzeit verbundene Konto.
+  - Öffne deinen Browser und melde dich beim neuen Outlook-Konto an.
+  - Führe die Schritte zur Integration erneut aus.
+</Accordion>

@@ -1,0 +1,215 @@
+---
+title: "Daten"
+sidebarTitle: "Daten"
+---
+
+## Daten in Habitify importieren
+
+Mit einer neuen App zu beginnen ist spannend. Wir wissen jedoch, dass du deinen wertvollen Verlauf aus anderen Apps oder Tabellen nicht verlieren möchtest. In diesem Abschnitt lernst du verschiedene Methoden kennen, mit denen du deine bisherigen Daten in Habitify importieren und ein vollständiges Bild deiner Entwicklung erhalten kannst.
+
+### **Daten aus deiner Gesundheits-App importieren**
+
+Wenn deine bisherigen Daten mit Fitness zusammenhängen und in Apple Health, Health Connect, Fitbit oder Strava gespeichert sind, ist dies die einfachste und automatischste Möglichkeit, deinen Verlauf zu importieren.
+
+**So funktioniert es:** Wenn du einen dieser Dienste zum ersten Mal mit einer Gewohnheit in Habitify verbindest, führt die App automatisch eine **Synchronisierung des Verlaufs** durch. Sie blickt in die Vergangenheit zurück und importiert frühere Aktivitäten in das Protokoll deiner Gewohnheit.
+
+- **Apple Health oder Health Connect:** Synchronisiere Schritte, Trainings, Schlaf, Achtsamkeitsminuten und mehr direkt von deinem iPhone oder Android-Smartphone.
+- **Fitbit:** Erfasse automatisch deine täglichen Schritte, deinen Schlaf, verbrannte Kalorien und weitere Werte von deinem Fitbit-Gerät.
+- **Strava:** Synchronisiere Läufe, Radtouren, Spaziergänge und andere Trainings direkt nach deren Abschluss mit deinen Gewohnheiten.
+
+### Daten aus der Productive-App importieren
+
+Für diese Funktion musst du deine Daten zuerst aus der Productive-App exportieren. Productive exportiert Daten normalerweise als `.sqlite`-Datei. Halte diese Datei bereit, um den Import in Habitify zu starten.
+
+Gehe in der Habitify-App zu **Einstellungen → Daten importieren/exportieren → Aus Productive importieren**.
+
+Wähle anschließend deine exportierte `.sqlite`-Datei aus und folge den Anweisungen auf dem Bildschirm, um den Import abzuschließen.
+
+Beim Import werden vor allem die grundlegenden Informationen zu deinen Gewohnheiten übernommen:
+
+- **Gewohnheiten:** deine Liste der Gewohnheiten.
+- **Gewohnheitsprotokolle:** deine bisherigen Check-ins sowie übersprungenen und nicht geschafften Einträge für diese Gewohnheiten.
+- **Tageszeit:** Einstellungen für morgens, nachmittags oder abends.
+- **Gewohnheitsbeschreibungen:** alle Notizen oder Beschreibungen, die du deinen Gewohnheiten hinzugefügt hast.
+- **Endbedingung:** Wenn für eine Gewohnheit in Productive ein Enddatum festgelegt war, wird es importiert, **sofern** es nicht heute oder in der Vergangenheit liegt. (In Habitify müssen Enddaten mindestens 7 Tage in der Zukunft liegen.)
+
+<Note>
+  **Wichtige Hinweise:**
+
+  - **Challenges** und **Programme** aus Productive werden **nicht** in Habitify importiert. Es werden nur einzelne Gewohnheiten übertragen.
+  - Gewohnheiten, die in Productive als **pausiert oder beendet** markiert waren, werden in Habitify importiert, aber automatisch in den Zustand **Archiviert** versetzt. Du kannst sie bei Bedarf später aus dem Archiv wiederherstellen.
+</Note>
+
+Beim Import werden deine Productive-Zeitpläne und -Ziele automatisch in das Habitify-Format umgewandelt. So funktioniert es:
+
+- **Täglich / Bestimmte Wochentage / Bestimmte Monatstage:** Gewohnheiten, die in Productive täglich, an bestimmten Wochentagen oder an bestimmten Tagen des Monats wiederholt werden, werden in Habitify als **Tagesziele** mit demselben Zeitplan importiert.
+- **Mehrere Ziele pro Tag:** Wenn deine Productive-Gewohnheit mehrere Ziele an einem Tag hatte (z. B. „2-mal morgens + 2-mal abends“), **addiert** Habitify diese zu einem einzigen Tagesziel (z. B. „4-mal pro Tag“).
+- **Wöchentliche Häufigkeit (z. B. „3-mal pro Woche“):** Wenn deine Productive-Gewohnheit auf eine wöchentliche Häufigkeit (z. B. „3-mal pro Woche“) und ein Tagesziel (z. B. „jeweils 20 Minuten“) eingestellt war, wandelt Habitify dies durch Multiplikation von Häufigkeit und Tagesziel in ein einziges **Wochenziel** um.<br />_Beispiel:_ Productive: „3-mal pro Woche, 20 Minuten pro Tag“ → Habitify: **„60 Minuten pro Woche“**.
+- **Sonderfall – zweiwöchentlich:** Wenn eine Gewohnheit in Productive beispielsweise auf „1-mal alle 2 Wochen“ eingestellt war, wird dieses konkrete Intervall beim Import nicht direkt unterstützt. Als Ausweichlösung wird sie in Habitify in ein **Tagesziel** umgewandelt. Möglicherweise musst du den Zeitplan dieser Gewohnheit nach dem Import manuell anpassen.
+
+### Daten aus der Streaks-App importieren
+
+Für diese Funktion musst du deine Daten zuerst aus der Streaks-App exportieren. Streaks exportiert diese Daten normalerweise als spezielle Datei mit der Erweiterung `.streaks`. Halte diese Datei bereit, um den Import in Habitify zu starten.
+
+Gehe in der Habitify-App zu **Einstellungen → Daten importieren/exportieren → Aus Streaks importieren**.
+
+Wähle anschließend deine exportierte `.streaks`-Datei aus und folge den Anweisungen auf dem Bildschirm, um den Import abzuschließen.
+
+Der Import übernimmt die grundlegenden Elemente deiner Gewohnheitsverfolgung:
+
+- **Gewohnheitsname:** Der Name deiner Gewohnheit bleibt unverändert.
+- **Zeitplan als Wiederholung:** Wie oft du die Gewohnheit ausführst (täglich, wöchentlich, monatlich), wird umgewandelt.
+- **Häufigkeit als Ziel:** Wenn deine Gewohnheit „X-mal pro Tag/Woche/Monat“ lautete, bleibt dieses Ziel erhalten.
+- **Erinnerungen als Erinnerungen:** Deine benutzerdefinierten Erinnerungszeiten werden übernommen (Details siehe unten).
+- **Notizen als Gewohnheitsnotizen:** Alle Notizen, die du deinen Gewohnheiten hinzugefügt hast, werden kopiert.
+- **Erstes Datum mit Protokollen als Startdatum:** Habitify verwendet das Datum deines frühesten Protokolleintrags in Streaks als „Startdatum“.
+- **Protokollverlauf:** Deine bisherigen Abschlüsse, Fehlschläge und übersprungenen Tage werden importiert.
+- **Schlechte Gewohnheiten:** Gewohnheiten, die du aufgeben oder einschränken wolltest, werden ebenfalls importiert (Details siehe unten).
+
+Da Habitify und Streaks etwas unterschiedlich funktionieren, werden einige Daten beim Import umgewandelt. Hier sind die wichtigsten Punkte.
+
+**1/ Erinnerungen**
+
+Wenn du in Streaks bestimmte Uhrzeiten für Erinnerungen festgelegt hast, werden diese exakten Uhrzeiten mit Habitify synchronisiert. Streaks besitzt außerdem eine Funktion namens „Automatische Erinnerung“, die es in Habitify nicht gibt. Diese Erinnerungen werden **nicht** importiert.
+
+**2/ Protokollverlauf**
+
+- **Für tägliche Gewohnheiten:** Die Zuordnung ist eindeutig.
+  - `Abgeschlossen` in Streaks → `Abgeschlossen` in Habitify
+  - `Nicht geschafft` in Streaks → `Nicht geschafft` in Habitify
+  - Wenn ein Tag in Streaks **_nicht protokolliert_** wurde, wird er in Habitify als `Übersprungen` markiert (damit deine Serie erhalten bleibt).
+- **Für wöchentliche Gewohnheiten:** In Habitify können Wochen nur sonntags oder montags beginnen, in Streaks dagegen an jedem beliebigen Tag. Daher werden deine wöchentlichen Protokolldaten aus Streaks in Habitify dem **Montag** der entsprechenden Woche zugeordnet.<br />_Beispiel:_ Wenn deine Streaks-Woche von Mittwoch bis Dienstag lief, wird der Abschlussstatus für die gesamte Woche in Habitify am Montag dieser Woche angezeigt.
+- **Für monatliche Gewohnheiten:** Ähnlich wie bei wöchentlichen Gewohnheiten wird der Abschlussstatus eines ganzen Monats in Streaks dem **1. Tag dieses Monats** in Habitify zugeordnet.
+
+**3/ Ziel von schlechten Gewohnheiten**
+
+- **Eine Gewohnheit aufgeben:** Wenn dein Ziel in Streaks „Kein(e) [Name der Gewohnheit]“ lautete, wird es in Habitify als **„Gewohnheit aufgeben“** importiert und erfasst die Tage, an denen du sie erfolgreich vermieden hast.
+- **Eine Gewohnheit einschränken:** Wenn dein Ziel in Streaks darin bestand, eine schlechte Gewohnheit auf „X-mal pro Tag/Woche/Monat“ zu begrenzen, wird sie in Habitify als **„Gewohnheit einschränken“** mit demselben Häufigkeitsziel importiert.
+
+### **Daten aus einer Tabelle importieren**
+
+Wenn sich deine bisherigen Tracking-Daten in einer Tabelle befinden (vielleicht aus einer anderen App exportiert oder manuell geführt), kannst du sie über einen Dienst namens **Zapier** importieren. Diese Methode ist anspruchsvoller, eignet sich aber ideal, um den vollständigen Verlauf einer beliebigen Gewohnheit nachträglich einzufügen.
+
+Diese Methode verwendet eine Automatisierung (einen „Zap“), die neue Zeilen in einer Google-Tabelle überwacht und einen entsprechenden Protokolleintrag in Habitify erstellt. Zum Importieren deiner alten Daten kopierst du sie in die Google-Tabelle und löst dadurch den Vorgang aus.
+
+Gehe wie folgt vor:
+
+<Steps>
+  <Step title="Bereite deine Datentabelle vor">
+    Zuerst musst du deine alten Daten an [<u>unsere Google-Sheets-Vorlage</u>](https://docs.google.com/spreadsheets/d/1LN3wqWGwHToYL0pWqYPCGztiY9Rxi9KA_xLo1poQdU8/edit?usp=sharing) anpassen. Jedes Tabellenblatt erfasst das Fortschrittsprotokoll einer Gewohnheit. Organisiere deinen Verlauf daher so, dass jede Zeile einen Abschluss darstellt (einschließlich des genauen Datums, der Uhrzeit und eines eventuellen Zahlenwerts).
+  </Step>
+  <Step title="Richte deine Habitify-Gewohnheit ein">
+    Erstelle in Habitify die entsprechende Gewohnheit, in die du die Daten importieren möchtest.
+  </Step>
+  <Step title="Verwende unsere Zapier-Vorlage für eine einfache Einrichtung">
+    Erstelle in Habitify die entsprechende Gewohnheit, in die du die Daten importieren möchtest.
+  </Step>
+  <Step title="Führe den Zap aus, um Daten zu importieren">
+    Sobald der Zap aktiv ist, kannst du sämtliche Verlaufsdaten in die Google-Tabelle kopieren. Zapier liest dann jede Zeile und importiert sie als datierten Protokolleintrag in Habitify, sodass dein Fortschrittsverlauf erfolgreich nachgetragen wird.
+  </Step>
+</Steps>
+
+Du kannst dieselbe Integration über Zapier auch mit anderen Tabellendiensten wie Airtable, Microsoft Excel Online, Zoho Sheet und weiteren umsetzen.
+
+## Daten aus Habitify exportieren
+
+Wir bieten zwei wichtige Exportformate für unterschiedliche Anforderungen: eine einfache **CSV-Datei** zur grundlegenden Analyse von Protokollen und eine umfassende **vollständige Sicherungsdatei (.sqlite)** als komplette Momentaufnahme deines Kontos.
+
+#### Schritt-für-Schritt-Anleitung
+
+1. Gehe in der Habitify-App zum Tab **Einstellungen**.
+2. Suche **Importieren/Exportieren** und tippe darauf.
+3. Wähle das gewünschte Exportformat: **Als .csv exportieren** oder **Als Sicherung exportieren**.
+4. Folge den Anweisungen deines Geräts, um die Datei zu speichern oder zu teilen (z. B. per E-Mail oder Cloud-Speicher).
+
+#### **Exportdateiformate vergleichen**
+
+| Format | .csv | Sicherung |
+| --- | --- | --- |
+| Am besten geeignet für | Analyse deines grundlegenden Gewohnheitsverlaufs in Tabellenprogrammen wie Google Sheets, Microsoft Excel oder Apple Numbers. | Erstellen einer vollständigen Sicherung deiner gesamten Habitify-Einrichtung und deines Verlaufs. Diese Datei kann möglicherweise künftig zur Wiederherstellung deiner Daten oder für erweiterte technische Analysen mit Datenbankwerkzeugen verwendet werden. |
+| Dateierweiterung | `.csv` | `.sqlite` |
+| Enthaltene Daten | Dieser Export enthält ein übersichtliches Protokoll deiner Gewohnheits-Check-ins mit folgenden Spalten für jeden Eintrag: <ul><li>`Gewohnheit`: Name der Gewohnheit.</li><li>`Datum`: Datum, an dem der Protokolleintrag erstellt wurde.</li><li>`Gesamtprotokoll`: erfasster Zahlenwert (falls zutreffend).</li><li>`Einheit`: mit dem Ziel verbundene Einheit (z. B. Minuten, km, Mal).</li><li>`Status`: ob die Gewohnheit als abgeschlossen, übersprungen oder nicht geschafft markiert wurde.</li><li>`Gewohnheits-ID`: eindeutige Kennung der Gewohnheit.</li></ul> | Dieser Export enthält eine umfassende Momentaufnahme von **allem** in deinem Konto, einschließlich (aber nicht beschränkt auf): <ul><li>**Gewohnheitsdetails:** alle deine Gewohnheiten (aktive und archivierte), Ziele, Checklisten, Erinnerungen (Zeit, Ort, Stapeln), Endbedingungen, Meilensteine usw.</li><li>**Fortschritt und Protokolle:** alle Check-ins, übersprungenen und nicht geschafften Einträge, Zahlenprotokolle, Notizen, Stimmungen, Checklistenprotokolle, Serienverlauf (`currentStreak`) und berechneten Fortschrittsdaten (`logCalculations`, `progresses`).</li><li>**Einstellungen:** deine Kontoeinstellungen wie der erste Tag der Woche (`firstDayOfWeek`).</li></ul> |
+
+## Daten in Habitify verwalten
+
+### Gewohnheitsdaten zurücksetzen
+
+<Warning>
+  Beachte vor dem Zurücksetzen deiner Daten Folgendes:
+
+  - Diese Aktion löscht **dauerhaft alle Verlaufsdaten** aller Gewohnheiten in deinem Konto.
+  - Dazu gehören sämtliche Check-ins, übersprungenen und nicht geschafften Einträge, alle aktuellen Serien, Notizen und Fortschritte archivierter Gewohnheiten.
+  - **Dieser Vorgang kann nicht rückgängig gemacht werden.** Sobald deine Daten gelöscht wurden, sind sie unwiederbringlich verloren und können auch von unserem Support-Team nicht wiederhergestellt werden.
+  - Deine Liste der _aktuellen_ Gewohnheiten bleibt erhalten, aber deren Fortschritt und Serien werden auf null zurückgesetzt.
+</Warning>
+
+<Tabs>
+  <Tab title=" iOS">
+    1. Öffne **Habitify** und gehe zu **Einstellungen**.
+    2. Tippe auf dein Profil.
+    3. Gehe zum Abschnitt **Datenschutz & Daten** und tippe auf **Gewohnheitsdaten zurücksetzen**.
+    4. Tippe zur Bestätigung auf **Gewohnheitsdaten zurücksetzen**.
+  </Tab>
+  <Tab title="🤖 Android">
+    1. Öffne **Habitify** und gehe zu **Einstellungen**.
+    2. Tippe auf deinen Namen.
+    3. Scrolle nach unten zum **Gefahrenbereich**.
+    4. Suche die Option **Gewohnheitsdaten zurücksetzen** und tippe daneben auf **Löschen**.
+    5. Tippe zur Bestätigung auf **OK**.
+  </Tab>
+  <Tab title="🖥️ Website & Desktop">
+    1. Öffne die Habitify-App.
+    2. Klicke auf dein Profilbild und wähle **Profil**.
+    3. Suche im **Gefahrenbereich** die Schaltfläche **Gewohnheitsdaten zurücksetzen** und klicke darauf.
+    4. Klicke zur Bestätigung auf **Gewohnheitsdaten zurücksetzen**.
+  </Tab>
+</Tabs>
+
+### Alle Daten löschen
+
+<Warning>
+  Lies die folgenden Hinweise bitte sehr sorgfältig, bevor du fortfährst.
+
+  - Diese Aktion löscht **ALLE DEINE GEWOHNHEITEN** dauerhaft aus deiner Liste.
+  - Außerdem werden **ALLE deine Verlaufsdaten** dauerhaft gelöscht, einschließlich sämtlicher Check-ins, übersprungenen und nicht geschafften Einträge, Notizen und Serien.
+  - **DIESER VORGANG KANN NICHT RÜCKGÄNGIG GEMACHT WERDEN.** Nach deiner Bestätigung sind alle Informationen unwiederbringlich verloren und können weder von dir noch von unserem Support-Team wiederhergestellt werden.
+  - Zurück bleibt ein **vollständig leeres Konto**.
+</Warning>
+
+<Tabs>
+  <Tab title=" iOS">
+    1. Öffne **Habitify** und gehe zu **Einstellungen**.
+    2. Tippe auf dein Profil.
+    3. Gehe zum Abschnitt **Datenschutz & Daten** und tippe auf **Alle Daten löschen**.
+    4. Tippe zur Bestätigung auf **Alle Daten löschen**.
+  </Tab>
+  <Tab title="🤖 Android">
+    1. Öffne **Habitify** und gehe zu **Einstellungen**.
+    2. Tippe auf deinen Namen.
+    3. Scrolle nach unten zum **Gefahrenbereich**.
+    4. Suche die Option **Alle Daten löschen** und tippe daneben auf **Löschen**.
+    5. Tippe zur Bestätigung auf **OK**.
+  </Tab>
+  <Tab title="🖥️ Website & Desktop">
+    1. Öffne die Habitify-App.
+    2. Klicke auf dein Profilbild und wähle **Profil**.
+    3. Suche im **Gefahrenbereich** die Schaltfläche **Daten löschen** und klicke darauf.
+    4. Klicke zur Bestätigung auf **Alle Daten löschen**.
+  </Tab>
+</Tabs>
+
+## Häufig gestellte Fragen
+
+<Accordion title="**Warum wird meine exportierte CSV-Datei in Excel in einer einzigen Spalte geöffnet?**">
+  Dies passiert, wenn Excel das in der CSV-Datei verwendete Trennzeichen nicht erkennt. Der Habitify-Export verwendet Semikolons (`;`) zum Trennen der Felder, während deine Excel-Einstellungen möglicherweise ein anderes Trennzeichen erwarten.
+
+  **Wie kann ich die Daten in getrennten Spalten anzeigen?**
+
+  1. Öffne die CSV-Datei in Excel und wähle **Spalte A** aus.
+  2. Gehe zu **Daten → Text in Spalten**.
+  3. Wähle **Getrennt** und klicke auf **Weiter**.
+  4. Aktiviere **Semikolon** und deaktiviere die anderen Trennzeichen.
+  5. Klicke auf **Fertig stellen**.
+
+  Deine Daten erscheinen in getrennten Spalten: **Gewohnheit, Datum, Gesamtprotokoll, Einheit, Status und Gewohnheits-ID**.
+</Accordion>
