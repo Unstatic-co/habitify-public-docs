@@ -20,6 +20,105 @@
     ],
     "languages": [
       {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "icon": "life-ring",
+            "pages": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "habitify-introduction",
+                  "habitify-quick-start",
+                  "glossary"
+                ]
+              },
+              {
+                "group": "Features",
+                "pages": [
+                  "good-habits",
+                  "bad-habits",
+                  "journal",
+                  "single-progress",
+                  "overall-progress",
+                  "reflection",
+                  "circle",
+                  "challenge"
+                ]
+              },
+              {
+                "group": "Tools",
+                "pages": [
+                  "area",
+                  "reminder",
+                  "habit-gate",
+                  "note",
+                  "widget",
+                  "task",
+                  "timer"
+                ]
+              },
+              {
+                "group": "App Settings",
+                "pages": ["off-mode", "app-behavior"]
+              },
+              {
+                "group": "Automation",
+                "pages": [
+                  "automation-status-update",
+                  "ios-shortcuts",
+                  "nfc-tags",
+                  "zapier-ifttt"
+                ]
+              },
+              {
+                "group": "Integration",
+                "pages": [
+                  "google-calendar-integration",
+                  "outlook-calendar-integration",
+                  "apple-calendar-integration",
+                  "apple-health-integration",
+                  "health-connect-integration",
+                  "strava-integration",
+                  "fitbit-integration",
+                  "rescue-time-integration",
+                  "screen-time-integration"
+                ]
+              },
+              {
+                "group": "Habitify MCP & AI",
+                "pages": ["habitify-mcp", "habi-ai", "siri-ai"]
+              },
+              {
+                "group": "Plans & Billing",
+                "pages": [
+                  "plans",
+                  "billings",
+                  "habitify-family",
+                  "habitify-team",
+                  "habitify-student"
+                ]
+              },
+              {
+                "group": "Account & Data",
+                "pages": ["manage-account", "manage-data"]
+              }
+            ]
+          },
+          {
+            "tab": "API",
+            "icon": "rectangle-api",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
+          },
+          {
+            "tab": "Changelog",
+            "icon": "bullhorn",
+            "href": "https://feedback.habitify.me/changelog"
+          }
+        ]
+      },
+      {
         "language": "pt-BR",
         "tabs": [
           {
@@ -122,105 +221,7 @@
           }
         ]
       },
-      {
-        "language": "en",
-        "tabs": [
-          {
-            "tab": "Documentation",
-            "icon": "life-ring",
-            "pages": [
-              {
-                "group": "Get Started",
-                "pages": [
-                  "habitify-introduction",
-                  "habitify-quick-start",
-                  "glossary"
-                ]
-              },
-              {
-                "group": "Features",
-                "pages": [
-                  "good-habits",
-                  "bad-habits",
-                  "journal",
-                  "single-progress",
-                  "overall-progress",
-                  "reflection",
-                  "circle",
-                  "challenge"
-                ]
-              },
-              {
-                "group": "Tools",
-                "pages": [
-                  "area",
-                  "reminder",
-                  "habit-gate",
-                  "note",
-                  "widget",
-                  "task",
-                  "timer"
-                ]
-              },
-              {
-                "group": "App Settings",
-                "pages": ["off-mode", "app-behavior"]
-              },
-              {
-                "group": "Automation",
-                "pages": [
-                  "automation-status-update",
-                  "ios-shortcuts",
-                  "nfc-tags",
-                  "zapier-ifttt"
-                ]
-              },
-              {
-                "group": "Integration",
-                "pages": [
-                  "google-calendar-integration",
-                  "outlook-calendar-integration",
-                  "apple-calendar-integration",
-                  "apple-health-integration",
-                  "health-connect-integration",
-                  "strava-integration",
-                  "fitbit-integration",
-                  "rescue-time-integration",
-                  "screen-time-integration"
-                ]
-              },
-              {
-                "group": "Habitify MCP & AI",
-                "pages": ["habitify-mcp", "habi-ai", "siri-ai"]
-              },
-              {
-                "group": "Plans & Billing",
-                "pages": [
-                  "plans",
-                  "billings",
-                  "habitify-family",
-                  "habitify-team",
-                  "habitify-student"
-                ]
-              },
-              {
-                "group": "Account & Data",
-                "pages": ["manage-account", "manage-data"]
-              }
-            ]
-          },
-          {
-            "tab": "API",
-            "icon": "rectangle-api",
-            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
-          },
-          {
-            "tab": "Changelog",
-            "icon": "bullhorn",
-            "href": "https://feedback.habitify.me/changelog"
-          }
-        ]
-      },
+
       {
         "language": "ja",
         "tabs": [
