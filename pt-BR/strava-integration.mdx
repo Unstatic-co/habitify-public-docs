@@ -1,0 +1,111 @@
+---
+title: "Strava"
+---
+
+Se você já registra suas corridas, pedaladas, nados e outros treinos no Strava, não há motivo para registrá-los uma segunda vez no Habitify. Esta integração conecta os dois aplicativos; assim, sempre que você conclui e salva uma atividade no Strava, seu progresso é sincronizado automaticamente com o hábito correspondente.
+
+Você cuida do esforço, e o Habitify cuida do acompanhamento. Este artigo mostra como fazer isso.
+
+## Adicionar um hábito sincronizado com o Strava
+
+<Tabs>
+  <Tab title="  iOS">
+    <iframe src="https://drive.google.com/file/d/1sNejJY7gvcyJK5zoTmcPWz4NVg3ql5uN/preview" width="640" height="360" />
+
+    1. Em **Diário**, toque em **\+** no canto inferior direito e escolha **Criar um bom hábito**.
+    2. Na tela seguinte, mude para a aba **Strava**.
+    4. Escolha na lista o tipo de dado que deseja acompanhar (por exemplo, "Passos").
+    5. Na etapa seguinte, você será redirecionado ao site do Strava para entrar em sua conta e conceder permissão de acesso ao Habitify.
+    6. Depois que a permissão for concedida, volte ao Habitify.
+    7. Configure os detalhes do hábito normalmente.
+    8. Quando tudo estiver definido, toque em **✓** para salvar o hábito recém-criado em sua lista.
+
+    Depois de criado, um hábito vinculado ao Strava é fácil de identificar: ele exibe um pequeno ícone do Strava diretamente na visualização do Diário, diferenciando-o rapidamente dos hábitos acompanhados manualmente.
+  </Tab>
+  <Tab title="🤖 Android">
+    <iframe src="https://drive.google.com/file/d/1p9Lj5qlRltVMMaBTlp0dKhlaHDh6l5lY/preview" width="640" height="360" />
+
+    1. Em _Diário_, toque **no botão \+** na barra de datas, no canto inferior direito da tela.
+    2. Escolha **Criar Bom Hábito**.
+    3. Entre as abas na parte superior da tela de modelos de hábito, toque em **Strava**.
+    4. Toque para selecionar uma opção de dados na lista de todas as atividades e tipos de dados que o Habitify pode importar do Strava.
+    5. Defina sua **Meta** (por exemplo, 10.000 passos ou 8 horas de sono) e toque em **Permitir acesso**.
+    6. Na etapa seguinte, você será redirecionado ao site do Strava para entrar em sua conta e conceder permissão de acesso ao Habitify.
+    7. Depois que a permissão for concedida, volte ao Habitify e toque no botão **Continuar**.
+    8. Configure o hábito normalmente.
+    9. Quando tudo estiver definido, toque no botão **Salvar** no canto superior direito.
+
+    Depois de criado, um hábito vinculado ao Strava é fácil de identificar: ao usar a Visualização diária do Diário, ele exibe um pequeno ícone do Strava, diferenciando-o rapidamente dos hábitos acompanhados manualmente.
+  </Tab>
+  <Tab title="🖥️ Site e desktop">
+    <iframe src="https://drive.google.com/file/d/1YNh34ejdRnf2KvDWnN0mfkfTv1PI4CS8/preview" width="640" height="360" />
+
+    1. Na barra de navegação à esquerda, acesse a aba **Todos os hábitos**.
+    2. Vá até a barra de ações inferior, clique em **\+ Adicionar hábito** e escolha **Criar bom hábito**.
+    4. Na janela exibida, selecione a aba **Strava** na parte superior.
+    5. Escolha na lista de categorias compatíveis o tipo de atividade que deseja acompanhar, como **Corrida, Pedalada, Caminhada** ou **Natação**.
+    6. Na primeira vez que criar um hábito sincronizado com o Strava, você precisará conceder ao Habitify permissão de acesso aos seus dados do Strava. <br />Abaixo do nome do hábito, clique em **Permitir acesso** e siga as próximas etapas necessárias.
+    7. Quando a conexão for bem-sucedida, o botão **Permitir acesso** desaparecerá.<br />Você poderá configurar o hábito normalmente.
+    8. Por fim, clique no botão **Salvar** no canto inferior direito para salvar o novo hábito em sua lista de acompanhamento.
+  </Tab>
+</Tabs>
+
+## **Como a integração funciona**
+
+Depois que o hábito é criado e vinculado ao Strava, o processo de acompanhamento é automático.
+
+- Quando você registra uma nova atividade no Strava, os dados são enviados ao Habitify.
+- O Habitify verifica se o tipo e os valores da atividade (distância, duração, calorias) atendem às regras definidas na meta do hábito.
+- Em seguida, o aplicativo obtém os dados que correspondem ao tipo exigido pela meta e os registra no progresso.
+
+Se o valor da meta for atingido, o hábito será marcado automaticamente como concluído. Nenhuma entrada manual é necessária no Habitify.
+
+Por exemplo:
+
+- **Meta baseada em distância:**
+  - **Nome:** Pedalar 50 km por semana
+  - **Meta:** 50 quilômetros por semana
+  - **Conexão com o Strava:** Tipo de atividade: `Pedalada`, Acompanhar por: `Distância`
+- **Meta baseada em tempo:**
+  - **Nome:** Treinar por 3 horas por semana
+  - **Meta:** 3 horas por semana
+  - **Conexão com o Strava:** Tipo de atividade: `Treino`, Acompanhar por: `Duração`
+
+## **Limitações**
+
+- **Uma única conta do Strava só pode estar conectada a uma conta do Habitify por vez.** Se você conectar sua conta do Strava a uma nova conta do Habitify, a conexão com a conta anterior será desfeita automaticamente, e uma notificação será enviada à conta original.
+- **O Strava aplica um limite variável de solicitações em intervalos de 15 minutos para a sincronização de dados** (até 3.300 solicitações no total a cada 15 minutos). Se ocorrer um erro ou não for possível concluir a integração imediatamente, aguarde de 10 a 15 minutos e tente novamente. Isso geralmente significa que um aumento repentino no acompanhamento atingiu temporariamente o limite desses 15 minutos, que será redefinido em breve.
+- Ao conectar um hábito ao Strava pela primeira vez, importaremos suas atividades anteriores para preencher o progresso. **O Habitify sincronizará no máximo os últimos 90 dias do seu histórico relevante no Strava**, ou a partir da data de início do hábito, se ela for mais recente.
+- **A sincronização ocorre em uma única direção: Strava → Habitify.** A integração foi criada para obter suas atividades concluídas no Strava e registrá-las no Habitify. Seus dados do Habitify nunca serão enviados à sua conta do Strava nem a modificarão.
+- **Não é possível adicionar manualmente um registro de progresso nem marcar como concluído um hábito vinculado ao Strava.** Depois que um hábito é vinculado ao Strava, seu progresso passa a ser controlado integralmente pelas atividades do Strava. Isso garante dados sempre precisos e um acompanhamento sem esforço.
+
+## Tipos de dados e unidades compatíveis
+
+Atualmente, o Habitify é compatível com a sincronização de mais de 50 tipos diferentes de atividades do Strava. Para facilitar a localização da sua atividade, nós as agrupamos por categoria abaixo.
+
+1. **Corrida e caminhada**: acompanhe seus passos e trajetos; inclui as atividades: Corrida, Caminhada, Trilha, Corrida em trilha e Corrida virtual.
+2. **Ciclismo**: acompanhe pedaladas na estrada, na montanha ou em ambientes internos; inclui as atividades: Pedalada, Pedalada em bicicleta elétrica, Pedalada em mountain bike elétrica, Pedalada em cascalho, Pedalada em mountain bike, Velomóvel, Pedalada virtual e Handcycle.
+3. **Esportes aquáticos**: calcule seu tempo ou sua distância na água; inclui as atividades: Natação, Remo, Remo virtual, Canoagem, Caiaque, Stand up paddle, Surfe, Windsurfe, Kitesurfe e Vela.
+4. **Esportes de inverno**: registre suas atividades na neve e no gelo; inclui as atividades: Esqui alpino, Esqui fora de pista, Esqui nórdico, Esqui sobre rodas, Snowboard, Caminhada com raquetes de neve e Patinação no gelo.
+5. **Academia e condicionamento físico**: monitore seus treinos em ambientes internos e seu treinamento de força; inclui as atividades: Treino, Musculação, Crossfit, Elíptico, Simulador de escada, Yoga e Pilates.
+6. **Esportes coletivos e com raquete**: registre suas partidas e sessões de treino; inclui as atividades: Futebol, Tênis, Badminton, Pickleball, Squash, Racquetball e Golfe.
+7. **Aventura e outros**: todas as demais atividades que mantêm você em movimento; inclui as atividades: Escalada, Skate, Patinação inline e Cadeira de rodas.
+
+Ao configurar seu hábito do Strava, você deve escolher uma unidade correspondente aos dados registrados pelo Strava. Em geral, é possível acompanhar:
+
+- **Distância:** (km, milhas, metros, jardas) – Disponível para atividades baseadas em distância, como corrida, ciclismo, natação etc.
+- **Duração:** (minutos, horas) – Disponível para quase todos os tipos de atividade.
+- **Calorias:** (kcal) – Disponível se sua atividade do Strava incluir dados de calorias.
+
+## Perguntas frequentes
+
+<Accordion title="**Conectei a conta errada do Strava. O que devo fazer?**">
+  O Strava pode ter uma autorização ativa armazenada em cache (no Strava ou no navegador). Por isso, ao tocar em “Conectar ao Strava”, o perfil antigo pode ser autorizado novamente sem nenhuma solicitação.
+
+  Recomendamos revogar o acesso do Habitify na conta errada do Strava:
+
+  1. Acesse [<u>strava.com/settings/apps</u>](https://www.strava.com/settings/apps).
+  2. Se encontrar “Habitify”, clique em Revogar acesso (revogue todas as entradas do Habitify se houver mais de uma).
+
+  Se a conta errada continuar sendo autorizada novamente sem uma solicitação, entre em contato conosco. Podemos remover, em nosso sistema, a autorização do Strava salva para sua conta do Habitify. Depois que confirmarmos a redefinição, tente fazer a conexão novamente; a página de login e autorização do Strava deverá ser exibida.
+</Accordion>
