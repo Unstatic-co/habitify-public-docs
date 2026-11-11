@@ -524,6 +524,109 @@
         ]
       },
       {
+        "language": "ru",
+        "tabs": [
+          {
+            "tab": "Документация",
+            "icon": "life-ring",
+            "pages": [
+              {
+                "group": "Начало работы",
+                "pages": [
+                  "ru/habitify-introduction",
+                  "ru/habitify-quick-start",
+                  "ru/glossary"
+                ]
+              },
+              {
+                "group": "Функции",
+                "pages": [
+                  "ru/good-habits",
+                  "ru/bad-habits",
+                  "ru/journal",
+                  "ru/single-progress",
+                  "ru/overall-progress",
+                  "ru/reflection",
+                  "ru/circle",
+                  "ru/challenge"
+                ]
+              },
+              {
+                "group": "Инструменты",
+                "pages": [
+                  "ru/area",
+                  "ru/reminder",
+                  "ru/habit-gate",
+                  "ru/note",
+                  "ru/widget",
+                  "ru/task",
+                  "ru/timer"
+                ]
+              },
+              {
+                "group": "Настройки приложения",
+                "pages": ["ru/off-mode", "ru/app-behavior"]
+              },
+              {
+                "group": "Автоматизация",
+                "pages": [
+                  "ru/automation-status-update",
+                  "ru/ios-shortcuts",
+                  "ru/nfc-tags",
+                  "ru/zapier-ifttt"
+                ]
+              },
+              {
+                "group": "Интеграции",
+                "pages": [
+                  "ru/google-calendar-integration",
+                  "ru/outlook-calendar-integration",
+                  "ru/apple-calendar-integration",
+                  "ru/apple-health-integration",
+                  "ru/health-connect-integration",
+                  "ru/strava-integration",
+                  "ru/fitbit-integration",
+                  "ru/rescue-time-integration",
+                  "ru/screen-time-integration"
+                ]
+              },
+              {
+                "group": "Habitify MCP и AI",
+                "pages": [
+                  "ru/habitify-mcp",
+                  "ru/habi-ai",
+                  "ru/siri-ai"
+                ]
+              },
+              {
+                "group": "Тарифы и оплата",
+                "pages": [
+                  "ru/plans",
+                  "ru/billings",
+                  "ru/habitify-family",
+                  "ru/habitify-team",
+                  "ru/habitify-student"
+                ]
+              },
+              {
+                "group": "Учетная запись и данные",
+                "pages": ["ru/manage-account", "ru/manage-data"]
+              }
+            ]
+          },
+          {
+            "tab": "API",
+            "icon": "rectangle-api",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
+          },
+          {
+            "tab": "Журнал изменений",
+            "icon": "bullhorn",
+            "href": "https://feedback.habitify.me/changelog"
+          }
+        ]
+      },
+      {
         "language": "de",
         "tabs": [
           {
