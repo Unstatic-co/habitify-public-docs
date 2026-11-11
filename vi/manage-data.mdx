@@ -1,0 +1,214 @@
+---
+title: "Dữ liệu"
+---
+
+## Nhập dữ liệu vào Habitify
+
+Bắt đầu với một ứng dụng mới rất thú vị, nhưng chúng tôi hiểu bạn không muốn mất lịch sử theo dõi quý giá từ các ứng dụng hoặc bảng tính khác. Phần này giới thiệu một số cách nhập dữ liệu cũ vào Habitify để bạn có được bức tranh đầy đủ về hành trình của mình.
+
+### **Nhập dữ liệu từ ứng dụng Sức khỏe**
+
+Nếu dữ liệu cũ liên quan đến thể chất và được lưu trong Apple Health, Health Connect, Fitbit hoặc Strava, đây là cách nhập lịch sử dễ dàng và tự động nhất.
+
+**Cách hoạt động:** Khi bạn kết nối một trong các dịch vụ này với thói quen trong Habitify lần đầu, ứng dụng tự động thực hiện **đồng bộ lịch sử**. Ứng dụng sẽ xem lại dữ liệu trong quá khứ và nhập các hoạt động cũ vào bản ghi thói quen.
+
+- **Apple Health hoặc Health Connect:** Đồng bộ số bước, bài tập, giấc ngủ, số phút chánh niệm và nhiều dữ liệu khác trực tiếp từ iPhone hoặc điện thoại Android.
+- **Fitbit:** Tự động ghi lại số bước hằng ngày, giấc ngủ, calo đã đốt và các số liệu khác từ thiết bị Fitbit.
+- **Strava:** Đồng bộ các buổi chạy, đạp xe, đi bộ và bài tập khác trực tiếp vào thói quen ngay sau khi bạn hoàn thành.
+
+### Nhập dữ liệu từ ứng dụng Productive
+
+Tính năng này yêu cầu bạn xuất dữ liệu từ ứng dụng Productive trước. Productive thường xuất dữ liệu dưới dạng tệp `.sqlite`. Bạn cần chuẩn bị sẵn tệp này để bắt đầu nhập vào Habitify.
+
+Trong ứng dụng Habitify, đi đến **Cài đặt → Nhập / Xuất dữ liệu → Nhập từ Productive**.
+
+Sau đó chọn tệp `.sqlite` đã xuất và làm theo hướng dẫn trên màn hình để hoàn tất quá trình nhập.
+
+Quá trình nhập tập trung chuyển những thông tin cốt lõi về thói quen:
+
+- **Thói quen:** Danh sách thói quen của bạn.
+- **Bản ghi thói quen:** Các lần check-in, bỏ qua và chưa đạt trong lịch sử của những thói quen đó.
+- **Thời điểm trong ngày:** Cài đặt Buổi sáng, Buổi chiều hoặc Buổi tối.
+- **Mô tả thói quen:** Mọi ghi chú hoặc mô tả đã thêm vào thói quen.
+- **Điều kiện kết thúc:** Nếu thói quen có ngày kết thúc trong Productive, ngày đó sẽ được nhập, **trừ khi** là hôm nay hoặc trong quá khứ. (Habitify yêu cầu ngày kết thúc phải cách hiện tại ít nhất 7 ngày trong tương lai).
+
+<Note>
+  **Lưu ý quan trọng:**
+
+  - **Thử thách** và **Chương trình** trong Productive **không** được nhập vào Habitify. Chỉ các thói quen riêng lẻ được chuyển.
+  - Những thói quen được đánh dấu là **tạm dừng hoặc đã dừng** trong Productive sẽ được nhập vào Habitify nhưng tự động đặt ở trạng thái **Đã lưu trữ**. Bạn có thể bỏ lưu trữ sau nếu cần.
+</Note>
+
+Quá trình nhập tự động chuyển đổi lịch biểu và mục tiêu Productive sang định dạng Habitify như sau:
+
+- **Hằng ngày / Các ngày cụ thể trong tuần / Các ngày cụ thể trong tháng:** Thói quen lặp lại hằng ngày, vào những ngày nhất định trong tuần hoặc ngày nhất định trong tháng trên Productive được nhập thành **Mục tiêu hằng ngày** trong Habitify và giữ nguyên lịch biểu.
+- **Nhiều mục tiêu mỗi ngày:** Nếu thói quen Productive có nhiều chỉ tiêu trong một ngày (ví dụ: "2 lần vào buổi sáng + 2 lần vào buổi tối"), Habitify sẽ **cộng các chỉ tiêu** thành một mục tiêu hằng ngày duy nhất (ví dụ: "4 lần mỗi ngày").
+- **Tần suất hằng tuần (ví dụ: "3 lần mỗi tuần"):** Nếu thói quen Productive được đặt theo tần suất hằng tuần (ví dụ: "3 lần mỗi tuần") và có chỉ tiêu hằng ngày (ví dụ: "mỗi lần 20 phút"), Habitify chuyển thành một **Mục tiêu hằng tuần** duy nhất bằng cách nhân tần suất với chỉ tiêu hằng ngày.<br />_Ví dụ:_ Productive: "3 lần mỗi tuần, 20 phút mỗi ngày" → Habitify: **"60 phút mỗi tuần"**.
+- **Trường hợp đặc biệt — Cách tuần:** Nếu có thói quen lặp lại, chẳng hạn "1 lần mỗi 2 tuần" trong Productive, khoảng lặp này không được hỗ trợ trực tiếp khi nhập. Thói quen sẽ được chuyển thành **Mục tiêu hằng ngày** trong Habitify như phương án dự phòng. Bạn có thể cần tự điều chỉnh lịch biểu sau khi nhập.
+
+### Nhập dữ liệu từ ứng dụng Streaks
+
+Tính năng này yêu cầu bạn xuất dữ liệu từ ứng dụng Streaks trước. Streaks thường xuất dữ liệu dưới dạng một tệp đặc biệt có phần mở rộng `.streaks`. Bạn cần chuẩn bị sẵn tệp này để bắt đầu nhập vào Habitify.
+
+Trong ứng dụng Habitify, đi đến **Cài đặt → Nhập / Xuất dữ liệu → Nhập từ Streaks**.
+
+Sau đó chọn tệp `.streaks` đã xuất và làm theo hướng dẫn trên màn hình để hoàn tất quá trình nhập.
+
+Quá trình nhập được thiết kế để chuyển các thành phần cốt lõi trong việc theo dõi thói quen:
+
+- **Tên thói quen:** Tên thói quen được giữ nguyên.
+- **Lịch biểu thành Lặp lại:** Tần suất thực hiện thói quen (hằng ngày, hằng tuần, hằng tháng) được chuyển đổi.
+- **Tần suất thành Mục tiêu:** Nếu thói quen là "X lần mỗi ngày/tuần/tháng", mục tiêu này được giữ nguyên.
+- **Lời nhắc thành Lời nhắc:** Thời gian lời nhắc tùy chỉnh được chuyển sang (xem chi tiết bên dưới).
+- **Ghi chú thành Ghi chú thói quen:** Mọi ghi chú đã thêm vào thói quen đều được sao chép.
+- **Ngày có bản ghi đầu tiên thành Ngày bắt đầu:** Habitify dùng ngày của bản ghi sớm nhất trong Streaks làm "Ngày bắt đầu".
+- **Lịch sử bản ghi:** Các lần hoàn thành, chưa đạt và ngày bỏ qua trong quá khứ được nhập.
+- **Thói quen xấu:** Những thói quen bạn đang cố từ bỏ hoặc giới hạn cũng được nhập (xem chi tiết bên dưới).
+
+Vì Habitify và Streaks hoạt động hơi khác nhau, một số dữ liệu được chuyển đổi trong quá trình nhập. Sau đây là những điều quan trọng nhất cần biết.
+
+**1/ Lời nhắc**
+
+Nếu bạn đặt thời gian cụ thể cho lời nhắc trong Streaks, những thời gian chính xác đó sẽ được đồng bộ sang Habitify. Streaks cũng có tính năng "Lời nhắc tự động" mà Habitify không có. Những lời nhắc này sẽ **không** được nhập.
+
+**2/ Lịch sử bản ghi**
+
+- **Đối với thói quen hằng ngày:** Việc chuyển đổi rất trực tiếp.
+  - `Hoàn thành` trong Streaks → `Hoàn thành` trong Habitify
+  - `Chưa đạt` trong Streaks → `Chưa đạt` trong Habitify
+  - Nếu một ngày **_không được ghi_** trong Streaks, ngày đó được đánh dấu là `Đã bỏ qua` trong Habitify (giữ nguyên chuỗi).
+- **Đối với thói quen hằng tuần:** Habitify chỉ cho phép tuần bắt đầu vào Chủ nhật hoặc Thứ hai, trong khi Streaks cho phép bắt đầu vào bất kỳ ngày nào. Vì vậy, dữ liệu bản ghi hằng tuần từ Streaks được gán cho **Thứ hai** của tuần tương ứng trong Habitify.<br />_Ví dụ:_ Nếu tuần trong Streaks chạy từ Thứ tư đến Thứ ba, trạng thái hoàn thành cho cả tuần đó được hiển thị vào Thứ hai của tuần trong Habitify.
+- **Đối với thói quen hằng tháng:** Tương tự thói quen hằng tuần, trạng thái hoàn thành của cả tháng trong Streaks được gán cho **ngày đầu tiên của tháng đó** trong Habitify.
+
+**3/ Mục tiêu của Thói quen xấu**
+
+- **Từ bỏ một thói quen:** Nếu mục tiêu trong Streaks là "Không [Tên thói quen]", mục tiêu được nhập thành **"Từ bỏ thói quen"** trong Habitify và theo dõi số ngày bạn tránh được thói quen thành công.
+- **Giới hạn một thói quen:** Nếu mục tiêu trong Streaks là giới hạn một thói quen xấu ở "X lần mỗi ngày/tuần/tháng", mục tiêu được nhập thành **"Giới hạn thói quen"** trong Habitify với cùng tần suất.
+
+### **Nhập dữ liệu từ bảng tính**
+
+Nếu dữ liệu theo dõi trước đây nằm trong bảng tính (có thể được xuất từ ứng dụng khác hoặc tự lưu), bạn có thể dùng dịch vụ **Zapier** để nhập. Phương pháp này nâng cao hơn nhưng rất phù hợp để điền toàn bộ lịch sử cho bất kỳ thói quen nào.
+
+Phương pháp dùng một quy trình tự động (một "Zap") theo dõi các hàng mới trong Google Sheet và tạo một bản ghi tương ứng trong Habitify. Để nhập dữ liệu cũ, bạn sẽ sao chép và dán dữ liệu vào Google Sheet để kích hoạt quy trình.
+
+Thực hiện các bước sau:
+
+<Steps>
+  <Step title="Chuẩn bị bảng tính dữ liệu">
+    Trước tiên, bạn cần định dạng dữ liệu cũ theo [<u>mẫu Google Sheets của chúng tôi</u>](https://docs.google.com/spreadsheets/d/1LN3wqWGwHToYL0pWqYPCGztiY9Rxi9KA_xLo1poQdU8/edit?usp=sharing). Mỗi trang tính ghi lại bản ghi tiến trình của một thói quen. Điều này có nghĩa bạn cần sắp xếp lịch sử sao cho mỗi hàng đại diện cho một lần hoàn thành (bao gồm ngày, giờ cụ thể và mọi giá trị số).
+  </Step>
+  <Step title="Thiết lập thói quen Habitify">
+    Tạo thói quen tương ứng trong Habitify mà bạn muốn nhập dữ liệu vào.
+  </Step>
+  <Step title="Dùng mẫu Zapier để thiết lập dễ dàng">
+    Tạo thói quen tương ứng trong Habitify mà bạn muốn nhập dữ liệu vào.
+  </Step>
+  <Step title="Chạy Zap để nhập dữ liệu">
+    Sau khi Zap hoạt động, bạn có thể sao chép và dán toàn bộ dữ liệu lịch sử vào Google Sheet. Zapier sẽ đọc từng hàng và nhập thành một bản ghi có ngày trong Habitify, điền đầy đủ tiến trình trước đây.
+  </Step>
+</Steps>
+
+Bạn có thể triển khai cùng một tích hợp qua Zapier với các dịch vụ bảng dữ liệu khác như Airtable, Microsoft Excel Online, Zoho Sheet, v.v.
+
+## Xuất dữ liệu khỏi Habitify
+
+Chúng tôi cung cấp hai định dạng xuất chính, mỗi định dạng phục vụ một nhu cầu khác nhau: **tệp CSV** đơn giản để phân tích bản ghi cơ bản và **Tệp sao lưu đầy đủ (.sqlite)** toàn diện để lưu ảnh chụp đầy đủ của tài khoản.
+
+#### Hướng dẫn từng bước
+
+1. Đi đến tab **Cài đặt** trong ứng dụng Habitify.
+2. Tìm và chạm vào **Nhập / Xuất**.
+3. Chọn định dạng muốn xuất: **Xuất dưới dạng .csv** hoặc **Xuất dưới dạng bản sao lưu**.
+4. Làm theo hướng dẫn trên màn hình thiết bị để lưu hoặc chia sẻ tệp (ví dụ: qua email, bộ nhớ đám mây).
+
+#### **So sánh định dạng tệp xuất**
+
+| Định dạng | .csv | Bản sao lưu |
+| --- | --- | --- |
+| Phù hợp nhất cho | Phân tích lịch sử hoàn thành thói quen cơ bản trong phần mềm bảng tính như Google Sheets, Microsoft Excel hoặc Apple Numbers. | Tạo bản sao lưu đầy đủ của toàn bộ thiết lập và lịch sử Habitify. Tệp này có thể dùng để khôi phục dữ liệu trong tương lai hoặc phân tích kỹ thuật nâng cao bằng công cụ cơ sở dữ liệu. |
+| Phần mở rộng tệp | `.csv` | `.sqlite` |
+| Nội dung bao gồm | Bản xuất này cung cấp bản ghi rõ ràng về các lần check-in thói quen, gồm các cột sau cho mỗi mục: <ul><li>`Thói quen`: Tên thói quen.</li><li>`Ngày`: Ngày tạo bản ghi.</li><li>`Tổng giá trị ghi nhận`: Giá trị số đã ghi (nếu có).</li><li>`Đơn vị`: Đơn vị gắn với mục tiêu (ví dụ: phút, km, lần).</li><li>`Trạng thái`: Thói quen được đánh dấu là Đã hoàn thành, Đã bỏ qua hay Chưa đạt.</li><li>`ID thói quen`: Mã định danh duy nhất của thói quen.</li></ul> | Bản xuất này chứa ảnh chụp toàn diện về **mọi thứ** trong tài khoản, bao gồm (nhưng không giới hạn): <ul><li>**Chi tiết thói quen:** Tất cả thói quen (đang hoạt động và đã lưu trữ), mục tiêu, danh sách kiểm tra, lời nhắc (thời gian, vị trí, xếp chồng), điều kiện kết thúc, cột mốc, v.v.</li><li>**Tiến trình & Bản ghi:** Tất cả lần check-in, bỏ qua, chưa đạt, bản ghi số, ghi chú, bản ghi tâm trạng, bản ghi danh sách kiểm tra, lịch sử chuỗi (`currentStreak`) và dữ liệu tiến trình đã tính (`logCalculations`, `progresses`).</li><li>**Cài đặt:** Cài đặt tài khoản như ngày đầu tuần (`firstDayOfWeek`).</li></ul> |
+
+## Quản lý dữ liệu trong Habitify
+
+### Đặt lại dữ liệu thói quen
+
+<Warning>
+  Trước khi đặt lại dữ liệu, hãy lưu ý rằng:
+
+  - Hành động này sẽ **xóa vĩnh viễn toàn bộ dữ liệu lịch sử** của mọi thói quen trong tài khoản.
+  - Dữ liệu này gồm tất cả lần check-in, bỏ qua, chưa đạt, mọi chuỗi hiện tại, ghi chú và tiến trình của thói quen đã lưu trữ.
+  - **Không thể hoàn tác quá trình này.** Sau khi dữ liệu bị xóa, dữ liệu sẽ mất vĩnh viễn và đội ngũ hỗ trợ không thể khôi phục.
+  - Danh sách thói quen _hiện tại_ vẫn được giữ lại nhưng tiến trình và chuỗi sẽ được đặt lại về 0.
+</Warning>
+
+<Tabs>
+  <Tab title=" iOS">
+    1. Mở **Habitify** rồi vào **Cài đặt**.
+    2. Chạm vào hồ sơ.
+    3. Đi đến phần **Quyền riêng tư và dữ liệu** rồi chạm vào **Đặt lại dữ liệu thói quen**.
+    4. Để xác nhận, chạm vào **Đặt lại dữ liệu thói quen**.
+  </Tab>
+  <Tab title="🤖 Android">
+    1. Mở **Habitify** rồi vào **Cài đặt**.
+    2. Chạm vào tên của bạn.
+    3. Cuộn xuống **Lưu ý**.
+    4. Tìm tùy chọn **Xoá dữ liệu thói quen** rồi chạm vào nút **Xóa** bên cạnh.
+    5. Để xác nhận, chạm vào **Ok**.
+  </Tab>
+  <Tab title="🖥️ Website & Máy tính">
+    1. Mở ứng dụng Habitify.
+    2. Nhấp vào ảnh hồ sơ rồi chọn **Hồ sơ**.
+    3. Trong **Khu vực thận trọng**, tìm và nhấp vào nút **Đặt lại dữ liệu thói quen**.
+    4. Để xác nhận, nhấp vào **Đặt lại dữ liệu thói quen**.
+  </Tab>
+</Tabs>
+
+### Xóa toàn bộ dữ liệu
+
+<Warning>
+  Hãy đọc thật kỹ những thông tin sau trước khi tiếp tục.
+
+  - Hành động này sẽ xóa vĩnh viễn **TOÀN BỘ THÓI QUEN** khỏi danh sách.
+  - Hành động cũng xóa vĩnh viễn **TOÀN BỘ dữ liệu lịch sử**, bao gồm mọi lần check-in, bỏ qua, chưa đạt, ghi chú và chuỗi.
+  - **KHÔNG THỂ HOÀN TÁC QUÁ TRÌNH NÀY.** Sau khi xác nhận, mọi thông tin sẽ mất vĩnh viễn và cả bạn lẫn đội ngũ hỗ trợ đều không thể khôi phục.
+  - Bạn sẽ còn lại một **tài khoản hoàn toàn trống**.
+</Warning>
+
+<Tabs>
+  <Tab title=" iOS">
+    1. Mở **Habitify** rồi vào **Cài đặt**.
+    2. Chạm vào hồ sơ.
+    3. Đi đến phần **Quyền riêng tư và dữ liệu** rồi chạm vào **Xóa toàn bộ dữ liệu**.
+    4. Để xác nhận, chạm vào **Xóa toàn bộ dữ liệu**.
+  </Tab>
+  <Tab title="🤖 Android">
+    1. Mở **Habitify** rồi vào **Cài đặt**.
+    2. Chạm vào tên của bạn.
+    3. Cuộn xuống **Lưu ý**.
+    4. Tìm tùy chọn **Xoá toàn bộ dữ liệu** rồi chạm vào nút **Xóa** bên cạnh.
+    5. Để xác nhận, chạm vào **Ok**.
+  </Tab>
+  <Tab title="🖥️ Website & Máy tính">
+    1. Mở ứng dụng Habitify.
+    2. Nhấp vào ảnh hồ sơ rồi chọn **Hồ sơ**.
+    3. Trong **Khu vực thận trọng**, tìm và nhấp vào nút **Xóa dữ liệu**.
+    4. Để xác nhận, nhấp vào **Xóa toàn bộ dữ liệu**.
+  </Tab>
+</Tabs>
+
+## Câu hỏi thường gặp
+
+<Accordion title="**Tại sao tệp CSV đã xuất lại mở trong một cột duy nhất trong Excel?**">
+  Điều này xảy ra khi Excel không nhận ra dấu phân cách được dùng trong tệp CSV. Bản xuất của Habitify dùng dấu chấm phẩy (`;`) để phân cách các trường, trong khi cài đặt Excel của bạn có thể đang chờ một dấu phân cách khác.
+
+  **Làm cách nào để hiển thị dữ liệu trong các cột riêng biệt?**
+
+  1. Mở tệp CSV trong Excel và chọn **cột A**.
+  2. Đi đến **Dữ liệu → Văn bản thành cột**.
+  3. Chọn **Phân cách**, sau đó nhấp vào **Tiếp theo**.
+  4. Chọn **Dấu chấm phẩy** và bỏ chọn các dấu phân cách khác.
+  5. Nhấp vào **Hoàn tất**.
+
+  Dữ liệu sẽ xuất hiện trong các cột riêng biệt: **Thói quen, Ngày, Tổng giá trị ghi nhận, Đơn vị, Trạng thái và ID thói quen**.
+</Accordion>

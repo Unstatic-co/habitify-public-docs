@@ -421,6 +421,109 @@
         ]
       },
       {
+        "language": "vi",
+        "tabs": [
+          {
+            "tab": "Tài liệu",
+            "icon": "life-ring",
+            "pages": [
+              {
+                "group": "Bắt đầu",
+                "pages": [
+                  "vi/habitify-introduction",
+                  "vi/habitify-quick-start",
+                  "vi/glossary"
+                ]
+              },
+              {
+                "group": "Tính năng",
+                "pages": [
+                  "vi/good-habits",
+                  "vi/bad-habits",
+                  "vi/journal",
+                  "vi/single-progress",
+                  "vi/overall-progress",
+                  "vi/reflection",
+                  "vi/circle",
+                  "vi/challenge"
+                ]
+              },
+              {
+                "group": "Công cụ",
+                "pages": [
+                  "vi/area",
+                  "vi/reminder",
+                  "vi/habit-gate",
+                  "vi/note",
+                  "vi/widget",
+                  "vi/task",
+                  "vi/timer"
+                ]
+              },
+              {
+                "group": "Cài đặt ứng dụng",
+                "pages": ["vi/off-mode", "vi/app-behavior"]
+              },
+              {
+                "group": "Tự động hóa",
+                "pages": [
+                  "vi/automation-status-update",
+                  "vi/ios-shortcuts",
+                  "vi/nfc-tags",
+                  "vi/zapier-ifttt"
+                ]
+              },
+              {
+                "group": "Tích hợp",
+                "pages": [
+                  "vi/google-calendar-integration",
+                  "vi/outlook-calendar-integration",
+                  "vi/apple-calendar-integration",
+                  "vi/apple-health-integration",
+                  "vi/health-connect-integration",
+                  "vi/strava-integration",
+                  "vi/fitbit-integration",
+                  "vi/rescue-time-integration",
+                  "vi/screen-time-integration"
+                ]
+              },
+              {
+                "group": "Habitify MCP & AI",
+                "pages": [
+                  "vi/habitify-mcp",
+                  "vi/habi-ai",
+                  "vi/siri-ai"
+                ]
+              },
+              {
+                "group": "Gói dịch vụ & Thanh toán",
+                "pages": [
+                  "vi/plans",
+                  "vi/billings",
+                  "vi/habitify-family",
+                  "vi/habitify-team",
+                  "vi/habitify-student"
+                ]
+              },
+              {
+                "group": "Tài khoản & Dữ liệu",
+                "pages": ["vi/manage-account", "vi/manage-data"]
+              }
+            ]
+          },
+          {
+            "tab": "API",
+            "icon": "rectangle-api",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
+          },
+          {
+            "tab": "Nhật ký thay đổi",
+            "icon": "bullhorn",
+            "href": "https://feedback.habitify.me/changelog"
+          }
+        ]
+      },
+      {
         "language": "de",
         "tabs": [
           {

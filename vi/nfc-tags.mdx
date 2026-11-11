@@ -1,0 +1,93 @@
+---
+title: "Thẻ NFC"
+---
+
+Thẻ NFC (Near Field Communication — Giao tiếp trường gần) là những miếng dán vật lý nhỏ, giá rẻ mà bạn có thể đặt ở bất kỳ đâu; Habitify có thể dùng chúng làm tác nhân vật lý để kích hoạt thói quen. Thay vì mở khóa điện thoại, mở ứng dụng rồi tìm đúng thói quen cần đánh dấu, bạn chỉ cần chạm điện thoại vào thẻ và việc check-in sẽ được thực hiện.
+
+Ý tưởng là tạo những điểm chạm thực tế trong môi trường xung quanh, kết nối trực tiếp với thói quen, biến không gian sống thành phần mở rộng của hệ thống thói quen thay vì một thứ tách biệt. Thẻ dán trên túi tập có thể kích hoạt thói quen "Tập luyện"; thẻ trên giá sách có thể kích hoạt "Đọc sách"; thẻ cạnh giường có thể kích hoạt "Đi ngủ". Thói quen trở thành điều bạn gặp trong ngày, chứ không phải việc bạn phải nhớ mở ứng dụng để thực hiện.
+
+<Tabs>
+  <Tab title=" iOS">
+    <iframe src="https://drive.google.com/file/d/1nVj2AURiJOVwidDNkoG5qnwegAN5mBdv/preview" width="640" height="360" />
+
+    ## Thiết lập tích hợp NFC với thói quen mới
+
+    1. Trong ứng dụng Habitify, vào **Cài đặt**.
+    2. Trong phần **Tích hợp**, chạm vào **NFC**.
+    3. Ở cuối màn hình NFC, chạm vào nút **Quét thẻ NFC mới**.
+    4. Đặt điện thoại lên thẻ NFC.<br />_Bạn có thể tìm trên Internet để xác định vị trí đầu đọc NFC của điện thoại. Bộ phận này thường nằm gần camera._
+    5. Sau khi quét xong:
+       1. Trong **Khi chạm vào thẻ NFC**, chọn một hành động để ứng dụng thực hiện.
+       2. Trong **Thói quen**, chọn một thói quen.
+    6. Cuối cùng, chạm vào nút **Lưu**.
+
+    ### Hành động được hỗ trợ
+
+    - **Đánh dấu là đã hoàn thành**: quét thẻ NFC để hoàn thành một thói quen
+    - **Đánh dấu là đã bỏ qua**: quét thẻ NFC để bỏ qua thói quen trong ngày hiện tại.
+    - **Đánh dấu là chưa đạt**: quét thẻ NFC để đánh dấu thói quen là chưa đạt trong ngày hiện tại.
+    - **Ghi nhận một giá trị tiến trình**: quét thẻ NFC để ghi một giá trị tiến trình đã xác định trước.
+    - **Hỏi tôi**: quét thẻ NFC rồi chọn hành động cần thực hiện.
+
+    ## Check-in thói quen bằng thẻ NFC
+
+    Check-in bằng thẻ NFC đã lập trình rất đơn giản:
+
+    - Quét thẻ bằng điện thoại và chờ nhận thông báo đẩy.
+    - Chạm vào thông báo đẩy để mở ứng dụng và thực hiện hành động bạn đã thiết lập.
+
+    <Note>
+      **Hãy để ứng dụng Habitify chạy trong nền để có trải nghiệm tốt nhất.**
+
+      Nếu ứng dụng đã đóng hoàn toàn, việc quét thẻ NFC rồi chạm vào thông báo đẩy sẽ chỉ mở màn hình Nhật ký thay vì thực hiện liền mạch hành động bạn muốn.
+    </Note>
+  </Tab>
+  <Tab title="🤖 Android">
+    <iframe src="https://drive.google.com/file/d/19VU6fi_9gwu4LuRt-mk3cxcaVvOGRyy8/preview" width="640" height="360" />
+
+    ## **Thiết lập tích hợp NFC với thói quen mới**
+
+    1. Trong ứng dụng Habitify, vào **Cài đặt**.
+    2. Trong phần **Tự động**, chạm để mở **NFC**.
+    3. Chạm vào nút **Quét thẻ NFC mới**.
+    4. Đặt điện thoại lên thẻ NFC.<br />_Bạn có thể tìm trên Internet để xác định vị trí đầu đọc NFC của điện thoại. Bộ phận này thường nằm gần camera._
+    5. Sau khi quét xong, bạn có thể cấu hình:
+       1. Trong **Khi chạm NFC**, chọn một hành động để ứng dụng thực hiện.
+       2. Trong **Thói quen**, chọn thói quen mà ứng dụng sẽ thực hiện hành động đó.
+    6. Cuối cùng, chạm vào nút **Lưu** ở góc trên bên phải.
+
+    ### Hành động được hỗ trợ
+
+    - **Đánh dấu là hoàn thành**: quét thẻ NFC để hoàn thành một thói quen
+    - **Đánh dấu là Bỏ Qua**: quét thẻ NFC để bỏ qua thói quen trong ngày hiện tại.
+    - **Đánh dấu là Thất bại**: quét thẻ NFC để đánh dấu thói quen là thất bại trong ngày hiện tại.
+    - **Bắt đầu tính giờ**: quét thẻ NFC để bắt đầu một phiên hẹn giờ cho thói quen.
+    - **Ghi nhận một giá trị tiến trình**: quét thẻ NFC để ghi một giá trị tiến trình đã xác định trước.
+    - **Đặt câu hỏi**: quét thẻ NFC rồi chọn hành động cần thực hiện.
+
+    ## Check-in thói quen bằng thẻ NFC
+
+    Check-in bằng thẻ NFC đã lập trình rất đơn giản:
+
+    - Chỉ cần quét thẻ bằng điện thoại cho đến khi thông báo đẩy xuất hiện.
+    - Chạm vào thông báo để mở ứng dụng và cho phép ứng dụng thực hiện các bước tiếp theo như bạn đã cấu hình khi thiết lập.
+
+    <Note>
+      **Hãy để ứng dụng Habitify chạy trong nền để có trải nghiệm tốt nhất.** <br /><br />Nếu ứng dụng đã đóng hoàn toàn, việc quét thẻ NFC rồi chạm vào thông báo đẩy sẽ chỉ mở màn hình Nhật ký thay vì thực hiện liền mạch hành động bạn muốn.
+    </Note>
+  </Tab>
+</Tabs>
+
+## Câu hỏi thường gặp
+
+<Accordion title="**Một thẻ NFC có thể liên kết với bao nhiêu thói quen?**">
+  Chỉ 1 thói quen
+</Accordion>
+
+<Accordion title="**Loại thẻ NFC nào tương thích?**">
+  Chúng tôi khuyên dùng thẻ NTAG213, NTA215 hoặc NTA216
+</Accordion>
+
+<Accordion title="**Thẻ NFC cần dung lượng lưu trữ tối thiểu bao nhiêu?**">
+  Việc liên kết một thói quen với thẻ NFC chỉ cần dưới 100 byte dung lượng lưu trữ.
+</Accordion>

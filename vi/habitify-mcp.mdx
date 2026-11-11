@@ -1,0 +1,107 @@
+---
+title: "Habitify MCP"
+---
+
+Habitify MCP (Model Context Protocol — Giao thức ngữ cảnh mô hình) kết nối trực tiếp tài khoản Habitify với các trợ lý AI như ChatGPT và Claude.
+
+Sau khi kết nối, bạn không chỉ trò chuyện về thói quen mà còn có thể thực sự quản lý chúng bằng ngôn ngữ tự nhiên, ngay trong cuộc trò chuyện với trợ lý AI mình chọn.
+
+## Kết nối Habitify MCP
+
+### Kết nối với Claude
+
+1. Mở Claude và đi đến **Tùy chỉnh**.
+2. Chọn **Trình kết nối**.
+3. Nhấp vào **Thêm**.
+4. Trong _Thêm trình kết nối tùy chỉnh_, cấu hình như sau:
+   1. **Tên**: Habitify
+   2. **URL máy chủ MCP**: `https://mcp.habitify.me/mcp`
+5. Làm theo hướng dẫn để đăng nhập Habitify và cấp quyền truy cập.
+
+Sau khi cấp quyền thành công, bạn có thể xem cài đặt chi tiết của trình kết nối Habitify vừa thêm.
+
+Trong cuộc trò chuyện mới, nhấp vào nút + → Trình kết nối → bật Habitify rồi bắt đầu tương tác với các thói quen trong Habitify ngay trên Claude.
+
+### Kết nối với ChatGPT
+
+1. Trong giao diện ChatGPT, đi đến **Plugin**.
+2. Tìm kiếm **Habitify**.
+3. Nhấp vào + để bắt đầu kết nối.
+4. Bạn sẽ được chuyển đến Habitify trên web. Đăng nhập vào tài khoản Habitify, sau đó nhấp vào **Kết nối** ở bước cấp quyền.
+
+Sau khi cấp quyền thành công, bạn có thể nhấp vào **Bắt đầu trò chuyện** để bắt đầu tương tác với các thói quen trong Habitify ngay trên ChatGPT.
+
+### Kết nối với công cụ khác
+
+Để kết nối Habitify với một công cụ mới, thông thường bạn sẽ được yêu cầu cung cấp **URL máy chủ** hoặc **Liên kết kết nối**.
+
+- **URL kết nối:** `https://mcp.habitify.me/mcp`
+- **Loại kết nối:** SSE (Server-Sent Events — Sự kiện do máy chủ gửi)
+
+Mỗi ứng dụng có giao diện hơi khác nhau nên tên nút cụ thể có thể thay đổi, nhưng quy trình thường giống nhau:
+
+1. Tìm một phần trong cài đặt ứng dụng có tên "Trình kết nối", "Máy chủ" hoặc "Tiện ích mở rộng".
+2. Chọn tùy chọn thêm máy chủ tùy chỉnh mới.
+3. Nhập thông tin:
+   - **Tên:** `Habitify`
+   - **URL:** Dán liên kết ở trên (`https://mcp.habitify.me/mcp`).
+4. Sau khi thêm, công cụ có thể yêu cầu bạn đăng nhập vào tài khoản Habitify để phê duyệt quyền truy cập.
+
+## Habitify MCP có thể làm gì với thói quen
+
+Sau khi kết nối, bạn có thể yêu cầu trợ lý AI thực hiện các hành động thật trong tài khoản Habitify hoàn toàn bằng ngôn ngữ tự nhiên:
+
+- **Kiểm tra danh sách**: Hỏi "Cho tôi xem các thói quen hôm nay" hoặc chỉ định một ngày bất kỳ để xem những việc còn lại cần làm.
+
+- **Thêm bản ghi:** Yêu cầu "Đánh dấu buổi chạy sáng của tôi là hoàn thành" hoặc thêm một giá trị cụ thể vào mục tiêu dạng số.
+- **Cập nhật trạng thái**: Yêu cầu thay đổi trạng thái thói quen thành Đã hoàn thành, Đã bỏ qua hoặc Chưa đạt.
+
+- **Xóa tiến trình**: Yêu cầu xóa tiến trình đã ghi nhận của một thói quen trong một ngày cụ thể, đưa tiến trình về 0 hoặc "Chưa bắt đầu". Nếu không đề cập ngày, mặc định sẽ là hôm nay.
+
+## Khắc phục sự cố
+
+<Accordion title="**Tại sao AI hiển thị thói quen cũ hoặc thói quen từ một tài khoản khác?**">
+  Nếu Habitify MCP truy xuất các thói quen đã xóa, hãy thử ngắt kết nối rồi kết nối lại để làm mới dữ liệu.
+
+  Nếu Habitify MCP truy xuất dữ liệu từ một tài khoản khác của bạn, hãy so sánh tài khoản đang đăng nhập trong ứng dụng Habitify với tài khoản đăng nhập trên trình duyệt nơi bạn xác thực kết nối. Hãy bảo đảm đó là cùng một tài khoản.
+
+  Nếu sự cố vẫn tiếp diễn, hãy liên hệ với đội ngũ để được hỗ trợ thêm.
+</Accordion>
+
+<Accordion title="**Tại sao Habitify MCP không truy xuất tất cả thói quen tôi có trong ứng dụng?**">
+  Habitify MCP giới hạn mỗi lần truy xuất danh sách tối đa 50 thói quen.
+
+  Nếu bạn có dưới 50 thói quen mà công cụ vẫn không thể truy xuất tất cả, hãy thử kết nối lại để làm mới.
+
+  Nếu sự cố vẫn tiếp diễn, hãy liên hệ với đội ngũ để được hỗ trợ thêm.
+</Accordion>
+
+<Accordion title="**Claude hiển thị 'Cấu hình' thay vì 'Kết nối'. Tôi nên làm gì?**">
+  Trong phần cài đặt trình kết nối của Claude, mở menu Habitify và ngắt kết nối. Sau đó tìm Kết nối rồi hoàn tất quy trình đăng nhập và cấp quyền Habitify. Hãy làm theo hướng dẫn thiết lập Claude hiện tại nếu nhãn menu khác đi.
+
+  Nếu tùy chọn Kết nối vẫn không khả dụng, hãy chụp màn hình trình kết nối và liên hệ với đội ngũ để được hỗ trợ thêm.
+</Accordion>
+
+## Câu hỏi thường gặp
+
+<Accordion title="**Tôi có cần gói trả phí hay có thể thử kết nối trong thời gian dùng thử?**">
+  Habitify MCP là tính năng miễn phí cho tất cả người dùng, vì vậy bạn không cần gói trả phí để sử dụng.
+
+  Tuy nhiên, việc sử dụng nâng cao với REST API có thể yêu cầu gói Pro.
+</Accordion>
+
+<Accordion title="**Tôi có thể truy xuất toàn bộ lịch sử, các lần sửa bản ghi tiến trình trước đây và thay đổi ghi chú không?**">
+  Habitify chưa hỗ trợ truy xuất toàn bộ lịch sử bản ghi của một thói quen, nhưng bạn vẫn có thể truy xuất tiến trình của một ngày cụ thể.
+
+  Nếu bạn ghi một giá trị rồi thay đổi, chỉ thay đổi cuối cùng được lưu nên không có dữ liệu để truy xuất lịch sử chỉnh sửa. Điều tương tự áp dụng với thay đổi trong ghi chú.
+</Accordion>
+
+<Accordion title="**currentStreak có hiển thị chuỗi tại ngày trong quá khứ mà tôi yêu cầu không?**">
+  currentStreak chỉ hiển thị chuỗi tính đến hôm nay.
+
+  Nếu muốn truy xuất chuỗi được tính đến một ngày cụ thể trong quá khứ, hãy viết lời nhắc chẳng hạn: _"chuỗi Thiền của tôi kéo dài bao lâu tính đến ngày 10 tháng 10 năm 2026"_.
+</Accordion>
+
+<Accordion title="**Habitify MCP có thể chạy các lần đánh giá theo lịch hoặc cập nhật thói quen trong nền không?**">
+  Habitify MCP chưa hỗ trợ hoạt động trong quy trình tự động hóa. Công cụ vẫn cần dữ liệu đầu vào hoặc tương tác của người dùng để chạy.
+</Accordion>
