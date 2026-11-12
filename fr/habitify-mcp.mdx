@@ -1,0 +1,111 @@
+---
+title: "Habitify MCP"
+---
+
+Habitify MCP (Model Context Protocol) connecte directement votre compte Habitify à des assistants d’IA comme ChatGPT et Claude.
+
+Une fois la connexion établie, vous ne vous contentez plus de discuter de vos habitudes : vous pouvez réellement les gérer en langage naturel, directement depuis votre conversation avec l’assistant d’IA de votre choix.
+
+## Connecter Habitify MCP
+
+### Connexion à Claude
+
+1. Ouvrez Claude et accédez à **Personnaliser**.
+2. Choisissez **Connecteurs.**
+3. Cliquez sur **Ajouter.**
+4. Dans _Ajouter un connecteur personnalisé_, configurez les éléments comme suit :
+   1. **Nom** : Habitify
+   2. **URL du serveur MCP** : `https://mcp.habitify.me/mcp`
+5. Suivez les instructions pour vous connecter à Habitify et autoriser l’accès.
+
+Une fois l’autorisation accordée, vous pouvez consulter les réglages détaillés du connecteur Habitify que vous venez d’ajouter.
+
+Dans une nouvelle discussion, cliquez sur le bouton + → Connecteurs → activez Habitify, puis commencez à interagir avec vos habitudes Habitify directement dans Claude.
+
+### Connexion à ChatGPT
+
+1. Dans l’interface de ChatGPT, accédez à **Plugins.**
+2. Recherchez **Habitify.**
+3. Cliquez sur + pour lancer la connexion.
+4. Vous serez redirigé vers le site Web de Habitify. Connectez-vous à votre compte Habitify, puis, à l’étape d’autorisation, cliquez sur **Connecter**.
+
+Une fois l’autorisation accordée, vous pouvez cliquer sur **Démarrer la discussion** pour commencer à interagir avec vos habitudes Habitify directement dans ChatGPT.
+
+### Connexion à d’autres outils
+
+Pour connecter Habitify à un nouvel outil, celui-ci vous demandera généralement une **URL du serveur** ou un **lien de connexion**.
+
+- **URL de connexion :** `https://mcp.habitify.me/mcp`
+- **Type de connexion :** Streamable HTTP
+
+<Warning>
+  **Habitify MCP prend uniquement en charge Streamable HTTP.** SSE (Server-Sent Events) n’est pas pris en charge. Si un outil se connecte uniquement via SSE, il ne peut pas se connecter à Habitify MCP, même s’il répertorie Habitify parmi les connexions disponibles.
+</Warning>
+
+Chaque application étant légèrement différente, les boutons précis peuvent varier, mais le processus reste généralement le même :
+
+1. Recherchez dans les réglages de votre application une section intitulée « Connecteurs », « Serveurs » ou « Extensions ».
+2. Choisissez l’option permettant d’ajouter un nouveau serveur personnalisé.
+3. Saisissez les informations suivantes :
+   - **Nom :** `Habitify`
+   - **URL :** collez le lien fourni ci-dessus (`https://mcp.habitify.me/mcp`).
+4. Une fois le serveur ajouté, votre outil vous demandera probablement de vous connecter à votre compte Habitify pour autoriser l’accès.
+
+## Ce que Habitify MCP peut faire avec vos habitudes
+
+Une fois la connexion établie, vous pouvez demander à votre assistant d’IA d’effectuer de véritables actions dans votre compte Habitify, entièrement en langage naturel :
+
+- **Consulter votre liste** : demandez « Montre-moi mes habitudes du jour » ou indiquez n’importe quelle date précise pour voir ce qu’il vous reste à faire.
+
+- **Ajouter un journal :** demandez « Marque ma course matinale comme terminée » ou ajoutez une valeur précise à un objectif numérique.
+- **Modifier le statut** : demandez de changer le statut d’une habitude en Terminé, Ignorée ou Échec.
+
+- **Effacer la progression** : demandez de supprimer la progression enregistrée d’une habitude pour un jour précis afin de la remettre à 0 ou au statut « Non commencé ». Si vous n’indiquez aucune date, la date du jour est utilisée par défaut.
+
+## Résolution des problèmes
+
+<Accordion title="**Pourquoi l’IA affiche-t-elle d’anciennes habitudes ou les habitudes d’un autre compte ?**">
+  Si Habitify MCP récupère des habitudes supprimées, essayez de le déconnecter, puis de le reconnecter afin d’actualiser les données.
+
+  Si Habitify MCP récupère les données d’un autre de vos comptes, comparez le compte connecté dans l’application Habitify avec celui connecté dans le navigateur où vous procédez à l’authentification de la connexion. Assurez-vous qu’il s’agit du même compte.
+
+  Si l’un de ces problèmes persiste, contactez l’équipe pour obtenir une assistance supplémentaire.
+</Accordion>
+
+<Accordion title="**Pourquoi Habitify MCP ne récupère-t-il pas toutes les habitudes présentes dans l’application ?**">
+  Habitify MCP ne peut récupérer qu’une liste de 50 habitudes à la fois.
+
+  Si vous avez moins de 50 habitudes et que l’outil ne parvient toujours pas à toutes les récupérer, essayez de le reconnecter afin d’actualiser les données.
+
+  Si l’un de ces problèmes persiste, contactez l’équipe pour obtenir une assistance supplémentaire.
+</Accordion>
+
+<Accordion title="**Claude affiche « Configurer » au lieu de « Connecter ». Que dois-je faire ?**">
+  Dans les réglages des connecteurs de Claude, ouvrez le menu de Habitify et déconnectez-le. Recherchez ensuite Connecter et terminez la procédure de connexion et d’autorisation de Habitify. Consultez le guide de configuration actuel de Claude si les libellés des menus diffèrent.
+
+  Si Connecter reste indisponible, faites une capture de l’écran du connecteur et contactez l’équipe pour obtenir une assistance supplémentaire.
+</Accordion>
+
+## FAQ
+
+<Accordion title="**Ai-je besoin d’un abonnement payant ou puis-je tester la connexion pendant une période d’essai ?**">
+  Habitify MCP est une fonctionnalité gratuite pour tout le monde. Vous n’avez donc pas besoin d’un abonnement payant pour l’utiliser.
+
+  Toutefois, les usages avancés avec l’API REST peuvent nécessiter un abonnement Pro.
+</Accordion>
+
+<Accordion title="**Puis-je récupérer l’historique complet, les corrections ultérieures des journaux de progression et les modifications des notes ?**">
+  Habitify ne permet pas encore de récupérer l’historique complet des journaux d’une habitude, mais vous pouvez toujours récupérer sa progression à une date précise.
+
+  Si vous enregistrez une valeur puis la modifiez, seule la dernière modification est conservée. Il n’existe donc aucune donnée permettant de récupérer l’historique des corrections. Il en va de même pour les modifications apportées aux notes.
+</Accordion>
+
+<Accordion title="**currentStreak affiche-t-il la série à la date passée que j’ai demandée ?**">
+  currentStreak affiche uniquement la série jusqu’à aujourd’hui.
+
+  Pour récupérer le décompte de la série jusqu’à une date précise dans le passé, écrivez par exemple l’invite suivante : « _combien de temps a duré ma série de Méditation au 10 octobre 2026_ ».
+</Accordion>
+
+<Accordion title="**Habitify MCP peut-il exécuter des bilans planifiés ou mettre à jour les habitudes en arrière-plan ?**">
+  Habitify MCP ne prend pas encore en charge les processus automatisés. Il nécessite toujours une saisie ou une interaction de l’utilisateur pour s’exécuter.
+</Accordion>

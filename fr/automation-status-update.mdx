@@ -1,0 +1,48 @@
+---
+title: "Mise à jour du statut"
+---
+
+Il arrive que la journée vous échappe et qu’une habitude que vous n’avez réellement pas accomplie reste simplement sans aucun statut, à moins que vous ne pensiez à ouvrir l’app et à la marquer vous-même.
+
+**L’automatisation Mise à jour du statut** vous aide à combler ce manque : à l’heure de votre choix, Habitify recherche les habitudes pour lesquelles aucune progression n’a été enregistrée et les marque automatiquement à votre place. Votre suivi reste ainsi fidèle à la réalité, même les jours où vous oubliez de faire le point.
+
+## Remarques importantes
+
+Quelques limites méritent d’être comprises pour que l’automatisation se comporte comme prévu :
+
+- **Elle s’exécute uniquement pour le jour en cours.** Évitez de définir l’heure de déclenchement après 23 h 59 : si l’exécution dépasse minuit, elle risque de vérifier les habitudes du lendemain à la place.
+- **Elle s’applique uniquement aux bonnes habitudes configurées pour se répéter chaque jour.** Les habitudes hebdomadaires, les habitudes mensuelles et les mauvaises habitudes ne sont pas encore prises en charge par cette automatisation.
+- **Elle concerne uniquement les habitudes dont la progression du jour est encore à 0.** Toute habitude pour laquelle vous avez déjà enregistré une valeur reste inchangée.
+- **Si le fuseau horaire de votre appareil change, manuellement ou automatiquement lors d’un voyage**, revenez dans le réglage Mise à jour du statut et actualisez-le (désactivez-le, puis réactivez-le) afin que l’heure de déclenchement reste exacte.
+- **C’est une aide, pas un remplacement.** Vous pouvez toujours mettre à jour manuellement le statut d’une habitude quand vous le souhaitez ; cette automatisation se contente de s’occuper de celles que vous n’avez pas eu le temps de mettre à jour.
+
+## Activer l’automatisation
+
+<Tabs>
+  <Tab title=" iOS">
+    ![Automatisation iOS](/images/Automation-iOS.png "Automatisation iOS")
+
+    1. Dans l’application Habitify, accédez aux **Réglages**.
+    2. Sous **Intégration**, ouvrez la section **Automatisation**.
+    3. Sur l’écran des réglages de l’automatisation, placez le bouton d’activation sur **ACTIVÉ**.
+    4. Dans **Heure programmée**, touchez l’heure et réglez-la selon votre préférence.
+    5. Dans **Marquer les habitudes non enregistrées comme**, choisissez le statut que doivent prendre les habitudes non enregistrées :
+       - **Ignorée** : vous avez intentionnellement choisi de ne pas l’accomplir pour une raison valable.
+       - **Échec** : vous ne l’avez pas accomplie, sans raison valable.
+    6. Lorsque tout est configuré, touchez く dans le coin supérieur droit pour tout enregistrer et revenir en arrière.
+  </Tab>
+  <Tab title="🤖 Android">
+    ![Mise à jour du statut Android](/images/StatusUpdate-Android.png "Mise à jour du statut Android")
+
+    1. Dans l’application Habitify, accédez aux **Paramètres**.
+    2. Sous **Automatisation**, ouvrez **Mise à jour du statut**.
+    3. Sur l’écran des réglages de Mise à jour du statut :
+       - Touchez **Tous les jours à [heure]**, puis choisissez l’heure à laquelle l’automatisation s’exécutera chaque jour.
+    4. Sous **Marquer les habitudes comme**, choisissez le statut que doivent prendre les habitudes non enregistrées :
+       - **Ignorée** : vous avez intentionnellement choisi de ne pas l’accomplir pour une raison valable.
+       - **Échec** : vous ne l’avez pas accomplie, sans raison valable.
+    5. Sous Habitudes exclues, touchez **Ajouter des habitudes exclues…**, puis sélectionnez les habitudes à exclure de l’automatisation.
+    6. Sous Statut, activez le bouton **Activé**.
+    7. Lorsque tout est configuré, touchez **←** dans le coin supérieur droit pour enregistrer et revenir en arrière.
+  </Tab>
+</Tabs>

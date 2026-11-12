@@ -1,0 +1,92 @@
+---
+title: "Health Connect"
+---
+
+Health Connect est la plateforme de Google qui centralise les données de santé et d’activité physique provenant des applications et appareils que vous utilisez déjà : votre montre, votre application de fitness et votre outil de suivi du sommeil.
+
+Habitify s’y connecte afin d’automatiser votre suivi : au lieu de cocher manuellement une habitude comme les pas ou le sommeil, Habitify lit les données déjà enregistrées par vos autres applications et appareils, puis consigne votre progression à votre place.
+
+## Ajouter une habitude synchronisée avec Health Connect
+
+<iframe src="https://drive.google.com/file/d/1oP2yN1sxBiho9PIVNXX-foM2swvoxlek/preview" width="640" height="360" />
+
+1. Dans le **Journal**, touchez **\+** dans la barre de date située dans le coin inférieur droit de l’écran.
+2. Choisissez **Créer de nouvelles habitudes** ou **Briser la mauvaise habitude**.
+3. Parmi les onglets situés en haut de l’écran des modèles d’habitudes, touchez **Health Connect.**
+4. Touchez l’une des options de données dans la liste de toutes les activités et de tous les types de données que Habitify peut importer depuis Health Connect.
+5. Touchez **Autoriser l’accès.**<br />Sur l’écran suivant, dans la section **Autoriser Habitify à lire**, placez le bouton bascule sur **ACTIVÉ**, puis touchez le bouton **Autoriser** en dessous.
+6. Une fois l’autorisation accordée, touchez le bouton **Continuer**.
+7. Configurez les détails de votre habitude comme d’habitude et ajustez l’objectif si vous le souhaitez.
+9. Lorsque tout est configuré, touchez le bouton **Enregistrer** dans le coin supérieur droit.
+
+Une habitude liée à Health Connect est facile à reconnaître une fois créée : une petite icône Health Connect apparaît directement dans le Journal lorsque vous utilisez la vue Jour, ce qui permet de la distinguer en un coup d’œil de vos habitudes suivies manuellement.
+
+## Fonctionnement
+
+Une fois l’habitude liée, son fonctionnement au quotidien est simple :
+
+- Les données Health Connect sont automatiquement synchronisées avec Habitify. Lorsque la valeur enregistrée atteint l’objectif de l’habitude, Habitify la marque comme **Complétée** pour vous : aucune validation manuelle n’est nécessaire pour une bonne habitude.
+- Vous pouvez toujours marquer manuellement l’habitude comme **Ignorée** ou **Échec** pour la journée si vous souhaitez noter un élément que les données synchronisées ne permettraient pas de consigner autrement.
+- **La synchronisation est à sens unique.** Les données circulent uniquement de Health Connect vers Habitify.
+
+## FAQ
+
+<Accordion title="**Mes données de calories ne sont pas correctement synchronisées depuis Health Connect. Que dois-je faire ?**">
+  Lorsque vous créez ou modifiez une habitude dans la catégorie Health Connect, vous êtes invité à sélectionner l’une des trois options liées aux calories. Voici précisément les données que chaque option demande à votre appareil :
+
+  1. **« Apports énergétiques » — Ce que vous consommez :** synchronise les calories nutritionnelles (calories consommées). Idéal pour suivre les repas, respecter des objectifs alimentaires ou surveiller un programme de déficit ou d’excédent calorique.
+
+  2. **« Brûler quelques calories » — Ce que vous brûlez pendant un entraînement :** synchronise les calories actives brûlées (activité physique uniquement). Idéal pour suivre l’exercice quotidien, la régularité des entraînements et les objectifs de mouvement actif.
+
+  3. **« Mesurer les calories » — Tout ce que vous brûlez :** synchronise le total des calories brûlées (actives \+ passives). Idéal pour surveiller la dépense énergétique quotidienne totale (DEQT) afin de gérer votre poids ou de suivre votre métabolisme global.
+
+  Si votre progression synchronisée s’affiche de manière incorrecte (par exemple, vous avez choisi « Mesurer les calories » alors que vous souhaitiez suivre votre alimentation), nous vous recommandons de créer une nouvelle habitude et de choisir l’option qui correspond à votre objectif.
+</Accordion>
+
+<Accordion title="**Habitify affiche des entrées de données en double provenant de Health Connect. Que dois-je faire ?**">
+  Health Connect est une couche de données partagée dans laquelle n’importe quel nombre d’applications installées sur votre téléphone peuvent écrire. Si deux applications écrivent le même type de données (comme le sommeil), Health Connect les stocke sous forme d’**enregistrements distincts**, même si elles décrivent la même nuit.
+
+  Cela se produit le plus souvent lorsque les deux éléments suivants sont actifs en même temps sur votre appareil Android :
+
+  - **Google Fit**
+  - L’**outil de suivi de la santé ou de l’activité physique intégré à votre appareil** (il varie selon le fabricant du téléphone et est souvent activé par défaut)
+
+  L’écran récapitulatif de Health Connect affiche parfois ces données comme une seule entrée fusionnée, ce qui explique pourquoi le doublon n’est pas forcément évident lorsque vous le consultez. Habitify lit cependant les enregistrements sous-jacents et récupère donc les deux.
+
+  **Comment résoudre le problème**
+
+  1. Ouvrez **Paramètres → Health Connect → Autorisations des applications** sur votre appareil Android.
+  2. Parcourez la liste des applications et repérez celles qui disposent d’un **accès en écriture** au type de données dupliqué (par exemple, le sommeil).
+  3. Si plusieurs applications disposent d’un accès en écriture au même type de données, désactivez cet accès pour l’une d’elles. Si Google Fit en fait partie, nous vous recommandons de le désactiver, car il s’agit d’une ancienne méthode dont de nombreux appareils n’ont plus besoin.
+  4. Attendez un cycle de synchronisation, puis vérifiez à nouveau Habitify. Les entrées en double créées avant la correction ne seront pas fusionnées rétroactivement, mais les nouvelles entrées seront désormais correctes.
+</Accordion>
+
+<Accordion title="**Habitify ne synchronise pas les données de Health Connect. Que dois-je faire ?**">
+  Les autorisations Health Connect sont accordées **par type de données**, et pas seulement par application. Connecter une application source (comme Withings, qui envoie des données à Google Health) ne signifie pas automatiquement que Habitify est autorisé à accéder à tous les types de données qu’elle fournit. Il est courant qu’un type de données (par exemple, les pas) soit autorisé tandis qu’un autre (par exemple, le poids) ne l’est pas.
+
+  **Comment résoudre le problème**
+
+  1. Ouvrez **Paramètres → Health Connect → Habitify** (sous Autorisations des applications).
+  2. Consultez la liste des types de données auxquels Habitify peut accéder.
+  3. Vérifiez que le type de données précis suivi par votre habitude (par exemple, **Poids**, **Sommeil** ou **Pas**) est explicitement **activé**.
+  4. S’il était désactivé, activez-le, puis rouvrez Habitify pour déclencher une nouvelle synchronisation.
+</Accordion>
+
+<Accordion title="**Pourquoi mes pas provenant de Health Connect sont-ils synchronisés dans Habitify avec une valeur différente ?**">
+  Cela se produit généralement lorsque **Health Connect** reçoit simultanément des données de pas provenant de plusieurs applications ou sources matérielles de votre téléphone (par exemple, Google Fit, Samsung Health, une application de montre connectée et le podomètre intégré à votre téléphone). Lorsque Health Connect combine ces entrées sans qu’une source principale soit prioritaire, il peut envoyer à Habitify un nombre de pas doublé.
+
+  **Comment résoudre le problème :**
+
+  Vous pouvez résoudre ce problème en définissant une seule source principale pour les données de pas dans les paramètres Health Connect d’Android :
+
+  1. Ouvrez l’application **Paramètres** de votre appareil Android.
+  2. Recherchez et sélectionnez **Health Connect**.
+  3. Touchez **Données et accès** (ou **Gérer les données**).
+  4. Sélectionnez **Sources de données et priorité**.
+  5. Touchez **Activité**, puis choisissez **Pas**.
+  6. Consultez la liste sous **Sources des applications** :
+     - **Réorganiser les sources :** faites glisser votre principal outil de suivi des pas (par exemple, Samsung Health ou Google Fit) en haut de la liste afin que Health Connect lui donne la priorité.
+     - **Supprimer les sources en double :** désactivez ou supprimez les applications secondaires dont vous ne souhaitez pas qu’elles contribuent à votre nombre total de pas.
+
+  > **_Remarque :_**_ après la mise à jour de l’ordre de priorité de vos sources dans Health Connect, quelques instants peuvent être nécessaires avant que le nombre de pas corrigé ne soit synchronisé avec Habitify._
+</Accordion>
