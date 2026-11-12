@@ -36,7 +36,13 @@ Sau khi cấp quyền thành công, bạn có thể nhấp vào **Bắt đầu t
 Để kết nối Habitify với một công cụ mới, thông thường bạn sẽ được yêu cầu cung cấp **URL máy chủ** hoặc **Liên kết kết nối**.
 
 - **URL kết nối:** `https://mcp.habitify.me/mcp`
-- **Loại kết nối:** SSE (Server-Sent Events — Sự kiện do máy chủ gửi)
+- **Loại kết nối:** Streamable HTTP
+
+<Warning>
+  Habitify MCP chỉ hỗ trợ Streamable HTTP. 
+
+  SSE (Server-Sent Events) không được hỗ trợ. Nếu một công cụ chỉ kết nối qua SSE, công cụ đó không thể kết nối với Habitify MCP, ngay cả khi công cụ đó liệt kê Habitify là một kết nối khả dụng.
+</Warning>
 
 Mỗi ứng dụng có giao diện hơi khác nhau nên tên nút cụ thể có thể thay đổi, nhưng quy trình thường giống nhau:
 
@@ -104,4 +110,17 @@ Sau khi kết nối, bạn có thể yêu cầu trợ lý AI thực hiện các 
 
 <Accordion title="**Habitify MCP có thể chạy các lần đánh giá theo lịch hoặc cập nhật thói quen trong nền không?**">
   Habitify MCP chưa hỗ trợ hoạt động trong quy trình tự động hóa. Công cụ vẫn cần dữ liệu đầu vào hoặc tương tác của người dùng để chạy.
+</Accordion>
+
+<Accordion title="**Tại sao tôi không thể kết nối Habitify MCP trong Todoist Automation hoặc công cụ khác?**">
+  Habitify MCP chỉ hỗ trợ Streamable HTTP. SSE đã bị tắt.
+
+  Một số công cụ chỉ kết nối qua SSE. Todoist Automation là một trong số đó. Công cụ này liệt kê Habitify MCP trong kho ứng dụng của mình, nhưng không thể kết nối vì sự không tương thích này. Nguyên nhân không nằm ở tài khoản Habitify hay cách bạn thiết lập.
+
+  Bạn có thể làm gì:
+
+  > 1. Dùng một client hỗ trợ Streamable HTTP, chẳng hạn Claude hoặc ChatGPT. Các bước thiết lập có ở đầu trang này.
+  > 2. Nếu bạn dùng công cụ khác, hãy xem tài liệu của công cụ đó để kiểm tra khả năng hỗ trợ Streamable HTTP trước khi thêm Habitify.
+
+  Hiện tại, Habitify MCP chưa thể kết nối với các công cụ chỉ dùng SSE.
 </Accordion>

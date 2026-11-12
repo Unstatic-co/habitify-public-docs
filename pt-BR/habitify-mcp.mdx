@@ -37,7 +37,13 @@ Quando a autorização for concluída, clique em **Iniciar conversa** para come�
 Para conectar o Habitify a uma nova ferramenta, normalmente será solicitada uma **URL do servidor** ou um **link de conexão**.
 
 - **URL de conexão:** `https://mcp.habitify.me/mcp`
-- **Tipo de conexão:** SSE — Server-Sent Events.
+- **Tipo de conexão:** Streamable HTTP
+
+<Warning>
+  **O Habitify MCP oferece suporte apenas ao Streamable HTTP.** 
+
+  O SSE (Server-Sent Events) não é compatível. Se uma ferramenta se conecta somente por SSE, ela não consegue se conectar ao Habitify MCP, mesmo que liste o Habitify como uma conexão disponível.
+</Warning>
 
 Como cada aplicativo é diferente, os nomes exatos dos botões podem variar, mas o processo costuma ser o mesmo:
 
@@ -105,4 +111,17 @@ Depois da conexão, você pode pedir ao assistente de IA para executar ações r
 
 <Accordion title="**O Habitify MCP pode executar revisões agendadas ou atualizar hábitos em segundo plano?**">
   O Habitify MCP ainda não funciona em fluxos de automação. Ele exige uma solicitação ou interação do usuário para ser executado.
+</Accordion>
+
+<Accordion title="**Por que não consigo conectar o Habitify MCP no Todoist Automation ou em outra ferramenta?**">
+  O Habitify MCP oferece suporte apenas ao Streamable HTTP. O SSE está desativado.
+
+  Algumas ferramentas se conectam somente por SSE. O Todoist Automation é uma delas. Ele lista o Habitify MCP na própria loja de aplicativos, mas a conexão não pode ser feita por causa dessa incompatibilidade. Sua conta do Habitify e sua configuração não são a causa.
+
+  O que você pode fazer:
+
+  > 1. Use um cliente compatível com Streamable HTTP, como o Claude ou o ChatGPT. As etapas de configuração estão no início desta página.
+  > 2. Se você usa outra ferramenta, consulte a documentação dela para verificar a compatibilidade com Streamable HTTP antes de adicionar o Habitify.
+
+  No momento, o Habitify MCP não pode ser conectado a ferramentas que usam somente SSE.
 </Accordion>

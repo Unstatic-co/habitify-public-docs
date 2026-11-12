@@ -37,7 +37,13 @@ Nach erfolgreicher Autorisierung kannst du auf **Chat starten** klicken und dire
 Um Habitify mit einem neuen Werkzeug zu verbinden, wirst du üblicherweise nach einer **Server-URL** oder einem **Verbindungslink** gefragt.
 
 - **Verbindungs-URL:** `https://mcp.habitify.me/mcp`
-- **Verbindungstyp:** SSE (Server-Sent Events)
+- **Verbindungstyp:** Streamable HTTP
+
+<Warning>
+  **Habitify MCP unterstützt nur Streamable HTTP.** 
+
+  SSE (Server-Sent Events) wird nicht unterstützt. Wenn ein Tool sich ausschließlich über SSE verbindet, kann es keine Verbindung zu Habitify MCP herstellen, auch wenn das Tool Habitify als verfügbare Verbindung auflistet.
+</Warning>
 
 Jede App sieht etwas anders aus, sodass die genauen Schaltflächen variieren können. Der Ablauf ist jedoch meist derselbe:
 
@@ -103,4 +109,17 @@ Nach der Verbindung kannst du deinen AI-Assistenten in natürlicher Sprache bitt
 
 <Accordion title="**Kann Habitify MCP geplante Auswertungen ausführen oder Gewohnheiten im Hintergrund aktualisieren?**">
   Habitify MCP unterstützt derzeit keine automatisierten Arbeitsabläufe. Zur Ausführung ist weiterhin eine Eingabe oder Interaktion des Nutzers erforderlich.
+</Accordion>
+
+<Accordion title="Warum kann ich Habitify MCP in Todoist Automation oder einem anderen Tool nicht verbinden?">
+  Habitify MCP unterstützt nur Streamable HTTP. SSE ist deaktiviert.
+
+  Manche Tools verbinden sich ausschließlich über SSE. Todoist Automation ist eines davon. Es listet Habitify MCP in seinem App-Store auf, aber die Verbindung kann wegen dieser Inkompatibilität nicht hergestellt werden. Ihr Habitify-Konto und Ihre Einrichtung sind nicht die Ursache.
+
+  Das können Sie tun:
+
+  > 1. Verwenden Sie einen Client, der Streamable HTTP unterstützt, zum Beispiel Claude oder ChatGPT. Die Einrichtungsschritte stehen am Anfang dieser Seite.
+  > 2. Wenn Sie ein anderes Tool verwenden, prüfen Sie in dessen Dokumentation die Unterstützung für Streamable HTTP, bevor Sie Habitify hinzufügen.
+
+  Habitify MCP kann derzeit nicht mit Tools verbunden werden, die nur SSE verwenden.
 </Accordion>

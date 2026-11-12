@@ -36,7 +36,13 @@ Cuando la autorización se complete correctamente, puedes hacer clic en **Inicia
 Para conectar Habitify con una herramienta nueva, normalmente se te pedirá una **URL del servidor** o un **enlace de conexión**.
 
 - **URL de conexión:** `https://mcp.habitify.me/mcp`
-- **Tipo de conexión:** SSE —eventos enviados por el servidor—.
+- **Tipo de conexión:** Streamable HTTP
+
+<Warning>
+  **Habitify MCP solo admite Streamable HTTP.** 
+
+  No admite SSE (Server-Sent Events). Si una herramienta se conecta únicamente mediante SSE, no puede conectarse a Habitify MCP, aunque la herramienta muestre Habitify como una conexión disponible.
+</Warning>
 
 Cada aplicación tiene un aspecto ligeramente distinto, por lo que los nombres exactos de los botones pueden variar. Sin embargo, el proceso suele ser el mismo:
 
@@ -104,4 +110,17 @@ Una vez conectado, puedes pedir al asistente de IA que realice acciones reales e
 
 <Accordion title="**¿Puede Habitify MCP realizar revisiones programadas o actualizar hábitos en segundo plano?**">
   Habitify MCP todavía no puede funcionar dentro de flujos de trabajo automatizados. Para ejecutarse, sigue necesitando una entrada o interacción del usuario.
+</Accordion>
+
+<Accordion title="**¿Por qué no puedo conectar Habitify MCP en Todoist Automation u otra herramienta?**">
+  Habitify MCP solo admite Streamable HTTP. SSE está desactivado.
+
+  Algunas herramientas se conectan únicamente mediante SSE. Todoist Automation es una de ellas. Muestra Habitify MCP en su tienda de aplicaciones, pero no se puede establecer la conexión por esta incompatibilidad. Tu cuenta de Habitify y tu configuración no son la causa.
+
+  Qué puedes hacer:
+
+  > 1. Usa un cliente que admita Streamable HTTP, como Claude o ChatGPT. Los pasos de configuración están al inicio de esta página.
+  > 2. Si usas otra herramienta, consulta su documentación para comprobar si admite Streamable HTTP antes de añadir Habitify.
+
+  Por ahora, Habitify MCP no se puede conectar a herramientas que solo usan SSE.
 </Accordion>

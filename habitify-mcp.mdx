@@ -36,7 +36,11 @@ Once the authorization is successful, you can click **Start Chat** to start inte
 To connect Habitify to a new tool, you will typically be asked for a **Server URL** or **Connection Link**.
 
 - **Connection URL:** `https://mcp.habitify.me/mcp`
-- **Connection Type:** SSE (Server-Sent Events)
+- **Connection Type:** Streamable HTTP
+
+<Warning>
+  **Habitify MCP supports Streamable HTTP only.** SSE (Server-Sent Events) is not supported. If a tool connects over SSE only, it can’t connect to Habitify MCP, even if the tool lists Habitify as an available connection.
+</Warning>
 
 Since every app looks a little different, the exact buttons might vary, but the process is usually the same:
 

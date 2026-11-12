@@ -36,7 +36,13 @@ Habitify MCP（Model Context Protocol）は、HabitifyアカウントをChatGPT�
 Habitifyを新しいツールへ接続する際は、通常、**サーバーURL**または**接続リンク**の入力を求められます。
 
 - **接続URL：** `https://mcp.habitify.me/mcp`
-- **接続タイプ：** SSE（Server-Sent Events）
+- **接続タイプ：** Streamable HTTP
+
+<Warning>
+  **Habitify MCPはStreamable HTTPのみに対応しています。**
+
+  SSE（Server-Sent Events）には対応していません。SSEのみで接続するツールは、Habitifyを利用可能な接続先として掲載していても、Habitify MCPに接続できません。
+</Warning>
 
 アプリによって画面は異なるため、ボタン名が違う場合がありますが、通常は次の手順で接続します。
 
@@ -104,4 +110,17 @@ Habitifyを新しいツールへ接続する際は、通常、**サーバーURL*
 
 <Accordion title="**Habitify MCPで、定期的な振り返りやバックグラウンドでの習慣更新を実行できますか？**">
   Habitify MCPは、現時点では自動化ワークフローでの動作に対応していません。実行にはユーザーからの入力または操作が必要です。
+</Accordion>
+
+<Accordion title="**Todoist Automationなどのツールで、Habitify MCPに接続できないのはなぜですか？**">
+  Habitify MCPはStreamable HTTPのみに対応しています。SSEは無効になっています。
+
+  一部のツールはSSEのみで接続します。Todoist Automationもその1つです。Todoist AutomationはアプリストアにHabitify MCPを掲載していますが、この不一致のため接続できません。原因は、Habitifyアカウントや設定にはありません。
+
+  対処方法：
+
+  > 1. ClaudeやChatGPTなど、Streamable HTTPに対応しているクライアントを使用してください。設定手順は、このページの冒頭にあります。
+  > 2. ほかのツールを使用する場合は、Habitifyを追加する前に、そのツールのドキュメントでStreamable HTTPへの対応を確認してください。
+
+  現時点では、Habitify MCPをSSEのみのツールに接続することはできません。
 </Accordion>
