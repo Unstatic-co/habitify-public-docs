@@ -730,6 +730,109 @@
         ]
       },
       {
+        "language": "ko",
+        "tabs": [
+          {
+            "tab": "문서",
+            "icon": "life-ring",
+            "pages": [
+              {
+                "group": "시작하기",
+                "pages": [
+                  "ko/habitify-introduction",
+                  "ko/habitify-quick-start",
+                  "ko/glossary"
+                ]
+              },
+              {
+                "group": "기능",
+                "pages": [
+                  "ko/good-habits",
+                  "ko/bad-habits",
+                  "ko/journal",
+                  "ko/single-progress",
+                  "ko/overall-progress",
+                  "ko/reflection",
+                  "ko/circle",
+                  "ko/challenge"
+                ]
+              },
+              {
+                "group": "도구",
+                "pages": [
+                  "ko/area",
+                  "ko/reminder",
+                  "ko/habit-gate",
+                  "ko/note",
+                  "ko/widget",
+                  "ko/task",
+                  "ko/timer"
+                ]
+              },
+              {
+                "group": "앱 설정",
+                "pages": ["ko/off-mode", "ko/app-behavior"]
+              },
+              {
+                "group": "자동화",
+                "pages": [
+                  "ko/automation-status-update",
+                  "ko/ios-shortcuts",
+                  "ko/nfc-tags",
+                  "ko/zapier-ifttt"
+                ]
+              },
+              {
+                "group": "연동",
+                "pages": [
+                  "ko/google-calendar-integration",
+                  "ko/outlook-calendar-integration",
+                  "ko/apple-calendar-integration",
+                  "ko/apple-health-integration",
+                  "ko/health-connect-integration",
+                  "ko/strava-integration",
+                  "ko/fitbit-integration",
+                  "ko/rescue-time-integration",
+                  "ko/screen-time-integration"
+                ]
+              },
+              {
+                "group": "Habitify MCP 및 AI",
+                "pages": [
+                  "ko/habitify-mcp",
+                  "ko/habi-ai",
+                  "ko/siri-ai"
+                ]
+              },
+              {
+                "group": "요금제 및 결제",
+                "pages": [
+                  "ko/plans",
+                  "ko/billings",
+                  "ko/habitify-family",
+                  "ko/habitify-team",
+                  "ko/habitify-student"
+                ]
+              },
+              {
+                "group": "계정 및 데이터",
+                "pages": ["ko/manage-account", "ko/manage-data"]
+              }
+            ]
+          },
+          {
+            "tab": "API",
+            "icon": "rectangle-api",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
+          },
+          {
+            "tab": "변경 내역",
+            "icon": "bullhorn",
+            "href": "https://feedback.habitify.me/changelog"
+          }
+        ]
+      },
+      {
         "language": "de",
         "tabs": [
           {
