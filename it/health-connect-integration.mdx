@@ -1,0 +1,92 @@
+---
+title: "Health Connect"
+---
+
+Health Connect è la piattaforma di Google che centralizza i dati relativi a salute e fitness provenienti dalle app e dai dispositivi che già utilizzi: il tuo orologio, la tua app di fitness e il tuo rilevatore del sonno.
+
+Habitify si connette a Health Connect per consentirti di automatizzare il monitoraggio: invece di contrassegnare manualmente un'abitudine come i passi o il sonno, Habitify legge i dati che le altre app e i dispositivi stanno già registrando e registra i progressi al posto tuo.
+
+## Aggiungere un'abitudine sincronizzata con Health Connect
+
+<iframe src="https://drive.google.com/file/d/1oP2yN1sxBiho9PIVNXX-foM2swvoxlek/preview" width="640" height="360" />
+
+1. Nel **Diario**, tocca **\+** sulla barra della data nell'angolo in basso a destra dello schermo.
+2. Scegli **Crea una nuova Abitudine** oppure **Interrompi una cattiva abitudine**.
+3. Tra le schede nella parte superiore della schermata dei modelli di abitudine, tocca **Health Connect.**
+4. Tocca per selezionare un'opzione relativa ai dati nell'elenco di tutte le attività e dei tipi di dati che Habitify può importare da Health Connect.
+5. Tocca **Consenti accesso.**<br />Nella schermata successiva, nella sezione **Consenti a Habitify di leggere**, imposta l'interruttore su **ATTIVO**, quindi tocca il pulsante **Consenti** in basso.
+6. Dopo avere concesso l'autorizzazione, tocca il pulsante **Continua**.
+7. Configura come di consueto i dettagli delle tue abitudini e modifica l'obiettivo, se lo desideri.
+9. Quando è tutto pronto, tocca il pulsante **Salva** nell'angolo in alto a destra.
+
+Una volta creata, un'abitudine collegata a Health Connect è facile da riconoscere: quando visualizzi la Vista giornaliera nel Diario, presenta una piccola icona di Health Connect che la distingue a colpo d'occhio dalle abitudini monitorate manualmente.
+
+## Come funziona
+
+Una volta collegata un'abitudine, il funzionamento quotidiano è semplice:
+
+- I dati di Health Connect si sincronizzano automaticamente con Habitify. Quando il valore registrato raggiunge l'obiettivo dell'abitudine, Habitify la contrassegna come **Completato** al posto tuo: per un'abitudine positiva non è necessaria alcuna registrazione manuale.
+- Puoi comunque contrassegnare manualmente l'abitudine come **Saltato** o **Fallito** per quel giorno, se vuoi annotare qualcosa che i dati sincronizzati altrimenti non rileverebbero.
+- **La sincronizzazione avviene soltanto in una direzione.** I dati fluiscono esclusivamente da Health Connect a Habitify.
+
+## Domande frequenti
+
+<Accordion title="**I dati sulle calorie non vengono sincronizzati correttamente da Health Connect. Che cosa devo fare?**">
+  Quando crei o modifichi un'abitudine nella categoria Health Connect, ti verrà chiesto di selezionare una delle tre opzioni relative alle calorie. Ecco esattamente quali dati richiede ciascuna opzione al tuo dispositivo:
+
+  1. **"Assunzione di energia" - Ciò che consumi:** sincronizza le calorie nutrizionali (calorie consumate). È l'opzione più adatta per monitorare i pasti, rispettare gli obiettivi alimentari o controllare una routine basata su deficit o surplus calorico.
+
+  2. **"Brucia qualche caloria" - Ciò che bruci durante l'allenamento:** sincronizza le calorie attive bruciate (soltanto l'attività fisica). È l'opzione più adatta per monitorare l'esercizio quotidiano, la costanza negli allenamenti e gli obiettivi di movimento attivo.
+
+  3. **"Tieni traccia delle calorie"  - ciò che bruci complessivamente**:  sincronizza le calorie totali bruciate (Attive \+ Passive). È l'opzione più adatta per monitorare il dispendio energetico giornaliero totale (TDEE), gestire il peso o tenere sotto controllo il metabolismo complessivo.
+
+  Se i progressi sincronizzati vengono visualizzati in modo errato (ad esempio, hai scelto "Tieni traccia delle calorie" ma volevi monitorare l'assunzione di cibo), ti consigliamo di creare una nuova abitudine e scegliere l'opzione corretta che corrisponde al tuo obiettivo.
+</Accordion>
+
+<Accordion title="**Habitify mostra voci di dati duplicate da Health Connect. Che cosa devo fare?**">
+  Health Connect è un livello dati condiviso nel quale può scrivere un numero qualsiasi di app presenti sul telefono. Se due app scrivono entrambe lo stesso tipo di dati (come il Sonno), Health Connect li memorizza come **record separati**, anche quando descrivono la stessa notte.
+
+  Questo accade più frequentemente quando sul tuo dispositivo Android sono attivi contemporaneamente entrambi gli elementi seguenti:
+
+  - **Google Fit**
+  - Il **sistema integrato del dispositivo per il monitoraggio di salute e fitness** (varia in base al produttore del telefono ed è spesso attivo per impostazione predefinita)
+
+  A volte la schermata di riepilogo di Health Connect mostra questi dati come un'unica voce combinata; per questo, il duplicato potrebbe non risultare evidente quando la controlli. Habitify, invece, legge i record sottostanti e quindi li rileva entrambi.
+
+  **Come risolvere il problema**
+
+  1. Apri **Impostazioni → Health Connect → Autorizzazioni app** sul tuo dispositivo Android.
+  2. Esamina l'elenco delle app e individua quelle che hanno **accesso in scrittura** al tipo di dati duplicato (ad esempio, Sonno).
+  3. Se più di un'app ha accesso in scrittura allo stesso tipo di dati, disattivalo per una di esse. Se Google Fit è tra queste, consigliamo di disattivarlo, poiché si tratta di un percorso precedente di cui molti dispositivi non hanno più bisogno.
+  4. Attendi un ciclo di sincronizzazione, quindi controlla nuovamente Habitify. Le voci duplicate già esistenti prima della correzione non verranno unite retroattivamente, ma le nuove voci future saranno corrette.
+</Accordion>
+
+<Accordion title="**Habitify non sincronizza i dati da Health Connect. Che cosa devo fare?**">
+  Le autorizzazioni di Health Connect vengono concesse **per tipo di dati**, non soltanto per app. Collegare un'app sorgente (come Withings, che invia dati a Google Health) non significa automaticamente che a Habitify sia stato concesso l'accesso a ogni tipo di dato proveniente da quell'app. È frequente che un tipo di dati (ad esempio, Passi) sia autorizzato e un altro (ad esempio, Peso) non lo sia.
+
+  **Come risolvere il problema**
+
+  1. Apri **Impostazioni → Health Connect → Habitify** (in Autorizzazioni app).
+  2. Controlla l'elenco dei tipi di dati ai quali Habitify può accedere.
+  3. Verifica che lo specifico tipo di dati monitorato dalla tua abitudine (ad esempio, **Peso**, **Sonno**, **Passi**) sia esplicitamente **attivato**.
+  4. Se era disattivato, attivalo e apri nuovamente Habitify per avviare una nuova sincronizzazione.
+</Accordion>
+
+<Accordion title="**Perché i passi provenienti da Health Connect vengono sincronizzati in Habitify con un valore diverso?**">
+  In genere, ciò accade quando **Health Connect** riceve contemporaneamente dati sui passi da più app o sorgenti hardware presenti sul telefono (ad esempio, Google Fit, Samsung Health, l'app di uno smartwatch e il pedometro integrato del telefono). Quando Health Connect combina queste voci senza una sorgente principale prioritaria, può inviare a Habitify un totale dei passi raddoppiato.
+
+  **Come risolvere il problema:**
+
+  Puoi risolverlo impostando un'unica sorgente principale per i dati sui passi nelle impostazioni di Health Connect di Android:
+
+  1. Apri l'app **Impostazioni** del tuo dispositivo Android.
+  2. Cerca e seleziona **Health Connect**.
+  3. Tocca **Dati e accesso** (oppure **Gestisci dati**).
+  4. Seleziona **Origini dati e priorità**.
+  5. Tocca **Attività**, quindi scegli **Passi**.
+  6. Osserva l'elenco sotto **Origini app**:
+     - **Riordina le sorgenti:** trascina il tuo rilevatore di passi principale (ad esempio, Samsung Health o Google Fit) in cima all'elenco, affinché Health Connect gli assegni la priorità.
+     - **Rimuovi le sorgenti duplicate:** disattiva o rimuovi le app secondarie che non vuoi contribuiscano al totale dei passi.
+
+  > **_Nota:_**_ dopo aver aggiornato le priorità delle sorgenti in Health Connect, potrebbero essere necessari alcuni istanti prima che il totale corretto dei passi venga sincronizzato con Habitify._
+</Accordion>

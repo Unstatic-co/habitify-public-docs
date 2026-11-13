@@ -1,0 +1,48 @@
+---
+title: "Aggiornamento dello stato"
+---
+
+Alcune giornate sfuggono di mano e un'abitudine che effettivamente non hai svolto può rimanere senza alcuno stato, a meno che tu non ricordi di aprire l'app e contrassegnarla personalmente.
+
+**L'automazione Aggiornamento dello stato** aiuta a colmare questa lacuna: all'ora che scegli, Habitify verifica quali abitudini non hanno progressi registrati e le contrassegna automaticamente al posto tuo, così il monitoraggio resta fedele alla realtà anche nei giorni in cui dimentichi di effettuare il check-in.
+
+## Note importanti
+
+È utile conoscere alcuni limiti, affinché l'automazione si comporti come previsto:
+
+- **Viene eseguita solo nella giornata corrente.** Evita di impostare l'ora di attivazione dopo le 23:59: se l'esecuzione supera la mezzanotte, rischia di controllare invece le abitudini del giorno successivo.
+- **Si applica solo alle abitudini positive con una ripetizione giornaliera.** Le abitudini settimanali, quelle mensili e le cattive abitudini non sono ancora incluse in questa automazione.
+- **Agisce solo sulle abitudini per le quali i progressi di oggi sono ancora pari a 0.** Qualsiasi abitudine per cui hai già registrato qualcosa rimane invariata.
+- **Se il fuso orario del dispositivo cambia, manualmente o automaticamente durante un viaggio**, torna nell'impostazione Aggiornamento dello stato e aggiornala, disattivandola e riattivandola, affinché l'ora di attivazione rimanga corretta.
+- **È un aiuto, non una sostituzione.** Puoi comunque aggiornare manualmente lo stato di qualsiasi abitudine in qualunque momento; questa automazione si limita a occuparsi di ciò che non hai avuto modo di registrare.
+
+## Abilitare l'automazione
+
+<Tabs>
+  <Tab title=" iOS">
+    ![Automazione su iOS](/images/Automation-iOS.png "Automazione su iOS")
+
+    1. Nell'app Habitify, vai a **Impostazioni**.
+    2. Sotto **Integrazione**, apri la sezione **Automazione**.
+    3. Nella schermata delle impostazioni di Automazione, porta l'interruttore su **ATTIVO**.
+    4. In **Ora programmata**, tocca l'ora e impostala su quella che preferisci.
+    5. In **Segna le abitudini non registrate come**, scegli quale stato devono assumere le abitudini non registrate:
+       - **Saltata**: hai scelto intenzionalmente di non svolgerla per un motivo valido;
+       - **Non riuscita**: non l'hai completata senza un motivo valido.
+    6. Dopo aver configurato tutto, tocca く nell'angolo in alto a destra per salvare e tornare indietro.
+  </Tab>
+  <Tab title="🤖 Android">
+    ![Aggiornamento dello stato su Android](/images/StatusUpdate-Android.png "Aggiornamento dello stato su Android")
+
+    1. Nell'app Habitify, vai a **Impostazioni**.
+    2. Sotto **Automazione**, apri **Aggiornamento Stato**.
+    3. Nella schermata delle impostazioni di Aggiornamento Stato:
+       - tocca **Ogni giorno alle [ora]** e imposta l'ora in cui l'automazione verrà eseguita ogni giorno.
+    4. Sotto **Segna le abitudini come**, scegli quale stato devono assumere le abitudini non registrate:
+       - **Saltato**: hai scelto intenzionalmente di non svolgerla per un motivo valido;
+       - **Fallito**: non l'hai completata senza un motivo valido.
+    5. Sotto Abitudini escluse, tocca **Aggiungi Abitudini Escluse…**, quindi seleziona le abitudini da escludere dall'automazione.
+    6. Sotto Stato, per **Abilitato**, attiva l'interruttore.
+    7. Dopo aver configurato tutto, tocca **←** nell'angolo in alto a destra per salvare e tornare indietro.
+  </Tab>
+</Tabs>
