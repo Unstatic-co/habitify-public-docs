@@ -1,0 +1,93 @@
+---
+title: "Tagi NFC"
+---
+
+Tagi NFC (komunikacji bliskiego zasięgu) to niewielkie, niedrogie naklejki, które można umieścić w dowolnym miejscu, a Habitify może używać ich jako fizycznych wyzwalaczy nawyków. Zamiast odblokowywać telefon, otwierać aplikację i wyszukiwać odpowiedni nawyk do oznaczenia, wystarczy zbliżyć telefon do tagu, aby nawyk został zarejestrowany.
+
+Chodzi o stworzenie w swoim otoczeniu rzeczywistych, fizycznych punktów styku bezpośrednio powiązanych z nawykami. Dzięki temu przestrzeń staje się rozszerzeniem systemu nawyków, a nie czymś od niego oddzielonym. Tag przyklejony do torby sportowej może wyzwalać nawyk „Trening”, tag na półce z książkami — „Czytanie”, a tag przy łóżku — „Sen”. Nawyk staje się czymś, na co natrafiasz w ciągu dnia, zamiast czymś, o czym musisz pamiętać, aby otworzyć aplikację.
+
+<Tabs>
+  <Tab title=" iOS">
+    <iframe src="https://drive.google.com/file/d/1nVj2AURiJOVwidDNkoG5qnwegAN5mBdv/preview" width="640" height="360" />
+
+    ## Konfigurowanie nowej integracji NFC z nawykiem
+
+    1. W aplikacji Habitify przejdź do **Ustawień**.
+    2. W sekcji **Integracja** stuknij **NFC.**
+    3. U dołu ekranu NFC stuknij przycisk **Zeskanuj nowy tag NFC**.
+    4. Umieść telefon na tagu NFC. <br />_W internecie możesz sprawdzić, gdzie w Twoim telefonie znajduje się czytnik NFC. Często jest umieszczony w pobliżu aparatu._
+    5. Po zakończeniu skanowania:
+       1. W sekcji **Po dotknięciu tagu NFC** wybierz działanie, które wykona aplikacja.
+       2. W sekcji **Nawyk** wybierz nawyk.
+    6. Na koniec stuknij przycisk „**Zapisz**”.
+
+    ### Obsługiwane działania
+
+    - **Oznacz jako ukończone**: zeskanuj tag NFC, aby ukończyć nawyk.
+    - **Oznacz jako pominięte**: zeskanuj tag NFC, aby pominąć nawyk w bieżącym dniu.
+    - **Oznacz jako niewykonane**: zeskanuj tag NFC, aby oznaczyć nawyk jako niewykonany w bieżącym dniu.
+    - **Zapisz postęp**: zeskanuj tag NFC, aby zapisać wcześniej zdefiniowany postęp.
+    - **Zapytaj mnie**: zeskanuj tag NFC i wybierz działanie do wykonania.
+
+    ## Rejestrowanie nawyku za pomocą tagu NFC
+
+    Rejestrowanie nawyku za pomocą zaprogramowanego tagu NFC jest proste:
+
+    - Zeskanuj tag telefonem i poczekaj na powiadomienie push.
+    - Stuknij powiadomienie push, aby otworzyć aplikację i wykonać skonfigurowane działanie.
+
+    <Note>
+      **Aby uzyskać najlepsze działanie, pozostaw aplikację Habitify uruchomioną w tle.**
+
+      Jeśli aplikacja zostanie całkowicie zamknięta, zeskanowanie tagu NFC i stuknięcie powiadomienia push otworzy tylko widok Dziennika, zamiast płynnie wykonać wybrane działanie.
+    </Note>
+  </Tab>
+  <Tab title="🤖 Android">
+    <iframe src="https://drive.google.com/file/d/19VU6fi_9gwu4LuRt-mk3cxcaVvOGRyy8/preview" width="640" height="360" />
+
+    ## **Konfigurowanie nowej integracji NFC z nawykiem**
+
+    1. W aplikacji Habitify przejdź do **Ustawień.**
+    2. W sekcji **Automatyzacja** stuknij **NFC**, aby ją otworzyć.
+    3. Stuknij przycisk **Skanuj nowy znacznik NFC**.
+    4. Umieść telefon na tagu NFC. <br />_W internecie możesz sprawdzić, gdzie w Twoim telefonie znajduje się czytnik NFC. Często jest umieszczony w pobliżu aparatu._
+    5. Po zakończeniu skanowania możesz skonfigurować następujące opcje:
+       1. W sekcji **Na stuknięciu NFC** wybierz działanie, które wykona aplikacja.
+       2. W sekcji **Zwyczaj** wybierz nawyk, dla którego aplikacja wykona działanie.
+    6. Na koniec stuknij przycisk **Zapisz** w prawym górnym rogu.
+
+    ### Obsługiwane działania
+
+    - **Zakończono**: zeskanuj tag NFC, aby ukończyć nawyk.
+    - **Oznacz jako pominięte**: zeskanuj tag NFC, aby pominąć nawyk w bieżącym dniu.
+    - **Oznacz jako nieudane**: zeskanuj tag NFC, aby oznaczyć nawyk jako nieudany w bieżącym dniu.
+    - **Włącz minutnik**: zeskanuj tag NFC, aby rozpocząć sesję minutnika dla nawyku.
+    - **Wartość dziennika**: zeskanuj tag NFC, aby zapisać wcześniej zdefiniowany postęp.
+    - **Zapytaj mnie**: zeskanuj tag NFC i wybierz działanie do wykonania.
+
+    ## Rejestrowanie nawyku za pomocą tagu NFC
+
+    Rejestrowanie nawyku za pomocą zaprogramowanego tagu NFC jest proste:
+
+    - Zeskanuj tag telefonem i poczekaj, aż pojawi się powiadomienie push.
+    - Stuknij powiadomienie, aby otworzyć aplikację i pozwolić jej wykonać kolejne kroki zgodnie z konfiguracją.
+
+    <Note>
+      **Aby uzyskać najlepsze działanie, pozostaw aplikację Habitify uruchomioną w tle.** <br /><br />Jeśli aplikacja zostanie całkowicie zamknięta, zeskanowanie tagu NFC i stuknięcie powiadomienia push otworzy tylko widok Dziennika, zamiast płynnie wykonać wybrane działanie.
+    </Note>
+  </Tab>
+</Tabs>
+
+## Często zadawane pytania
+
+<Accordion title="**Ile nawyków można powiązać z jednym tagiem NFC?**">
+  Tylko 1
+</Accordion>
+
+<Accordion title="**Jaki rodzaj tagu NFC jest zgodny z Habitify?**">
+  Zalecamy tagi NTAG213, NTA215 lub NTA216.
+</Accordion>
+
+<Accordion title="**Jaka jest minimalna wymagana pojemność pamięci tagu NFC?**">
+  Powiązanie nawyku z tagiem NFC wymaga mniej niż 100 bajtów pamięci.
+</Accordion>

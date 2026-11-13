@@ -1,0 +1,214 @@
+---
+title: "Dane"
+---
+
+## Importowanie danych do Habitify
+
+Rozpoczęcie korzystania z nowej aplikacji jest ekscytujące, ale wiemy, że nie chcesz stracić cennej historii śledzenia z innych aplikacji ani arkuszy kalkulacyjnych. W tej części poznasz kilka sposobów importowania wcześniejszych danych do Habitify, aby uzyskać pełny obraz swojej drogi.
+
+### **Importowanie danych zdrowotnych**
+
+Jeśli wcześniejsze dane dotyczą aktywności fizycznej i są przechowywane w Apple Health, Health Connect, Fitbit lub Strava, jest to najłatwiejszy i najbardziej automatyczny sposób importowania historii.
+
+**Jak to działa:** Gdy po raz pierwszy połączysz jedną z tych usług z nawykiem w Habitify, aplikacja automatycznie przeprowadzi **synchronizację historii**. Sięgnie do wcześniejszych danych i zaimportuje poprzednie aktywności do historii nawyku.
+
+- **Apple Health lub Health Connect:** Synchronizuj kroki, treningi, sen, minuty uważności i inne dane bezpośrednio z iPhone'ów lub telefonów z Androidem.
+- **Fitbit:** Automatycznie rejestruj codzienne kroki, sen, spalone kalorie i inne statystyki z urządzenia Fitbit.
+- **Strava:** Synchronizuj biegi, przejazdy rowerowe, spacery i inne treningi bezpośrednio z nawykami zaraz po ich ukończeniu.
+
+### Importowanie danych z aplikacji Productive
+
+Ta funkcja wymaga wcześniejszego wyeksportowania danych z aplikacji Productive. Productive zwykle eksportuje dane jako plik `.sqlite`. Przygotuj ten plik, aby rozpocząć importowanie do Habitify.
+
+W aplikacji Habitify przejdź do **Ustawienia → Importuj / eksportuj dane → Importuj z Productive.**
+
+Następnie wybierz wyeksportowany plik `.sqlite` i postępuj zgodnie z instrukcjami na ekranie, aby ukończyć proces importowania.
+
+Import obejmuje najważniejsze informacje o nawykach:
+
+- **Nawyki:** Twoja lista nawyków.
+- **Historia nawyków:** Historyczne oznaczenia wykonania, pominięcia i niepowodzenia tych nawyków.
+- **Pora dnia:** Ustawienia Poranek, Popołudnie lub Wieczór.
+- **Opisy nawyków:** Wszystkie notatki i opisy dodane do nawyków.
+- **Warunek zakończenia:** Jeśli w Productive ustawiono datę zakończenia nawyku, zostanie ona zaimportowana, **chyba że** przypada dzisiaj lub w przeszłości. (Habitify wymaga, aby data zakończenia przypadała co najmniej 7 dni w przyszłości).
+
+<Note>
+  **Ważne uwagi:**
+
+  - **Wyzwania** i **Programy** z Productive **nie są** importowane do Habitify. Przenoszone są tylko poszczególne nawyki.
+  - Nawyki oznaczone w Productive jako **wstrzymane lub zatrzymane** zostaną zaimportowane do Habitify, ale automatycznie otrzymają stan **Zarchiwizowane**. W razie potrzeby możesz później przywrócić je z archiwum.
+</Note>
+
+Proces importowania automatycznie przekształca harmonogramy i cele z Productive do formatu Habitify. Działa to następująco:
+
+- **Codziennie / Określone dni tygodnia / Określone dni miesiąca:** Nawyki ustawione w Productive tak, aby powtarzały się codziennie, w określone dni tygodnia lub w określone dni miesiąca, zostaną zaimportowane do Habitify jako **Cele dzienne** z zachowaniem tego samego harmonogramu.
+- **Wiele celów dziennie:** Jeśli nawyk w Productive miał kilka celów w ciągu dnia (np. „2 razy rano + 2 razy wieczorem”), Habitify **zsumuje je** w jeden cel dzienny (np. „4 razy dziennie”).
+- **Częstotliwość tygodniowa (np. „3 razy w tygodniu”):** Jeśli nawyk w Productive miał ustawioną częstotliwość tygodniową (np. „3 razy w tygodniu”) i cel dzienny (np. „za każdym razem po 20 minut”), Habitify przekształci go w jeden **Cel tygodniowy**, mnożąc częstotliwość przez cel dzienny.<br />_Przykład:_ Productive: „3 razy w tygodniu, 20 minut dziennie” → Habitify: **„60 minut tygodniowo”**.
+- **Szczególny przypadek — co dwa tygodnie:** Jeśli nawyk w Productive miał na przykład powtarzać się „1 raz co 2 tygodnie”, ten konkretny interwał nie jest bezpośrednio obsługiwany podczas importowania. Zostanie awaryjnie przekształcony w **Cel dzienny** w Habitify. Po zaimportowaniu może być konieczne ręczne dostosowanie harmonogramu tego nawyku.
+
+### Importowanie danych z aplikacji Streak
+
+Ta funkcja wymaga wcześniejszego wyeksportowania danych z aplikacji Streaks. Streaks zwykle eksportuje te dane jako specjalny plik z rozszerzeniem `.streaks`. Przygotuj ten plik, aby rozpocząć importowanie do Habitify.
+
+W aplikacji Habitify przejdź do **Ustawienia → Importuj / eksportuj dane → Importuj ze Streaks.**
+
+Następnie wybierz wyeksportowany plik `.streaks` i postępuj zgodnie z instrukcjami na ekranie, aby ukończyć proces importowania.
+
+Proces importowania służy do przenoszenia najważniejszych elementów śledzenia nawyków:
+
+- **Nazwa nawyku:** Nazwa nawyku pozostaje bez zmian.
+- **Harmonogram jako powtarzanie:** Częstotliwość wykonywania nawyku (codziennie, tygodniowo, miesięcznie) zostaje przekształcona.
+- **Częstotliwość jako cel:** Jeśli nawyk miał ustawienie „X razy dziennie/tygodniowo/miesięcznie”, cel ten zostanie zachowany.
+- **Przypomnienia jako przypomnienia:** Własne godziny przypomnień zostaną przeniesione (szczegóły poniżej).
+- **Notatki jako notatki nawyku:** Wszystkie notatki dodane do nawyków zostaną skopiowane.
+- **Pierwsza data z wpisami jako data rozpoczęcia:** Habitify użyje daty najwcześniejszego wpisu w Streaks jako „Daty rozpoczęcia”.
+- **Historia zapisów:** Wcześniejsze ukończenia, niepowodzenia i pominięte dni zostaną zaimportowane.
+- **Złe nawyki:** Nawyki, z którymi próbujesz zerwać lub które próbujesz ograniczyć, również zostaną zaimportowane (szczegóły poniżej).
+
+Ponieważ Habitify i Streaks działają nieco inaczej, niektóre dane są przekształcane podczas importowania. Oto najważniejsze informacje.
+
+**1/ Przypomnienia**
+
+Jeśli w Streaks ustawiono konkretne godziny przypomnień, dokładnie te godziny zostaną zsynchronizowane z Habitify. Streaks ma również funkcję „Automatyczne przypomnienie”, której nie ma w Habitify. Te przypomnienia **nie** zostaną zaimportowane.
+
+**2/ Historia zapisów**
+
+- **W przypadku nawyków dziennych:** To proste.
+  - `Complete` w Streaks → `Complete` w Habitify
+  - `Failed` w Streaks → `Failed` w Habitify
+  - Jeśli dzień **_nie został zarejestrowany_** w Streaks, w Habitify zostanie oznaczony jako `Skipped` (co pozwoli zachować serię).
+- **W przypadku nawyków tygodniowych:** Habitify pozwala rozpoczynać tydzień tylko w niedzielę lub poniedziałek, natomiast Streaks umożliwia rozpoczęcie go w dowolnym dniu. Z tego powodu tygodniowe wpisy ze Streaks zostaną przypisane do **poniedziałku** odpowiedniego tygodnia w Habitify.<br />_Przykład:_ Jeśli tydzień w Streaks trwał od środy do wtorku, stan ukończenia całego tygodnia będzie widoczny w Habitify w poniedziałek tego tygodnia.
+- **W przypadku nawyków miesięcznych:** Podobnie jak w przypadku nawyków tygodniowych stan ukończenia całego miesiąca w Streaks zostanie przypisany w Habitify do **1. dnia tego miesiąca**.
+
+**3/ Cel złych nawyków**
+
+- **Porzucanie nawyku:** Jeśli celem w Streaks było „Bez [nazwa nawyku]”, zostanie on zaimportowany do Habitify jako **„Zrezygnuj z nawyku”**, śledząc dni, w których udało Ci się go unikać.
+- **Ograniczanie nawyku:** Jeśli celem w Streaks było ograniczenie złego nawyku do „X razy dziennie/tygodniowo/miesięcznie”, zostanie on zaimportowany do Habitify jako **„Ogranicz nawyk”** z takim samym celem częstotliwości.
+
+### **Importowanie danych z arkusza kalkulacyjnego**
+
+Jeśli wcześniejsze dane śledzenia znajdują się w arkuszu kalkulacyjnym (na przykład zostały wyeksportowane z innej aplikacji lub zapisane ręcznie), możesz zaimportować je za pomocą usługi **Zapier**. Ta metoda jest bardziej zaawansowana, ale doskonale sprawdza się przy uzupełnianiu pełnej historii dowolnego nawyku.
+
+Metoda ta korzysta z automatyzacji („Zapa”), która wykrywa nowe wiersze w Arkuszu Google i tworzy odpowiadający im wpis w Habitify. Aby zaimportować stare dane, skopiuj je i wklej do Arkusza Google, co uruchomi ten proces.
+
+Wykonaj następujące kroki:
+
+<Steps>
+  <Step title="Przygotuj arkusz z danymi">
+    Najpierw sformatuj stare dane tak, aby pasowały do [<u>naszego szablonu Arkuszy Google</u>](https://docs.google.com/spreadsheets/d/1LN3wqWGwHToYL0pWqYPCGztiY9Rxi9KA_xLo1poQdU8/edit?usp=sharing). Każdy arkusz rejestruje historię postępów jednego nawyku. Oznacza to uporządkowanie historii w taki sposób, aby każdy wiersz odpowiadał jednemu ukończeniu (wraz z konkretną datą, godziną i ewentualną wartością liczbową).
+  </Step>
+  <Step title="Skonfiguruj nawyk w Habitify">
+    Utwórz w Habitify odpowiedni nawyk, do którego chcesz zaimportować dane.
+  </Step>
+  <Step title="Skorzystaj z naszego szablonu Zapier, aby ułatwić konfigurację">
+    Utwórz w Habitify odpowiedni nawyk, do którego chcesz zaimportować dane.
+  </Step>
+  <Step title="Uruchom Zapa, aby zaimportować dane">
+    Gdy Zap będzie aktywny, możesz skopiować wszystkie dane historyczne i wkleić je do Arkusza Google. Zapier odczyta każdy wiersz i zaimportuje go do Habitify jako wpis z określoną datą, skutecznie uzupełniając historię postępów.
+  </Step>
+</Steps>
+
+Taką samą integrację za pośrednictwem Zapier możesz wdrożyć z innymi usługami tabel danych, takimi jak Airtable, Microsoft Excel Online, Zoho Sheet itd.
+
+## Eksportowanie danych z Habitify
+
+Oferujemy dwa główne formaty eksportu, z których każdy służy do innych celów: prosty **plik CSV** do podstawowej analizy historii oraz kompleksowy **plik pełnej kopii zapasowej (.sqlite)** zawierający pełny obraz konta.
+
+#### Instrukcja krok po kroku
+
+1. Przejdź do karty **Ustawienia** w aplikacji Habitify.
+2. Znajdź i stuknij **Importuj / eksportuj**
+3. Wybierz odpowiedni format eksportu: **Eksportuj jako .csv** lub **Eksportuj jako kopię zapasową**
+4. Postępuj zgodnie z instrukcjami wyświetlanymi na urządzeniu, aby zapisać lub udostępnić plik (np. przez e-mail albo chmurę).
+
+#### **Porównanie formatów plików eksportu**
+
+| Format | .csv | Kopia zapasowa |
+| --- | --- | --- |
+| Najlepsze zastosowanie | Analizowanie podstawowej historii ukończeń nawyków w arkuszu kalkulacyjnym, takim jak Arkusze Google, Microsoft Excel lub Apple Numbers. | Tworzenie pełnej kopii zapasowej całej konfiguracji i historii Habitify. Plik ten może w przyszłości posłużyć do przywracania danych lub do zaawansowanej analizy technicznej za pomocą narzędzi bazodanowych. |
+| Rozszerzenie pliku | `.csv` | `.sqlite` |
+| Zawartość | Ten eksport zawiera przejrzystą historię oznaczeń nawyków z następującymi kolumnami dla każdego wpisu: <ul><li>`Habit`: nazwa nawyku.</li><li>`Date`: data utworzenia wpisu.</li><li>`Total log`: zarejestrowana wartość liczbowa (jeśli dotyczy).</li><li>`Unit`: jednostka powiązana z celem (np. minuty, km, razy).</li><li>`Status`: informacja, czy nawyk oznaczono jako ukończony, pominięty czy niewykonany.</li><li>`Habit ID`: unikatowy identyfikator nawyku.</li></ul> | Ten eksport zawiera kompleksowy obraz **wszystkich danych** na koncie, w tym między innymi: <ul><li>**Szczegóły nawyków:** wszystkie nawyki (aktywne i zarchiwizowane), cele, listy kontrolne, przypomnienia (czasowe, lokalizacyjne i dotyczące łączenia nawyków), warunki zakończenia, kamienie milowe itd.</li><li>**Postępy i historia:** wszystkie oznaczenia wykonania, pominięcia, niepowodzenia, wpisy liczbowe, notatki, zapisy nastroju, wpisy list kontrolnych, historia serii (`currentStreak`) i obliczone dane o postępach (`logCalculations`, `progresses`).</li><li>**Ustawienia:** ustawienia konta, takie jak pierwszy dzień tygodnia (`firstDayOfWeek`).</li></ul> |
+
+## Zarządzanie danymi w Habitify
+
+### Resetowanie danych nawyków
+
+<Warning>
+  Zanim zresetujesz dane, pamiętaj, że:
+
+  - Ta czynność **trwale usunie wszystkie dane historyczne** dotyczące wszystkich nawyków na Twoim koncie.
+  - Obejmuje to wszystkie oznaczenia wykonania, pominięcia, niepowodzenia, wszystkie bieżące serie, notatki oraz wszelkie postępy zarchiwizowanych nawyków.
+  - **Tej czynności nie można cofnąć.** Po usunięciu dane przepadają na zawsze, a nasz zespół pomocy technicznej nie będzie mógł ich odzyskać.
+  - Lista _bieżących_ nawyków pozostanie, ale ich postępy i serie zostaną wyzerowane.
+</Warning>
+
+<Tabs>
+  <Tab title=" iOS">
+    1. Otwórz **Habitify** i przejdź do **Ustawień**
+    2. Stuknij swój profil.
+    3. Przejdź do sekcji **Prywatność i dane** i stuknij **Zresetuj dane nawyku**.
+    4. Aby potwierdzić, stuknij **Zresetuj dane nawyku**.
+  </Tab>
+  <Tab title="🤖 Android">
+    1. Otwórz **Habitify** i przejdź do **Ustawień**.
+    2. Stuknij swoje imię i nazwisko.
+    3. Przewiń w dół do sekcji **Caution zone**.
+    4. Znajdź opcję **Zresetuj dane o nawykach** i stuknij znajdujący się obok niej przycisk **Usuń**.
+    5. Aby potwierdzić, stuknij **OK**.
+  </Tab>
+  <Tab title="🖥️ Witryna i aplikacja komputerowa">
+    1. Otwórz aplikację Habitify
+    2. Kliknij zdjęcie profilowe i wybierz **Profil**.
+    3. W sekcji **Strefa ostrożności** znajdź i kliknij przycisk **Zresetuj dane nawyku**.
+    4. Aby potwierdzić, kliknij **Zresetuj dane nawyku**.
+  </Tab>
+</Tabs>
+
+### Usuwanie wszystkich danych
+
+<Warning>
+  Zanim przejdziesz dalej, przeczytaj bardzo uważnie poniższe informacje.
+
+  - Ta czynność trwale usunie **WSZYSTKIE NAWYKI** z Twojej listy.
+  - Trwale usunie również **WSZYSTKIE dane historyczne**, w tym każde oznaczenie wykonania, pominięcie, niepowodzenie, notatkę i serię.
+  - **TEJ CZYNNOŚCI NIE MOŻNA COFNĄĆ.** Po potwierdzeniu wszystkie informacje przepadną na zawsze i ani Ty, ani nasz zespół pomocy technicznej nie będziecie mogli ich odzyskać.
+  - Pozostanie Ci **całkowicie puste konto**.
+</Warning>
+
+<Tabs>
+  <Tab title=" iOS">
+    1. Otwórz **Habitify** i przejdź do **Ustawień**
+    2. Stuknij swój profil.
+    3. Przejdź do sekcji **Prywatność i dane** i stuknij **Usuń wszystkie dane**.
+    4. Aby potwierdzić, stuknij **Usuń wszystkie dane**.
+  </Tab>
+  <Tab title="🤖 Android">
+    1. Otwórz **Habitify** i przejdź do **Ustawień**.
+    2. Stuknij swoje imię i nazwisko.
+    3. Przewiń w dół do sekcji **Caution zone**.
+    4. Znajdź opcję **Usuń wszystkie dane** i stuknij znajdujący się obok niej przycisk **Usuń**.
+    5. Aby potwierdzić, stuknij **OK**.
+  </Tab>
+  <Tab title="🖥️ Witryna i aplikacja komputerowa">
+    1. Otwórz aplikację Habitify
+    2. Kliknij zdjęcie profilowe i wybierz **Profil**.
+    3. W sekcji **Strefa ostrożności** znajdź i kliknij przycisk **Usuń dane**.
+    4. Aby potwierdzić, kliknij **Usuń wszystkie dane**.
+  </Tab>
+</Tabs>
+
+## Często zadawane pytania
+
+<Accordion title="**Dlaczego wyeksportowany plik CSV otwiera się w Excelu w jednej kolumnie?**">
+  Dzieje się tak, gdy Excel nie rozpoznaje separatora użytego w pliku CSV. Eksport Habitify używa średników (`;`) do rozdzielania pól, natomiast ustawienia programu Excel mogą oczekiwać innego separatora.
+
+  **Jak wyświetlić dane w osobnych kolumnach?**
+
+  1. Otwórz plik CSV w Excelu i zaznacz **kolumnę A**.
+  2. Przejdź do **Dane → Tekst jako kolumny**.
+  3. Wybierz **Rozdzielany**, a następnie kliknij **Dalej**.
+  4. Zaznacz **Średnik** i usuń zaznaczenie pozostałych separatorów.
+  5. Kliknij **Zakończ**.
+
+  Dane pojawią się w osobnych kolumnach: **Habit, Date, Total Log, Unit, Status i Habit ID**.
+</Accordion>

@@ -1,0 +1,48 @@
+---
+title: "Aktualizacja statusu"
+---
+
+Czasem dzień wymyka się spod kontroli, a nawyk, którego naprawdę nie wykonasz, może pozostać bez żadnego statusu — chyba że pamiętasz, aby otworzyć aplikację i oznaczyć go samodzielnie.
+
+**Automatyzacja aktualizacji statusu** pomaga uzupełnić tę lukę: o wybranej godzinie Habitify sprawdza nawyki bez zarejestrowanych postępów i automatycznie je oznacza, dzięki czemu śledzenie pozostaje zgodne z rzeczywistością nawet w te dni, kiedy zapomnisz odnotować postęp.
+
+## Ważne informacje
+
+Warto znać kilka ograniczeń, aby automatyzacja działała zgodnie z oczekiwaniami:
+
+- **Działa tylko dla bieżącego dnia.** Nie ustawiaj godziny wyzwalania później niż na 23:59 — uruchomienie po północy może spowodować sprawdzenie nawyków z następnego dnia.
+- **Dotyczy tylko dobrych nawyków z ustawionym codziennym powtarzaniem.** Nawyki tygodniowe, miesięczne i złe nawyki nie są jeszcze obsługiwane przez tę automatyzację.
+- **Wpływa tylko na nawyki, których dzisiejszy postęp nadal wynosi 0.** Wszystkie nawyki, dla których cokolwiek już zarejestrowano, pozostają bez zmian.
+- **Jeśli strefa czasowa urządzenia zmieni się ręcznie lub automatycznie podczas podróży**, wróć do ustawienia Aktualizacja statusu i odśwież je (wyłącz, a następnie ponownie włącz), aby godzina wyzwalania pozostała prawidłowa.
+- **To pomoc, a nie zastępstwo.** Nadal możesz ręcznie zmienić status dowolnego nawyku w każdej chwili — ta automatyzacja jedynie uzupełnia to, czego nie udało Ci się oznaczyć.
+
+## Włączanie automatyzacji
+
+<Tabs>
+  <Tab title=" iOS">
+    ![Automatyzacja iOS](/images/Automation-iOS.png "Automatyzacja iOS")
+
+    1. W aplikacji Habitify przejdź do **Ustawień**.
+    2. W sekcji **Integracja** otwórz **Automatyzacja**.
+    3. Na ekranie ustawień Automatyzacji przestaw przełącznik w położenie **WŁ.**.
+    4. W sekcji **Zaplanowana godzina** stuknij godzinę i ustaw preferowaną wartość.
+    5. W sekcji **Oznacz niezapisane nawyki jako** wybierz, jaki status mają otrzymać niezarejestrowane nawyki:
+       - **Pominięto**: świadomie rezygnujesz z wykonania nawyku z uzasadnionego powodu.
+       - **Nie wykonano**: nawyk nie został wykonany bez uzasadnionego powodu.
+    6. Gdy wszystko będzie ustawione, stuknij く w prawym górnym rogu, aby zapisać wszystkie zmiany i wrócić.
+  </Tab>
+  <Tab title="🤖 Android">
+    ![Aktualizacja statusu Android](/images/StatusUpdate-Android.png "Aktualizacja statusu Android")
+
+    1. W aplikacji Habitify przejdź do **Ustawień**.
+    2. W sekcji **Automatyzacja** otwórz **Aktualizacja Statusu**.
+    3. Na ekranie ustawień Aktualizacji statusu:
+       - Stuknij **Codziennie o [godzina]** i ustaw godzinę, o której automatyzacja ma uruchamiać się każdego dnia.
+    4. W sekcji **Oznacz zwyczaje jako** wybierz, jaki status mają otrzymać niezarejestrowane nawyki:
+       - **Pominięto**: świadomie rezygnujesz z wykonania nawyku z uzasadnionego powodu.
+       - **Odpuszczono**: nawyk nie został wykonany bez uzasadnionego powodu.
+    5. W sekcji Wyłączone nawyki stuknij **Dodaj Wyłączone Nawyki…**, a następnie wybierz nawyki, które mają zostać wykluczone z automatyzacji.
+    6. W sekcji Status przestaw przełącznik **Włączone** w położenie WŁ.
+    7. Gdy wszystko będzie gotowe, stuknij **←** w prawym górnym rogu, aby zapisać i wrócić.
+  </Tab>
+</Tabs>

@@ -1,0 +1,111 @@
+---
+title: "Habitify MCP"
+---
+
+Habitify MCP (Model Context Protocol) łączy Twoje konto Habitify bezpośrednio z asystentami AI, takimi jak ChatGPT i Claude.
+
+Po nawiązaniu połączenia nie tylko rozmawiasz o swoich nawykach — możesz nimi faktycznie zarządzać za pomocą języka naturalnego, bezpośrednio podczas rozmowy z wybranym asystentem AI.
+
+## Łączenie z Habitify MCP
+
+### Łączenie z Claude
+
+1. Otwórz Claude i przejdź do sekcji **Dostosuj**.
+2. Wybierz **Łączniki.**
+3. Kliknij **Dodaj.**
+4. W sekcji _Dodaj niestandardowy łącznik_ skonfiguruj następujące ustawienia:
+   1. **Nazwa**: Habitify
+   2. **Adres URL serwera MCP**: `https://mcp.habitify.me/mcp`
+5. Postępuj zgodnie z instrukcjami, aby zalogować się do Habitify i udzielić dostępu.
+
+Po pomyślnej autoryzacji zobaczysz szczegółowe ustawienia właśnie dodanego łącznika Habitify.
+
+W nowym czacie kliknij przycisk + → Łączniki → włącz Habitify i zacznij pracować ze swoimi nawykami w Habitify bezpośrednio w Claude.
+
+### Łączenie z ChatGPT
+
+1. W interfejsie ChatGPT przejdź do sekcji **Wtyczki.**
+2. Wyszukaj **Habitify.**
+3. Kliknij +, aby rozpocząć łączenie.
+4. Nastąpi przekierowanie do witryny Habitify. Zaloguj się na swoje konto Habitify, a następnie na etapie autoryzacji kliknij **Połącz**.
+
+Po pomyślnej autoryzacji możesz kliknąć **Rozpocznij czat**, aby zacząć pracować ze swoimi nawykami w Habitify bezpośrednio w ChatGPT.
+
+### Łączenie z innymi narzędziami
+
+Aby połączyć Habitify z nowym narzędziem, zwykle trzeba podać **Adres URL serwera** lub **Link połączenia**.
+
+- **Adres URL połączenia:** `https://mcp.habitify.me/mcp`
+- **Typ połączenia:** Streamable HTTP
+
+<Warning>
+  **Habitify MCP obsługuje wyłącznie Streamable HTTP.** SSE (Server-Sent Events) nie jest obsługiwane. Jeśli narzędzie łączy się wyłącznie przez SSE, nie może połączyć się z Habitify MCP, nawet jeśli wymienia Habitify jako dostępne połączenie.
+</Warning>
+
+Każda aplikacja wygląda nieco inaczej, dlatego dokładne nazwy przycisków mogą się różnić, ale sam proces zwykle przebiega tak samo:
+
+1. Poszukaj w ustawieniach aplikacji sekcji o nazwie „Łączniki”, „Serwery” lub „Rozszerzenia”.
+2. Wybierz opcję dodania nowego serwera niestandardowego.
+3. Wprowadź dane:
+   - **Nazwa:** `Habitify`
+   - **Adres URL:** Wklej link podany powyżej (`https://mcp.habitify.me/mcp`).
+4. Po dodaniu połączenia narzędzie prawdopodobnie poprosi Cię o zalogowanie się na konto Habitify w celu zatwierdzenia dostępu.
+
+## Co Habitify MCP może robić z Twoimi nawykami
+
+Po nawiązaniu połączenia możesz poprosić asystenta AI o wykonywanie rzeczywistych działań na koncie Habitify, używając wyłącznie języka naturalnego:
+
+- **Sprawdzenie listy**: Poproś: „Pokaż moje nawyki na dziś” lub podaj inną konkretną datę, aby zobaczyć, co pozostało jeszcze do zrobienia.
+
+- **Dodanie wpisu:** Poproś: „Oznacz mój poranny bieg jako ukończony” albo dodaj konkretną wartość postępu do celu liczbowego.
+- **Aktualizacja statusu**: Poproś o zmianę statusu nawyku na Ukończone, Pominięto lub Niepowodzenie.
+
+- **Wyczyszczenie postępu** : Poproś o usunięcie zapisanego postępu nawyku z konkretnego dnia, co wyzeruje go do 0 lub przywróci status „Nie rozpoczęto”. Jeśli nie podasz daty, domyślnie zostanie wybrany dzisiejszy dzień.
+
+## Rozwiązywanie problemów
+
+<Accordion title="**Dlaczego AI pokazuje stare nawyki lub nawyki z innego konta?**">
+  Jeśli Habitify MCP pobiera usunięte nawyki, spróbuj rozłączyć i ponownie nawiązać połączenie, aby odświeżyć dane.
+
+  Jeśli Habitify MCP pobiera dane z innego Twojego konta, porównaj konto, na którym jesteś zalogowany(-a) w aplikacji Habitify, z kontem używanym w przeglądarce podczas uwierzytelniania połączenia. Upewnij się, że jest to to samo konto.
+
+  Jeśli którykolwiek z tych problemów nadal występuje, skontaktuj się z zespołem, aby uzyskać dalszą pomoc.
+</Accordion>
+
+<Accordion title="**Dlaczego Habitify MCP nie pobiera wszystkich nawyków, które mam w aplikacji?**">
+  Habitify MCP może jednorazowo pobrać listę maksymalnie 50 nawyków.
+
+  Jeśli masz mniej niż 50 nawyków, a narzędzie nadal nie może pobrać ich wszystkich, spróbuj ponownie nawiązać połączenie, aby odświeżyć dane.
+
+  Jeśli którykolwiek z tych problemów nadal występuje, skontaktuj się z zespołem, aby uzyskać dalszą pomoc.
+</Accordion>
+
+<Accordion title="**Claude wyświetla „Konfiguruj” zamiast „Połącz”. Co zrobić?**">
+  W ustawieniach łączników Claude otwórz menu Habitify i rozłącz połączenie. Następnie znajdź opcję Połącz i wykonaj proces logowania do Habitify oraz autoryzacji. Jeśli etykiety w menu są inne, skorzystaj z aktualnego przewodnika konfiguracji Claude.
+
+  Jeśli opcja Połącz nadal jest niedostępna, zrób zrzut ekranu łącznika i skontaktuj się z zespołem, aby uzyskać dalszą pomoc.
+</Accordion>
+
+## Najczęściej zadawane pytania
+
+<Accordion title="**Czy potrzebuję płatnego planu, czy mogę przetestować połączenie w okresie próbnym?**">
+  Habitify MCP jest bezpłatną funkcją dostępną dla wszystkich użytkowników, dlatego nie potrzebujesz płatnego planu, aby z niej korzystać.
+
+  Zaawansowane korzystanie z REST API może jednak wymagać subskrypcji Pro.
+</Accordion>
+
+<Accordion title="**Czy mogę pobrać pełną historię, późniejsze korekty wpisów postępu i zmiany notatek?**">
+  Habitify nie umożliwia jeszcze pobrania pełnej historii wpisów nawyku, ale nadal możesz pobrać postęp z konkretnego dnia.
+
+  Jeśli zapiszesz wartość, a następnie ją zmienisz, zachowana zostanie tylko ostatnia zmiana, dlatego nie ma danych, z których można pobrać historię korekt. To samo dotyczy zmian w notatkach.
+</Accordion>
+
+<Accordion title="**Czy currentStreak pokazuje serię z wybranego przeze mnie dnia w przeszłości?**">
+  currentStreak pokazuje serię obliczoną wyłącznie do dzisiejszego dnia.
+
+  Jeśli chcesz pobrać serię policzoną do konkretnej daty w przeszłości, wpisz polecenie, na przykład: „_jak długo trwała moja seria nawyku Medytacja 10 października 2026 r._”.
+</Accordion>
+
+<Accordion title="**Czy Habitify MCP może wykonywać zaplanowane przeglądy lub aktualizować nawyki w tle?**">
+  Habitify MCP nie obsługuje jeszcze działania w zautomatyzowanych przepływach pracy. Do uruchomienia nadal wymaga polecenia lub interakcji użytkownika.
+</Accordion>

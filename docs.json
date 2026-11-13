@@ -833,6 +833,109 @@
         ]
       },
       {
+        "language": "pl",
+        "tabs": [
+          {
+            "tab": "Dokumentacja",
+            "icon": "life-ring",
+            "pages": [
+              {
+                "group": "Pierwsze kroki",
+                "pages": [
+                  "pl/habitify-introduction",
+                  "pl/habitify-quick-start",
+                  "pl/glossary"
+                ]
+              },
+              {
+                "group": "Funkcje",
+                "pages": [
+                  "pl/good-habits",
+                  "pl/bad-habits",
+                  "pl/journal",
+                  "pl/single-progress",
+                  "pl/overall-progress",
+                  "pl/reflection",
+                  "pl/circle",
+                  "pl/challenge"
+                ]
+              },
+              {
+                "group": "Narzędzia",
+                "pages": [
+                  "pl/area",
+                  "pl/reminder",
+                  "pl/habit-gate",
+                  "pl/note",
+                  "pl/widget",
+                  "pl/task",
+                  "pl/timer"
+                ]
+              },
+              {
+                "group": "Ustawienia aplikacji",
+                "pages": ["pl/off-mode", "pl/app-behavior"]
+              },
+              {
+                "group": "Automatyzacja",
+                "pages": [
+                  "pl/automation-status-update",
+                  "pl/ios-shortcuts",
+                  "pl/nfc-tags",
+                  "pl/zapier-ifttt"
+                ]
+              },
+              {
+                "group": "Integracje",
+                "pages": [
+                  "pl/google-calendar-integration",
+                  "pl/outlook-calendar-integration",
+                  "pl/apple-calendar-integration",
+                  "pl/apple-health-integration",
+                  "pl/health-connect-integration",
+                  "pl/strava-integration",
+                  "pl/fitbit-integration",
+                  "pl/rescue-time-integration",
+                  "pl/screen-time-integration"
+                ]
+              },
+              {
+                "group": "Habitify MCP i AI",
+                "pages": [
+                  "pl/habitify-mcp",
+                  "pl/habi-ai",
+                  "pl/siri-ai"
+                ]
+              },
+              {
+                "group": "Plany i płatności",
+                "pages": [
+                  "pl/plans",
+                  "pl/billings",
+                  "pl/habitify-family",
+                  "pl/habitify-team",
+                  "pl/habitify-student"
+                ]
+              },
+              {
+                "group": "Konto i dane",
+                "pages": ["pl/manage-account", "pl/manage-data"]
+              }
+            ]
+          },
+          {
+            "tab": "API",
+            "icon": "rectangle-api",
+            "openapi": "https://static.habitify.me/habitify_apidocsv2_261026.json"
+          },
+          {
+            "tab": "Dziennik zmian",
+            "icon": "bullhorn",
+            "href": "https://feedback.habitify.me/changelog"
+          }
+        ]
+      },
+      {
         "language": "de",
         "tabs": [
           {
