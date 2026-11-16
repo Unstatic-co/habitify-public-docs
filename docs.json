@@ -156,7 +156,8 @@
                   "pt-BR/note",
                   "pt-BR/widget",
                   "pt-BR/task",
-                  "pt-BR/timer"
+                  "pt-BR/timer",
+                  "pt-BR/habitify-watchOS"
                 ]
               },
               {
@@ -260,7 +261,8 @@
                   "ja/note",
                   "ja/widget",
                   "ja/task",
-                  "ja/timer"
+                  "ja/timer",
+                  "ja/habitify-watchOS"
                 ]
               },
               {
@@ -359,7 +361,8 @@
                   "es/note",
                   "es/widget",
                   "es/task",
-                  "es/timer"
+                  "es/timer",
+                  "es/habitify-watchOS"
                 ]
               },
               {
@@ -458,7 +461,8 @@
                   "vi/note",
                   "vi/widget",
                   "vi/task",
-                  "vi/timer"
+                  "vi/timer",
+                  "vi/habitify-watchOS"
                 ]
               },
               {
@@ -561,7 +565,8 @@
                   "ru/note",
                   "ru/widget",
                   "ru/task",
-                  "ru/timer"
+                  "ru/timer",
+                  "ru/habitify-watchOS"
                 ]
               },
               {
@@ -664,7 +669,8 @@
                   "fr/note",
                   "fr/widget",
                   "fr/task",
-                  "fr/timer"
+                  "fr/timer",
+                  "fr/habitify-watchOS"
                 ]
               },
               {
@@ -767,7 +773,8 @@
                   "ko/note",
                   "ko/widget",
                   "ko/task",
-                  "ko/timer"
+                  "ko/timer",
+                  "ko/habitify-watchOS"
                 ]
               },
               {
@@ -870,7 +877,8 @@
                   "pl/note",
                   "pl/widget",
                   "pl/task",
-                  "pl/timer"
+                  "pl/timer",
+                  "pl/habitify-watchOS"
                 ]
               },
               {
@@ -973,7 +981,8 @@
                   "it/note",
                   "it/widget",
                   "it/task",
-                  "it/timer"
+                  "it/timer",
+                  "it/habitify-watchOS"
                 ]
               },
               {
@@ -1076,7 +1085,8 @@
                   "de/note",
                   "de/widget",
                   "de/task",
-                  "de/timer"
+                  "de/timer",
+                  "de/habitify-watchOS"
                 ]
               },
               {
