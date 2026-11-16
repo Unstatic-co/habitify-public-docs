@@ -1,0 +1,239 @@
+---
+title: "Habitify per watchOS"
+hidden: true
+---
+
+L’app Habitify per Apple Watch ti consente di vedere le tue abitudini, registrare i progressi, utilizzare un timer e saltare o segnare come non riuscita un’abitudine direttamente dal polso, senza dover prendere il telefono. Si sincronizza con l’app Habitify sul tuo iPhone, quindi le tue abitudini, la cronologia dei check-in e le impostazioni sono già disponibili quando la apri.
+
+Questo articolo descrive tutte le funzionalità dell’app per watchOS.
+
+## Accedere a Habitify dall’Apple Watch
+
+**Prima di iniziare, verifica che:**
+
+- Habitify sia installato sul tuo iPhone e che tu abbia effettuato l’accesso.
+- Il tuo Apple Watch **sia abbinato a** quell’iPhone.
+- Entrambi i dispositivi **utilizzino lo stesso Apple ID e abbiano il Portachiavi iCloud attivato**. L’Apple Watch riceve i dati di accesso dall’iPhone tramite il Portachiavi iCloud.
+- Il **Bluetooth sia attivato** sul tuo iPhone.
+
+**Aprire l’app per la prima volta**
+
+1. Installa Habitify sull’Apple Watch.
+2. **Tieni l’iPhone vicino all’Apple Watch** e **mantieni aperta l’app Habitify** sull’iPhone.
+3. Apri Habitify sull’Apple Watch.
+4. Attendi che l’app si sincronizzi con l’iPhone. Importerà le tue abitudini, la cronologia dei check-in e le impostazioni.
+
+## Vedere gli elenchi delle abitudini sull’Apple Watch
+
+La prima schermata è intitolata **Oggi**. Mostra tre gruppi di elenchi:
+
+1. **Tutte le abitudini:** tutte le tue abitudini di oggi.
+2. **Momento della giornata:** un elenco per ogni momento della giornata, ad esempio Mattina, Pomeriggio e Sera. Quello corrente è contrassegnato come **Ora**. Gli altri mostrano il relativo intervallo orario, ad esempio 18:00 – 00:00.
+3. **Sezioni:** un elenco per ciascuna delle tue sezioni personalizzate.
+
+Ogni elenco mostra quante abitudini hai completato sul totale di oggi, ad esempio 0/4.
+
+![Elenchi e sezioni nell’app per Apple Watch](/images/List&amp;Area-WatchApp.png "Elenchi e sezioni nell’app per Apple Watch")
+
+Tocca un elenco per vedere le abitudini che contiene. Ogni elenco ha due modalità di visualizzazione: **Oggi** e **Ultimi 7 giorni**.
+
+###  Vista Oggi
+
+La vista Oggi si apre per prima. Il nome dell’elenco, ad esempio **Tutte le abitudini**, è in alto, con un pulsante Indietro nell’angolo in alto a sinistra.
+
+Ogni riga mostra il nome dell’abitudine, i tuoi progressi rispetto all’obiettivo (ad esempio 10/20 min, 0/1 volta o 12,8/40 km) e un pulsante a destra. Un anello intorno al pulsante si riempie man mano che ti avvicini all’obiettivo.
+
+Le abitudini vengono visualizzate nell’ordine impostato nell’app per iOS e sono raggruppate per tipo di obiettivo e stato. Ad esempio, le abitudini con un obiettivo settimanale appaiono sotto l’intestazione **Questa settimana**.
+
+![Vista Oggi nell’app per Apple Watch](/images/Today-view---Watch-app.png "Vista Oggi nell’app per Apple Watch")
+
+Accanto a ogni abitudine è presente un pulsante che cambia in base al relativo obiettivo:
+
+<table>
+  <colgroup>
+    <col width="241" />
+    <col width="149" />
+    <col width="345" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Obiettivo dell’abitudine</th>
+      <th>Pulsante</th>
+      <th>Funzione</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Durata (minuti o ore)</td>
+      <td>Timer</td>
+      <td>Avvia una sessione di conto alla rovescia</td>
+    </tr>
+    <tr>
+      <td>Unità «volte»</td>
+      <td>Plus (+)</td>
+      <td>Aggiunge un valore ai progressi dell’abitudine</td>
+    </tr>
+    <tr>
+      <td>Qualsiasi altra unità</td>
+      <td>Registra</td>
+      <td>Consente di inserire un valore</td>
+    </tr>
+  </tbody>
+</table>
+
+### Vista Ultimi 7 giorni
+
+Per accedere alla vista degli ultimi 7 giorni, scorri verso sinistra dalla vista Oggi.
+
+In questa vista puoi vedere l’elenco delle tue abitudini con i progressi degli ultimi 7 giorni per ciascuna di esse. Leggi la vista dall’alto verso il basso:
+
+1. Una riga di lettere dei giorni della settimana in alto mostra gli ultimi 7 giorni. La giornata odierna corrisponde alla lettera cerchiata a destra.
+2. Sotto, ogni abitudine mostra il proprio nome e un quadrato per ogni giorno, del colore dell’abitudine, allineati sotto le lettere dei giorni della settimana.
+3. Un’abitudine con un obiettivo settimanale, mensile o annuale mostra una barra per il periodo corrente anziché sette quadrati.
+
+Qui le abitudini vengono ordinate indipendentemente dal tipo di obiettivo e dallo stato.
+
+![Vista Ultimi 7 giorni nell’app per Apple Watch](/images/L7D-view---Watch-app.png "Vista Ultimi 7 giorni nell’app per Apple Watch")
+
+## Vedere la vista dei progressi di un’abitudine
+
+Tocca un’abitudine per aprire la relativa vista dei progressi. Scorri verso il basso per vedere, nell’ordine:
+
+1. **Nome e progressi dell’abitudine:** i tuoi progressi rispetto all’obiettivo per il periodo corrente, ad esempio 2/3 volte questa settimana. Un anello a destra mostra lo stato dell’abitudine. La tua serie attuale viene mostrata come un badge a forma di fiamma con il numero di giorni, ad esempio 0d.
+2. **Checklist**, se l’abitudine ne ha una. Le voci completate sono selezionate e barrate.
+3. **Cronologia:** ciò che mostra dipende dal tipo di obiettivo dell’abitudine (vedi sotto).
+4. **Note di oggi:** le note di testo che hai aggiunto oggi.
+
+![Progressi di un’abitudine nell’app per Apple Watch](/images/Habit-progress---Watch-App.png "Progressi di un’abitudine nell’app per Apple Watch")
+
+#### Cosa mostra la cronologia
+
+<table>
+  <colgroup>
+    <col width="100" />
+    <col width="597" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Obiettivo dell’abitudine</th>
+      <th>Cronologia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Giornaliero</td>
+      <td>**Ultime 4 settimane:** una griglia con una colonna per ogni giorno della settimana (da L a D) e una riga per ciascuna delle ultime 4 settimane. I quadrati più luminosi rappresentano i giorni in cui hai completato l’abitudine. I quadrati più scuri rappresentano i giorni in cui non l’hai completata.</td>
+    </tr>
+    <tr>
+      <td>Settimanale</td>
+      <td>**Ultime 4 settimane:** una barra per settimana, con le etichette Questa settimana, Settimana scorsa e poi intervalli di date come 11 lug – 18 lug.</td>
+    </tr>
+    <tr>
+      <td>Mensile</td>
+      <td>**Ultimi 3 mesi:** una barra per mese, con l’etichetta del mese e dell’anno.</td>
+    </tr>
+    <tr>
+      <td>Annuale</td>
+      <td>Nessuna cronologia. La vista mostra solo la checklist e le note.</td>
+    </tr>
+  </tbody>
+</table>
+
+Nelle barre, la parte piena mostra quanto dell’obiettivo hai completato in quel periodo.
+
+## Registrare i progressi dell’abitudine
+
+### Come registrare i progressi
+
+Esistono 2 modi per registrare i progressi di un’abitudine su Apple Watch:
+
+- Nella **vista Giorno** dell’elenco delle abitudini, usa i pulsanti intelligenti accanto all’abitudine.
+
+- Apri la **vista dei progressi dell’abitudine** e tocca il pulsante per registrare un valore nell’angolo in basso a destra.
+
+### **Come** saltare o segnare come non riuscita un’abitudine per oggi
+
+1. Apri la vista dei progressi dell’abitudine.
+2. Tocca il pulsante con **3 punti**.
+3. Scegli **Salta oggi** o **Segna come non riuscita**.
+
+## Aggiungere una nota all’abitudine
+
+1. Apri la vista dei progressi dell’abitudine.
+2. Tocca il pulsante con **3 punti**.
+3. Scegli **Nota di testo** e aggiungi la nota.
+
+## Utilizzare una sessione del Timer
+
+### Come avviare una sessione
+
+1. Nella vista Oggi, tocca il pulsante del **timer** accanto all’abitudine.
+2. Accedi al **Conto alla rovescia** predefinito: tocca i **minuti** o i **secondi** per selezionarli, quindi ruota la Digital Crown per impostare il tempo.
+3. Accedi al **Cronometro**: scorri verso sinistra sulla schermata del Conto alla rovescia.
+4. Tocca **Avvia**.
+
+![Conto alla rovescia nell’app per Apple Watch](/images/Countdown-Timer---Watch-App.png "Conto alla rovescia nell’app per Apple Watch")
+
+### Controllare una sessione in corso
+
+L’Apple Watch mostra un conto alla rovescia in tempo reale con tre controlli:
+
+- **Mettere in pausa e riprendere:** tocca il pulsante di pausa (||) nell’angolo in basso a destra. Il pulsante diventa un’icona di riproduzione (▶). Toccalo per riprendere.
+- **Suoni di sottofondo:** tocca l’icona delle cuffie al centro per attivare o disattivare i suoni ambientali di sottofondo.
+- **Interrompere e salvare:** tocca la **X** nell’angolo in alto a sinistra per interrompere il timer. Habitify ti chiede se vuoi salvare il tempo trascorso nei progressi dell’abitudine per la giornata. Ad esempio, se il tuo obiettivo è di 30 minuti e interrompi a 15, puoi salvare i 15 minuti o scartarli.
+
+![Cronometro nell’app per Apple Watch](/images/Stopwatch-Timer---Watch-App.png "Cronometro nell’app per Apple Watch")
+
+## Domande frequenti
+
+<AccordionGroup>
+  <Accordion title="**Perché le mie abitudini non vengono visualizzate sull’Apple Watch?**">
+    1. Sull’iPhone, apri Habitify e trascina verso il basso dalla parte superiore dell’elenco delle abitudini per aggiornarlo. Quindi apri di nuovo Habitify sull’Apple Watch.
+    2. Verifica che il Bluetooth sia attivato e che l’Apple Watch sia connesso all’iPhone.
+    3. Riavvia sia l’iPhone che l’Apple Watch.
+  </Accordion>
+
+  <Accordion title="**L’app è bloccata su «In attesa dell’autenticazione». Cosa devo fare?**">
+    Questo accade quando il Portachiavi iCloud è disattivato su uno dei dispositivi oppure quando l’Apple Watch e l’iPhone utilizzano Apple ID diversi.
+
+    1.  Sull’iPhone, apri **Impostazioni**.
+    2. Tocca **[il tuo nome]**, quindi **iCloud**.
+    3. Tocca **Password**, quindi attiva **Sincronizza questo iPhone**.
+    4. Assicurati che l’Apple Watch abbia effettuato l’accesso con lo stesso Apple ID dell’iPhone. Se le impostazioni di watchOS includono un’opzione Portachiavi, assicurati che sia attivata.
+    5. Tieni l’iPhone vicino all’Apple Watch, con Habitify aperto sull’iPhone, da 2 a 5 minuti.
+    6. Apri di nuovo Habitify sull’Apple Watch.
+
+    Se l’app è ancora bloccata, riavvia entrambi i dispositivi, apri Habitify prima sull’iPhone e poi sull’Apple Watch oppure reinstalla l’app per Apple Watch. Se il problema persiste, contattaci indicando il modello di iPhone, il modello di Apple Watch e la versione di watchOS e inviando un breve video del problema.
+  </Accordion>
+
+  <Accordion title="**Perché non vedo il pulsante del timer per un’abitudine?**">
+    Il pulsante del timer appare solo per le abitudini con un obiettivo in minuti o ore. Non appare per le abitudini sì/no o per quelle misurate in altre unità. Controlla l’obiettivo dell’abitudine sull’iPhone e assicurati che utilizzi un’unità di durata.
+  </Accordion>
+
+  <Accordion title="**Perché le mie abitudini hanno un aspetto diverso nelle viste Oggi e Ultimi 7 giorni?**">
+    Entrambe le viste mantengono l’ordine delle abitudini definito nell’app per iOS. La vista Oggi raggruppa inoltre le abitudini per tipo di obiettivo e stato. La vista Ultimi 7 giorni non lo fa, quindi mostra lo stesso ordine indipendentemente dal tipo di obiettivo e dallo stato.
+  </Accordion>
+
+  <Accordion title="**Quali complicazioni sono disponibili per Habitify?**">
+    Habitify dispone di tre complicazioni:
+
+    1. **Rotonda:** Tocca per monitorare.
+    2. **Angolo:** Tocca per monitorare.
+    3. **Centrale:** una complicazione rettangolare che mostra uno degli elementi seguenti: l’elenco di oggi, l’elenco del momento corrente della giornata o una mappa a blocchi dei progressi di un’abitudine.
+
+    Quelle che puoi aggiungere dipendono dagli spazi disponibili sul quadrante dell’Apple Watch
+  </Accordion>
+
+  <Accordion title="**Ho segnato per errore un’abitudine come non riuscita o saltata. Come posso annullare l’operazione?**">
+    Apri l’abitudine e tocca **Reimposta** nell’angolo in basso a destra della vista dei progressi.
+  </Accordion>
+
+  <Accordion title="**Posso vedere sull’Apple Watch tutte le note che ho registrato?**">
+    No. L’Apple Watch mostra solo le note di oggi, sotto **Note di oggi**, nella vista dei progressi di un’abitudine. Le note dei giorni precedenti non vengono mostrate sull’Apple Watch.
+
+    Per leggere le note meno recenti, usa Habitify sull’iPhone:
+
+    1. **Note per una sola abitudine:** in Diario, tocca l’abitudine, quindi apri la scheda **Nota**.
+    2. **Note per tutte le abitudini:** in Diario, trascina l’elenco verso il basso per aprire Riflessione. Qui vengono mostrati insieme le tue note e i registri dell’umore.
+  </Accordion>
+</AccordionGroup>

@@ -1,0 +1,239 @@
+---
+title: "Habitify für watchOS"
+hidden: true
+---
+
+Mit der Habitify-App für Apple Watch kannst du deine Gewohnheiten ansehen, Fortschritte erfassen, einen Timer starten und eine Gewohnheit direkt am Handgelenk überspringen oder als nicht geschafft markieren, ohne dein Smartphone herauszunehmen. Die App synchronisiert sich mit Habitify auf deinem iPhone, sodass deine Gewohnheiten, dein Check-in-Verlauf und deine Einstellungen beim Öffnen bereits vorhanden sind.
+
+Dieser Artikel beschreibt alle Funktionen der watchOS-App.
+
+## Bei Habitify auf deiner Apple Watch anmelden
+
+**Vergewissere dich zunächst, dass:**
+
+- Habitify auf deinem iPhone installiert ist und du angemeldet bist;
+- deine Apple Watch **mit diesem iPhone gekoppelt ist**;
+- beide Geräte **dieselbe Apple ID verwenden und der iCloud-Schlüsselbund aktiviert ist**. Die Apple Watch übernimmt die Anmeldung über den iCloud-Schlüsselbund von deinem iPhone;
+- **Bluetooth auf deinem iPhone aktiviert ist**.
+
+**Die App zum ersten Mal öffnen**
+
+1. Installiere Habitify auf deiner Apple Watch.
+2. **Halte dein iPhone in der Nähe deiner Apple Watch** und **lasse die Habitify-App auf deinem iPhone geöffnet**.
+3. Öffne Habitify auf deiner Apple Watch.
+4. Warte, während die App mit deinem iPhone synchronisiert wird. Dabei werden deine Gewohnheiten, dein Check-in-Verlauf und deine Einstellungen geladen.
+
+## Gewohnheitslisten auf deiner Apple Watch ansehen
+
+Der erste Bildschirm heißt **Heute**. Er zeigt drei Gruppen von Listen:
+
+1. **Alle Gewohnheiten:** alle deine Gewohnheiten für heute.
+2. **Tageszeit:** jeweils eine Liste für jede Tageszeit, etwa Morgen, Nachmittag und Abend. Die aktuelle Tageszeit ist mit **Jetzt** gekennzeichnet. Bei den anderen wird der jeweilige Zeitraum angezeigt, zum Beispiel 18:00–00:00 Uhr.
+3. **Bereiche:** jeweils eine Liste für jeden deiner benutzerdefinierten Bereiche.
+
+Jede Liste zeigt, wie viele der heute insgesamt anstehenden Gewohnheiten du abgeschlossen hast, zum Beispiel 0/4.
+
+![Listen und Bereiche in der Apple-Watch-App](/images/List&amp;Area-WatchApp.png "Listen und Bereiche in der Apple-Watch-App")
+
+Tippe auf eine Liste, um die darin enthaltenen Gewohnheiten anzuzeigen. Jede Liste hat zwei Ansichten: **Heute** und **Letzte 7 Tage**.
+
+###  Ansicht „Heute“
+
+Die Ansicht „Heute“ wird zuerst geöffnet. Der Listenname, etwa **Alle Gewohnheiten**, steht oben, die Zurück-Taste oben links.
+
+Jede Zeile zeigt den Namen der Gewohnheit, deinen Fortschritt im Verhältnis zum Ziel (zum Beispiel 10/20 Min., 0/1 Mal oder 12,8/40 km) und rechts eine Taste. Ein Ring um die Taste füllt sich, je näher du deinem Ziel kommst.
+
+Die Gewohnheiten werden in der Reihenfolge angezeigt, die du in der iOS-App festgelegt hast, und nach Zieltyp und Status gruppiert. Gewohnheiten mit einem Wochenziel stehen beispielsweise unter der Überschrift **Diese Woche**.
+
+![Ansicht „Heute“ in der Apple-Watch-App](/images/Today-view---Watch-app.png "Ansicht „Heute“ in der Apple-Watch-App")
+
+Neben jeder Gewohnheit befindet sich eine Taste, die sich je nach Ziel der Gewohnheit ändert:
+
+<table>
+  <colgroup>
+    <col width="241" />
+    <col width="149" />
+    <col width="345" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Gewohnheitsziel</th>
+      <th>Taste</th>
+      <th>Funktion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dauer (Minuten oder Stunden)</td>
+      <td>Timer</td>
+      <td>Startet eine Countdown-Sitzung</td>
+    </tr>
+    <tr>
+      <td>Einheit „Mal“</td>
+      <td>Plus (+)</td>
+      <td>Erhöht den Fortschritt der Gewohnheit</td>
+    </tr>
+    <tr>
+      <td>Jede andere Einheit</td>
+      <td>Eintragen</td>
+      <td>Ermöglicht die Eingabe eines Werts</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ansicht „Letzte 7 Tage“
+
+Wische in der Ansicht „Heute“ nach links, um die Ansicht „Letzte 7 Tage“ aufzurufen.
+
+In dieser Ansicht siehst du deine Gewohnheitsliste mit dem Fortschritt der letzten 7 Tage für jede Gewohnheit. Von oben nach unten zeigt die Ansicht Folgendes:
+
+1. Eine Reihe von Wochentagsbuchstaben oben steht für die letzten 7 Tage. Der heutige Tag ist der eingekreiste Buchstabe rechts.
+2. Darunter zeigt jede Gewohnheit ihren Namen und ein Quadrat pro Tag in der Farbe der Gewohnheit, jeweils unter dem entsprechenden Wochentagsbuchstaben.
+3. Bei einer Gewohnheit mit Wochen-, Monats- oder Jahresziel wird anstelle von sieben Quadraten ein Balken für den aktuellen Zeitraum angezeigt.
+
+Hier werden die Gewohnheiten unabhängig von Zieltyp und Status sortiert.
+
+![Ansicht „Letzte 7 Tage“ in der Apple-Watch-App](/images/L7D-view---Watch-app.png "Ansicht „Letzte 7 Tage“ in der Apple-Watch-App")
+
+## Fortschrittsansicht einer Gewohnheit ansehen
+
+Tippe auf eine Gewohnheit, um ihre Fortschrittsansicht zu öffnen. Scrolle nach unten, um der Reihe nach Folgendes zu sehen:
+
+1. **Name und Fortschritt der Gewohnheit:** dein Fortschritt im Verhältnis zum Ziel für den aktuellen Zeitraum, zum Beispiel 2/3 Mal in dieser Woche. Ein Ring rechts zeigt den Status der Gewohnheit. Deine aktuelle Serie wird als Flammensymbol mit der Anzahl der Tage angezeigt, zum Beispiel 0 T.
+2. **Checkliste**, falls die Gewohnheit eine hat. Abgeschlossene Punkte sind mit einem Häkchen versehen und durchgestrichen.
+3. **Verlauf:** Was hier angezeigt wird, hängt vom Zieltyp der Gewohnheit ab (siehe unten).
+4. **Heutige Notizen:** die Textnotizen, die du heute hinzugefügt hast.
+
+![Gewohnheitsfortschritt in der Apple-Watch-App](/images/Habit-progress---Watch-App.png "Gewohnheitsfortschritt in der Apple-Watch-App")
+
+#### Was der Verlauf zeigt
+
+<table>
+  <colgroup>
+    <col width="100" />
+    <col width="597" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Gewohnheitsziel</th>
+      <th>Verlauf</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Täglich</td>
+      <td>**Letzte 4 Wochen:** ein Raster mit einer Spalte für jeden Wochentag (Mo bis So) und einer Zeile für jede der letzten 4 Wochen. Hellere Quadrate stehen für Tage, an denen du die Gewohnheit abgeschlossen hast. Dunklere Quadrate stehen für Tage, an denen du sie nicht abgeschlossen hast.</td>
+    </tr>
+    <tr>
+      <td>Wöchentlich</td>
+      <td>**Letzte 4 Wochen:** ein Balken pro Woche, beschriftet mit Diese Woche, Letzte Woche und anschließend mit Datumsbereichen wie 11. Juli–18. Juli.</td>
+    </tr>
+    <tr>
+      <td>Monatlich</td>
+      <td>**Letzte 3 Monate:** ein Balken pro Monat, beschriftet mit Monat und Jahr.</td>
+    </tr>
+    <tr>
+      <td>Jährlich</td>
+      <td>Kein Verlauf. Die Ansicht zeigt nur die Checkliste und die Notizen.</td>
+    </tr>
+  </tbody>
+</table>
+
+Auf den Balken zeigt der ausgefüllte Teil, wie viel des Ziels du in diesem Zeitraum erreicht hast.
+
+## Fortschritt deiner Gewohnheit erfassen
+
+### Fortschritt erfassen
+
+Auf der Apple Watch kannst du den Fortschritt einer Gewohnheit auf 2 Arten erfassen:
+
+- Verwende in der **Tagesansicht** deiner Gewohnheitsliste die intelligenten Tasten neben der Gewohnheit.
+
+- Öffne die **Fortschrittsansicht der Gewohnheit** und tippe unten rechts auf die Taste zum Eintragen eines Werts.
+
+### **So kannst du** eine Gewohnheit für heute überspringen oder als nicht geschafft markieren
+
+1. Öffne die Fortschrittsansicht der Gewohnheit.
+2. Tippe auf die Taste mit den **3 Punkten**.
+3. Wähle **Heute überspringen** oder **Als nicht geschafft markieren**.
+
+## Eine Notiz zu deiner Gewohnheit hinzufügen
+
+1. Öffne die Fortschrittsansicht der Gewohnheit.
+2. Tippe auf die Taste mit den **3 Punkten**.
+3. Wähle **Textnotiz** und füge deine Notiz hinzu.
+
+## Eine Timer-Sitzung starten
+
+### Eine Sitzung starten
+
+1. Tippe in der Ansicht „Heute“ auf die **Timer**-Taste neben der Gewohnheit.
+2. Rufe den standardmäßigen **Countdown** auf: Tippe auf **Minuten** oder **Sekunden**, um die jeweilige Einheit auszuwählen, und stelle die Zeit anschließend mit der Digital Crown ein.
+3. Rufe die **Stoppuhr** auf: Wische auf dem Countdown-Bildschirm nach links.
+4. Tippe auf **Starten**.
+
+![Countdown-Timer in der Apple-Watch-App](/images/Countdown-Timer---Watch-App.png "Countdown-Timer in der Apple-Watch-App")
+
+### Eine laufende Sitzung steuern
+
+Die Apple Watch zeigt einen laufenden Countdown mit drei Bedienelementen:
+
+- **Pausieren und fortsetzen:** Tippe unten rechts auf die Pausentaste (||). Sie wird zu einem Wiedergabesymbol (▶). Tippe darauf, um fortzufahren.
+- **Hintergrundgeräusche:** Tippe in der Mitte auf das Kopfhörersymbol, um atmosphärische Hintergrundgeräusche ein- oder auszuschalten.
+- **Stoppen und speichern:** Tippe oben links auf das **X**, um den Timer zu stoppen. Habitify fragt, ob die verstrichene Zeit im Tagesfortschritt der Gewohnheit gespeichert werden soll. Wenn dein Ziel beispielsweise 30 Minuten beträgt und du nach 15 Minuten stoppst, kannst du die 15 Minuten speichern oder verwerfen.
+
+![Stoppuhr in der Apple-Watch-App](/images/Stopwatch-Timer---Watch-App.png "Stoppuhr in der Apple-Watch-App")
+
+## Häufig gestellte Fragen
+
+<AccordionGroup>
+  <Accordion title="**Warum werden meine Gewohnheiten nicht auf der Apple Watch angezeigt?**">
+    1. Öffne Habitify auf deinem iPhone und ziehe die Gewohnheitsliste von oben nach unten, um sie zu aktualisieren. Öffne Habitify anschließend erneut auf deiner Apple Watch.
+    2. Vergewissere dich, dass Bluetooth aktiviert und deine Apple Watch mit deinem iPhone verbunden ist.
+    3. Starte sowohl dein iPhone als auch deine Apple Watch neu.
+  </Accordion>
+
+  <Accordion title="**Die App hängt bei „Warten auf Anmeldung“. Was kann ich tun?**">
+    Das passiert, wenn der iCloud-Schlüsselbund auf einem der Geräte deaktiviert ist oder wenn Apple Watch und iPhone unterschiedliche Apple IDs verwenden.
+
+    1. Öffne auf deinem iPhone die **Einstellungen**.
+    2. Tippe auf **[dein Name]** und dann auf **iCloud**.
+    3. Tippe auf **Passwörter** und aktiviere dann **Dieses iPhone synchronisieren**.
+    4. Vergewissere dich, dass deine Apple Watch mit derselben Apple ID angemeldet ist wie dein iPhone. Wenn es in deinen watchOS-Einstellungen eine Schlüsselbund-Option gibt, stelle sicher, dass sie aktiviert ist.
+    5. Halte dein iPhone 2 bis 5 Minuten lang in der Nähe deiner Apple Watch und lasse Habitify auf dem iPhone geöffnet.
+    6. Öffne Habitify erneut auf deiner Apple Watch.
+
+    Wenn die App weiterhin hängt, starte beide Geräte neu, öffne Habitify zuerst auf deinem iPhone und dann auf deiner Apple Watch oder installiere die App für die Apple Watch neu. Wenn das Problem weiterhin besteht, kontaktiere uns mit deinem iPhone-Modell, deinem Apple-Watch-Modell, deiner watchOS-Version und einem kurzen Video des Problems.
+  </Accordion>
+
+  <Accordion title="**Warum sehe ich bei einer Gewohnheit keine Timer-Taste?**">
+    Die Timer-Taste erscheint nur bei Gewohnheiten mit einem Ziel in Minuten oder Stunden. Bei Ja/Nein-Gewohnheiten oder Gewohnheiten mit anderen Einheiten wird sie nicht angezeigt. Überprüfe das Ziel der Gewohnheit auf deinem iPhone und vergewissere dich, dass es eine Zeiteinheit verwendet.
+  </Accordion>
+
+  <Accordion title="**Warum sehen meine Gewohnheiten in den Ansichten „Heute“ und „Letzte 7 Tage“ unterschiedlich aus?**">
+    Beide Ansichten übernehmen die Reihenfolge der Gewohnheiten aus der iOS-App. Die Ansicht „Heute“ gruppiert Gewohnheiten zusätzlich nach Zieltyp und Status. Die Ansicht „Letzte 7 Tage“ tut dies nicht und zeigt daher unabhängig von Zieltyp und Status dieselbe Reihenfolge.
+  </Accordion>
+
+  <Accordion title="**Welche Komplikationen sind für Habitify verfügbar?**">
+    Habitify bietet drei Komplikationen:
+
+    1. **Rund:** Tippe zum Erfassen.
+    2. **Ecke:** Tippe zum Erfassen.
+    3. **Mitte:** eine rechteckige Komplikation, die eines der folgenden Elemente anzeigt: die heutige Liste, die Liste für die aktuelle Tageszeit oder eine Blockkarte des Fortschritts einer Gewohnheit.
+
+    Welche du hinzufügen kannst, hängt von den verfügbaren Plätzen auf deinem Zifferblatt ab.
+  </Accordion>
+
+  <Accordion title="**Ich habe eine Gewohnheit versehentlich als nicht geschafft oder übersprungen markiert. Wie mache ich das rückgängig?**">
+    Öffne die Gewohnheit und tippe unten rechts in der Fortschrittsansicht auf **Zurücksetzen**.
+  </Accordion>
+
+  <Accordion title="**Kann ich auf der Apple Watch alle Notizen sehen, die ich jemals erfasst habe?**">
+    Nein. Die Apple Watch zeigt in der Fortschrittsansicht einer Gewohnheit unter **Heutige Notizen** nur die Notizen von heute. Notizen aus früheren Tagen werden auf der Apple Watch nicht angezeigt.
+
+    Ältere Notizen kannst du in Habitify auf deinem iPhone lesen:
+
+    1. **Notizen zu einer Gewohnheit:** Tippe im Tagebuch auf die Gewohnheit und öffne dann die Registerkarte **Notiz**.
+    2. **Notizen zu allen Gewohnheiten:** Ziehe die Liste im Tagebuch nach unten, um die Reflexion zu öffnen. Dort werden deine Notizen und Stimmungseinträge an einer Stelle angezeigt.
+  </Accordion>
+</AccordionGroup>

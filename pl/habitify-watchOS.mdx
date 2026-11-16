@@ -1,0 +1,239 @@
+---
+title: "Habitify na watchOS"
+hidden: true
+---
+
+W aplikacji Habitify na Apple Watch możesz wyświetlać swoje nawyki, zapisywać postępy, uruchamiać minutnik oraz pomijać nawyk lub oznaczać go jako niewykonany prosto z nadgarstka, bez wyjmowania telefonu. Aplikacja synchronizuje się z Habitify na iPhonie, więc po jej otwarciu Twoje nawyki, historia zapisów i ustawienia są już dostępne.
+
+W tym artykule opisano wszystkie funkcje aplikacji na watchOS.
+
+## Logowanie do Habitify na zegarku
+
+**Zanim zaczniesz, upewnij się, że:**
+
+- aplikacja Habitify jest zainstalowana na iPhonie i jesteś w niej zalogowany;
+- Apple Watch **jest połączony w parę** z tym iPhonem;
+- oba urządzenia **korzystają z tego samego Apple ID i mają włączony Pęk kluczy iCloud**. Zegarek pobiera dane logowania z iPhone’a za pośrednictwem Pęku kluczy iCloud;
+- na iPhonie **jest włączony Bluetooth**.
+
+**Pierwsze otwarcie aplikacji**
+
+1. Zainstaluj Habitify na Apple Watch.
+2. **Trzymaj iPhone’a blisko zegarka** i **pozostaw aplikację Habitify otwartą** na iPhonie.
+3. Otwórz Habitify na zegarku.
+4. Poczekaj, aż aplikacja zsynchronizuje się z iPhonem. Pobierze Twoje nawyki, historię zapisów i ustawienia.
+
+## Wyświetlanie list nawyków na zegarku
+
+Pierwszy ekran ma tytuł **Dzisiaj**. Wyświetla trzy grupy list:
+
+1. **Wszystkie nawyki:** wszystkie Twoje nawyki na dziś.
+2. **Pora dnia:** po jednej liście dla każdej pory dnia, na przykład Rano, Popołudnie i Wieczór. Bieżąca pora jest oznaczona jako **Teraz**. Pozostałe pokazują swój zakres godzin, na przykład 18:00–00:00.
+3. **Obszary:** po jednej liście dla każdego utworzonego przez Ciebie obszaru.
+
+Każda lista pokazuje, ile nawyków udało Ci się ukończyć z łącznej liczby na dziś, na przykład 0/4.
+
+![Listy i obszary w aplikacji na Apple Watch](/images/List&amp;Area-WatchApp.png "Listy i obszary w aplikacji na Apple Watch")
+
+Stuknij listę, aby zobaczyć należące do niej nawyki. Każda lista ma dwa tryby wyświetlania: **Dzisiaj** i **Ostatnie 7 dni**.
+
+###  Widok Dzisiaj
+
+Widok Dzisiaj otwiera się jako pierwszy. Nazwa listy, na przykład **Wszystkie nawyki**, znajduje się u góry, a przycisk Wstecz — w lewym górnym rogu.
+
+Każdy wiersz pokazuje nazwę nawyku, Twój postęp względem celu (na przykład 10/20 min, 0/1 raz lub 12,8/40 km) oraz przycisk po prawej stronie. Pierścień wokół przycisku wypełnia się w miarę zbliżania się do celu.
+
+Nawyki są wyświetlane w kolejności ustawionej w aplikacji na iOS i pogrupowane według rodzaju oraz stanu celu. Na przykład nawyki z celem tygodniowym znajdują się pod nagłówkiem **Ten tydzień**.
+
+![Widok Dzisiaj w aplikacji na Apple Watch](/images/Today-view---Watch-app.png "Widok Dzisiaj w aplikacji na Apple Watch")
+
+Obok każdego nawyku znajduje się przycisk, który zmienia się zależnie od jego celu:
+
+<table>
+  <colgroup>
+    <col width="241" />
+    <col width="149" />
+    <col width="345" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Cel nawyku</th>
+      <th>Przycisk</th>
+      <th>Działanie</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Czas trwania (minuty lub godziny)</td>
+      <td>Minutnik</td>
+      <td>Rozpoczyna sesję odliczania</td>
+    </tr>
+    <tr>
+      <td>Jednostka „raz”</td>
+      <td>Plus (+)</td>
+      <td>Dodaje wartość do postępu nawyku</td>
+    </tr>
+    <tr>
+      <td>Dowolna inna jednostka</td>
+      <td>Zapisz</td>
+      <td>Umożliwia wprowadzenie wartości</td>
+    </tr>
+  </tbody>
+</table>
+
+### Widok Ostatnie 7 dni
+
+Aby przejść do widoku Ostatnie 7 dni, przesuń palcem w lewo w widoku Dzisiaj.
+
+W tym widoku możesz zobaczyć listę nawyków wraz z postępem każdego z nich z ostatnich 7 dni. Czytając widok od góry do dołu, zobaczysz:
+
+1. Rząd liter oznaczających dni tygodnia u góry, który przedstawia ostatnie 7 dni. Dzisiejszy dzień to litera w kółku po prawej stronie.
+2. Poniżej każdy nawyk ma swoją nazwę i po jednym kwadracie na każdy dzień, w kolorze nawyku, ustawionym pod literą odpowiedniego dnia tygodnia.
+3. Nawyk z celem tygodniowym, miesięcznym lub rocznym zamiast siedmiu kwadratów pokazuje jeden pasek dla bieżącego okresu.
+
+Nawyki są tutaj uporządkowane niezależnie od rodzaju i stanu celu.
+
+![Widok Ostatnie 7 dni w aplikacji na Apple Watch](/images/L7D-view---Watch-app.png "Widok Ostatnie 7 dni w aplikacji na Apple Watch")
+
+## Wyświetlanie widoku postępu nawyku
+
+Stuknij dowolny nawyk, aby otworzyć widok jego postępu. Przewiń w dół, aby kolejno zobaczyć:
+
+1. **Nazwę nawyku i postęp:** Twój postęp względem celu w bieżącym okresie, na przykład 2/3 razy w tym tygodniu. Pierścień po prawej stronie pokazuje stan nawyku. Bieżąca seria jest wyświetlana jako plakietka płomienia z liczbą dni, na przykład 0 d.
+2. **Listę kontrolną**, jeśli nawyk ją ma. Ukończone elementy są zaznaczone i przekreślone.
+3. **Historię:** jej zawartość zależy od rodzaju celu nawyku (patrz poniżej).
+4. **Dzisiejsze notatki:** notatki tekstowe dodane przez Ciebie dzisiaj.
+
+![Postęp nawyku w aplikacji na Apple Watch](/images/Habit-progress---Watch-App.png "Postęp nawyku w aplikacji na Apple Watch")
+
+#### Co pokazuje historia
+
+<table>
+  <colgroup>
+    <col width="100" />
+    <col width="597" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Cel nawyku</th>
+      <th>Historia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dzienny</td>
+      <td>**Ostatnie 4 tygodnie:** siatka z jedną kolumną dla każdego dnia tygodnia (od Pn do Nd) i jednym wierszem dla każdego z ostatnich 4 tygodni. Jaśniejsze kwadraty oznaczają dni, w których udało Ci się wykonać nawyk. Ciemniejsze kwadraty oznaczają dni, w których go nie wykonałeś.</td>
+    </tr>
+    <tr>
+      <td>Tygodniowy</td>
+      <td>**Ostatnie 4 tygodnie:** po jednym pasku na tydzień, z etykietami Ten tydzień, Ostatni tydzień, a następnie zakresami dat, takimi jak 11 lipca–18 lipca.</td>
+    </tr>
+    <tr>
+      <td>Miesięczny</td>
+      <td>**Ostatnie 3 miesiące:** po jednym pasku na miesiąc, z etykietą zawierającą miesiąc i rok.</td>
+    </tr>
+    <tr>
+      <td>Roczny</td>
+      <td>Brak historii. Widok pokazuje tylko listę kontrolną i notatki.</td>
+    </tr>
+  </tbody>
+</table>
+
+Wypełniona część pasków pokazuje, jaką część celu udało Ci się wykonać w danym okresie.
+
+## Zapisywanie postępu nawyku
+
+### Jak zapisać postęp
+
+Na Apple Watch postęp nawyku możesz zapisać na 2 sposoby:
+
+- W **widoku dnia** listy nawyków użyj inteligentnych przycisków obok nawyku.
+
+- Otwórz **widok postępu nawyku** i stuknij przycisk zapisywania wartości w prawym dolnym rogu.
+
+### **Jak** pominąć nawyk lub oznaczyć go jako niewykonany na dziś
+
+1. Otwórz widok postępu nawyku.
+2. Stuknij przycisk **z trzema kropkami**.
+3. Wybierz **Pomiń dzisiaj** lub **Oznacz jako niewykonane**.
+
+## Dodawanie notatki do nawyku
+
+1. Otwórz widok postępu nawyku.
+2. Stuknij przycisk **z trzema kropkami**.
+3. Wybierz **Notatka tekstowa** i dodaj notatkę.
+
+## Uruchamianie sesji minutnika
+
+### Jak rozpocząć sesję
+
+1. W widoku Dzisiaj stuknij przycisk **minutnika** obok nawyku.
+2. Otwórz domyślne **Odliczanie**: stuknij **minuty** lub **sekundy**, aby je wybrać, a następnie obróć Digital Crown, aby ustawić czas.
+3. Otwórz **Stoper**: przesuń palcem w lewo na ekranie Odliczania.
+4. Stuknij **Rozpocznij**.
+
+![Minutnik z odliczaniem w aplikacji na Apple Watch](/images/Countdown-Timer---Watch-App.png "Minutnik z odliczaniem w aplikacji na Apple Watch")
+
+### Sterowanie trwającą sesją
+
+Zegarek pokazuje odliczanie na żywo i trzy elementy sterujące:
+
+- **Wstrzymywanie i wznawianie:** stuknij przycisk pauzy (||) w prawym dolnym rogu. Zmieni się w ikonę odtwarzania (▶). Stuknij ją, aby wznowić.
+- **Dźwięki tła:** stuknij ikonę słuchawek pośrodku, aby włączyć lub wyłączyć dźwięki otoczenia w tle.
+- **Zatrzymywanie i zapisywanie:** stuknij **X** w lewym górnym rogu, aby zatrzymać minutnik. Habitify zapyta, czy zapisać czas, który upłynął, w postępie nawyku z danego dnia. Jeśli na przykład Twój cel wynosi 30 minut, a zatrzymasz minutnik po 15, możesz zapisać te 15 minut lub je odrzucić.
+
+![Stoper w aplikacji na Apple Watch](/images/Stopwatch-Timer---Watch-App.png "Stoper w aplikacji na Apple Watch")
+
+## Często zadawane pytania
+
+<AccordionGroup>
+  <Accordion title="**Dlaczego moje nawyki nie są widoczne na zegarku?**">
+    1. Otwórz Habitify na iPhonie i przeciągnij listę nawyków w dół od jej górnej krawędzi, aby ją odświeżyć. Następnie ponownie otwórz Habitify na zegarku.
+    2. Sprawdź, czy Bluetooth jest włączony, a zegarek połączony z iPhonem.
+    3. Uruchom ponownie iPhone’a i Apple Watch.
+  </Accordion>
+
+  <Accordion title="**Aplikacja zatrzymała się na komunikacie „Oczekiwanie na uwierzytelnienie”. Co zrobić?**">
+    Dzieje się tak, gdy Pęk kluczy iCloud jest wyłączony na jednym z urządzeń albo gdy zegarek i iPhone korzystają z różnych Apple ID.
+
+    1. Na iPhonie otwórz **Ustawienia**.
+    2. Stuknij **[Twoje imię i nazwisko]**, a następnie **iCloud**.
+    3. Stuknij **Hasła**, a następnie włącz **Synchronizuj tego iPhone’a**.
+    4. Upewnij się, że Apple Watch jest zalogowany do tego samego Apple ID co iPhone. Jeśli w ustawieniach watchOS jest dostępna opcja Pęku kluczy, upewnij się, że jest włączona.
+    5. Przez 2–5 minut trzymaj iPhone’a blisko zegarka i pozostaw Habitify otwarte na iPhonie.
+    6. Ponownie otwórz Habitify na zegarku.
+
+    Jeśli ekran nadal jest zablokowany, uruchom ponownie oba urządzenia, otwórz Habitify najpierw na iPhonie, a następnie na zegarku, lub ponownie zainstaluj aplikację na zegarku. Jeśli problem nie ustąpi, skontaktuj się z nami, podając model iPhone’a, model Apple Watch i wersję watchOS, oraz dołącz krótkie nagranie przedstawiające problem.
+  </Accordion>
+
+  <Accordion title="**Dlaczego przy nawyku nie widzę przycisku minutnika?**">
+    Przycisk minutnika jest wyświetlany tylko przy nawykach z celem określonym w minutach lub godzinach. Nie jest wyświetlany przy nawykach typu tak/nie ani przy nawykach z innymi jednostkami. Sprawdź cel nawyku na iPhonie i upewnij się, że używa jednostki czasu trwania.
+  </Accordion>
+
+  <Accordion title="**Dlaczego moje nawyki wyglądają inaczej w widokach Dzisiaj i Ostatnie 7 dni?**">
+    Oba widoki zachowują kolejność nawyków z aplikacji na iOS. Widok Dzisiaj dodatkowo grupuje nawyki według rodzaju i stanu celu. Widok Ostatnie 7 dni tego nie robi, więc pokazuje tę samą kolejność niezależnie od rodzaju i stanu celu.
+  </Accordion>
+
+  <Accordion title="**Jakie komplikacje są dostępne dla Habitify?**">
+    Habitify ma trzy komplikacje:
+
+    1. **Okrągła:** Stuknij, aby śledzić.
+    2. **Narożna:** Stuknij, aby śledzić.
+    3. **Środkowa:** prostokątna komplikacja wyświetlająca jeden z następujących elementów: dzisiejszą listę, listę dla bieżącej pory dnia lub mapę blokową postępu nawyku.
+
+    To, które z nich możesz dodać, zależy od pól dostępnych na tarczy zegarka.
+  </Accordion>
+
+  <Accordion title="**Przez pomyłkę oznaczyłem nawyk jako niewykonany lub pominięty. Jak to cofnąć?**">
+    Otwórz nawyk i stuknij **Resetuj** w prawym dolnym rogu widoku postępu.
+  </Accordion>
+
+  <Accordion title="**Czy na zegarku mogę zobaczyć wszystkie zapisane kiedykolwiek notatki?**">
+    Nie. Zegarek pokazuje tylko dzisiejsze notatki w sekcji **Dzisiejsze notatki** widoku postępu nawyku. Notatki z wcześniejszych dni nie są wyświetlane na zegarku.
+
+    Aby przeczytać starsze notatki, użyj Habitify na iPhonie:
+
+    1. **Notatki dotyczące jednego nawyku:** w Dzienniku stuknij nawyk, a następnie otwórz kartę **Notatka**.
+    2. **Notatki dotyczące wszystkich nawyków:** w Dzienniku przeciągnij listę w dół, aby otworzyć Refleksję. Znajdziesz tam swoje notatki i zapisy nastroju w jednym miejscu.
+  </Accordion>
+</AccordionGroup>
