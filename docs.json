@@ -117,7 +117,8 @@
             "icon": "bullhorn",
             "href": "https://feedback.habitify.me/changelog"
           }
-        ]
+        ],
+        "default": true
       },
       {
         "language": "pt-BR",
